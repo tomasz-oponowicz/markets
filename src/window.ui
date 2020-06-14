@@ -69,6 +69,7 @@
           <object class="GtkStack" id="stack">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
+            <property name="expand">True</property>
             <child>
               <placeholder/>
             </child>
