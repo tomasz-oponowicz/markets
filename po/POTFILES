@@ -1,0 +1,7 @@
+data/com.bitstower.Markets.desktop.in
+data/com.bitstower.Markets.appdata.xml.in
+data/com.bitstower.Markets.gschema.xml
+src/window.ui
+src/main.vala
+src/window.vala
+
