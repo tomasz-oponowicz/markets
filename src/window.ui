@@ -69,64 +69,8 @@
           <object class="GtkStack" id="stack">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
-            <child> <!-- finnhub key start -->
-              <object class="GtkBox">
-                <property name="visible">True</property>
-                <property name="orientation">vertical</property>
-                <property name="halign">center</property>
-                <property name="valign">center</property>
-                <property name="margin">18</property>
-                <property name="spacing">9</property>
-                <child>
-                  <object class="GtkImage">
-                    <property name="visible">True</property>
-                    <property name="pixel_size">96</property>
-                    <property name="margin-bottom">18</property>
-                    <property name="icon_name">emblem-favorite-symbolic</property>
-                    <property name="icon_size">6</property>
-                    <style><class name="dim-label"/></style>
-                  </object>
-                </child>
-                <child>
-                  <object class="GtkLabel">
-                    <property name="visible">True</property>
-                    <property name="label" translatable="yes">No Finnhub API key</property>
-                    <property name="wrap">True</property>
-                    <style><class name="dim-label"/></style>
-                    <property name="justify">center</property>
-                    <attributes>
-                      <attribute name="weight" value="bold"/>
-                      <attribute name="scale" value="1.36"/>
-                    </attributes>
-                  </object>
-                </child>
-                <child>
-                  <object class="GtkLabel">
-                    <property name="visible">True</property>
-                    <property name="label" translatable="yes">Open the Preferences to add one.</property>
-                    <style><class name="dim-label"/></style>
-                  </object>
-                </child>
-              </object>
-              <packing>
-                <property name="name">photos</property>
-                <property name="title" translatable="yes">Photos</property>
-                <property name="icon_name">image-x-generic-symbolic</property>
-              </packing>
-            </child> <!-- finnhub key end-->
             <child>
-              <object class="GtkLabel">
-                <property name="visible">True</property>
-                <property name="can_focus">False</property>
-                <property name="vexpand">True</property>
-                <property name="label" translatable="yes">Albums</property>
-              </object>
-              <packing>
-                <property name="name">albums</property>
-                <property name="title" translatable="yes">Albums</property>
-                <property name="icon_name">accessories-dictionary-symbolic</property>
-                <property name="position">1</property>
-              </packing>
+              <placeholder/>
             </child>
           </object>
           <packing>

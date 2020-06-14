@@ -1,6 +1,6 @@
 markets_sources = [
-  'main.vala',
-  'window.vala',
+  'Main.vala',
+  'Window.vala',
 ]
 
 markets_deps = [

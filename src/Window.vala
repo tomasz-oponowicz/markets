@@ -30,11 +30,15 @@ namespace Markets {
 		}
 
 		construct {
-            var builder = new Gtk.Builder.from_resource("/com/bitstower/Markets/menu.ui");
-            var main_menu = (GLib.MenuModel) builder.get_object("main-menu");
-
+            var builder1 = new Gtk.Builder.from_resource("/com/bitstower/Markets/menu.ui");
+            var main_menu = (GLib.MenuModel) builder1.get_object("main-menu");
             menuBtn.set_menu_model(main_menu);
-		    stack.set_visible_child_name("photos");
+
+            var builder2 = new Gtk.Builder.from_resource("/com/bitstower/Markets/api_key_view.ui");
+            var api_key_view = (Gtk.Box) builder2.get_object("api_key_view");
+            stack.add_named(api_key_view, "api_key_view");
+
+		    stack.set_visible_child_name("api_key_view");
 		}
 	}
 }
