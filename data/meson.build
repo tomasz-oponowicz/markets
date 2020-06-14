@@ -1,3 +1,9 @@
+gnome = import('gnome')
+markets_sources = gnome.compile_resources('markets-resources',
+  'markets.gresource.xml',
+  c_name: 'markets'
+)
+
 desktop_file = i18n.merge_file(
   input: 'com.bitstower.Markets.desktop.in',
   output: 'com.bitstower.Markets.desktop',
