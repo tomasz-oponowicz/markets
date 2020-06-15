@@ -24,6 +24,25 @@
     ],
     "modules" : [
         {
+            "name" : "libhandy",
+            "buildsystem" : "meson",
+            "config-opts" : [
+                "-Dprofiling=false",
+                "-Dintrospection=enabled",
+                "-Dgtk_doc=false",
+                "-Dtests=false",
+                "-Dexamples=false",
+                "-Dglade_catalog=disabled"
+            ],
+            "sources" : [
+                {
+                    "type" : "git",
+                    "url" : "https://gitlab.gnome.org/GNOME/libhandy.git",
+                    "branch" : "v0.0.13"
+                }
+            ]
+        },
+        {
             "name" : "markets",
             "builddir" : true,
             "buildsystem" : "meson",

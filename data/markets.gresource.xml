@@ -3,6 +3,7 @@
   <gresource prefix="/com/bitstower/Markets">
     <file>window.ui</file>
     <file>menu.ui</file>
+    <file>settings.ui</file>
     <file>api_key_view.ui</file>
   </gresource>
 </gresources>
