@@ -1,9 +1,5 @@
 subdir('icons')
-
-markets_resources = gnome.compile_resources('com.bitstower.Markets',
-  'markets.gresource.xml',
-  c_name: 'markets'
-)
+subdir('ui')
 
 desktop_file = i18n.merge_file(
   input: 'com.bitstower.Markets.desktop.in',
