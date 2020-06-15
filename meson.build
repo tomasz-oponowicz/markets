@@ -5,8 +5,12 @@ project('markets', ['c', 'vala'],
                    ],
 )
 
-i18n = import('i18n')
+app_prefix = get_option('prefix')
+app_datadir = join_paths(app_prefix, get_option('datadir'))
+app_id = 'com.bitstower.Markets'
 
+i18n = import('i18n')
+gnome = import('gnome')
 
 subdir('data')
 subdir('src')

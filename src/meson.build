@@ -1,7 +1,7 @@
 markets_sources = [
   'Main.vala',
   'Window.vala',
-  markets_sources
+  markets_resources
 ]
 
 markets_deps = [

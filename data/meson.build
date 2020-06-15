@@ -1,5 +1,6 @@
-gnome = import('gnome')
-markets_sources = gnome.compile_resources('markets-resources',
+subdir('icons')
+
+markets_resources = gnome.compile_resources('com.bitstower.Markets',
   'markets.gresource.xml',
   c_name: 'markets'
 )
