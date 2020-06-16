@@ -37,11 +37,9 @@ namespace Markets {
             var main_menu = (GLib.MenuModel) builder1.get_object("main-menu");
             menuBtn.set_menu_model(main_menu);
 
-            var builder2 = new Gtk.Builder.from_resource("/com/bitstower/Markets/api_key_view.ui");
-            var api_key_view = (Gtk.Box) builder2.get_object("api_key_view");
-            stack.add_named(api_key_view, "api_key_view");
-
-		    stack.set_visible_child_name("api_key_view");
+            var view = new Markets.SymbolsView ();
+            stack.add_named(view, "symbols");
+		    stack.set_visible_child_name("symbols");
 
 		    addBtn.clicked.connect (() => {
                 var dialog = new Markets.NewSymbolDialog (this);

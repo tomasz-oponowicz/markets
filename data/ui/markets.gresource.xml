@@ -6,5 +6,7 @@
     <file>preferences.ui</file>
     <file>api_key_view.ui</file>
     <file>new_symbol.ui</file>
+    <file>SymbolRow.ui</file>
+    <file>SymbolsView.ui</file>
   </gresource>
 </gresources>

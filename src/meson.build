@@ -3,6 +3,8 @@ markets_sources = [
 
   'NewSymbolDialog.vala',
   'PreferencesWindow.vala',
+  'SymbolsView.vala',
+  'SymbolRow.vala',
 
   'Window.vala',
   markets_resources
