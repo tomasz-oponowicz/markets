@@ -29,11 +29,8 @@ int main (string[] args) {
 	app.startup.connect (() => {
         var settings = new SimpleAction ("settings", null);
         settings.activate.connect (() => {
-            var builder1 = new Gtk.Builder.from_resource("/com/bitstower/Markets/settings.ui");
-            var dialog = (Hdy.Dialog) builder1.get_object("settings_dialog");
-            dialog.set_modal (true);
-            dialog.set_transient_for (window);
-            dialog.present ();
+            var preferences = new Markets.PreferencesWindow (app);
+		    preferences.present ();
         });
 		app.add_action (settings);
 

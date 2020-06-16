@@ -25,6 +25,9 @@ namespace Markets {
 		[GtkChild]
 		Gtk.MenuButton menuBtn;
 
+		[GtkChild]
+		Gtk.Button addBtn;
+
 		public Window (Gtk.Application app) {
 			Object (application: app);
 		}
@@ -39,6 +42,12 @@ namespace Markets {
             stack.add_named(api_key_view, "api_key_view");
 
 		    stack.set_visible_child_name("api_key_view");
+
+		    addBtn.clicked.connect (() => {
+                var dialog = new Markets.NewSymbolDialog (this);
+                dialog.run ();
+                dialog.destroy ();
+		    });
 		}
 	}
 }
