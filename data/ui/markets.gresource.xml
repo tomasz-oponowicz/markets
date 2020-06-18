@@ -8,5 +8,6 @@
     <file>new_symbol.ui</file>
     <file>SymbolRow.ui</file>
     <file>SymbolsView.ui</file>
+    <file>HeaderBar.ui</file>
   </gresource>
 </gresources>

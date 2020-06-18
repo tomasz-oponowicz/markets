@@ -5,6 +5,7 @@ markets_sources = [
   'PreferencesWindow.vala',
   'SymbolsView.vala',
   'SymbolRow.vala',
+  'HeaderBar.vala',
 
   'Window.vala',
   markets_resources
