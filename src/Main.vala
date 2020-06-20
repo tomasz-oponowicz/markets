@@ -20,6 +20,10 @@ int main (string[] args) {
     Gtk.Window window = null;
 	var app = new Gtk.Application ("com.bitstower.Markets", ApplicationFlags.FLAGS_NONE);
 	app.activate.connect (() => {
+        var provider = new Gtk.CssProvider ();
+        provider.load_from_resource ("/com/bitstower/Markets/Application.css");
+        Gtk.StyleContext.add_provider_for_screen (Gdk.Screen.get_default (), provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
+
 		window = app.active_window;
 		if (window == null) {
 			window = new Markets.Window (app);

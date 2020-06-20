@@ -46,9 +46,9 @@
                 <property name="valign">end</property>
                 <property name="margin_bottom">3</property>
                 <property name="label"></property>
-                <attributes>
-                  <attribute name="foreground" value="#8a8ae2e23434"/>
-                </attributes>
+                <style>
+                  <class name="profit"/>
+                </style>
               </object>
               <packing>
                 <property name="expand">False</property>
