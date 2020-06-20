@@ -29,7 +29,7 @@ int main (string[] args) {
 	app.startup.connect (() => {
         var settings = new SimpleAction ("settings", null);
         settings.activate.connect (() => {
-            var preferences = new Markets.PreferencesWindow (app);
+            var preferences = new Markets.PreferencesWindow (app, window);
 		    preferences.present ();
         });
 		app.add_action (settings);

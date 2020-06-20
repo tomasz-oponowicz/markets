@@ -6,7 +6,7 @@
   <template class="MarketsPreferencesWindow" parent="HdyPreferencesWindow">
     <property name="can_focus">False</property>
     <property name="modal">True</property>
-    <property name="window_position">center</property>
+    <property name="window_position">center_on_parent</property>
     <property name="destroy_with_parent">True</property>
     <property name="default_width">500</property>
     <property name="default_height">270</property>
