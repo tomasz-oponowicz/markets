@@ -1,10 +1,10 @@
-[GtkTemplate (ui = "/com/bitstower/Markets/window.ui")]
-public class Markets.Window : Gtk.ApplicationWindow {
+[GtkTemplate (ui = "/com/bitstower/Markets/MainWindow.ui")]
+public class Markets.MainWindow : Gtk.ApplicationWindow {
 
 	[GtkChild]
 	Gtk.Stack stack;
 
-	public Window (Gtk.Application app) {
+	public MainWindow (Gtk.Application app) {
         Object (application: app);
 
 	    this.set_titlebar (new Markets.HeaderBar (this));

@@ -2,7 +2,7 @@
 <gresources>
   <gresource prefix="/com/bitstower/Markets">
     <file compressed="true">Application.css</file>
-    <file compressed="true">window.ui</file>
+    <file compressed="true">MainWindow.ui</file>
     <file compressed="true">menu.ui</file>
     <file compressed="true">preferences.ui</file>
     <file compressed="true">api_key_view.ui</file>

@@ -1,5 +1,5 @@
 markets_sources = [
-  'Main.vala',
+  'Application.vala',
 
   'NewSymbolDialog.vala',
   'PreferencesWindow.vala',
@@ -7,7 +7,7 @@ markets_sources = [
   'SymbolRow.vala',
   'HeaderBar.vala',
 
-  'Window.vala',
+  'MainWindow.vala',
   markets_resources
 ]
 
