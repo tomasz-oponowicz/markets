@@ -1,5 +1,7 @@
 public class Markets.Application : Gtk.Application {
-    private Gtk.Window window = null;
+    public static GLib.Settings settings;
+
+    private Gtk.Window window;
 
     public Application () {
         Object (
@@ -9,25 +11,28 @@ public class Markets.Application : Gtk.Application {
     }
 
     public override void activate () {
-		window = active_window;
-
-		if (window == null) {
-			window = new Markets.MainWindow (this);
-		}
-
-		window.present ();
+        if (active_window != null) {
+            return;
+        }
 
         var provider = new Gtk.CssProvider ();
         provider.load_from_resource ("/com/bitstower/Markets/Application.css");
-        Gtk.StyleContext.add_provider_for_screen (Gdk.Screen.get_default (), provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
+        Gtk.StyleContext.add_provider_for_screen (
+            Gdk.Screen.get_default (),
+            provider,
+            Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION
+        );
 
-        var settings = new SimpleAction ("settings", null);
-        settings.activate.connect (onPreferences);
-		add_action (settings);
+        var preferences = new SimpleAction ("preferences", null);
+        preferences.activate.connect (onPreferences);
+		add_action (preferences);
 
         var about = new SimpleAction ("about", null);
         about.activate.connect (onAbout);
 		add_action (about);
+
+		window = new Markets.MainWindow (this);
+		window.present ();
     }
 
     public void onPreferences () {
@@ -54,7 +59,12 @@ public class Markets.Application : Gtk.Application {
     }
 
     public static int main (string [] args) {
-        var app = new Markets.Application ();
+        var app = new Application ();
+
+        // Settings has to be created after Application.
+        // Otherwise application freezes on start.
+        Application.settings = new GLib.Settings ("com.bitstower.Markets");
+
         return app.run (args);
     }
 }

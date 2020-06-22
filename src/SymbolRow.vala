@@ -1,9 +1,8 @@
 [GtkTemplate (ui = "/com/bitstower/Markets/SymbolRow.ui")]
 public class Markets.SymbolRow : Gtk.ListBoxRow {
 
-
     [GtkChild]
-    Gtk.Label name;
+    Gtk.Label title;
 
     [GtkChild]
     Gtk.Label change;
@@ -17,10 +16,10 @@ public class Markets.SymbolRow : Gtk.ListBoxRow {
     [GtkChild]
     Gtk.Label details;
 
-    public SymbolRow (string name, string price, string currency, string change) {
+    public SymbolRow (string title, string price, string currency, string change) {
         Object ();
 
-        this.name.label = name;
+        this.title.label = title;
         this.change.label = change;
         this.price.label = price;
         this.currency.label = currency;

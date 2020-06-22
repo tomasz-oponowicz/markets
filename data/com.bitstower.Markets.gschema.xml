@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist gettext-domain="markets">
 	<schema id="com.bitstower.Markets" path="/com/bitstower/Markets/">
+    <key type="s" name="api-key">
+      <default>""</default>
+      <summary>Finnhub API Key</summary>
+    </key>
 	</schema>
 </schemalist>

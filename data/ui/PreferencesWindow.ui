@@ -28,7 +28,7 @@
                 <property name="use_underline">True</property>
                 <property name="activatable">False</property>
                 <child type="action">
-                  <object class="GtkEntry">
+                  <object class="GtkEntry" id="apiKeyEntry">
                     <property name="hexpand">True</property>
                     <property name="secondary-icon-name">edit-clear-symbolic</property>
                     <property name="valign">center</property>
