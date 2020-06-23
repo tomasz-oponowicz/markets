@@ -9,6 +9,7 @@
     <file compressed="true">new_symbol.ui</file>
     <file compressed="true">SymbolRow.ui</file>
     <file compressed="true">SymbolsView.ui</file>
-    <file compressed="true">HeaderBar.ui</file>
+    <file compressed="true">MainHeaderBar.ui</file>
+    <file compressed="true">SelectionHeaderBar.ui</file>
   </gresource>
 </gresources>
