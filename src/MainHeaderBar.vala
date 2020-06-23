@@ -11,13 +11,13 @@ public class Markets.MainHeaderBar : Hdy.HeaderBar {
 	Gtk.Button selectBtn;
 
     private Gtk.ApplicationWindow parentWindow;
-    private Markets.Model model;
+    private Markets.State state;
 
-    public MainHeaderBar (Gtk.ApplicationWindow parentWindow, Markets.Model model) {
+    public MainHeaderBar (Gtk.ApplicationWindow parentWindow, Markets.State state) {
         Object ();
 
         this.parentWindow = parentWindow;
-        this.model = model;
+        this.state = state;
 
         var builder1 = new Gtk.Builder.from_resource("/com/bitstower/Markets/menu.ui");
         var main_menu = (GLib.MenuModel) builder1.get_object("main-menu");
@@ -34,6 +34,6 @@ public class Markets.MainHeaderBar : Hdy.HeaderBar {
     }
 
     private void onSelectClicked () {
-        this.model.selectionEnabled = true;
+        this.state.viewMode = Markets.ViewMode.SELECTION;
     }
 }

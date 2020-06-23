@@ -4,18 +4,17 @@ public class Markets.SelectionHeaderBar : Hdy.HeaderBar {
 	[GtkChild]
 	Gtk.Button cancelBtn;
 
-    private Markets.Model model;
+    private Markets.State state;
 
-    public SelectionHeaderBar (Markets.Model model) {
+    public SelectionHeaderBar (Markets.State state) {
         Object ();
 
-        this.model = model;
+        this.state = state;
 
-        this.set_show_close_button(false);
         this.cancelBtn.clicked.connect (this.onCancelClicked);
     }
 
     private void onCancelClicked () {
-        this.model.selectionEnabled = false;
+        this.state.viewMode = Markets.ViewMode.PRESENTATION;
     }
 }

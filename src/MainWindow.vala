@@ -4,7 +4,7 @@ public class Markets.MainWindow : Gtk.ApplicationWindow {
 	[GtkChild]
 	Gtk.Stack stack;
 
-	private Markets.Model model;
+	private Markets.State state;
 
 	private Markets.MainHeaderBar mainHeaderBar;
 
@@ -13,24 +13,24 @@ public class Markets.MainWindow : Gtk.ApplicationWindow {
 	public MainWindow (Gtk.Application app) {
         Object (application: app);
 
-        this.model = new Markets.Model ();
+        this.state = new Markets.State ();
 
-        this.mainHeaderBar = new Markets.MainHeaderBar (this, model);
-        this.selectionHeaderBar = new Markets.SelectionHeaderBar (model);
+        this.mainHeaderBar = new Markets.MainHeaderBar (this, state);
+        this.selectionHeaderBar = new Markets.SelectionHeaderBar (state);
 	    this.set_titlebar (this.mainHeaderBar);
 
         var view = new Markets.SymbolsView ();
         stack.add_named(view, "symbols");
 	    stack.set_visible_child_name("symbols");
 
-	    this.model.notify["selectionEnabled"].connect (this.onSelectionEnabledUpdate);
+	    this.state.notify["viewMode"].connect (this.onSelectionModeUpdate);
 	}
 
-	private void onSelectionEnabledUpdate () {
-	    if (this.model.selectionEnabled) {
-            this.set_titlebar (this.selectionHeaderBar);
-	    } else {
+	private void onSelectionModeUpdate () {
+	    if (this.state.viewMode == Markets.ViewMode.PRESENTATION) {
 	        this.set_titlebar (this.mainHeaderBar);
+	    } else {
+	        this.set_titlebar (this.selectionHeaderBar);
 	    }
 	}
 }

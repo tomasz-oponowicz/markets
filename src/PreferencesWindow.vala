@@ -14,7 +14,7 @@ public class Markets.PreferencesWindow : Hdy.PreferencesWindow {
 	    apiKeyEntry.changed.connect (onApiKeyChanged);
     }
 
-    public void onApiKeyChanged () {
+    private void onApiKeyChanged () {
         var apiKey = apiKeyEntry.text;
 
         if (apiKey.length < 10) {

@@ -7,7 +7,7 @@ markets_sources = [
   'SymbolRow.vala',
   'MainHeaderBar.vala',
   'SelectionHeaderBar.vala',
-  'Model.vala',
+  'State.vala',
 
   'MainWindow.vala',
   markets_resources

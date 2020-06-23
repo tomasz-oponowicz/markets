@@ -5,7 +5,7 @@
   <requires lib="libhandy" version="0.0"/>
   <template class="MarketsSelectionHeaderBar" parent="HdyHeaderBar">
     <property name="visible">True</property>
-    <property name="show_close_button">True</property>
+    <property name="show_close_button">False</property>
     <style>
       <class name="selection-mode"/>
     </style>
