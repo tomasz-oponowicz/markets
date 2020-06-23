@@ -20,4 +20,10 @@ public class Markets.State : Object {
         set;
         default = Markets.SelectionMode.NONE;
     }
+
+    public int totalSelected {
+        get;
+        set;
+        default = 0;
+    }
 }

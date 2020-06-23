@@ -16,7 +16,12 @@ public class Markets.SymbolRow : Gtk.ListBoxRow {
     [GtkChild]
     Gtk.Label details;
 
-    public SymbolRow (string title, string price, string currency, string change) {
+    [GtkChild]
+    Gtk.CheckButton checkbox;
+
+    private Markets.State state;
+
+    public SymbolRow (string title, string price, string currency, string change, Markets.State state) {
         Object ();
 
         this.title.label = title;
@@ -24,5 +29,25 @@ public class Markets.SymbolRow : Gtk.ListBoxRow {
         this.price.label = price;
         this.currency.label = currency;
         this.details.label = "MARKET OPEN";
-    }
+
+        this.state = state;
+
+        this.checkbox.toggled.connect (this.onCheckboxToggled);
+	    this.state.notify["viewMode"].connect (this.onSelectionModeUpdate);
+
+	    this.onSelectionModeUpdate ();
+	}
+
+	private void onSelectionModeUpdate () {
+        this.checkbox.visible =
+            this.state.viewMode == Markets.ViewMode.SELECTION;
+	}
+
+	private void onCheckboxToggled () {
+	    if (this.checkbox.active) {
+	        this.state.totalSelected++;
+	    } else {
+	        this.state.totalSelected--;
+	    }
+	}
 }

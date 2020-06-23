@@ -19,7 +19,7 @@ public class Markets.MainWindow : Gtk.ApplicationWindow {
         this.selectionHeaderBar = new Markets.SelectionHeaderBar (state);
 	    this.set_titlebar (this.mainHeaderBar);
 
-        var view = new Markets.SymbolsView ();
+        var view = new Markets.SymbolsView (this.state);
         stack.add_named(view, "symbols");
 	    stack.set_visible_child_name("symbols");
 
