@@ -10,10 +10,9 @@ public class Markets.PreferencesWindow : Hdy.PreferencesWindow {
 
         var apiKey = Application.settings.get_string("api-key");
         apiKeyEntry.text = apiKey;
-
-	    apiKeyEntry.changed.connect (onApiKeyChanged);
     }
 
+    [GtkCallback]
     private void onApiKeyChanged () {
         var apiKey = apiKeyEntry.text;
 

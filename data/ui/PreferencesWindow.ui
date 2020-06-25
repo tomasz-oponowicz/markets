@@ -33,6 +33,7 @@
                     <property name="secondary-icon-name">edit-clear-symbolic</property>
                     <property name="valign">center</property>
                     <property name="visible">True</property>
+                    <signal name="changed" handler="onApiKeyChanged" swapped="no"/>
                   </object>
                 </child>
               </object>

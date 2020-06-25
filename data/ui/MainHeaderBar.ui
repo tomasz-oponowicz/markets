@@ -13,6 +13,7 @@
         <property name="can_focus">False</property>
         <property name="receives_default">False</property>
         <property name="valign">center</property>
+        <signal name="clicked" handler="onAddClicked" swapped="no"/>
         <child>
           <object class="GtkImage">
             <property name="visible">True</property>
@@ -32,6 +33,7 @@
         <property name="can_focus">False</property>
         <property name="receives_default">False</property>
         <property name="valign">center</property>
+        <signal name="clicked" handler="onSelectClicked" swapped="no"/>
         <child>
           <object class="GtkImage">
             <property name="visible">True</property>
@@ -51,6 +53,7 @@
         <property name="can_focus">False</property>
         <property name="receives_default">False</property>
         <property name="valign">center</property>
+        <property name="menu_model">mainMenu</property>
         <child>
           <object class="GtkImage">
             <property name="visible">True</property>
@@ -76,4 +79,18 @@
       </packing>
     </child>
   </template>
+  <menu id="mainMenu">
+    <section>
+      <item>
+        <attribute name="label" translatable="yes">Preferences</attribute>
+        <attribute name="action">app.preferences</attribute>
+      </item>
+    </section>
+    <section>
+      <item>
+        <attribute name="label" translatable="yes">About Markets</attribute>
+        <attribute name="action">app.about</attribute>
+      </item>
+    </section>
+  </menu>
 </interface>

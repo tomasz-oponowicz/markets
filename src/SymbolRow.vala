@@ -32,7 +32,6 @@ public class Markets.SymbolRow : Gtk.ListBoxRow {
 
         this.state = state;
 
-        this.checkbox.toggled.connect (this.onCheckboxToggled);
 	    this.state.notify["viewMode"].connect (this.onViewModeUpdate);
 	    this.state.notify["selectionMode"].connect (this.onSelectionModeUpdate);
 
@@ -56,6 +55,7 @@ public class Markets.SymbolRow : Gtk.ListBoxRow {
 	    }
 	}
 
+    [GtkCallback]
 	private void onCheckboxToggled () {
 	    if (this.checkbox.active) {
 	        this.state.totalSelected++;
