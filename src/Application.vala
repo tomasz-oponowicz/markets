@@ -3,11 +3,15 @@ public class Markets.Application : Gtk.Application {
 
     private Gtk.Window window;
 
+	private Markets.State state;
+
     public Application () {
         Object (
            application_id : "com.bitstower.Markets",
            flags: ApplicationFlags.FLAGS_NONE
         );
+
+        this.state = new Markets.State ();
     }
 
     public override void activate () {
@@ -31,16 +35,24 @@ public class Markets.Application : Gtk.Application {
         about.activate.connect (onAbout);
 		add_action (about);
 
-		window = new Markets.MainWindow (this);
+        var selectionAll = new SimpleAction ("selection.all", null);
+        selectionAll.activate.connect (onSelectionAll);
+		add_action (selectionAll);
+
+        var selectionNone = new SimpleAction ("selection.none", null);
+        selectionNone.activate.connect (onSelectionNone);
+		add_action (selectionNone);
+
+		window = new Markets.MainWindow (this, this.state);
 		window.present ();
     }
 
-    public void onPreferences () {
+    private void onPreferences () {
         var preferences = new Markets.PreferencesWindow (this, window);
         preferences.present ();
     }
 
-    public void onAbout () {
+    private void onAbout () {
         var dialog = new Gtk.AboutDialog ();
 
         dialog.set_destroy_with_parent (true);
@@ -56,6 +68,20 @@ public class Markets.Application : Gtk.Application {
 
         dialog.run();
         dialog.destroy();
+    }
+
+    private void onSelectionAll () {
+
+        // Enforce update by changing to opposite value first
+        this.state.selectionMode = Markets.SelectionMode.NONE;
+        this.state.selectionMode = Markets.SelectionMode.ALL;
+    }
+
+    private void onSelectionNone () {
+
+        // Enforce update by changing to opposite value first
+        this.state.selectionMode = Markets.SelectionMode.ALL;
+        this.state.selectionMode = Markets.SelectionMode.NONE;
     }
 
     public static int main (string [] args) {

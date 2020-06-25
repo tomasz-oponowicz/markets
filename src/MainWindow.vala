@@ -10,10 +10,10 @@ public class Markets.MainWindow : Gtk.ApplicationWindow {
 
 	private Markets.SelectionHeaderBar selectionHeaderBar;
 
-	public MainWindow (Gtk.Application app) {
+	public MainWindow (Gtk.Application app, Markets.State state) {
         Object (application: app);
 
-        this.state = new Markets.State ();
+        this.state = state;
 
         this.mainHeaderBar = new Markets.MainHeaderBar (this, state);
         this.selectionHeaderBar = new Markets.SelectionHeaderBar (state);
@@ -27,10 +27,14 @@ public class Markets.MainWindow : Gtk.ApplicationWindow {
 	}
 
 	private void onSelectionModeUpdate () {
-	    if (this.state.viewMode == Markets.ViewMode.PRESENTATION) {
-	        this.set_titlebar (this.mainHeaderBar);
-	    } else {
-	        this.set_titlebar (this.selectionHeaderBar);
+	    switch (this.state.viewMode) {
+	        case Markets.ViewMode.PRESENTATION:
+	            this.set_titlebar (this.mainHeaderBar);
+	            break;
+            case Markets.ViewMode.SELECTION:
+	            this.state.selectionMode = Markets.SelectionMode.NONE;
+	            this.set_titlebar (this.selectionHeaderBar);
+	            break;
 	    }
 	}
 }

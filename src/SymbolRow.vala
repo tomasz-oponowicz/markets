@@ -33,14 +33,27 @@ public class Markets.SymbolRow : Gtk.ListBoxRow {
         this.state = state;
 
         this.checkbox.toggled.connect (this.onCheckboxToggled);
-	    this.state.notify["viewMode"].connect (this.onSelectionModeUpdate);
+	    this.state.notify["viewMode"].connect (this.onViewModeUpdate);
+	    this.state.notify["selectionMode"].connect (this.onSelectionModeUpdate);
 
+        this.onViewModeUpdate ();
 	    this.onSelectionModeUpdate ();
 	}
 
-	private void onSelectionModeUpdate () {
+	private void onViewModeUpdate () {
         this.checkbox.visible =
             this.state.viewMode == Markets.ViewMode.SELECTION;
+	}
+
+	private void onSelectionModeUpdate () {
+	    switch (this.state.selectionMode) {
+	        case Markets.SelectionMode.ALL:
+                this.checkbox.active = true;
+                break;
+	        case Markets.SelectionMode.NONE:
+                this.checkbox.active = false;
+                break;
+	    }
 	}
 
 	private void onCheckboxToggled () {

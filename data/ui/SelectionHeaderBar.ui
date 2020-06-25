@@ -15,6 +15,7 @@
         <property name="can_focus">True</property>
         <property name="receives_default">True</property>
         <property name="relief">none</property>
+        <property name="popover">selection_options_popover</property>
         <child>
           <object class="GtkBox" id="selection_options_button_box">
             <property name="visible">True</property>
@@ -82,4 +83,52 @@
       </packing>
     </child>
   </template>
+  <object class="GtkPopoverMenu" id="selection_options_popover">
+    <property name="can_focus">False</property>
+    <property name="position">bottom</property>
+    <child>
+      <object class="GtkBox" id="selection_options_popover_box">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <property name="margin_left">5</property>
+        <property name="margin_right">5</property>
+        <property name="margin_top">5</property>
+        <property name="margin_bottom">5</property>
+        <property name="orientation">vertical</property>
+        <child>
+          <object class="GtkModelButton" id="selection_option_all_button">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="action_name">app.selection.all</property>
+            <property name="text" translatable="yes">Select all</property>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkModelButton" id="selection_option_none_button">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="action_name">app.selection.none</property>
+            <property name="text" translatable="yes">Select none</property>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+      </object>
+      <packing>
+        <property name="submenu">main</property>
+        <property name="position">1</property>
+      </packing>
+    </child>
+  </object>
+
 </interface>
