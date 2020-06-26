@@ -30,7 +30,6 @@
                 <child type="action">
                   <object class="GtkEntry" id="apiKeyEntry">
                     <property name="hexpand">True</property>
-                    <property name="secondary-icon-name">edit-clear-symbolic</property>
                     <property name="valign">center</property>
                     <property name="visible">True</property>
                     <signal name="changed" handler="onApiKeyChanged" swapped="no"/>

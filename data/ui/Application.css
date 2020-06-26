@@ -1,3 +1,11 @@
 .profit {
   color: #33d17a;
 }
+
+.not-valid image {
+  color: @warning_color;
+}
+
+.valid image {
+  color: #33d17a;
+}
