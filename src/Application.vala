@@ -5,6 +5,8 @@ public class Markets.Application : Gtk.Application {
 
 	private Markets.State state;
 
+    private uint timeoutId;
+
     public Application () {
         Object (
            application_id : "com.bitstower.Markets",
@@ -43,8 +45,20 @@ public class Markets.Application : Gtk.Application {
         selectionNone.activate.connect (onSelectionNone);
 		add_action (selectionNone);
 
+		this.timeoutId = Timeout.add(3000, onTick);
+
 		window = new Markets.MainWindow (this, this.state);
 		window.present ();
+    }
+
+    private bool onTick () {
+        if (this.state.networkStatus == Markets.NetworkStatus.IDLE) {
+            this.state.networkStatus = Markets.NetworkStatus.IN_PROGRESS;
+        } else {
+            this.state.networkStatus = Markets.NetworkStatus.IDLE;
+        }
+
+        return true;
     }
 
     private void onPreferences () {

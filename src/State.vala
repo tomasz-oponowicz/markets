@@ -8,6 +8,11 @@ public enum Markets.SelectionMode {
     ALL,
 }
 
+public enum Markets.NetworkStatus {
+    IDLE,
+    IN_PROGRESS,
+}
+
 public class Markets.State : Object {
     public Markets.ViewMode viewMode {
         get;
@@ -25,5 +30,11 @@ public class Markets.State : Object {
         get;
         set;
         default = 0;
+    }
+
+    public Markets.NetworkStatus networkStatus {
+        get;
+        set;
+        default = Markets.NetworkStatus.IDLE;
     }
 }
