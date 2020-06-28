@@ -11,19 +11,19 @@ public class Markets.MainWindow : Gtk.ApplicationWindow {
 	private Markets.SelectionHeaderBar selectionHeaderBar;
 
 	public MainWindow (Gtk.Application app, Markets.State state) {
-        Object (application: app);
+    Object (application: app);
 
-        this.state = state;
+    this.state = state;
 
-        this.mainHeaderBar = new Markets.MainHeaderBar (this, state);
-        this.selectionHeaderBar = new Markets.SelectionHeaderBar (state);
-	    this.set_titlebar (this.mainHeaderBar);
+    this.mainHeaderBar = new Markets.MainHeaderBar (this, state);
+    this.selectionHeaderBar = new Markets.SelectionHeaderBar (state);
+    this.set_titlebar (this.mainHeaderBar);
 
-        var view = new Markets.SymbolsView (this.state);
-        stack.add_named(view, "symbols");
-	    stack.set_visible_child_name("symbols");
+    var view = new Markets.SymbolsView (this.state);
+    stack.add_named(view, "symbols");
+    stack.set_visible_child_name("symbols");
 
-	    this.state.notify["viewMode"].connect (this.onSelectionModeUpdate);
+    this.state.notify["viewMode"].connect (this.onSelectionModeUpdate);
 	}
 
 	private void onSelectionModeUpdate () {

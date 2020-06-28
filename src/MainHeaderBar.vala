@@ -17,7 +17,7 @@ public class Markets.MainHeaderBar : Hdy.HeaderBar {
 
     [GtkCallback]
     private void onAddClicked () {
-        var dialog = new Markets.NewSymbolDialog (this.parentWindow);
+        var dialog = new Markets.NewSymbolDialog (this.parentWindow, this.state);
         dialog.run ();
         dialog.destroy ();
     }

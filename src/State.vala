@@ -1,3 +1,5 @@
+using Gee;
+
 public enum Markets.ViewMode {
     PRESENTATION,
     SELECTION
@@ -36,5 +38,11 @@ public class Markets.State : Object {
         get;
         set;
         default = Markets.NetworkStatus.IDLE;
+    }
+
+    public ArrayList<Symbol> symbols {
+      get;
+      set;
+      default = new ArrayList<Symbol> ();
     }
 }

@@ -8,6 +8,7 @@ markets_sources = [
   'MainHeaderBar.vala',
   'SelectionHeaderBar.vala',
   'State.vala',
+  'Service.vala',
 
   'MainWindow.vala',
   markets_resources
@@ -17,6 +18,9 @@ markets_deps = [
   dependency('gio-2.0', version: '>= 2.50'),
   dependency('gtk+-3.0', version: '>= 3.22'),
   dependency('libhandy-0.0', version: '>= 0.0.13'),
+  dependency('libsoup-2.4', version: '>= 2.66'),
+  dependency('json-glib-1.0'),
+  dependency('gee-0.8')
 ]
 
 markets_c_args = [
