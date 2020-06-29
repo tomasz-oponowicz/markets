@@ -45,4 +45,10 @@ public class Markets.State : Object {
       set;
       default = new ArrayList<Symbol> ();
     }
+
+    public bool symbolsLoaded {
+      get;
+      set;
+      default = false;
+    }
 }

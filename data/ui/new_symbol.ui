@@ -8,7 +8,7 @@
     <property name="modal">True</property>
     <property name="window_position">center-on-parent</property>
     <property name="destroy_with_parent">True</property>
-    <property name="default_width">300</property>
+    <property name="default_width">400</property>
     <property name="default_height">300</property>
     <property name="type_hint">dialog</property>
     <property name="gravity">center</property>
@@ -74,6 +74,7 @@
             <property name="primary_icon_activatable">False</property>
             <property name="primary_icon_sensitive">False</property>
             <property name="margin_bottom">10</property>
+            <signal name="search_changed" handler="onSearchChanged" swapped="no"/>
           </object>
           <packing>
             <property name="expand">False</property>
@@ -89,8 +90,23 @@
             <property name="max_content_height">250</property>
             <property name="propagate_natural_height">True</property>
             <child>
-              <object class="GtkListBox" id="symbolList">
+              <object class="GtkTreeView" id="treeView">
                 <property name="visible">True</property>
+                <property name="headers_visible">False</property>
+                <property name="activate_on_single_click">True</property>
+                <property name="search_column">0</property>
+                <signal name="row_activated" handler="onRowActivated" swapped="no"/>
+                <child>
+                  <object class="GtkTreeViewColumn">
+                    <property name="title">Name</property>
+                    <child>
+                      <object class="GtkCellRendererText"/>
+                      <attributes>
+                        <attribute name="text">0</attribute>
+                      </attributes>
+                    </child>
+                  </object>
+                </child>
               </object>
             </child>
           </object>

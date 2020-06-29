@@ -6,13 +6,17 @@ public class Markets.MainHeaderBar : Hdy.HeaderBar {
     [GtkChild]
     private Gtk.Spinner spinner;
 
+    [GtkChild]
+    private Gtk.Button addBtn;
+
     public MainHeaderBar (Gtk.ApplicationWindow parentWindow, Markets.State state) {
         Object ();
 
         this.parentWindow = parentWindow;
         this.state = state;
 
-        this.state.notify["networkStatus"].connect (onNetworkStatusUpdated);
+        this.state.notify["networkStatus"].connect (this.onNetworkStatusUpdated);
+        this.state.notify["symbolsLoaded"].connect (this.onSymbolsLoaded);
     }
 
     [GtkCallback]
@@ -30,5 +34,9 @@ public class Markets.MainHeaderBar : Hdy.HeaderBar {
     private void onNetworkStatusUpdated () {
         this.spinner.visible =
             this.state.networkStatus == Markets.NetworkStatus.IN_PROGRESS;
+    }
+
+    private void onSymbolsLoaded () {
+        this.addBtn.sensitive = this.state.symbolsLoaded;
     }
 }

@@ -40,6 +40,10 @@ namespace Markets {
       get; private set;
     }
 
+    public string description {
+      get; private set;
+    }
+
     public Exchange exchange {
       get; private set;
     }
@@ -52,9 +56,8 @@ namespace Markets {
       this(exchange);
 
       this.id = json.get_string_member("symbol");
-      this.name = this.exchange.category == Category.STOCK
-          ? json.get_string_member("description")
-          : json.get_string_member("displaySymbol");
+      this.name = json.get_string_member("displaySymbol");
+      this.description = json.get_string_member("description");
     }
   }
 
@@ -141,9 +144,9 @@ namespace Markets {
         }
       }
 
-      print("==> loaded\n");
-
       this.state.networkStatus = NetworkStatus.IDLE;
+
+      this.state.symbolsLoaded = true;
     }
 
     private async ArrayList<Exchange> load_exchanges (Category category) {
@@ -151,7 +154,18 @@ namespace Markets {
 
       if (category == Category.STOCK) {
         exchanges.add(new Exchange("US", Category.STOCK, "NASDAQ"));
-      } else {
+      }
+
+      if (category == Category.FOREX) {
+        exchanges.add(new Exchange("oanda", Category.FOREX, "OANDA"));
+      }
+
+      if (category == Category.CRYPTO) {
+        exchanges.add(new Exchange("KRAKEN", Category.CRYPTO, "KRAKEN"));
+      }
+
+      /*
+      else {
         string path = this.to_path(category);
         var url = @"$(BASE_URL)/$(path)/exchange";
         var json = yield this.client.fetch(url);
@@ -162,6 +176,7 @@ namespace Markets {
           exchanges.add(new Exchange(id, category, id));
         }
       }
+      */
 
       return exchanges;
     }
