@@ -40,15 +40,9 @@ public class Markets.State : Object {
         default = Markets.NetworkStatus.IDLE;
     }
 
-    public ArrayList<Symbol> symbols {
+    public ArrayList<Symbol> search_results {
       get;
       set;
       default = new ArrayList<Symbol> ();
-    }
-
-    public bool symbolsLoaded {
-      get;
-      set;
-      default = false;
     }
 }

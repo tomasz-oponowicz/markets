@@ -9,6 +9,7 @@ markets_sources = [
   'SelectionHeaderBar.vala',
   'State.vala',
   'Service.vala',
+  'Symbol.vala',
 
   'MainWindow.vala',
   markets_resources

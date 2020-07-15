@@ -2,26 +2,24 @@
 public class Markets.MainHeaderBar : Hdy.HeaderBar {
     private Gtk.ApplicationWindow parentWindow;
     private Markets.State state;
+    private Markets.Service service;
 
     [GtkChild]
     private Gtk.Spinner spinner;
 
-    [GtkChild]
-    private Gtk.Button addBtn;
-
-    public MainHeaderBar (Gtk.ApplicationWindow parentWindow, Markets.State state) {
+    public MainHeaderBar (Gtk.ApplicationWindow parentWindow, Markets.State state, Markets.Service service) {
         Object ();
 
         this.parentWindow = parentWindow;
         this.state = state;
+        this.service = service;
 
         this.state.notify["networkStatus"].connect (this.onNetworkStatusUpdated);
-        this.state.notify["symbolsLoaded"].connect (this.onSymbolsLoaded);
     }
 
     [GtkCallback]
     private void onAddClicked () {
-        var dialog = new Markets.NewSymbolDialog (this.parentWindow, this.state);
+        var dialog = new Markets.NewSymbolDialog (this.parentWindow, this.state, this.service);
         dialog.run ();
         dialog.destroy ();
     }
@@ -34,9 +32,5 @@ public class Markets.MainHeaderBar : Hdy.HeaderBar {
     private void onNetworkStatusUpdated () {
         this.spinner.visible =
             this.state.networkStatus == Markets.NetworkStatus.IN_PROGRESS;
-    }
-
-    private void onSymbolsLoaded () {
-        this.addBtn.sensitive = this.state.symbolsLoaded;
     }
 }

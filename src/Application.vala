@@ -49,10 +49,8 @@ public class Markets.Application : Gtk.Application {
 
   	// this.timeoutId = Timeout.add(3000, onTick);
 
-    window = new Markets.MainWindow (this, this.state);
+    window = new Markets.MainWindow (this, this.state, this.service);
   	window.present ();
-
-    this.service.load_async();
   }
 
   private bool onTick () {

@@ -3,85 +3,7 @@
 using Gee;
 
 namespace Markets {
-  const string BASE_URL = "https://finnhub.io/api/v1";
-
-  public enum Category {
-    STOCK,
-    FOREX,
-    CRYPTO
-  }
-
-  public class Exchange : Object {
-    public string id {
-      get; private set;
-    }
-
-    public Category category {
-      get; private set;
-    }
-
-    public string name {
-      get; private set;
-    }
-
-    public Exchange (string id, Category category, string name) {
-      this.id = id;
-      this.category = category;
-      this.name = name;
-    }
-  }
-
-  public class Symbol : Object {
-    public string id {
-      get; private set;
-    }
-
-    public string name {
-      get; private set;
-    }
-
-    public string description {
-      get; private set;
-    }
-
-    public Exchange exchange {
-      get; private set;
-    }
-
-    public Symbol(Exchange exchange) {
-      this.exchange = exchange;
-    }
-
-    public Symbol.fromJsonObject(Exchange exchange, Json.Object json) {
-      this(exchange);
-
-      this.id = json.get_string_member("symbol");
-      this.name = json.get_string_member("displaySymbol");
-      this.description = json.get_string_member("description");
-    }
-  }
-
-  public class Tick : Object {
-    public double price {
-      get;
-      set;
-    }
-
-    public double change {
-      get;
-      set;
-    }
-
-    public bool is_market_open {
-      get;
-      set;
-    }
-
-    public Symbol symbol {
-      get;
-      set;
-    }
-  }
+  const string BASE_URL = "https://query1.finance.yahoo.com/v1/finance";
 
   public class RestClient {
     private Soup.Session session;
@@ -92,9 +14,6 @@ namespace Markets {
 
     public async Json.Node fetch (string url) {
       var message = new Soup.Message("GET", url);
-
-      // TODO make it generic
-      message.request_headers.append("X-Finnhub-Token", "bri9qdnrh5rep8a5ivi0");
 
       yield this.queue_message(this.session, message);
 
@@ -121,98 +40,28 @@ namespace Markets {
       this.client = new RestClient();
     }
 
-    public void load_async () {
-      this.load.begin((obj, res) => {
-        this.load.end(res);
-      });
-    }
-
-    private async void load () {
-      Category[] categories = new Category[] {
-        Category.STOCK,
-        Category.FOREX,
-        Category.CRYPTO
-      };
+    public async void search (string query) {
+      if (query == null || query.length == 0) {
+        this.state.search_results = new ArrayList<Symbol> ();
+        return;
+      }
 
       this.state.networkStatus = NetworkStatus.IN_PROGRESS;
 
-      for (var i = 0; i < categories.length; i++) {
-        var exchanges = yield this.load_exchanges(categories[i]);
-        for (var j = 0; j < exchanges.size; j++) {
-          var symbols = yield this.load_symbols(exchanges[j]);
-          this.state.symbols.add_all(symbols);
-        }
-      }
-
-      this.state.networkStatus = NetworkStatus.IDLE;
-
-      this.state.symbolsLoaded = true;
-    }
-
-    private async ArrayList<Exchange> load_exchanges (Category category) {
-      var exchanges = new ArrayList<Exchange>();
-
-      if (category == Category.STOCK) {
-        exchanges.add(new Exchange("US", Category.STOCK, "NASDAQ"));
-      }
-
-      if (category == Category.FOREX) {
-        exchanges.add(new Exchange("oanda", Category.FOREX, "OANDA"));
-      }
-
-      if (category == Category.CRYPTO) {
-        exchanges.add(new Exchange("KRAKEN", Category.CRYPTO, "KRAKEN"));
-      }
-
-      /*
-      else {
-        string path = this.to_path(category);
-        var url = @"$(BASE_URL)/$(path)/exchange";
-        var json = yield this.client.fetch(url);
-
-        var items = json.get_array();
-        for (var i = 0; i < items.get_length(); i++) {
-          var id = items.get_string_element(i);
-          exchanges.add(new Exchange(id, category, id));
-        }
-      }
-      */
-
-      return exchanges;
-    }
-
-    private async ArrayList<Symbol> load_symbols (Exchange exchange) {
-      var symbols = new ArrayList<Symbol>();
-
-      string path = this.to_path(exchange.category);
-      var url = @"$(BASE_URL)/$(path)/symbol?exchange=$(exchange.id)";
+      var url = @"$(BASE_URL)/search?q=$query&lang=en-US&region=US&quotesCount=10&newsCount=0&enableFuzzyQuery=false&quotesQueryId=tss_match_phrase_query&enableEnhancedTrivialQuery=true";
       var json = yield this.client.fetch(url);
 
-      var items = json.get_array();
-      for (var i = 0; i < items.get_length(); i++) {
-        var object = items.get_object_element(i);
-        symbols.add(new Symbol.fromJsonObject(exchange, object));
+      var search_results = new ArrayList<Symbol> ();
+
+      var quotes = json.get_object().get_array_member("quotes");
+      for (var i = 0; i < quotes.get_length(); i++) {
+        var object = quotes.get_object_element(i);
+        search_results.add(new Symbol.from_json_object (object));
       }
 
-      return symbols;
-    }
+      this.state.search_results = search_results;
 
-    private string to_path (Category category) {
-      string path = "";
-
-      switch (category) {
-        case Category.STOCK:
-          path = "stock";
-          break;
-        case Category.FOREX:
-          path = "forex";
-          break;
-        case Category.CRYPTO:
-          path = "crypto";
-          break;
-      }
-
-      return path;
+      this.state.networkStatus = NetworkStatus.IDLE;
     }
   }
 }
