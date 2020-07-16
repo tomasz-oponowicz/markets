@@ -1,3 +1,5 @@
+using Gee;
+
 [GtkTemplate (ui = "/com/bitstower/Markets/SelectionHeaderBar.ui")]
 public class Markets.SelectionHeaderBar : Hdy.HeaderBar {
 
@@ -21,8 +23,21 @@ public class Markets.SelectionHeaderBar : Hdy.HeaderBar {
         this.state.viewMode = Markets.ViewMode.PRESENTATION;
     }
 
+    [GtkCallback]
+    private void onDeleteClicked () {
+        var filtered = new ArrayList<Symbol> ();
+
+        foreach (Symbol symbol in this.state.favourite_symbols) {
+            if (!symbol.selected) {
+                filtered.add (symbol);
+            }
+        }
+
+        // create new array in order to enforce a notification
+        this.state.favourite_symbols = filtered;
+    }
+
     private void onTotalSelectedUpdated () {
         this.deleteBtn.sensitive = this.state.totalSelected > 0;
-
     }
 }

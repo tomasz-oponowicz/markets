@@ -70,6 +70,7 @@
         <property name="sensitive">False</property>
         <property name="receives_default">False</property>
         <property name="valign">center</property>
+        <signal name="clicked" handler="onDeleteClicked" swapped="no"/>
         <child>
           <object class="GtkImage">
             <property name="visible">True</property>

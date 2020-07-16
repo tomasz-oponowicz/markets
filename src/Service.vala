@@ -3,7 +3,7 @@
 using Gee;
 
 namespace Markets {
-  const string BASE_URL = "https://query1.finance.yahoo.com/v1/finance";
+  const string BASE_URL = "https://query1.finance.yahoo.com";
 
   public class RestClient {
     private Soup.Session session;
@@ -48,7 +48,7 @@ namespace Markets {
 
       this.state.networkStatus = NetworkStatus.IN_PROGRESS;
 
-      var url = @"$(BASE_URL)/search?q=$query&lang=en-US&region=US&quotesCount=10&newsCount=0&enableFuzzyQuery=false&quotesQueryId=tss_match_phrase_query&enableEnhancedTrivialQuery=true";
+      var url = @"$(BASE_URL)/v1/finance/search?q=$query&lang=en-US&region=US&quotesCount=10&newsCount=0&enableFuzzyQuery=false&quotesQueryId=tss_match_phrase_query&enableEnhancedTrivialQuery=true";
       var json = yield this.client.fetch(url);
 
       var search_results = new ArrayList<Symbol> ();
@@ -62,6 +62,46 @@ namespace Markets {
       this.state.search_results = search_results;
 
       this.state.networkStatus = NetworkStatus.IDLE;
+    }
+
+    public async void update () {
+        string ids;
+        ids = string.joinv(
+            ",",
+            this.state.get_favourite_symbol_ids ()
+        );
+        ids = Soup.URI.encode(ids, ",");
+
+        string fields;
+        fields = string.join(
+            ",",
+            "symbol",
+            "marketState",
+            "shortName",
+            "exchange",
+            "regularMarketPrice",
+            "regularMarketChange",
+            "regularMarketChangePercent",
+            "regularMarketTime"
+        );
+        fields = Soup.URI.encode(fields, ",");
+
+        this.state.networkStatus = NetworkStatus.IN_PROGRESS;
+
+        var url = @"$(BASE_URL)/v7/finance/quote?lang=en-US&region=US&corsDomain=finance.yahoo.com&fields=$fields&symbols=$ids";
+
+        var json = yield this.client.fetch(url);
+
+        var objects = json.get_object()
+            .get_object_member("quoteResponse")
+            .get_array_member("result");
+        for (var i = 0; i < objects.get_length(); i++) {
+            var object = objects.get_object_element(i);
+            var id = object.get_string_member ("symbol");
+            this.state.find_favourite_symbol(id).update(object);
+        }
+
+        this.state.networkStatus = NetworkStatus.IDLE;
     }
   }
 }

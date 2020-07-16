@@ -45,4 +45,30 @@ public class Markets.State : Object {
       set;
       default = new ArrayList<Symbol> ();
     }
+
+    public ArrayList<Symbol> favourite_symbols {
+      get;
+      set;
+      default = new ArrayList<Symbol> ();
+    }
+
+    public string[] get_favourite_symbol_ids () {
+        var ids = new HashSet<string> ();
+
+        foreach (Symbol symbol in this.favourite_symbols) {
+            ids.add (symbol.id);
+        }
+
+        return ids.to_array ();
+    }
+
+    public Symbol find_favourite_symbol (string id) {
+        foreach (Symbol symbol in this.favourite_symbols) {
+            if (symbol.id == id) {
+                return symbol;
+            }
+        }
+
+        return null;
+    }
 }

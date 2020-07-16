@@ -1,4 +1,8 @@
-public class Markets.Application : Gtk.Application {
+using Gee;
+
+namespace Markets {
+
+public class Application : Gtk.Application {
   public static GLib.Settings settings;
 
   private Gtk.Window window;
@@ -47,18 +51,43 @@ public class Markets.Application : Gtk.Application {
     selectionNone.activate.connect (onSelectionNone);
 	  add_action (selectionNone);
 
-  	// this.timeoutId = Timeout.add(3000, onTick);
+
+    ArrayList<Symbol> mock_symbols = new ArrayList<Symbol> ();
+
+    Symbol mock_symbol;
+
+    mock_symbol  = new Symbol ();
+    mock_symbol.id = "AAPL";
+    mock_symbol.name = "Apple Inc.";
+    mock_symbol.regular_market_price = 383.02;
+    mock_symbol.regular_market_change = -30.53;
+    mock_symbols.add(mock_symbol);
+
+    mock_symbol = new Symbol ();
+    mock_symbol.id = "EURUSD=X";
+    mock_symbol.name = "EUR/USD";
+    mock_symbol.regular_market_price = 1.3;
+    mock_symbol.regular_market_change = 0.01;
+    mock_symbols.add(mock_symbol);
+
+    this.state.favourite_symbols = mock_symbols;
+
+  	this.timeoutId = Timeout.add(3000, onTick);
 
     window = new Markets.MainWindow (this, this.state, this.service);
   	window.present ();
   }
 
   private bool onTick () {
-    if (this.state.networkStatus == Markets.NetworkStatus.IDLE) {
-        this.state.networkStatus = Markets.NetworkStatus.IN_PROGRESS;
-    } else {
-        this.state.networkStatus = Markets.NetworkStatus.IDLE;
-    }
+    // if (this.state.networkStatus == Markets.NetworkStatus.IDLE) {
+    //     this.state.networkStatus = Markets.NetworkStatus.IN_PROGRESS;
+    // } else {
+    //     this.state.networkStatus = Markets.NetworkStatus.IDLE;
+    // }
+
+    this.service.update.begin((obj, res) => {
+      this.service.update.end(res);
+    });
 
     return true;
   }
@@ -109,4 +138,5 @@ public class Markets.Application : Gtk.Application {
 
     return app.run (args);
   }
+}
 }

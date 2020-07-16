@@ -19,24 +19,30 @@ public class Markets.SymbolRow : Gtk.ListBoxRow {
     [GtkChild]
     Gtk.CheckButton checkbox;
 
+    private Symbol symbol;
     private Markets.State state;
 
-    public SymbolRow (string title, string price, string currency, string change, Markets.State state) {
+    public SymbolRow (Symbol symbol, Markets.State state) {
         Object ();
 
-        this.title.label = title;
-        this.change.label = change;
-        this.price.label = price;
-        this.currency.label = currency;
-        this.details.label = "MARKET OPEN";
-
+        this.symbol = symbol;
         this.state = state;
 
+        this.symbol.notify.connect (this.onSymbolUpdate);
 	    this.state.notify["viewMode"].connect (this.onViewModeUpdate);
 	    this.state.notify["selectionMode"].connect (this.onSelectionModeUpdate);
 
+        this.onSymbolUpdate ();
         this.onViewModeUpdate ();
 	    this.onSelectionModeUpdate ();
+	}
+
+	private void onSymbolUpdate () {
+        this.title.label = this.symbol.name;
+        this.change.label = "%.2f".printf(this.symbol.regular_market_change);
+        this.price.label = "%.2f".printf(this.symbol.regular_market_price);
+        this.currency.label = "USD";
+        this.details.label = "MARKET OPEN";
 	}
 
 	private void onViewModeUpdate () {
@@ -47,9 +53,11 @@ public class Markets.SymbolRow : Gtk.ListBoxRow {
 	private void onSelectionModeUpdate () {
 	    switch (this.state.selectionMode) {
 	        case Markets.SelectionMode.ALL:
+	            this.symbol.selected = true;
                 this.checkbox.active = true;
                 break;
 	        case Markets.SelectionMode.NONE:
+	            this.symbol.selected = false;
                 this.checkbox.active = false;
                 break;
 	    }
@@ -58,8 +66,10 @@ public class Markets.SymbolRow : Gtk.ListBoxRow {
     [GtkCallback]
 	private void onCheckboxToggled () {
 	    if (this.checkbox.active) {
+	        this.symbol.selected = true;
 	        this.state.totalSelected++;
 	    } else {
+	        this.symbol.selected = false;
 	        this.state.totalSelected--;
 	    }
 	}
