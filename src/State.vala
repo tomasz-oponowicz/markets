@@ -62,7 +62,7 @@ public class Markets.State : Object {
         return ids.to_array ();
     }
 
-    public Symbol find_favourite_symbol (string id) {
+    public Symbol? find_favourite_symbol (string id) {
         foreach (Symbol symbol in this.favourite_symbols) {
             if (symbol.id == id) {
                 return symbol;

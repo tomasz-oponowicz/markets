@@ -102,6 +102,75 @@ namespace Markets {
         }
 
         this.state.networkStatus = NetworkStatus.IDLE;
+
+        this.store_favourite_symbols ();
+    }
+
+    private string get_config_file () {
+        var path = string.join(
+            "/",
+            Environment.get_user_config_dir (),
+            Environment.get_application_name ()
+        );
+
+        var config_dir = File.new_for_path (path);
+        if (!config_dir.query_exists ()) {
+            config_dir.make_directory ();
+        }
+
+        return config_dir
+            .resolve_relative_path ("favourite-symbols.json")
+            .get_path ();
+    }
+
+    private void store_favourite_symbols () {
+        var path = this.get_config_file ();
+
+        Json.Builder builder = new Json.Builder ();
+
+        builder.begin_object ();
+
+        builder.set_member_name ("version");
+	    builder.add_int_value (1);
+
+        builder.set_member_name ("symbols");
+        builder.begin_array ();
+        foreach (Symbol symbol in this.state.favourite_symbols) {
+            symbol.build_json(builder);
+        }
+        builder.end_array ();
+
+        builder.end_object ();
+
+        Json.Generator generator = new Json.Generator ();
+        generator.pretty = true;
+	    generator.root = builder.get_root ();
+        generator.to_file (path);
+    }
+
+    public void load_favourite_symbols () {
+        var path = this.get_config_file ();
+
+        Json.Parser parser = new Json.Parser ();
+
+        try {
+		    parser.load_from_file (path);
+	    } catch (Error e) {
+		    warning("The config file doesn't exist. Skipping.");
+		    return;
+	    }
+
+	    var objects = parser
+	        .get_root ()
+	        .get_object()
+	        .get_array_member("symbols");
+
+        this.state.favourite_symbols.clear ();
+
+        for (var i = 0; i < objects.get_length(); i++) {
+            var object = objects.get_object_element(i);
+            this.state.favourite_symbols.add (new Symbol.from_json_object (object));
+        }
     }
   }
 }

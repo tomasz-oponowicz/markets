@@ -66,6 +66,8 @@ public class Markets.Symbol : Object {
 
       if (json.has_member("typeDisp")) {
         this.instrument_type = json.get_string_member("typeDisp");
+      } else if (json.has_member("quoteType")) {
+        this.instrument_type = json.get_string_member("quoteType");
       } else {
         this.instrument_type = "";
       }
@@ -91,5 +93,32 @@ public class Markets.Symbol : Object {
 
     public Symbol.from_json_object (Json.Object json) {
         this.update(json);
+    }
+
+    public void build_json (Json.Builder builder) {
+        builder.begin_object ();
+
+        builder.set_member_name ("symbol");
+	    builder.add_string_value (this.id);
+
+        builder.set_member_name ("quoteType");
+	    builder.add_string_value (this.instrument_type);
+
+        builder.set_member_name ("shortName");
+	    builder.add_string_value (this.name);
+
+        builder.set_member_name ("exchange");
+	    builder.add_string_value (this.exchange_name);
+
+        builder.set_member_name ("regularMarketPrice");
+	    builder.add_double_value (this.regular_market_price);
+
+        builder.set_member_name ("regularMarketChange");
+	    builder.add_double_value (this.regular_market_change);
+
+        builder.set_member_name ("regularMarketChangePercent");
+	    builder.add_double_value (this.regular_market_change_percent);
+
+	    builder.end_object ();
     }
   }

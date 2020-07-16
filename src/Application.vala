@@ -51,28 +51,9 @@ public class Application : Gtk.Application {
     selectionNone.activate.connect (onSelectionNone);
 	  add_action (selectionNone);
 
+    this.service.load_favourite_symbols ();
 
-    ArrayList<Symbol> mock_symbols = new ArrayList<Symbol> ();
-
-    Symbol mock_symbol;
-
-    mock_symbol  = new Symbol ();
-    mock_symbol.id = "AAPL";
-    mock_symbol.name = "Apple Inc.";
-    mock_symbol.regular_market_price = 383.02;
-    mock_symbol.regular_market_change = -30.53;
-    mock_symbols.add(mock_symbol);
-
-    mock_symbol = new Symbol ();
-    mock_symbol.id = "EURUSD=X";
-    mock_symbol.name = "EUR/USD";
-    mock_symbol.regular_market_price = 1.3;
-    mock_symbol.regular_market_change = 0.01;
-    mock_symbols.add(mock_symbol);
-
-    this.state.favourite_symbols = mock_symbols;
-
-  	this.timeoutId = Timeout.add(3000, onTick);
+  	this.timeoutId = Timeout.add(15000, onTick);
 
     window = new Markets.MainWindow (this, this.state, this.service);
   	window.present ();
