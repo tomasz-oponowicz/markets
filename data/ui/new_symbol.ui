@@ -45,6 +45,7 @@
             <property name="receives_default">True</property>
             <property name="use_underline">True</property>
             <property name="valign">center</property>
+            <signal name="clicked" handler="onAddClicked" swapped="no"/>
             <style>
               <class name="text-button"/>
               <class name="suggested-action"/>

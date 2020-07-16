@@ -46,6 +46,13 @@ public class Markets.State : Object {
       default = new ArrayList<Symbol> ();
     }
 
+
+    public int search_selection {
+      get;
+      set;
+      default = -1;
+    }
+
     public ArrayList<Symbol> favourite_symbols {
       get;
       set;

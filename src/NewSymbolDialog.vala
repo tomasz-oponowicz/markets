@@ -1,3 +1,5 @@
+using Gee;
+
 [GtkTemplate (ui = "/com/bitstower/Markets/new_symbol.ui")]
 public class Markets.NewSymbolDialog : Hdy.Dialog {
 
@@ -20,6 +22,7 @@ public class Markets.NewSymbolDialog : Hdy.Dialog {
         this.state = state;
         this.service = service;
         this.store = new Gtk.ListStore(1, typeof(string));
+
         this.treeView.model = this.store;
 
         this.state.notify["search-results"].connect (this.onSearchResultsUpdated);
@@ -48,8 +51,21 @@ public class Markets.NewSymbolDialog : Hdy.Dialog {
     }
 
     [GtkCallback]
-    private void onRowActivated () {
+    private void onRowActivated (Gtk.TreePath path, Gtk.TreeViewColumn column) {
+        this.state.search_selection = path.get_indices ()[0];
+
         var selection = this.treeView.get_selection ();
         this.addButton.sensitive = selection.count_selected_rows () > 0;
+    }
+
+    [GtkCallback]
+    private void onAddClicked () {
+        var new_symbol = this.state.search_results[this.state.search_selection];
+
+        var copy = new ArrayList<Symbol> ();
+        copy.add_all (this.state.favourite_symbols);
+        copy.add (new_symbol);
+
+        this.state.favourite_symbols = copy;
     }
 }
