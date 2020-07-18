@@ -34,20 +34,20 @@ namespace Markets {
             );
 
             var preferences = new SimpleAction ("preferences", null);
-            preferences.activate.connect (onPreferences);
+            preferences.activate.connect (on_preferences);
             add_action (preferences);
 
             var about = new SimpleAction ("about", null);
-            about.activate.connect (onAbout);
+            about.activate.connect (on_about);
             add_action (about);
 
-            var selectionAll = new SimpleAction ("selection.all", null);
-            selectionAll.activate.connect (onSelectionAll);
-            add_action (selectionAll);
+            var selection_all = new SimpleAction ("selection.all", null);
+            selection_all.activate.connect (on_selection_all);
+            add_action (selection_all);
 
-            var selectionNone = new SimpleAction ("selection.none", null);
-            selectionNone.activate.connect (onSelectionNone);
-            add_action (selectionNone);
+            var selection_none = new SimpleAction ("selection.none", null);
+            selection_none.activate.connect (on_selection_none);
+            add_action (selection_none);
 
             this.service.load_favourite_symbols ();
             this.service.on_tick ();
@@ -56,12 +56,12 @@ namespace Markets {
             window.present ();
         }
 
-        private void onPreferences () {
+        private void on_preferences () {
             var preferences = new Markets.PreferencesWindow (this, window, this.state);
             preferences.present ();
         }
 
-        private void onAbout () {
+        private void on_about () {
             var dialog = new Gtk.AboutDialog ();
 
             dialog.set_destroy_with_parent (true);
@@ -79,14 +79,14 @@ namespace Markets {
             dialog.destroy ();
         }
 
-        private void onSelectionAll () {
+        private void on_selection_all () {
 
             // Enforce update by changing to opposite value first
             this.state.selectionMode = Markets.SelectionMode.NONE;
             this.state.selectionMode = Markets.SelectionMode.ALL;
         }
 
-        private void onSelectionNone () {
+        private void on_selection_none () {
 
             // Enforce update by changing to opposite value first
             this.state.selectionMode = Markets.SelectionMode.ALL;
