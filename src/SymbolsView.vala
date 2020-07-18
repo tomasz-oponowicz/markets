@@ -2,7 +2,7 @@
 public class Markets.SymbolsView : Gtk.ScrolledWindow {
 
     [GtkChild]
-    Gtk.ListBox symbols;
+    private Gtk.ListBox symbols;
 
     private Markets.State state;
 
@@ -11,11 +11,11 @@ public class Markets.SymbolsView : Gtk.ScrolledWindow {
 
         this.state = state;
 
-        this.state.notify["favourite-symbols"].connect (this.onFavouriteSymbolsUpdate);
-        this.onFavouriteSymbolsUpdate ();
+        this.state.notify["favourite-symbols"].connect (this.on_favourite_symbols_update);
+        this.on_favourite_symbols_update ();
     }
 
-    private void onFavouriteSymbolsUpdate () {
+    private void on_favourite_symbols_update () {
         var children = this.symbols.get_children ();
         foreach (Gtk.Widget widget in children) {
             this.symbols.remove (widget);
