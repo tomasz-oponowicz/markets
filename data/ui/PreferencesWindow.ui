@@ -8,8 +8,8 @@
     <property name="modal">True</property>
     <property name="window_position">center_on_parent</property>
     <property name="destroy_with_parent">True</property>
-    <property name="default_width">500</property>
-    <property name="default_height">270</property>
+    <property name="default_width">300</property>
+    <property name="default_height">250</property>
     <child>
       <object class="HdyPreferencesPage" id="scrolled_window">
         <property name="icon_name">applications-system-symbolic</property>
@@ -17,23 +17,57 @@
         <property name="visible">True</property>
         <child>
           <object class="HdyPreferencesGroup">
-            <property name="title" translatable="yes">Finnhub</property>
-            <property name="description" translatable="yes">Sign up to finnhub.io and get free API key.</property>
+            <property name="title" translatable="yes">General</property>
             <property name="visible">True</property>
             <child>
               <object class="HdyActionRow">
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
-                <property name="title" translatable="yes">API token</property>
+                <property name="title" translatable="yes">Update Interval</property>
+                <property name="subtitle" translatable="yes">Pull data every X seconds</property>
                 <property name="use_underline">True</property>
                 <property name="activatable">False</property>
                 <child type="action">
-                  <object class="GtkEntry" id="apiKeyEntry">
-                    <property name="hexpand">True</property>
-                    <property name="valign">center</property>
-                    <property name="visible">True</property>
-                    <signal name="changed" handler="onApiKeyChanged" swapped="no"/>
-                  </object>
+                    <object class="GtkComboBoxText" id="pull_interval">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="hexpand">False</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                        <property name="active_id">30</property>
+                        <signal name="changed" handler="on_pull_interval_changed" swapped="no"/>
+                        <items>
+                            <item id="30" translatable="yes">30</item>
+                            <item id="45" translatable="yes">45</item>
+                            <item id="60" translatable="yes">60</item>
+                        </items>
+                    </object>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="HdyPreferencesGroup">
+            <property name="title" translatable="yes">Apppearance</property>
+            <property name="visible">True</property>
+            <child>
+              <object class="HdyActionRow">
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="title" translatable="yes">Dark Theme</property>
+                <property name="subtitle" translatable="yes">Use dark GTK+ theme</property>
+                <property name="use_underline">True</property>
+                <property name="activatable">False</property>
+                <child type="action">
+                    <object class="GtkSwitch" id="dark_theme">
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                        <property name="hexpand">False</property>
+                        <signal name="state-set" handler="on_dark_theme_changed" swapped="no"/>
+                    </object>
                 </child>
               </object>
             </child>

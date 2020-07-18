@@ -7,10 +7,8 @@ public class Application : Gtk.Application {
 
   private Gtk.Window window;
 
-	private Markets.State state;
-	private Markets.Service service;
-
-  private uint timeoutId;
+  private Markets.State state;
+  private Markets.Service service;
 
   public Application () {
     Object (
@@ -52,29 +50,14 @@ public class Application : Gtk.Application {
 	  add_action (selectionNone);
 
     this.service.load_favourite_symbols ();
-
-  	this.timeoutId = Timeout.add(15000, onTick);
+    this.service.on_tick ();
 
     window = new Markets.MainWindow (this, this.state, this.service);
   	window.present ();
   }
 
-  private bool onTick () {
-    // if (this.state.networkStatus == Markets.NetworkStatus.IDLE) {
-    //     this.state.networkStatus = Markets.NetworkStatus.IN_PROGRESS;
-    // } else {
-    //     this.state.networkStatus = Markets.NetworkStatus.IDLE;
-    // }
-
-    this.service.update.begin((obj, res) => {
-      this.service.update.end(res);
-    });
-
-    return true;
-  }
-
   private void onPreferences () {
-    var preferences = new Markets.PreferencesWindow (this, window);
+    var preferences = new Markets.PreferencesWindow (this, window, this.state);
     preferences.present ();
   }
 

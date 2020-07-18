@@ -2,33 +2,31 @@
 public class Markets.PreferencesWindow : Hdy.PreferencesWindow {
 
     [GtkChild]
-    Gtk.Entry apiKeyEntry;
+    private Gtk.ComboBoxText pull_interval;
 
-    public PreferencesWindow (Gtk.Application app, Gtk.Window parent) {
+    [GtkChild]
+    private Gtk.Switch dark_theme;
+
+    private State state;
+
+    public PreferencesWindow (Gtk.Application app, Gtk.Window parent, State state) {
 	    Object (application: app);
-	    set_transient_for (parent);
 
-        var apiKey = Application.settings.get_string("api-key");
-        apiKeyEntry.text = apiKey;
+	    this.state = state;
+	    this.set_transient_for (parent);
+
+	    this.dark_theme.active = this.state.dark_theme;
+	    this.pull_interval.active_id = this.state.pull_interval.to_string ();
     }
 
     [GtkCallback]
-    private void onApiKeyChanged () {
-        var apiKey = apiKeyEntry.text;
+    private bool on_dark_theme_changed (Gtk.Switch widget, bool enabled) {
+        this.state.dark_theme = enabled;
+        return false;
+    }
 
-        apiKeyEntry.get_style_context ().remove_class ("valid");
-        apiKeyEntry.get_style_context ().remove_class ("not-valid");
-
-        if (apiKey.length < 10) {
-            apiKeyEntry.get_style_context ().add_class ("not-valid");
-            apiKeyEntry.primary_icon_name = "dialog-warning-symbolic";
-            apiKeyEntry.primary_icon_tooltip_text = "This is not a valid value";
-            return;
-        }
-
-        apiKeyEntry.get_style_context ().add_class ("valid");
-        apiKeyEntry.primary_icon_name = "emblem-ok-symbolic";
-        apiKeyEntry.primary_icon_tooltip_text = "";
-        Application.settings.set_string("api-key", apiKey);
+    [GtkCallback]
+    private void on_pull_interval_changed () {
+        this.state.pull_interval = int.parse(pull_interval.active_id);
     }
 }

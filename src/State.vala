@@ -46,6 +46,17 @@ public class Markets.State : Object {
       default = new ArrayList<Symbol> ();
     }
 
+    public int pull_interval {
+      get;
+      set;
+      default = 30; // sec
+    }
+
+    public bool dark_theme {
+      get;
+      set;
+      default = false;
+    }
 
     public int search_selection {
       get;

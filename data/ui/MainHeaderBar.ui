@@ -69,7 +69,7 @@
     </child>
     <child>
       <object class="GtkSpinner" id="spinner">
-        <property name="visible">True</property>
+        <property name="visible">False</property>
         <property name="active">True</property>
         <property name="can_focus">False</property>
       </object>

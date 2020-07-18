@@ -35,9 +35,43 @@ namespace Markets {
     private State state;
     private RestClient client;
 
+    private uint? timeout_id = null;
+
     public Service (State state) {
       this.state = state;
       this.client = new RestClient();
+
+      this.attach_listeners ();
+
+      this.on_pull_interval_updated ();
+    }
+
+    public bool on_tick () {
+        this.update.begin((obj, res) => {
+          this.update.end(res);
+        });
+
+        return true;
+    }
+
+    private void attach_listeners () {
+        this.state.notify["dark-theme"].connect (this.on_dark_theme_updated);
+        this.state.notify["pull-interval"].connect (this.on_pull_interval_updated);
+    }
+
+    private void on_dark_theme_updated () {
+        Gtk.Settings.get_default().gtk_application_prefer_dark_theme =
+            this.state.dark_theme;
+    }
+
+    private void on_pull_interval_updated () {
+        if (this.timeout_id != null) {
+            Source.remove (this.timeout_id);
+        }
+
+        var interval = this.state.pull_interval;
+      	this.timeout_id = Timeout.add_seconds(interval, this.on_tick);
+
     }
 
     public async void search (string query) {
