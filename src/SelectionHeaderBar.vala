@@ -4,7 +4,7 @@ using Gee;
 public class Markets.SelectionHeaderBar : Hdy.HeaderBar {
 
     [GtkChild]
-    Gtk.Button deleteBtn;
+    private Gtk.Button delete_button;
 
     private Markets.State state;
 
@@ -13,18 +13,18 @@ public class Markets.SelectionHeaderBar : Hdy.HeaderBar {
 
         this.state = state;
 
-        this.state.notify["totalSelected"].connect (this.onTotalSelectedUpdated);
+        this.state.notify["totalSelected"].connect (this.on_total_selected_updated);
 
-        this.onTotalSelectedUpdated ();
+        this.on_total_selected_updated ();
     }
 
     [GtkCallback]
-    private void onCancelClicked () {
+    private void on_cancel_clicked () {
         this.state.viewMode = Markets.ViewMode.PRESENTATION;
     }
 
     [GtkCallback]
-    private void onDeleteClicked () {
+    private void on_delete_clicked () {
         var filtered = new ArrayList<Symbol> ();
 
         foreach (Symbol symbol in this.state.favourite_symbols) {
@@ -37,7 +37,7 @@ public class Markets.SelectionHeaderBar : Hdy.HeaderBar {
         this.state.favourite_symbols = filtered;
     }
 
-    private void onTotalSelectedUpdated () {
-        this.deleteBtn.sensitive = this.state.totalSelected > 0;
+    private void on_total_selected_updated () {
+        this.delete_button.sensitive = this.state.totalSelected > 0;
     }
 }

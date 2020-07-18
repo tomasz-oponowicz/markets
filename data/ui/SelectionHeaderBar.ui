@@ -10,19 +10,19 @@
       <class name="selection-mode"/>
     </style>
     <child type="title">
-      <object class="GtkMenuButton" id="selection_options_button">
+      <object class="GtkMenuButton">
         <property name="visible">True</property>
         <property name="can_focus">True</property>
         <property name="receives_default">True</property>
         <property name="relief">none</property>
         <property name="popover">selection_options_popover</property>
         <child>
-          <object class="GtkBox" id="selection_options_button_box">
+          <object class="GtkBox">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="spacing">6</property>
             <child>
-              <object class="GtkLabel" id="selection_options_button_label">
+              <object class="GtkLabel">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="label" translatable="yes">Click on a checkbox to select</property>
@@ -35,7 +35,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkImage" id="selection_options_button_labe">
+              <object class="GtkImage">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="icon_name">pan-down-symbolic</property>
@@ -51,12 +51,12 @@
       </object>
     </child>
     <child>
-      <object class="GtkButton" id="cancelBtn">
+      <object class="GtkButton" id="cancel_button">
         <property name="label" translatable="yes">Cancel</property>
         <property name="visible">True</property>
         <property name="can_focus">True</property>
         <property name="receives_default">True</property>
-        <signal name="clicked" handler="onCancelClicked" swapped="no"/>
+        <signal name="clicked" handler="on_cancel_clicked" swapped="no"/>
       </object>
       <packing>
         <property name="pack_type">end</property>
@@ -64,13 +64,13 @@
       </packing>
     </child>
     <child>
-      <object class="GtkButton" id="deleteBtn">
+      <object class="GtkButton" id="delete_button">
         <property name="visible">True</property>
         <property name="can_focus">False</property>
         <property name="sensitive">False</property>
         <property name="receives_default">False</property>
         <property name="valign">center</property>
-        <signal name="clicked" handler="onDeleteClicked" swapped="no"/>
+        <signal name="clicked" handler="on_delete_clicked" swapped="no"/>
         <child>
           <object class="GtkImage">
             <property name="visible">True</property>
@@ -89,7 +89,7 @@
     <property name="can_focus">False</property>
     <property name="position">bottom</property>
     <child>
-      <object class="GtkBox" id="selection_options_popover_box">
+      <object class="GtkBox">
         <property name="visible">True</property>
         <property name="can_focus">False</property>
         <property name="margin_left">5</property>
@@ -98,7 +98,7 @@
         <property name="margin_bottom">5</property>
         <property name="orientation">vertical</property>
         <child>
-          <object class="GtkModelButton" id="selection_option_all_button">
+          <object class="GtkModelButton">
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="receives_default">True</property>
@@ -112,7 +112,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkModelButton" id="selection_option_none_button">
+          <object class="GtkModelButton">
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="receives_default">True</property>
@@ -132,5 +132,4 @@
       </packing>
     </child>
   </object>
-
 </interface>
