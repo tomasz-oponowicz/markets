@@ -14,7 +14,9 @@
         <property name="margin-bottom">18</property>
         <property name="icon_name">com.bitstower.Markets-symbolic</property>
         <property name="icon_size">6</property>
-        <style><class name="dim-label"/></style>
+        <style>
+          <class name="dim-label"/>
+        </style>
       </object>
     </child>
     <child>
@@ -22,7 +24,9 @@
         <property name="visible">True</property>
         <property name="label" translatable="yes">No Finnhub API key</property>
         <property name="wrap">True</property>
-        <style><class name="dim-label"/></style>
+        <style>
+          <class name="dim-label"/>
+        </style>
         <property name="justify">center</property>
         <attributes>
           <attribute name="weight" value="bold"/>
@@ -34,7 +38,9 @@
       <object class="GtkLabel">
         <property name="visible">True</property>
         <property name="label" translatable="yes">Open the Preferences to add one.</property>
-        <style><class name="dim-label"/></style>
+        <style>
+          <class name="dim-label"/>
+        </style>
       </object>
     </child>
   </object>

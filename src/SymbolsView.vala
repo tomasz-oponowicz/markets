@@ -22,7 +22,7 @@ public class Markets.SymbolsView : Gtk.ScrolledWindow {
         }
 
         foreach (Symbol symbol in this.state.favourite_symbols) {
-            symbols.add(new Markets.SymbolRow (symbol, state));
+            symbols.add (new Markets.SymbolRow (symbol, state));
         }
     }
 }

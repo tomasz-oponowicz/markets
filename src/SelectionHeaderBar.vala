@@ -3,8 +3,8 @@ using Gee;
 [GtkTemplate (ui = "/com/bitstower/Markets/SelectionHeaderBar.ui")]
 public class Markets.SelectionHeaderBar : Hdy.HeaderBar {
 
-	[GtkChild]
-	Gtk.Button deleteBtn;
+    [GtkChild]
+    Gtk.Button deleteBtn;
 
     private Markets.State state;
 

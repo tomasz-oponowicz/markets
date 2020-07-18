@@ -10,13 +10,13 @@ public class Markets.PreferencesWindow : Hdy.PreferencesWindow {
     private State state;
 
     public PreferencesWindow (Gtk.Application app, Gtk.Window parent, State state) {
-	    Object (application: app);
+        Object (application: app);
 
-	    this.state = state;
-	    this.set_transient_for (parent);
+        this.state = state;
+        this.set_transient_for (parent);
 
-	    this.dark_theme.active = this.state.dark_theme;
-	    this.pull_interval.active_id = this.state.pull_interval.to_string ();
+        this.dark_theme.active = this.state.dark_theme;
+        this.pull_interval.active_id = this.state.pull_interval.to_string ();
     }
 
     [GtkCallback]
@@ -27,6 +27,6 @@ public class Markets.PreferencesWindow : Hdy.PreferencesWindow {
 
     [GtkCallback]
     private void on_pull_interval_changed () {
-        this.state.pull_interval = int.parse(pull_interval.active_id);
+        this.state.pull_interval = int.parse (pull_interval.active_id);
     }
 }

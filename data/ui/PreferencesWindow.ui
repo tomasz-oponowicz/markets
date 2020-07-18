@@ -28,20 +28,20 @@
                 <property name="use_underline">True</property>
                 <property name="activatable">False</property>
                 <child type="action">
-                    <object class="GtkComboBoxText" id="pull_interval">
-                        <property name="visible">True</property>
-                        <property name="can_focus">False</property>
-                        <property name="hexpand">False</property>
-                        <property name="halign">center</property>
-                        <property name="valign">center</property>
-                        <property name="active_id">30</property>
-                        <signal name="changed" handler="on_pull_interval_changed" swapped="no"/>
-                        <items>
-                            <item id="30" translatable="yes">30</item>
-                            <item id="45" translatable="yes">45</item>
-                            <item id="60" translatable="yes">60</item>
-                        </items>
-                    </object>
+                  <object class="GtkComboBoxText" id="pull_interval">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="hexpand">False</property>
+                    <property name="halign">center</property>
+                    <property name="valign">center</property>
+                    <property name="active_id">30</property>
+                    <signal name="changed" handler="on_pull_interval_changed" swapped="no"/>
+                    <items>
+                      <item id="30" translatable="yes">30</item>
+                      <item id="45" translatable="yes">45</item>
+                      <item id="60" translatable="yes">60</item>
+                    </items>
+                  </object>
                 </child>
               </object>
             </child>
@@ -60,14 +60,14 @@
                 <property name="use_underline">True</property>
                 <property name="activatable">False</property>
                 <child type="action">
-                    <object class="GtkSwitch" id="dark_theme">
-                        <property name="visible">True</property>
-                        <property name="can_focus">True</property>
-                        <property name="halign">center</property>
-                        <property name="valign">center</property>
-                        <property name="hexpand">False</property>
-                        <signal name="state-set" handler="on_dark_theme_changed" swapped="no"/>
-                    </object>
+                  <object class="GtkSwitch" id="dark_theme">
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="halign">center</property>
+                    <property name="valign">center</property>
+                    <property name="hexpand">False</property>
+                    <signal name="state-set" handler="on_dark_theme_changed" swapped="no"/>
+                  </object>
                 </child>
               </object>
             </child>

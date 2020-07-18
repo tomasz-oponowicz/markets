@@ -21,7 +21,7 @@ public class Markets.NewSymbolDialog : Hdy.Dialog {
 
         this.state = state;
         this.service = service;
-        this.store = new Gtk.ListStore(1, typeof(string));
+        this.store = new Gtk.ListStore (1, typeof (string));
 
         this.treeView.model = this.store;
 
@@ -29,15 +29,19 @@ public class Markets.NewSymbolDialog : Hdy.Dialog {
     }
 
     private void onSearchResultsUpdated () {
-      this.store.clear ();
+        this.store.clear ();
 
-      Gtk.TreeIter iter;
-      var search_results = this.state.search_results;
-      for (var i = 0; i < search_results.size; i++) {
-        var symbol = search_results[i];
-        this.store.append (out iter);
-        this.store.set (iter, 0, @"$(symbol.id) · $(symbol.name) · $(symbol.instrument_type) · $(symbol.exchange_name)");
-      }
+        Gtk.TreeIter iter;
+        var search_results = this.state.search_results;
+        for (var i = 0; i < search_results.size; i++) {
+            var symbol = search_results[i];
+            this.store.append (out iter);
+            var label = symbol.id + " · " +
+                        symbol.name + " · " +
+                        symbol.instrument_type + " · " +
+                        symbol.exchange_name;
+            this.store.set (iter, 0, label);
+        }
     }
 
     [GtkCallback]
@@ -45,8 +49,8 @@ public class Markets.NewSymbolDialog : Hdy.Dialog {
         this.addButton.sensitive = false;
 
         var query = this.searchEntry.text;
-        this.service.search.begin(query, (obj, res) => {
-          this.service.search.end(res);
+        this.service.search.begin (query, (obj, res) => {
+            this.service.search.end (res);
         });
     }
 

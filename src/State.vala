@@ -41,33 +41,33 @@ public class Markets.State : Object {
     }
 
     public ArrayList<Symbol> search_results {
-      get;
-      set;
-      default = new ArrayList<Symbol> ();
+        get;
+        set;
+        default = new ArrayList<Symbol> ();
     }
 
     public int pull_interval {
-      get;
-      set;
-      default = 30; // sec
+        get;
+        set;
+        default = 30; // sec
     }
 
     public bool dark_theme {
-      get;
-      set;
-      default = false;
+        get;
+        set;
+        default = false;
     }
 
     public int search_selection {
-      get;
-      set;
-      default = -1;
+        get;
+        set;
+        default = -1;
     }
 
     public ArrayList<Symbol> favourite_symbols {
-      get;
-      set;
-      default = new ArrayList<Symbol> ();
+        get;
+        set;
+        default = new ArrayList<Symbol> ();
     }
 
     public string[] get_favourite_symbol_ids () {
@@ -80,7 +80,7 @@ public class Markets.State : Object {
         return ids.to_array ();
     }
 
-    public Symbol? find_favourite_symbol (string id) {
+    public Symbol ? find_favourite_symbol (string id) {
         foreach (Symbol symbol in this.favourite_symbols) {
             if (symbol.id == id) {
                 return symbol;
