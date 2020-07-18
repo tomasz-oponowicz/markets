@@ -10,6 +10,7 @@ markets_sources = [
   'State.vala',
   'Service.vala',
   'Symbol.vala',
+  'RestClient.vala',
 
   'MainWindow.vala',
   markets_resources
