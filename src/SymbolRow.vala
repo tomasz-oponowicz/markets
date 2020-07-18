@@ -2,22 +2,22 @@
 public class Markets.SymbolRow : Gtk.ListBoxRow {
 
     [GtkChild]
-    Gtk.Label title;
+    private Gtk.Label title;
 
     [GtkChild]
-    Gtk.Label change;
+    private Gtk.Label change;
 
     [GtkChild]
-    Gtk.Label price;
+    private Gtk.Label price;
 
     [GtkChild]
-    Gtk.Label currency;
+    private Gtk.Label currency;
 
     [GtkChild]
-    Gtk.Label details;
+    private Gtk.Label details;
 
     [GtkChild]
-    Gtk.CheckButton checkbox;
+    private Gtk.CheckButton checkbox;
 
     private Symbol symbol;
     private Markets.State state;
@@ -28,16 +28,16 @@ public class Markets.SymbolRow : Gtk.ListBoxRow {
         this.symbol = symbol;
         this.state = state;
 
-        this.symbol.notify.connect (this.onSymbolUpdate);
-        this.state.notify["viewMode"].connect (this.onViewModeUpdate);
-        this.state.notify["selectionMode"].connect (this.onSelectionModeUpdate);
+        this.symbol.notify.connect (this.on_symbol_update);
+        this.state.notify["viewMode"].connect (this.on_view_mode_update);
+        this.state.notify["selectionMode"].connect (this.on_selection_mode_update);
 
-        this.onSymbolUpdate ();
-        this.onViewModeUpdate ();
-        this.onSelectionModeUpdate ();
+        this.on_symbol_update ();
+        this.on_view_mode_update ();
+        this.on_selection_mode_update ();
     }
 
-    private void onSymbolUpdate () {
+    private void on_symbol_update () {
         this.title.label = this.symbol.name;
         this.change.label = "%.2f".printf (this.symbol.regular_market_change);
         this.price.label = "%.2f".printf (this.symbol.regular_market_price);
@@ -45,12 +45,12 @@ public class Markets.SymbolRow : Gtk.ListBoxRow {
         this.details.label = "MARKET OPEN";
     }
 
-    private void onViewModeUpdate () {
+    private void on_view_mode_update () {
         this.checkbox.visible =
             this.state.viewMode == Markets.ViewMode.SELECTION;
     }
 
-    private void onSelectionModeUpdate () {
+    private void on_selection_mode_update () {
         switch (this.state.selectionMode) {
             case Markets.SelectionMode.ALL:
                 this.symbol.selected = true;
@@ -64,7 +64,7 @@ public class Markets.SymbolRow : Gtk.ListBoxRow {
     }
 
     [GtkCallback]
-    private void onCheckboxToggled () {
+    private void on_checkbox_toggled () {
         if (this.checkbox.active) {
             this.symbol.selected = true;
             this.state.totalSelected++;

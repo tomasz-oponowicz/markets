@@ -20,7 +20,7 @@
             <property name="draw_indicator">True</property>
             <property name="margin_start">10</property>
             <property name="margin_end">5</property>
-            <signal name="toggled" handler="onCheckboxToggled" swapped="no"/>
+            <signal name="toggled" handler="on_checkbox_toggled" swapped="no"/>
           </object>
           <packing>
             <property name="fill">True</property>
