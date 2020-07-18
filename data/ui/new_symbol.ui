@@ -19,7 +19,7 @@
         <property name="title" translatable="yes">New symbol</property>
         <property name="show_close_button">False</property>
         <child>
-          <object class="GtkButton" id="cancelButton">
+          <object class="GtkButton" id="cancel_button">
             <property name="label" translatable="yes">_Cancel</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
@@ -35,7 +35,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="addButton">
+          <object class="GtkButton" id="save_button">
             <property name="label" translatable="yes">_Add</property>
             <property name="visible">True</property>
             <property name="sensitive">False</property>
@@ -45,7 +45,7 @@
             <property name="receives_default">True</property>
             <property name="use_underline">True</property>
             <property name="valign">center</property>
-            <signal name="clicked" handler="onAddClicked" swapped="no"/>
+            <signal name="clicked" handler="on_save_clicked" swapped="no"/>
             <style>
               <class name="text-button"/>
               <class name="suggested-action"/>
@@ -68,14 +68,14 @@
         <property name="margin_start">10</property>
         <property name="margin_end">10</property>
         <child>
-          <object class="GtkSearchEntry" id="searchEntry">
+          <object class="GtkSearchEntry" id="search_entry">
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="primary_icon_name">edit-find-symbolic</property>
             <property name="primary_icon_activatable">False</property>
             <property name="primary_icon_sensitive">False</property>
             <property name="margin_bottom">10</property>
-            <signal name="search_changed" handler="onSearchChanged" swapped="no"/>
+            <signal name="search_changed" handler="on_search_changed" swapped="no"/>
           </object>
           <packing>
             <property name="expand">False</property>
@@ -91,12 +91,12 @@
             <property name="max_content_height">250</property>
             <property name="propagate_natural_height">True</property>
             <child>
-              <object class="GtkTreeView" id="treeView">
+              <object class="GtkTreeView" id="results_view">
                 <property name="visible">True</property>
                 <property name="headers_visible">False</property>
                 <property name="activate_on_single_click">True</property>
                 <property name="search_column">0</property>
-                <signal name="row_activated" handler="onRowActivated" swapped="no"/>
+                <signal name="row_activated" handler="on_row_activated" swapped="no"/>
                 <child>
                   <object class="GtkTreeViewColumn">
                     <property name="title">Name</property>
@@ -120,8 +120,8 @@
       </object>
     </child>
     <action-widgets>
-      <action-widget response="0">cancelButton</action-widget>
-      <action-widget response="1">addButton</action-widget>
+      <action-widget response="0">cancel_button</action-widget>
+      <action-widget response="1">save_button</action-widget>
     </action-widgets>
   </template>
 </interface>

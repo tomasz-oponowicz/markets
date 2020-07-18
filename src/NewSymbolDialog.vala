@@ -4,13 +4,13 @@ using Gee;
 public class Markets.NewSymbolDialog : Hdy.Dialog {
 
     [GtkChild]
-    Gtk.TreeView treeView;
+    private Gtk.TreeView results_view;
 
     [GtkChild]
-    Gtk.Button addButton;
+    private Gtk.Button save_button;
 
     [GtkChild]
-    Gtk.SearchEntry searchEntry;
+    private Gtk.SearchEntry search_entry;
 
     private Markets.Service service;
     private Markets.State state;
@@ -23,12 +23,12 @@ public class Markets.NewSymbolDialog : Hdy.Dialog {
         this.service = service;
         this.store = new Gtk.ListStore (1, typeof (string));
 
-        this.treeView.model = this.store;
+        this.results_view.model = this.store;
 
-        this.state.notify["search-results"].connect (this.onSearchResultsUpdated);
+        this.state.notify["search-results"].connect (this.on_search_results_updated);
     }
 
-    private void onSearchResultsUpdated () {
+    private void on_search_results_updated () {
         this.store.clear ();
 
         Gtk.TreeIter iter;
@@ -45,25 +45,25 @@ public class Markets.NewSymbolDialog : Hdy.Dialog {
     }
 
     [GtkCallback]
-    private void onSearchChanged () {
-        this.addButton.sensitive = false;
+    private void on_search_changed () {
+        this.save_button.sensitive = false;
 
-        var query = this.searchEntry.text;
+        var query = this.search_entry.text;
         this.service.search.begin (query, (obj, res) => {
             this.service.search.end (res);
         });
     }
 
     [GtkCallback]
-    private void onRowActivated (Gtk.TreePath path, Gtk.TreeViewColumn column) {
+    private void on_row_activated (Gtk.TreePath path, Gtk.TreeViewColumn column) {
         this.state.search_selection = path.get_indices ()[0];
 
-        var selection = this.treeView.get_selection ();
-        this.addButton.sensitive = selection.count_selected_rows () > 0;
+        var selection = this.results_view.get_selection ();
+        this.save_button.sensitive = selection.count_selected_rows () > 0;
     }
 
     [GtkCallback]
-    private void onAddClicked () {
+    private void on_save_clicked () {
         var new_symbol = this.state.search_results[this.state.search_selection];
 
         var copy = new ArrayList<Symbol> ();
