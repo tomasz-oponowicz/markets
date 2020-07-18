@@ -82,15 +82,15 @@ namespace Markets {
         private void on_selection_all () {
 
             // Enforce update by changing to opposite value first
-            this.state.selectionMode = Markets.SelectionMode.NONE;
-            this.state.selectionMode = Markets.SelectionMode.ALL;
+            this.state.selection_mode = Markets.SelectionMode.NONE;
+            this.state.selection_mode = Markets.SelectionMode.ALL;
         }
 
         private void on_selection_none () {
 
             // Enforce update by changing to opposite value first
-            this.state.selectionMode = Markets.SelectionMode.ALL;
-            this.state.selectionMode = Markets.SelectionMode.NONE;
+            this.state.selection_mode = Markets.SelectionMode.ALL;
+            this.state.selection_mode = Markets.SelectionMode.NONE;
         }
 
         public static int main (string[] args) {

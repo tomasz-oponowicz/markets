@@ -14,7 +14,7 @@ public class Markets.MainHeaderBar : Hdy.HeaderBar {
         this.state = state;
         this.service = service;
 
-        this.state.notify["networkStatus"].connect (this.on_network_status_updated);
+        this.state.notify["network-status"].connect (this.on_network_status_updated);
     }
 
     [GtkCallback]
@@ -26,11 +26,11 @@ public class Markets.MainHeaderBar : Hdy.HeaderBar {
 
     [GtkCallback]
     private void on_select_clicked () {
-        this.state.viewMode = Markets.ViewMode.SELECTION;
+        this.state.view_mode = Markets.ViewMode.SELECTION;
     }
 
     private void on_network_status_updated () {
         this.spinner.visible =
-            this.state.networkStatus == Markets.NetworkStatus.IN_PROGRESS;
+            this.state.network_status == Markets.NetworkStatus.IN_PROGRESS;
     }
 }

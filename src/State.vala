@@ -16,25 +16,25 @@ public enum Markets.NetworkStatus {
 }
 
 public class Markets.State : Object {
-    public Markets.ViewMode viewMode {
+    public Markets.ViewMode view_mode {
         get;
         set;
         default = Markets.ViewMode.PRESENTATION;
     }
 
-    public Markets.SelectionMode selectionMode {
+    public Markets.SelectionMode selection_mode {
         get;
         set;
         default = Markets.SelectionMode.NONE;
     }
 
-    public int totalSelected {
+    public int total_selected {
         get;
         set;
         default = 0;
     }
 
-    public Markets.NetworkStatus networkStatus {
+    public Markets.NetworkStatus network_status {
         get;
         set;
         default = Markets.NetworkStatus.IDLE;

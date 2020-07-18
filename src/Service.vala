@@ -1,5 +1,3 @@
-// TODO remove Object() from constructors
-
 using Gee;
 
 namespace Markets {
@@ -16,9 +14,6 @@ namespace Markets {
             var message = new Soup.Message ("GET", url);
 
             yield this.queue_message (this.session, message);
-
-            // TODO handle error
-            // message.status_code == 200
 
             var body = (string) message.response_body.data;
             return Json.from_string (body);
@@ -79,7 +74,7 @@ namespace Markets {
                 return;
             }
 
-            this.state.networkStatus = NetworkStatus.IN_PROGRESS;
+            this.state.network_status = NetworkStatus.IN_PROGRESS;
 
             var url = @"$BASE_URL/v1/finance/search" +
                       @"?q=$query" +
@@ -103,7 +98,7 @@ namespace Markets {
 
             this.state.search_results = search_results;
 
-            this.state.networkStatus = NetworkStatus.IDLE;
+            this.state.network_status = NetworkStatus.IDLE;
         }
 
         public async void update () {
@@ -128,7 +123,7 @@ namespace Markets {
             );
             fields = Soup.URI.encode (fields, ",");
 
-            this.state.networkStatus = NetworkStatus.IN_PROGRESS;
+            this.state.network_status = NetworkStatus.IN_PROGRESS;
 
             var url = @"$BASE_URL/v7/finance/quote" +
                       "?lang=en-US" +
@@ -148,7 +143,7 @@ namespace Markets {
                 this.state.find_favourite_symbol (id).update (object);
             }
 
-            this.state.networkStatus = NetworkStatus.IDLE;
+            this.state.network_status = NetworkStatus.IDLE;
 
             this.store_favourite_symbols ();
         }

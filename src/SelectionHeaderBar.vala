@@ -13,14 +13,14 @@ public class Markets.SelectionHeaderBar : Hdy.HeaderBar {
 
         this.state = state;
 
-        this.state.notify["totalSelected"].connect (this.on_total_selected_updated);
+        this.state.notify["total-selected"].connect (this.on_total_selected_updated);
 
         this.on_total_selected_updated ();
     }
 
     [GtkCallback]
     private void on_cancel_clicked () {
-        this.state.viewMode = Markets.ViewMode.PRESENTATION;
+        this.state.view_mode = Markets.ViewMode.PRESENTATION;
     }
 
     [GtkCallback]
@@ -38,6 +38,6 @@ public class Markets.SelectionHeaderBar : Hdy.HeaderBar {
     }
 
     private void on_total_selected_updated () {
-        this.delete_button.sensitive = this.state.totalSelected > 0;
+        this.delete_button.sensitive = this.state.total_selected > 0;
     }
 }

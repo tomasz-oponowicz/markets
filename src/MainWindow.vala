@@ -26,16 +26,16 @@ public class Markets.MainWindow : Gtk.ApplicationWindow {
         stack.add_named (view, "symbols");
         stack.set_visible_child_name ("symbols");
 
-        this.state.notify["viewMode"].connect (this.on_selection_mode_update);
+        this.state.notify["view-mode"].connect (this.on_selection_mode_update);
     }
 
     private void on_selection_mode_update () {
-        switch (this.state.viewMode) {
+        switch (this.state.view_mode) {
             case Markets.ViewMode.PRESENTATION:
                 this.set_titlebar (this.main_header_bar);
                 break;
             case Markets.ViewMode.SELECTION:
-                this.state.selectionMode = Markets.SelectionMode.NONE;
+                this.state.selection_mode = Markets.SelectionMode.NONE;
                 this.set_titlebar (this.selection_header_bar);
                 break;
         }
