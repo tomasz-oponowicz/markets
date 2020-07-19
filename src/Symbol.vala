@@ -95,6 +95,13 @@ public class Markets.Symbol : Object {
         this.update (json);
     }
 
+    public Symbol.from_mock (string id, string instrument_type, string name, string exchange_name) {
+        this.id = id;
+        this.instrument_type = instrument_type;
+        this.name = name;
+        this.exchange_name = exchange_name;
+    }
+
     public void build_json (Json.Builder builder) {
         builder.begin_object ();
 

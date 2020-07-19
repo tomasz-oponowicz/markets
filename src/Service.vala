@@ -189,27 +189,48 @@ namespace Markets {
         }
 
         public void load_favourite_symbols () {
-            var path = this.get_config_file ();
-
-            Json.Parser parser = new Json.Parser ();
-
             try {
+                var path = this.get_config_file ();
+
+                Json.Parser parser = new Json.Parser ();
+
                 parser.load_from_file (path);
+
+                var objects = parser
+                               .get_root ()
+                               .get_object ()
+                               .get_array_member ("symbols");
+
+                var symbols = new ArrayList<Symbol> ();
+                for (var i = 0; i < objects.get_length (); i++) {
+                    var object = objects.get_object_element (i);
+                    symbols.add (new Symbol.from_json_object (object));
+                }
+
+                this.state.favourite_symbols = symbols;
             } catch (Error e) {
-                warning ("The config file doesn't exist. Skipping.");
-                return;
-            }
+                warning ("The config file doesn't exist. Adding default symbols.");
 
-            var objects = parser
-                           .get_root ()
-                           .get_object ()
-                           .get_array_member ("symbols");
-
-            this.state.favourite_symbols.clear ();
-
-            for (var i = 0; i < objects.get_length (); i++) {
-                var object = objects.get_object_element (i);
-                this.state.favourite_symbols.add (new Symbol.from_json_object (object));
+                this.state.favourite_symbols = new ArrayList<Symbol>.wrap ({
+                    new Symbol.from_mock (
+                        "TSLA",
+                        "EQUITY",
+                        "Tesla, Inc.",
+                        "NMS"
+                    ),
+                    new Symbol.from_mock (
+                        "BTC-USD",
+                        "CRYPTOCURRENCY",
+                        "Bitcoin USD",
+                        "CCC"
+                    ),
+                    new Symbol.from_mock (
+                        "EURUSD=X",
+                        "CURRENCY",
+                        "EUR/USD",
+                        "CCY"
+                    )
+                });
             }
         }
     }

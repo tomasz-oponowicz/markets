@@ -10,11 +10,9 @@ public class Markets.PreferencesWindow : Hdy.PreferencesWindow {
     private State state;
 
     public PreferencesWindow (Gtk.Application app, Gtk.Window parent, State state) {
-        Object (application: app);
+        Object (transient_for: parent, application: app);
 
         this.state = state;
-        this.set_transient_for (parent);
-
         this.dark_theme.active = this.state.dark_theme;
         this.pull_interval.active_id = this.state.pull_interval.to_string ();
     }
