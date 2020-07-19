@@ -49,19 +49,27 @@ public class Markets.State : Object {
     public int pull_interval {
         get;
         set;
-        default = 30; // sec
     }
 
     public bool dark_theme {
         get;
         set;
-        default = false;
     }
 
     public int search_selection {
         get;
         set;
         default = -1;
+    }
+
+    public int window_width {
+        get;
+        set;
+    }
+
+    public int window_height {
+        get;
+        set;
     }
 
     public ArrayList<Symbol> favourite_symbols {

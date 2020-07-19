@@ -6,16 +6,16 @@ namespace Markets {
     public class Service : Object {
         private State state;
         private RestClient client;
+        private Settings settings;
 
         private uint ? timeout_id = null;
 
         public Service (State state) {
             this.state = state;
             this.client = new RestClient ();
+            this.settings = new Settings ("com.bitstower.Markets");
 
             this.attach_listeners ();
-
-            this.on_pull_interval_updated ();
         }
 
         public bool on_tick () {
@@ -27,16 +27,30 @@ namespace Markets {
         }
 
         private void attach_listeners () {
+            bind_setting ("dark-theme", "dark_theme");
+            bind_setting ("pull-interval", "pull_interval");
+            bind_setting ("window-width", "window_width");
+            bind_setting ("window-height", "window_height");
+
             this.state.notify["dark-theme"].connect (this.on_dark_theme_updated);
             this.state.notify["pull-interval"].connect (this.on_pull_interval_updated);
         }
 
-        private void on_dark_theme_updated () {
+        private void bind_setting (string setting_prop, string state_prop) {
+            this.settings.bind (
+                setting_prop,
+                this.state,
+                state_prop,
+                SettingsBindFlags.DEFAULT
+            );
+        }
+
+        public void on_dark_theme_updated () {
             Gtk.Settings.get_default ().gtk_application_prefer_dark_theme =
                 this.state.dark_theme;
         }
 
-        private void on_pull_interval_updated () {
+        public void on_pull_interval_updated () {
             if (this.timeout_id != null) {
                 Source.remove (this.timeout_id);
             }

@@ -2,7 +2,7 @@
 public class Markets.MainWindow : Gtk.ApplicationWindow {
 
     [GtkChild]
-    Gtk.Stack stack;
+    private Gtk.Stack stack;
 
     private Markets.State state;
 
@@ -26,7 +26,21 @@ public class Markets.MainWindow : Gtk.ApplicationWindow {
         stack.add_named (view, "symbols");
         stack.set_visible_child_name ("symbols");
 
+        this.delete_event.connect (this.on_quit);
         this.state.notify["view-mode"].connect (this.on_selection_mode_update);
+
+        this.window_position = Gtk.WindowPosition.CENTER;
+        this.set_default_size (this.state.window_width, this.state.window_height);
+    }
+
+    private bool on_quit () {
+        int width, height;
+        this.get_size (out width, out height);
+
+        this.state.window_width = width;
+        this.state.window_height = height;
+
+        return false;
     }
 
     private void on_selection_mode_update () {

@@ -3,8 +3,6 @@ using Gee;
 namespace Markets {
 
     public class Application : Gtk.Application {
-        public static GLib.Settings settings;
-
         private Gtk.Window window;
 
         private Markets.State state;
@@ -51,13 +49,16 @@ namespace Markets {
 
             this.service.load_favourite_symbols ();
             this.service.on_tick ();
+            this.service.on_pull_interval_updated ();
+            this.service.on_dark_theme_updated ();
 
-            window = new Markets.MainWindow (this, this.state, this.service);
-            window.present ();
+            this.window = new Markets.MainWindow (this, this.state, this.service);
+            this.window.present ();
         }
 
         private void on_preferences () {
             var preferences = new Markets.PreferencesWindow (this, window, this.state);
+
             preferences.present ();
         }
 
@@ -95,10 +96,6 @@ namespace Markets {
 
         public static int main (string[] args) {
             var app = new Application ();
-
-            // Settings has to be created after Application.
-            // Otherwise application freezes on start.
-            Application.settings = new GLib.Settings ("com.bitstower.Markets");
 
             return app.run (args);
         }

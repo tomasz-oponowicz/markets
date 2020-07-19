@@ -10,7 +10,8 @@ indent_style = space
 insert_final_newline = true
 max_line_length = 80
 tab_width = 4
+trim_trailing_whitespace = true
 
 # Markup files
-[{*.html,*.xml,*.xml.in,*.yml}]
+[{*.html,*.xml,*.xml.in,*.ui,*.yml}]
 tab_width = 2

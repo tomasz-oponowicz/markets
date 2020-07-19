@@ -1,9 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist gettext-domain="markets">
-	<schema id="com.bitstower.Markets" path="/com/bitstower/Markets/">
-    <key type="s" name="api-key">
-      <default>""</default>
-      <summary>Finnhub API Key</summary>
+  <schema id="com.bitstower.Markets" path="/com/bitstower/Markets/">
+    <key type="i" name="pull-interval">
+      <default>30</default>
+      <summary>Pull interval</summary>
+      <description>Pull data every X seconds.</description>
     </key>
-	</schema>
+    <key type="b" name="dark-theme">
+      <default>true</default>
+      <summary>Use dark GTK+ theme</summary>
+      <description>Use the dark variant of your GTK+ theme. Please note that not every GTK+ theme has a dark variant.</description>
+    </key>
+    <key type="i" name="window-width">
+      <default>300</default>
+      <summary>Window width</summary>
+      <description>Remember the window width.</description>
+    </key>
+    <key type="i" name="window-height">
+      <default>600</default>
+      <summary>Window height</summary>
+      <description>Remember the window height.</description>
+    </key>
+  </schema>
 </schemalist>
