@@ -12,20 +12,19 @@ public class Markets.NewSymbolDialog : Hdy.Dialog {
     [GtkChild]
     private Gtk.SearchEntry search_entry;
 
-    private Markets.Service service;
     private Markets.State state;
     private Gtk.ListStore store;
 
-    public NewSymbolDialog (Gtk.Window parent, Markets.State state, Markets.Service service) {
+    public NewSymbolDialog (Gtk.Window parent, Markets.State state) {
         Object (transient_for: parent, use_header_bar: 1);
 
         this.state = state;
-        this.service = service;
         this.store = new Gtk.ListStore (1, typeof (string));
 
         this.results_view.model = this.store;
 
         this.state.notify["search-results"].connect (this.on_search_results_updated);
+        this.on_search_results_updated ();
     }
 
     private void on_search_results_updated () {
@@ -47,11 +46,7 @@ public class Markets.NewSymbolDialog : Hdy.Dialog {
     [GtkCallback]
     private void on_search_changed () {
         this.save_button.sensitive = false;
-
-        var query = this.search_entry.text;
-        this.service.search.begin (query, (obj, res) => {
-            this.service.search.end (res);
-        });
+        this.state.search_query = this.search_entry.text;
     }
 
     [GtkCallback]

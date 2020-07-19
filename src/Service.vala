@@ -27,13 +27,14 @@ namespace Markets {
         }
 
         private void attach_listeners () {
-            bind_setting ("dark-theme", "dark_theme");
-            bind_setting ("pull-interval", "pull_interval");
-            bind_setting ("window-width", "window_width");
-            bind_setting ("window-height", "window_height");
+            this.bind_setting ("dark-theme", "dark_theme");
+            this.bind_setting ("pull-interval", "pull_interval");
+            this.bind_setting ("window-width", "window_width");
+            this.bind_setting ("window-height", "window_height");
 
             this.state.notify["dark-theme"].connect (this.on_dark_theme_updated);
             this.state.notify["pull-interval"].connect (this.on_pull_interval_updated);
+            this.state.notify["search-query"].connect (this.on_search_query_updated);
         }
 
         private void bind_setting (string setting_prop, string state_prop) {
@@ -43,6 +44,12 @@ namespace Markets {
                 state_prop,
                 SettingsBindFlags.DEFAULT
             );
+        }
+
+        public void on_search_query_updated () {
+            this.search.begin (this.state.search_query, (obj, res) => {
+                this.search.end (res);
+            });
         }
 
         public void on_dark_theme_updated () {

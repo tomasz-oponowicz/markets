@@ -10,15 +10,12 @@ public class Markets.MainWindow : Gtk.ApplicationWindow {
 
     private Markets.SelectionHeaderBar selection_header_bar;
 
-    private Markets.Service service;
-
-    public MainWindow (Gtk.Application app, Markets.State state, Markets.Service service) {
+    public MainWindow (Gtk.Application app, Markets.State state) {
         Object (application: app);
 
         this.state = state;
-        this.service = service;
 
-        this.main_header_bar = new Markets.MainHeaderBar (this, state, service);
+        this.main_header_bar = new Markets.MainHeaderBar (this, state);
         this.selection_header_bar = new Markets.SelectionHeaderBar (state);
         this.set_titlebar (this.main_header_bar);
 

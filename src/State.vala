@@ -46,6 +46,12 @@ public class Markets.State : Object {
         default = new ArrayList<Symbol> ();
     }
 
+    public string search_query {
+        get;
+        set;
+        default = "";
+    }
+
     public int pull_interval {
         get;
         set;

@@ -52,7 +52,7 @@ namespace Markets {
             this.service.on_pull_interval_updated ();
             this.service.on_dark_theme_updated ();
 
-            this.window = new Markets.MainWindow (this, this.state, this.service);
+            this.window = new Markets.MainWindow (this, this.state);
             this.window.present ();
         }
 
