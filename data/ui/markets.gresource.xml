@@ -4,7 +4,7 @@
     <file compressed="true">Application.css</file>
     <file compressed="true">MainWindow.ui</file>
     <file compressed="true">PreferencesWindow.ui</file>
-    <file compressed="true">api_key_view.ui</file>
+    <file compressed="true">NoSymbolsView.ui</file>
     <file compressed="true">new_symbol.ui</file>
     <file compressed="true">SymbolRow.ui</file>
     <file compressed="true">SymbolsView.ui</file>

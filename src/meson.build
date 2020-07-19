@@ -4,6 +4,7 @@ markets_sources = [
   'NewSymbolDialog.vala',
   'PreferencesWindow.vala',
   'SymbolsView.vala',
+  'NoSymbolsView.vala',
   'SymbolRow.vala',
   'MainHeaderBar.vala',
   'SelectionHeaderBar.vala',

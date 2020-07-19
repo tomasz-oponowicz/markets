@@ -1,6 +1,8 @@
 <?xml version="1.0"?>
 <interface>
-  <object class="GtkBox" id="api_key_view">
+  <requires lib="gtk+" version="3.20"/>
+  <requires lib="libhandy" version="0.0"/>
+  <template class="MarketsNoSymbolsView" parent="GtkBox">
     <property name="visible">True</property>
     <property name="orientation">vertical</property>
     <property name="halign">center</property>
@@ -12,7 +14,7 @@
         <property name="visible">True</property>
         <property name="pixel_size">96</property>
         <property name="margin-bottom">18</property>
-        <property name="icon_name">com.bitstower.Markets-symbolic</property>
+        <property name="icon_name">face-sad-symbolic</property>
         <property name="icon_size">6</property>
         <style>
           <class name="dim-label"/>
@@ -22,7 +24,7 @@
     <child>
       <object class="GtkLabel">
         <property name="visible">True</property>
-        <property name="label" translatable="yes">No Finnhub API key</property>
+        <property name="label" translatable="yes">No symbols</property>
         <property name="wrap">True</property>
         <style>
           <class name="dim-label"/>
@@ -37,11 +39,11 @@
     <child>
       <object class="GtkLabel">
         <property name="visible">True</property>
-        <property name="label" translatable="yes">Open the Preferences to add one.</property>
+        <property name="label" translatable="yes">Press + to add one.</property>
         <style>
           <class name="dim-label"/>
         </style>
       </object>
     </child>
-  </object>
+  </template>
 </interface>

@@ -19,12 +19,16 @@ public class Markets.MainWindow : Gtk.ApplicationWindow {
         this.selection_header_bar = new Markets.SelectionHeaderBar (state);
         this.set_titlebar (this.main_header_bar);
 
-        var view = new Markets.SymbolsView (this.state);
-        stack.add_named (view, "symbols");
-        stack.set_visible_child_name ("symbols");
+        var symbols_view = new Markets.SymbolsView (this.state);
+        stack.add_named (symbols_view, "symbols_view");
+
+        var no_symbols_view = new Markets.NoSymbolsView ();
+        stack.add_named (no_symbols_view, "no_symbols_view");
 
         this.delete_event.connect (this.on_quit);
         this.state.notify["view-mode"].connect (this.on_selection_mode_update);
+        this.state.notify["favourite-symbols"].connect (this.on_favourite_symbols_updated);
+        this.on_favourite_symbols_updated ();
 
         this.window_position = Gtk.WindowPosition.CENTER;
         this.set_default_size (this.state.window_width, this.state.window_height);
@@ -38,6 +42,14 @@ public class Markets.MainWindow : Gtk.ApplicationWindow {
         this.state.window_height = height;
 
         return false;
+    }
+
+    private void on_favourite_symbols_updated () {
+        if (this.state.favourite_symbols.size > 0) {
+            this.stack.set_visible_child_name ("symbols_view");
+        } else {
+            this.stack.set_visible_child_name ("no_symbols_view");
+        }
     }
 
     private void on_selection_mode_update () {
