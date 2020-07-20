@@ -1,13 +1,12 @@
 # Markets
 
-A market tracker for Linux Smartphones (Librem 5, PinePhone).
-
+A market tracker for Linux Smartphones (Librem 5, PinePhone). Track your favourite stocks, currencies or cryptocurrencies.
 
 ![](data/screenshots/symbols.png?raw=true)
 
 ## Build & Install
 
-1. Install dependencies (btw. I use Arch):
+1. Install dependencies (Arch):
 
        sudo pacman -S libsoup libgee libhandy json-glib glib2 gtk3 meson ninja
 1. Clone the repository
