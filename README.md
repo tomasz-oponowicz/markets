@@ -7,7 +7,7 @@ A market tracker for Linux Smartphones (Librem 5, PinePhone).
 
 ## Build & Install
 
-1. Install dependencies:
+1. Install dependencies (btw. I use Arch):
 
        sudo pacman -S libsoup libgee libhandy json-glib glib2 gtk3 meson ninja
 1. Clone the repository
