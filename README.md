@@ -12,7 +12,7 @@ A market tracker for Linux Smartphones (Librem 5, PinePhone).
        pacman -S libsoup libgee libhandy json-glib glib2 gtk3 meson ninja
 1. Clone the repository
 
-       git clone 
+       git clone https://github.com/bitstower/markets.git
 1. Build the application:
 
        cd ./markets
