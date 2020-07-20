@@ -20,15 +20,15 @@ public class Markets.Symbol : Object {
     }
 
     public string market_state {
-        get; set; default = "";
+        get; set; default = "closed";
     }
 
     public int precision {
-        get; set; default = 0;
+        get; set; default = 2;
     }
 
     public string currency {
-        get; set; default = "closed";
+        get; set; default = "";
     }
 
     public DateTime? regular_market_time {
@@ -53,7 +53,7 @@ public class Markets.Symbol : Object {
         }
     }
 
-    public void update (Json.Object json) {
+    public Symbol.from_search (Json.Object json) {
         if (json.has_member ("symbol")) {
             this.id = json.get_string_member ("symbol");
         }
@@ -62,7 +62,45 @@ public class Markets.Symbol : Object {
             this.name = json.get_string_member ("longname");
         } else if (json.has_member ("shortname")) {
             this.name = json.get_string_member ("shortname");
-        } else if (json.has_member ("shortName")) {
+        }
+
+        if (json.has_member ("typeDisp")) {
+            this.instrument_type = json.get_string_member ("typeDisp");
+        } else if (json.has_member ("quoteType")) {
+            this.instrument_type = json.get_string_member ("quoteType");
+        }
+
+        if (json.has_member ("exchange")) {
+            this.exchange_name = json.get_string_member ("exchange");
+        }
+    }
+
+    public Symbol.from_quote (Json.Object json) {
+        if (json.has_member ("symbol")) {
+            this.id = json.get_string_member ("symbol");
+        }
+
+        this.update (json);
+    }
+
+    public Symbol.from_mock (
+        string id,
+        string name,
+        string instrument_type,
+        string exchange_name)
+    {
+        this.id = id;
+        this.name = name;
+        this.instrument_type = instrument_type;
+        this.exchange_name = exchange_name;
+    }
+
+    public void update (Json.Object json) {
+        if (json.has_member ("quoteType")) {
+            this.instrument_type = json.get_string_member ("quoteType");
+        }
+
+        if (json.has_member ("shortName")) {
             this.name = json.get_string_member ("shortName");
         }
 
@@ -78,14 +116,14 @@ public class Markets.Symbol : Object {
             this.market_state = json.get_string_member ("marketState");
         }
 
-        if (json.has_member ("typeDisp")) {
-            this.instrument_type = json.get_string_member ("typeDisp");
-        } else if (json.has_member ("quoteType")) {
-            this.instrument_type = json.get_string_member ("quoteType");
-        }
-
         if (json.has_member ("priceHint")) {
             this.precision = (int) json.get_int_member ("priceHint");
+        }
+
+        if (json.has_member ("regularMarketTime")) {
+            this.regular_market_time = new DateTime.from_unix_utc (
+                json.get_int_member("regularMarketTime")
+            );
         }
 
         if (json.has_member ("regularMarketPrice")) {
@@ -102,27 +140,6 @@ public class Markets.Symbol : Object {
             this.regular_market_change_percent =
                 json.get_double_member ("regularMarketChangePercent");
         }
-
-        if (json.has_member ("regularMarketTime")) {
-            this.regular_market_time =
-                new DateTime.from_unix_utc (json.get_int_member("regularMarketTime"));
-        }
-    }
-
-    public Symbol.from_json_object (Json.Object json) {
-        this.update (json);
-    }
-
-    public Symbol.from_mock (
-        string id,
-        string instrument_type,
-        string name,
-        string exchange_name)
-    {
-        this.id = id;
-        this.instrument_type = instrument_type;
-        this.name = name;
-        this.exchange_name = exchange_name;
     }
 
     public void build_json (Json.Builder builder) {

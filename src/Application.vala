@@ -14,8 +14,8 @@ namespace Markets {
                 flags : ApplicationFlags.FLAGS_NONE
             );
 
-            this.state = new Markets.State ();
-            this.service = new Markets.Service (this.state);
+            this.service = new Markets.Service ();
+            this.state = this.service.state;
         }
 
         public override void activate () {
@@ -47,10 +47,7 @@ namespace Markets {
             selection_none.activate.connect (on_selection_none);
             add_action (selection_none);
 
-            this.service.load_favourite_symbols ();
-            this.service.on_tick ();
-            this.service.on_pull_interval_updated ();
-            this.service.on_dark_theme_updated ();
+            this.service.init ();
 
             this.window = new Markets.MainWindow (this, this.state);
             this.window.present ();
@@ -83,15 +80,15 @@ namespace Markets {
         private void on_selection_all () {
 
             // Enforce update by changing to opposite value first
-            this.state.selection_mode = Markets.SelectionMode.NONE;
-            this.state.selection_mode = Markets.SelectionMode.ALL;
+            this.state.selection_mode = State.SelectionMode.NONE;
+            this.state.selection_mode = State.SelectionMode.ALL;
         }
 
         private void on_selection_none () {
 
             // Enforce update by changing to opposite value first
-            this.state.selection_mode = Markets.SelectionMode.ALL;
-            this.state.selection_mode = Markets.SelectionMode.NONE;
+            this.state.selection_mode = State.SelectionMode.ALL;
+            this.state.selection_mode = State.SelectionMode.NONE;
         }
 
         public static int main (string[] args) {

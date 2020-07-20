@@ -4,26 +4,18 @@ namespace Markets {
     const string BASE_URL = "https://query1.finance.yahoo.com";
 
     public class Service : Object {
-        private State state;
         private RestClient client;
         private Settings settings;
-
         private uint ? timeout_id = null;
 
-        public Service (State state) {
-            this.state = state;
-            this.client = new RestClient ();
-            this.settings = new Settings ("com.bitstower.Markets");
-
-            this.attach_listeners ();
+        public State state {
+            get; private set;
         }
 
-        public bool on_tick () {
-            this.update.begin ((obj, res) => {
-                this.update.end (res);
-            });
-
-            return true;
+        public Service () {
+            this.state = new State ();
+            this.client = new RestClient ();
+            this.settings = new Settings ("com.bitstower.Markets");
         }
 
         private void attach_listeners () {
@@ -32,9 +24,18 @@ namespace Markets {
             this.bind_setting ("window-width", "window_width");
             this.bind_setting ("window-height", "window_height");
 
+            this.state.notify["symbols"].connect (this.on_symbols_updated);
             this.state.notify["dark-theme"].connect (this.on_dark_theme_updated);
             this.state.notify["pull-interval"].connect (this.on_pull_interval_updated);
             this.state.notify["search-query"].connect (this.on_search_query_updated);
+        }
+
+        public void init () {
+            this.attach_listeners ();
+
+            this.load_symbols ();
+            this.on_pull_interval_updated ();
+            this.on_dark_theme_updated ();
         }
 
         private void bind_setting (string setting_prop, string state_prop) {
@@ -46,18 +47,30 @@ namespace Markets {
             );
         }
 
-        public void on_search_query_updated () {
+        private void on_symbols_updated () {
+            this.on_tick ();
+        }
+
+        private bool on_tick () {
+            this.update.begin ((obj, res) => {
+                this.update.end (res);
+            });
+
+            return true;
+        }
+
+        private void on_search_query_updated () {
             this.search.begin (this.state.search_query, (obj, res) => {
                 this.search.end (res);
             });
         }
 
-        public void on_dark_theme_updated () {
+        private void on_dark_theme_updated () {
             Gtk.Settings.get_default ().gtk_application_prefer_dark_theme =
                 this.state.dark_theme;
         }
 
-        public void on_pull_interval_updated () {
+        private void on_pull_interval_updated () {
             if (this.timeout_id != null) {
                 Source.remove (this.timeout_id);
             }
@@ -66,13 +79,13 @@ namespace Markets {
             this.timeout_id = Timeout.add_seconds (interval, this.on_tick);
         }
 
-        public async void search (string query) {
+        private async void search (string query) {
             if (query == null || query.length == 0) {
                 this.state.search_results = new ArrayList<Symbol> ();
                 return;
             }
 
-            this.state.network_status = NetworkStatus.IN_PROGRESS;
+            this.state.network_status = State.NetworkStatus.IN_PROGRESS;
 
             var url = @"$BASE_URL/v1/finance/search" +
                       @"?q=$query" +
@@ -91,19 +104,24 @@ namespace Markets {
             var quotes = json.get_object ().get_array_member ("quotes");
             for (var i = 0; i < quotes.get_length (); i++) {
                 var object = quotes.get_object_element (i);
-                search_results.add (new Symbol.from_json_object (object));
+                search_results.add (new Symbol.from_search (object));
             }
 
             this.state.search_results = search_results;
 
-            this.state.network_status = NetworkStatus.IDLE;
+            this.state.network_status = State.NetworkStatus.IDLE;
         }
 
-        public async void update () {
+        private async void update () {
+            if (this.state.symbols.size == 0) {
+                warning ("No symbols. Skipping update.");
+                return;
+            }
+
             string ids;
             ids = string.joinv (
                 ",",
-                this.state.get_favourite_symbol_ids ()
+                this.state.get_symbol_ids ()
             );
             ids = Soup.URI.encode (ids, ",");
 
@@ -112,6 +130,7 @@ namespace Markets {
                 ",",
                 "symbol",
                 "marketState",
+                "quoteType",
                 "shortName",
                 "exchange",
                 "currency",
@@ -123,7 +142,7 @@ namespace Markets {
             );
             fields = Soup.URI.encode (fields, ",");
 
-            this.state.network_status = NetworkStatus.IN_PROGRESS;
+            this.state.network_status = State.NetworkStatus.IN_PROGRESS;
 
             var url = @"$BASE_URL/v7/finance/quote" +
                       "?lang=en-US" +
@@ -140,12 +159,12 @@ namespace Markets {
             for (var i = 0; i < objects.get_length (); i++) {
                 var object = objects.get_object_element (i);
                 var id = object.get_string_member ("symbol");
-                this.state.find_favourite_symbol (id).update (object);
+                this.state.find_symbol (id).update (object);
             }
 
-            this.state.network_status = NetworkStatus.IDLE;
+            this.state.network_status = State.NetworkStatus.IDLE;
 
-            this.store_favourite_symbols ();
+            this.store_symbols ();
         }
 
         private string get_config_file () {
@@ -161,11 +180,11 @@ namespace Markets {
             }
 
             return config_dir
-                    .resolve_relative_path ("favourite-symbols.json")
+                    .resolve_relative_path ("symbols.json")
                     .get_path ();
         }
 
-        private void store_favourite_symbols () {
+        private void store_symbols () {
             var path = this.get_config_file ();
 
             Json.Builder builder = new Json.Builder ();
@@ -177,7 +196,7 @@ namespace Markets {
 
             builder.set_member_name ("symbols");
             builder.begin_array ();
-            foreach (Symbol symbol in this.state.favourite_symbols) {
+            foreach (Symbol symbol in this.state.symbols) {
                 symbol.build_json (builder);
             }
             builder.end_array ();
@@ -190,7 +209,7 @@ namespace Markets {
             generator.to_file (path);
         }
 
-        public void load_favourite_symbols () {
+        private void load_symbols () {
             try {
                 var path = this.get_config_file ();
 
@@ -206,14 +225,14 @@ namespace Markets {
                 var symbols = new ArrayList<Symbol> ();
                 for (var i = 0; i < objects.get_length (); i++) {
                     var object = objects.get_object_element (i);
-                    symbols.add (new Symbol.from_json_object (object));
+                    symbols.add (new Symbol.from_quote (object));
                 }
 
-                this.state.favourite_symbols = symbols;
+                this.state.symbols = symbols;
             } catch (Error e) {
                 warning ("The config file doesn't exist. Adding default symbols.");
 
-                this.state.favourite_symbols = new ArrayList<Symbol>.wrap ({
+                this.state.symbols = new ArrayList<Symbol>.wrap ({
                     new Symbol.from_mock (
                         "TSLA",
                         "EQUITY",

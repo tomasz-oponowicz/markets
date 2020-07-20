@@ -20,21 +20,19 @@ public class Markets.SelectionHeaderBar : Hdy.HeaderBar {
 
     [GtkCallback]
     private void on_cancel_clicked () {
-        this.state.view_mode = Markets.ViewMode.PRESENTATION;
+        this.state.view_mode = State.ViewMode.PRESENTATION;
     }
 
     [GtkCallback]
     private void on_delete_clicked () {
-        var filtered = new ArrayList<Symbol> ();
-
-        foreach (Symbol symbol in this.state.favourite_symbols) {
-            if (!symbol.selected) {
-                filtered.add (symbol);
+        ArrayList<string> ids = new ArrayList<string> ();
+        foreach (Symbol symbol in this.state.symbols) {
+            if (symbol.selected) {
+                ids.add (symbol.id);
             }
         }
 
-        // create new array in order to enforce a notification
-        this.state.favourite_symbols = filtered;
+        this.state.remove_symbols (ids);
     }
 
     private void on_total_selected_updated () {

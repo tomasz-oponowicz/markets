@@ -1,101 +1,114 @@
 using Gee;
 
-public enum Markets.ViewMode {
-    PRESENTATION,
-    SELECTION
-}
-
-public enum Markets.SelectionMode {
-    NONE,
-    ALL,
-}
-
-public enum Markets.NetworkStatus {
-    IDLE,
-    IN_PROGRESS,
-}
-
 public class Markets.State : Object {
-    public Markets.ViewMode view_mode {
-        get;
-        set;
-        default = Markets.ViewMode.PRESENTATION;
+    public enum ViewMode {
+        PRESENTATION,
+        SELECTION
     }
 
-    public Markets.SelectionMode selection_mode {
-        get;
-        set;
-        default = Markets.SelectionMode.NONE;
+    public enum SelectionMode {
+        NONE,
+        ALL,
+    }
+
+    public enum NetworkStatus {
+        IDLE,
+        IN_PROGRESS,
+    }
+
+    public ViewMode view_mode {
+        get; set; default = ViewMode.PRESENTATION;
+    }
+
+    public SelectionMode selection_mode {
+        get; set; default = SelectionMode.NONE;
     }
 
     public int total_selected {
-        get;
-        set;
-        default = 0;
+        get; set; default = 0;
     }
 
-    public Markets.NetworkStatus network_status {
-        get;
-        set;
-        default = Markets.NetworkStatus.IDLE;
+    public NetworkStatus network_status {
+        get; set; default = NetworkStatus.IDLE;
     }
 
     public ArrayList<Symbol> search_results {
-        get;
-        set;
-        default = new ArrayList<Symbol> ();
+        get; set; default = new ArrayList<Symbol> ();
     }
 
     public string search_query {
-        get;
-        set;
-        default = "";
+        get; set; default = "";
     }
 
     public int pull_interval {
-        get;
-        set;
+        get; set;
     }
 
     public bool dark_theme {
-        get;
-        set;
+        get; set;
     }
 
     public int search_selection {
-        get;
-        set;
-        default = -1;
+        get; set; default = -1;
     }
 
     public int window_width {
-        get;
-        set;
+        get; set;
     }
 
     public int window_height {
-        get;
-        set;
+        get; set;
     }
 
-    public ArrayList<Symbol> favourite_symbols {
-        get;
-        set;
-        default = new ArrayList<Symbol> ();
+    public ArrayList<Symbol> symbols {
+        get; set; default = new ArrayList<Symbol> ();
     }
 
-    public string[] get_favourite_symbol_ids () {
+    public void add_symbol (Symbol new_symbol) {
+        var copy = new ArrayList<Symbol> ();
+
+        copy.add_all (this.symbols);
+        copy.add (new_symbol);
+
+        // create new array in order to enforce a notification
+        this.symbols = copy;
+    }
+
+    public void remove_symbols (ArrayList<string> ids) {
+        var filtered = new ArrayList<Symbol> ();
+
+        foreach (Symbol symbol in this.symbols) {
+            var found = false;
+
+            foreach (string id in ids) {
+                if (symbol.id == id) {
+                    found = true;
+                    break;
+                }
+            }
+
+            if (!found) {
+                filtered.add (symbol);
+            }
+        }
+
+
+        // create new array in order to enforce a notification
+        this.symbols = filtered;
+    }
+
+    public string[] get_symbol_ids () {
         var ids = new HashSet<string> ();
 
-        foreach (Symbol symbol in this.favourite_symbols) {
+        foreach (Symbol symbol in this.symbols) {
             ids.add (symbol.id);
         }
 
         return ids.to_array ();
     }
 
-    public Symbol ? find_favourite_symbol (string id) {
-        foreach (Symbol symbol in this.favourite_symbols) {
+    public Symbol ? find_symbol (string id) {
+        foreach (Symbol symbol in this.symbols) {
             if (symbol.id == id) {
                 return symbol;
             }

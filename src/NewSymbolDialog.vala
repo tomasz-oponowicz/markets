@@ -20,20 +20,22 @@ public class Markets.NewSymbolDialog : Hdy.Dialog {
 
         this.state = state;
         this.store = new Gtk.ListStore (1, typeof (string));
-
         this.results_view.model = this.store;
 
+        // Reset the search state.
+        //
+        // There might be leftovers from a previous search.
+        this.state.search_query = "";
+        this.state.search_results = new ArrayList<Symbol> ();
+
         this.state.notify["search-results"].connect (this.on_search_results_updated);
-        this.on_search_results_updated ();
     }
 
     private void on_search_results_updated () {
         this.store.clear ();
 
         Gtk.TreeIter iter;
-        var search_results = this.state.search_results;
-        for (var i = 0; i < search_results.size; i++) {
-            var symbol = search_results[i];
+        foreach (Symbol symbol in this.state.search_results) {
             this.store.append (out iter);
             var label = symbol.id + " · " +
                         symbol.name + " · " +
@@ -60,11 +62,6 @@ public class Markets.NewSymbolDialog : Hdy.Dialog {
     [GtkCallback]
     private void on_save_clicked () {
         var new_symbol = this.state.search_results[this.state.search_selection];
-
-        var copy = new ArrayList<Symbol> ();
-        copy.add_all (this.state.favourite_symbols);
-        copy.add (new_symbol);
-
-        this.state.favourite_symbols = copy;
+        this.state.add_symbol (new_symbol);
     }
 }

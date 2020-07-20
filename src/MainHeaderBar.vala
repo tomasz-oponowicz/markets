@@ -24,11 +24,11 @@ public class Markets.MainHeaderBar : Hdy.HeaderBar {
 
     [GtkCallback]
     private void on_select_clicked () {
-        this.state.view_mode = Markets.ViewMode.SELECTION;
+        this.state.view_mode = State.ViewMode.SELECTION;
     }
 
     private void on_network_status_updated () {
         this.spinner.visible =
-            this.state.network_status == Markets.NetworkStatus.IN_PROGRESS;
+            this.state.network_status == State.NetworkStatus.IN_PROGRESS;
     }
 }
