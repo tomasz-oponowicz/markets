@@ -9,7 +9,7 @@ A market tracker for Linux Smartphones (Librem 5, PinePhone).
 
 1. Install dependencies:
 
-       pacman -S libsoup libgee libhandy json-glib glib2 gtk3 meson ninja
+       sudo pacman -S libsoup libgee libhandy json-glib glib2 gtk3 meson ninja
 1. Clone the repository
 
        git clone https://github.com/bitstower/markets.git
