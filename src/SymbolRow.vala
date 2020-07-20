@@ -22,8 +22,11 @@ public class Markets.SymbolRow : Gtk.ListBoxRow {
     [GtkChild]
     private Gtk.CheckButton checkbox;
 
-    private Symbol symbol;
     private State state;
+
+    public Symbol symbol {
+        get; private set;
+    }
 
     public SymbolRow (Symbol symbol, State state) {
         this.symbol = symbol;

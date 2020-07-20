@@ -22,6 +22,7 @@ namespace Markets {
             this.state.notify["dark-theme"].connect (this.on_dark_theme_updated);
             this.state.notify["pull-interval"].connect (this.on_pull_interval_updated);
             this.state.notify["search-query"].connect (this.on_search_query_updated);
+            this.state.notify["link"].connect (this.on_link_updated);
         }
 
         public State state {
@@ -61,6 +62,21 @@ namespace Markets {
             this.search.begin (this.state.search_query, (obj, res) => {
                 this.search.end (res);
             });
+        }
+
+        private void on_link_updated () {
+            if (this.state.link == null) {
+                return;
+            }
+
+            try {
+                Gtk.show_uri_on_window(null, this.state.link, Gdk.CURRENT_TIME);
+            } catch (Error e) {
+                warning( @"An error occured when opening the link, message: $(e.message)");
+            }
+
+            // reset value in order to allow triggering the same url many times
+            this.state.link = null;
         }
 
         private void on_dark_theme_updated () {

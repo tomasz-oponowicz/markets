@@ -13,6 +13,11 @@ public class Markets.SymbolsView : Gtk.ScrolledWindow {
         this.on_symbols_update ();
     }
 
+    [GtkCallback]
+    private void on_row_click (Gtk.ListBox box, Gtk.ListBoxRow row) {
+        this.state.link = ((SymbolRow) row).symbol.link;
+    }
+
     private void on_symbols_update () {
         var children = this.symbols.get_children ();
         foreach (Gtk.Widget widget in children) {

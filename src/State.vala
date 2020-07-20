@@ -58,6 +58,10 @@ public class Markets.State : Object {
         get; set;
     }
 
+    public string link {
+        get; set;
+    }
+
     public Gee.ArrayList<Symbol> symbols {
         get; set; default = new Gee.ArrayList<Symbol> ();
     }

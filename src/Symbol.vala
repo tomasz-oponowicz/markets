@@ -53,6 +53,12 @@ public class Markets.Symbol : Object {
         }
     }
 
+    public string link  {
+        owned get {
+            return @"https://finance.yahoo.com/quote/$(this.id)";
+        }
+    }
+
     public Symbol.from_search (Json.Object json) {
         if (json.has_member ("symbol")) {
             this.id = json.get_string_member ("symbol");
