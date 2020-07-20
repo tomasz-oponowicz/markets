@@ -128,7 +128,7 @@ namespace Markets {
 
         private async void update () {
             if (this.state.symbols.size == 0) {
-                warning ("No symbols. Skipping update.");
+                warning ("No symbols. Skipping the update operation.");
                 return;
             }
 

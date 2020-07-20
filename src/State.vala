@@ -67,6 +67,12 @@ public class Markets.State : Object {
     }
 
     public void add_symbol (Symbol new_symbol) {
+        var found = this.find_symbol (new_symbol.id);
+        if (found != null) {
+            warning ("The symbol already exists. Skipping the add operation.");
+            return;
+        }
+
         var copy = new Gee.ArrayList<Symbol> ();
 
         copy.add_all (this.symbols);
