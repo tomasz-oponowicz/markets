@@ -31,7 +31,7 @@ public class Markets.Symbol : Object {
         get; set; default = "";
     }
 
-    public DateTime? regular_market_time {
+    public DateTime ? regular_market_time {
         get; set; default = null;
     }
 
@@ -87,8 +87,8 @@ public class Markets.Symbol : Object {
         string id,
         string name,
         string instrument_type,
-        string exchange_name)
-    {
+        string exchange_name
+    ) {
         this.id = id;
         this.name = name;
         this.instrument_type = instrument_type;
@@ -122,7 +122,7 @@ public class Markets.Symbol : Object {
 
         if (json.has_member ("regularMarketTime")) {
             this.regular_market_time = new DateTime.from_unix_utc (
-                json.get_int_member("regularMarketTime")
+                json.get_int_member ("regularMarketTime")
             );
         }
 

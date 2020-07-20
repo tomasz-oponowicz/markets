@@ -1,5 +1,3 @@
-using Gee;
-
 namespace Markets {
     const string BASE_URL = "https://query1.finance.yahoo.com";
 
@@ -7,10 +5,6 @@ namespace Markets {
         private RestClient client;
         private Settings settings;
         private uint ? timeout_id = null;
-
-        public State state {
-            get; private set;
-        }
 
         public Service () {
             this.state = new State ();
@@ -28,6 +22,10 @@ namespace Markets {
             this.state.notify["dark-theme"].connect (this.on_dark_theme_updated);
             this.state.notify["pull-interval"].connect (this.on_pull_interval_updated);
             this.state.notify["search-query"].connect (this.on_search_query_updated);
+        }
+
+        public State state {
+            get; private set;
         }
 
         public void init () {
@@ -81,7 +79,7 @@ namespace Markets {
 
         private async void search (string query) {
             if (query == null || query.length == 0) {
-                this.state.search_results = new ArrayList<Symbol> ();
+                this.state.search_results = new Gee.ArrayList<Symbol> ();
                 return;
             }
 
@@ -99,7 +97,7 @@ namespace Markets {
 
             var json = yield this.client.fetch (url);
 
-            var search_results = new ArrayList<Symbol> ();
+            var search_results = new Gee.ArrayList<Symbol> ();
 
             var quotes = json.get_object ().get_array_member ("quotes");
             for (var i = 0; i < quotes.get_length (); i++) {
@@ -222,7 +220,7 @@ namespace Markets {
                                .get_object ()
                                .get_array_member ("symbols");
 
-                var symbols = new ArrayList<Symbol> ();
+                var symbols = new Gee.ArrayList<Symbol> ();
                 for (var i = 0; i < objects.get_length (); i++) {
                     var object = objects.get_object_element (i);
                     symbols.add (new Symbol.from_quote (object));
@@ -232,7 +230,7 @@ namespace Markets {
             } catch (Error e) {
                 warning ("The config file doesn't exist. Adding default symbols.");
 
-                this.state.symbols = new ArrayList<Symbol>.wrap ({
+                this.state.symbols = new Gee.ArrayList<Symbol>.wrap ({
                     new Symbol.from_mock (
                         "TSLA",
                         "EQUITY",

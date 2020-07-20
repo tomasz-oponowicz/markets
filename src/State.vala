@@ -1,5 +1,3 @@
-using Gee;
-
 public class Markets.State : Object {
     public enum ViewMode {
         PRESENTATION,
@@ -32,8 +30,8 @@ public class Markets.State : Object {
         get; set; default = NetworkStatus.IDLE;
     }
 
-    public ArrayList<Symbol> search_results {
-        get; set; default = new ArrayList<Symbol> ();
+    public Gee.ArrayList<Symbol> search_results {
+        get; set; default = new Gee.ArrayList<Symbol> ();
     }
 
     public string search_query {
@@ -60,12 +58,12 @@ public class Markets.State : Object {
         get; set;
     }
 
-    public ArrayList<Symbol> symbols {
-        get; set; default = new ArrayList<Symbol> ();
+    public Gee.ArrayList<Symbol> symbols {
+        get; set; default = new Gee.ArrayList<Symbol> ();
     }
 
     public void add_symbol (Symbol new_symbol) {
-        var copy = new ArrayList<Symbol> ();
+        var copy = new Gee.ArrayList<Symbol> ();
 
         copy.add_all (this.symbols);
         copy.add (new_symbol);
@@ -74,8 +72,8 @@ public class Markets.State : Object {
         this.symbols = copy;
     }
 
-    public void remove_symbols (ArrayList<string> ids) {
-        var filtered = new ArrayList<Symbol> ();
+    public void remove_symbols (Gee.ArrayList<string> ids) {
+        var filtered = new Gee.ArrayList<Symbol> ();
 
         foreach (Symbol symbol in this.symbols) {
             var found = false;
@@ -98,7 +96,7 @@ public class Markets.State : Object {
     }
 
     public string[] get_symbol_ids () {
-        var ids = new HashSet<string> ();
+        var ids = new Gee.HashSet<string> ();
 
         foreach (Symbol symbol in this.symbols) {
             ids.add (symbol.id);

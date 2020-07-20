@@ -1,16 +1,12 @@
-using Gee;
-
 [GtkTemplate (ui = "/com/bitstower/Markets/SelectionHeaderBar.ui")]
 public class Markets.SelectionHeaderBar : Hdy.HeaderBar {
 
     [GtkChild]
     private Gtk.Button delete_button;
 
-    private Markets.State state;
+    private State state;
 
-    public SelectionHeaderBar (Markets.State state) {
-        Object ();
-
+    public SelectionHeaderBar (State state) {
         this.state = state;
 
         this.state.notify["total-selected"].connect (this.on_total_selected_updated);
@@ -25,7 +21,7 @@ public class Markets.SelectionHeaderBar : Hdy.HeaderBar {
 
     [GtkCallback]
     private void on_delete_clicked () {
-        ArrayList<string> ids = new ArrayList<string> ();
+        Gee.ArrayList<string> ids = new Gee.ArrayList<string> ();
         foreach (Symbol symbol in this.state.symbols) {
             if (symbol.selected) {
                 ids.add (symbol.id);

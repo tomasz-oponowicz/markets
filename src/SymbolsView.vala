@@ -4,11 +4,9 @@ public class Markets.SymbolsView : Gtk.ScrolledWindow {
     [GtkChild]
     private Gtk.ListBox symbols;
 
-    private Markets.State state;
+    private State state;
 
-    public SymbolsView (Markets.State state) {
-        Object ();
-
+    public SymbolsView (State state) {
         this.state = state;
 
         this.state.notify["symbols"].connect (this.on_symbols_update);
@@ -22,7 +20,7 @@ public class Markets.SymbolsView : Gtk.ScrolledWindow {
         }
 
         foreach (Symbol symbol in this.state.symbols) {
-            symbols.add (new Markets.SymbolRow (symbol, state));
+            symbols.add (new SymbolRow (symbol, state));
         }
     }
 }

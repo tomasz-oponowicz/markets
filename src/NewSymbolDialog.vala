@@ -1,6 +1,4 @@
-using Gee;
-
-[GtkTemplate (ui = "/com/bitstower/Markets/new_symbol.ui")]
+[GtkTemplate (ui = "/com/bitstower/Markets/NewSymbolDialog.ui")]
 public class Markets.NewSymbolDialog : Hdy.Dialog {
 
     [GtkChild]
@@ -15,7 +13,7 @@ public class Markets.NewSymbolDialog : Hdy.Dialog {
     private Markets.State state;
     private Gtk.ListStore store;
 
-    public NewSymbolDialog (Gtk.Window parent, Markets.State state) {
+    public NewSymbolDialog (Gtk.Window parent, State state) {
         Object (transient_for: parent, use_header_bar: 1);
 
         this.state = state;
@@ -26,7 +24,7 @@ public class Markets.NewSymbolDialog : Hdy.Dialog {
         //
         // There might be leftovers from a previous search.
         this.state.search_query = "";
-        this.state.search_results = new ArrayList<Symbol> ();
+        this.state.search_results = new Gee.ArrayList<Symbol> ();
 
         this.state.notify["search-results"].connect (this.on_search_results_updated);
     }

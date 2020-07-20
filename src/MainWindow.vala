@@ -4,25 +4,25 @@ public class Markets.MainWindow : Gtk.ApplicationWindow {
     [GtkChild]
     private Gtk.Stack stack;
 
-    private Markets.State state;
+    private State state;
 
-    private Markets.MainHeaderBar main_header_bar;
+    private MainHeaderBar main_header_bar;
 
-    private Markets.SelectionHeaderBar selection_header_bar;
+    private SelectionHeaderBar selection_header_bar;
 
-    public MainWindow (Gtk.Application app, Markets.State state) {
+    public MainWindow (Gtk.Application app, State state) {
         Object (application: app);
 
         this.state = state;
 
-        this.main_header_bar = new Markets.MainHeaderBar (this, state);
-        this.selection_header_bar = new Markets.SelectionHeaderBar (state);
+        this.main_header_bar = new MainHeaderBar (this, state);
+        this.selection_header_bar = new SelectionHeaderBar (state);
         this.set_titlebar (this.main_header_bar);
 
-        var symbols_view = new Markets.SymbolsView (this.state);
+        var symbols_view = new SymbolsView (this.state);
         stack.add_named (symbols_view, "symbols_view");
 
-        var no_symbols_view = new Markets.NoSymbolsView ();
+        var no_symbols_view = new NoSymbolsView ();
         stack.add_named (no_symbols_view, "no_symbols_view");
 
         this.delete_event.connect (this.on_quit);

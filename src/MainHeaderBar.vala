@@ -6,9 +6,7 @@ public class Markets.MainHeaderBar : Hdy.HeaderBar {
     [GtkChild]
     private Gtk.Spinner spinner;
 
-    public MainHeaderBar (Gtk.ApplicationWindow parent_window, Markets.State state) {
-        Object ();
-
+    public MainHeaderBar (Gtk.ApplicationWindow parent_window, State state) {
         this.parent_window = parent_window;
         this.state = state;
 
@@ -17,7 +15,7 @@ public class Markets.MainHeaderBar : Hdy.HeaderBar {
 
     [GtkCallback]
     private void on_add_clicked () {
-        var dialog = new Markets.NewSymbolDialog (this.parent_window, this.state);
+        var dialog = new NewSymbolDialog (this.parent_window, this.state);
         dialog.run ();
         dialog.destroy ();
     }

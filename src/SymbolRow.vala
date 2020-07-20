@@ -23,11 +23,9 @@ public class Markets.SymbolRow : Gtk.ListBoxRow {
     private Gtk.CheckButton checkbox;
 
     private Symbol symbol;
-    private Markets.State state;
+    private State state;
 
-    public SymbolRow (Symbol symbol, Markets.State state) {
-        Object ();
-
+    public SymbolRow (Symbol symbol, State state) {
         this.symbol = symbol;
         this.state = state;
 
@@ -77,8 +75,8 @@ public class Markets.SymbolRow : Gtk.ListBoxRow {
 
         if (s.regular_market_time != null) {
             this.time.label = s.regular_market_time
-                .to_local ()
-                .format ("%b %e, %X");
+                               .to_local ()
+                               .format ("%b %e, %X");
         }
     }
 
