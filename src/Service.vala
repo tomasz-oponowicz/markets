@@ -70,9 +70,9 @@ namespace Markets {
             }
 
             try {
-                Gtk.show_uri_on_window(null, this.state.link, Gdk.CURRENT_TIME);
+                Gtk.show_uri_on_window (null, this.state.link, Gdk.CURRENT_TIME);
             } catch (Error e) {
-                warning( @"An error occured when opening the link, message: $(e.message)");
+                warning (@"An error occured when opening the link, message: $(e.message)");
             }
 
             // reset value in order to allow triggering the same url many times
