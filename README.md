@@ -17,6 +17,7 @@ A market tracker for Linux Smartphones (Librem 5, PinePhone).
 
        cd ./markets
        meson build
+       cd ./build
        ninja
        
 1. Install the application:
