@@ -114,6 +114,8 @@ namespace Markets {
                 "marketState",
                 "shortName",
                 "exchange",
+                "currency",
+                "priceHint",
                 "regularMarketPrice",
                 "regularMarketChange",
                 "regularMarketChangePercent",

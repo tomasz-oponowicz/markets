@@ -14,7 +14,10 @@ public class Markets.SymbolRow : Gtk.ListBoxRow {
     private Gtk.Label currency;
 
     [GtkChild]
-    private Gtk.Label details;
+    private Gtk.Label market;
+
+    [GtkChild]
+    private Gtk.Label time;
 
     [GtkChild]
     private Gtk.CheckButton checkbox;
@@ -38,11 +41,43 @@ public class Markets.SymbolRow : Gtk.ListBoxRow {
     }
 
     private void on_symbol_update () {
+        int precision = this.symbol.precision;
+        this.price.label = @"%'.$(precision)F".printf (this.symbol.regular_market_price);
+
+        this.change.label =
+            @"%'+.$(precision)F (%'+.2F)".printf (
+                this.symbol.regular_market_change,
+                this.symbol.regular_market_change_percent
+            );
+
+        var change_style = this.change.get_style_context ();
+        change_style.remove_class ("profit");
+        change_style.remove_class ("loss");
+        if (this.symbol.regular_market_change >= 0) {
+            change_style.add_class ("profit");
+        } else {
+            change_style.add_class ("loss");
+        }
+
+        var market_style = this.market.get_style_context ();
+        market_style.remove_class ("open");
+        market_style.remove_class ("dim-label");
+        if (this.symbol.is_marked_closed) {
+            this.market.label = "Market Closed";
+            market_style.add_class ("dim-label");
+        } else {
+            this.market.label = "Market Open";
+            market_style.add_class ("open");
+        }
+
         this.title.label = this.symbol.name;
-        this.change.label = "%.2f".printf (this.symbol.regular_market_change);
-        this.price.label = "%.2f".printf (this.symbol.regular_market_price);
-        this.currency.label = "USD";
-        this.details.label = "MARKET OPEN";
+        this.currency.label = this.symbol.currency.up ();
+
+        if (this.symbol.regular_market_time != null) {
+            this.time.label = this.symbol.regular_market_time
+                .to_local ()
+                .format ("%b %e, %X");
+        }
     }
 
     private void on_view_mode_update () {

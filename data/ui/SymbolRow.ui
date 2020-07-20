@@ -40,12 +40,13 @@
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="halign">start</property>
-                <property name="margin_bottom">10</property>
+                <property name="margin_bottom">5</property>
                 <property name="label"></property>
                 <property name="single_line_mode">True</property>
-                <attributes>
-                  <attribute name="font-desc" value="Cantarell Bold 10"/>
-                </attributes>
+                <style>
+                  <class name="text-md"/>
+                  <class name="text-bold"/>
+                </style>
               </object>
               <packing>
                 <property name="expand">False</property>
@@ -64,9 +65,6 @@
                     <property name="valign">end</property>
                     <property name="margin_bottom">3</property>
                     <property name="label"></property>
-                    <style>
-                      <class name="profit"/>
-                    </style>
                   </object>
                   <packing>
                     <property name="expand">False</property>
@@ -83,10 +81,10 @@
                     <property name="xpad">0</property>
                     <property name="label"></property>
                     <property name="single_line_mode">True</property>
-                    <attributes>
-                      <attribute name="font-desc" value="Cantarell Bold 24"/>
-                      <attribute name="weight" value="bold"/>
-                    </attributes>
+                    <style>
+                      <class name="text-lg"/>
+                      <class name="text-bold"/>
+                    </style>
                   </object>
                   <packing>
                     <property name="expand">False</property>
@@ -102,9 +100,9 @@
                     <property name="margin_start">5</property>
                     <property name="margin_bottom">3</property>
                     <property name="label"></property>
-                    <attributes>
-                      <attribute name="weight" value="bold"/>
-                    </attributes>
+                    <style>
+                      <class name="text-bold"/>
+                    </style>
                   </object>
                   <packing>
                     <property name="expand">False</property>
@@ -120,18 +118,47 @@
               </packing>
             </child>
             <child>
-              <object class="GtkLabel" id="details">
+              <object class="GtkBox">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
-                <property name="halign">start</property>
-                <property name="margin_top">5</property>
-                <property name="label">MARKET OPEN</property>
-                <attributes>
-                  <attribute name="font-desc" value="Cantarell 8"/>
-                </attributes>
-                <style>
-                  <class name="dim-label"/>
-                </style>
+                <child>
+                  <object class="GtkLabel" id="market">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="halign">start</property>
+                    <property name="margin_top">5</property>
+                    <style>
+                      <class name="text-sm"/>
+                    </style>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkLabel">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="halign">start</property>
+                    <property name="margin_top">5</property>
+                    <property name="label"> · </property>
+                    <attributes>
+                    </attributes>
+                    <style>
+                      <class name="dim-label"/>
+                      <class name="text-sm"/>
+                    </style>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="time">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="halign">start</property>
+                    <property name="margin_top">5</property>
+                    <style>
+                      <class name="dim-label"/>
+                      <class name="text-sm"/>
+                    </style>
+                  </object>
+                </child>
               </object>
               <packing>
                 <property name="expand">False</property>

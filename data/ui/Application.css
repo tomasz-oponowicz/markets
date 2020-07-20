@@ -1,11 +1,23 @@
-.profit {
+.profit, .open {
   color: #33d17a;
 }
 
-.not-valid image {
-  color: @warning_color;
+.loss {
+    color: #e01b24;
 }
 
-.valid image {
-  color: #33d17a;
+.text-lg {
+    font-size: 2em;
+}
+
+.text-md {
+    font-size: 1em;
+}
+
+.text-sm {
+    font-size: 0.8em;
+}
+
+.text-bold {
+    font-weight: 700;
 }
