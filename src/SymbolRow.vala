@@ -51,7 +51,7 @@ public class Markets.SymbolRow : Gtk.ListBoxRow {
         this.currency.label = s.currency.up ();
 
         this.change.label =
-            @"%'+.$(s.precision)F (%'+.2F)".printf (
+            @"%'+.$(s.precision)F (%'+.2F%)".printf (
                 s.regular_market_change,
                 s.regular_market_change_percent
             );
