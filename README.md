@@ -1,6 +1,16 @@
 # Markets
 
-A market tracker designed for Linux Smartphones (Librem 5, PinePhone). Track your favourite stocks, currencies or cryptocurrencies.
+The Markets app delivers market data to your fingertips.
+
+Stay on top of the market and never miss an investment opportunity.
+
+Features:
+* Create your personal portfolio
+* Easily follow stocks, currencies and cryptocurrencies
+* Compatible with Linux smartphones
+* Open specified symbol in Yahoo Finance for more details
+* Adjust pull interval
+* Dark Mode
 
 ![](data/screenshots/symbols.png?raw=true)
 
