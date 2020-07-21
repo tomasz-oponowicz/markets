@@ -1,18 +1,17 @@
 # Markets
 
-The Markets app delivers market data to your fingertips.
+![](data/screenshots/symbols.png?raw=true)
 
-Stay on top of the market and never miss an investment opportunity.
+The Markets app delivers financial data to your fingertips. Stay on top of the market and never miss an investment opportunity!
 
 Features:
 * Create your personal portfolio
-* Easily follow stocks, currencies and cryptocurrencies
-* Compatible with Linux smartphones
-* Open specified symbol in Yahoo Finance for more details
-* Adjust pull interval
+* Track stocks, currencies, cryptocurrencies, commodities and indexes
+* Compatible with Linux smartphones (Librem5, PinePhone)
+* Open any symbol in Yahoo Finance for more details
+* Adjust the refresh rate
 * Dark Mode
 
-![](data/screenshots/symbols.png?raw=true)
 
 ## Build & Install
 
