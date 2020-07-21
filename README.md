@@ -1,6 +1,6 @@
 # Markets
 
-A market tracker for Linux Smartphones (Librem 5, PinePhone). Track your favourite stocks, currencies or cryptocurrencies.
+A market tracker designed for Linux Smartphones (Librem 5, PinePhone). Track your favourite stocks, currencies or cryptocurrencies.
 
 ![](data/screenshots/symbols.png?raw=true)
 
