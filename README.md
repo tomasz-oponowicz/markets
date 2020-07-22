@@ -1,3 +1,5 @@
+![](data/icons/com.bitstower.Markets.svg?raw=true)
+
 # Markets
 
 ![](data/screenshots/symbols.png?raw=true)
