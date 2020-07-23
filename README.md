@@ -14,22 +14,36 @@ Features:
 * Adjust the refresh rate
 * Dark Mode
 
+## Installation
 
-## Build & Install
+### Arch Linux
 
-1. Install dependencies (Arch):
+[markets](https://aur.archlinux.org/packages/markets/) is available in AUR.
 
-       sudo pacman -S libsoup libgee libhandy json-glib glib2 gtk3 meson ninja
-1. Clone the repository
+## Building from source
 
-       git clone https://github.com/bitstower/markets.git
-1. Build the application:
+You'll need the following dependencies:
 
-       cd ./markets
-       meson build
-       cd ./build
-       ninja
-       
-1. Install the application:
+* libsoup
+* libgee
+* libhandy
+* json-glib
+* glib2
+* gtk3
+* meson
+* ninja
 
-       sudo ninja install
+Run `meson build` to configure the build environment. Change to the build directory and run `ninja` to build
+
+```
+meson build --prefix=/usr
+cd build
+ninja
+```
+
+To install, use `ninja install`, then execute with `markets`
+
+```
+sudo ninja install
+markets
+```
