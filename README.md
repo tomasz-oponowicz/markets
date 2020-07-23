@@ -22,6 +22,17 @@ The Markets application delivers financial data to your fingertips. Track stocks
 
 ## Building from source
 
+
+### Option 1: with GNOME Builder
+
+1. Open GNOME Builder
+1. Click the _Clone..._ button
+1. Enter `https://github.com/bitstower/markets.git` in the field _Repository URL_
+1. Click the _Clone the project_ button
+1. Click the _Run_ button to start building application
+
+### Option 2: Option 3: with Meson
+
 You'll need the following dependencies:
 
 * libsoup
@@ -32,6 +43,14 @@ You'll need the following dependencies:
 * gtk3
 * meson
 * ninja
+* git
+
+Clone the repository and change to the project directory
+
+```
+git clone https://github.com/bitstower/markets.git
+cd markets
+```
 
 Run `meson build` to configure the build environment. Change to the build directory and run `ninja` to build
 
