@@ -18,9 +18,7 @@ The Markets application delivers financial data to your fingertips. Track stocks
 
 ## Installation
 
-### Arch Linux
-
-[markets](https://aur.archlinux.org/packages/markets/) is available in AUR.
+* Arch Linux AUR: [markets](https://aur.archlinux.org/packages/markets/)
 
 ## Building from source
 
