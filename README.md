@@ -2,11 +2,16 @@
 
 # Markets
 
-![](data/screenshots/symbols.png?raw=true)
+A simple application to track stocks, currencies and cryptocurrencies.
 
 The Markets app delivers financial data to your fingertips. Stay on top of the market and never miss an investment opportunity!
 
-Features:
+## Screenshots
+
+![](data/screenshots/symbols.png?raw=true)
+
+## Features
+
 * Create your personal portfolio
 * Track stocks, currencies, cryptocurrencies, commodities and indexes
 * Compatible with Linux smartphones (Librem5, PinePhone)
