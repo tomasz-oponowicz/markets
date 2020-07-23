@@ -48,8 +48,8 @@
             "buildsystem" : "meson",
             "sources" : [
                 {
-                    "type" : "git",
-                    "url" : "file:///home/myveo/b/p/Markets"
+                    "type" : "dir",
+                    "path" : "."
                 }
             ]
         }
