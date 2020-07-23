@@ -1,8 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop">
-	<id>com.bitstower.Markets.desktop</id>
-	<metadata_license>CC0-1.0</metadata_license>
-	<project_license>GPL-3.0-or-later</project_license>
-	<description>
-	</description>
+  <id>com.bitstower.Markets.desktop</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+  <developer_name>Bitstower</developer_name>
+  <update_contact>tomasz@zaxo.biz</update_contact>
+  <url type="homepage">https://github.com/bitstower/markets</url>
+  <url type="bugtracker">https://github.com/bitstower/markets/issues</url>
+
+  <name>Markets</name>
+  <summary>A stock, currency and cryptocurrency tracker</summary>
+  <description>
+    <p>
+      The Markets app delivers financial data to your fingertips.
+      Stay on top of the market and never miss an investment opportunity!
+    </p>
+    <p>Features:</p>
+    <ul>
+      <li>Create your personal portfolio</li>
+      <li>Track stocks, currencies, cryptocurrencies, commodities and indexes</li>
+      <li>Compatible with Linux smartphones (Librem5, PinePhone)</li>
+      <li>Open any symbol in Yahoo Finance for more details</li>
+      <li>Adjust the refresh rate</li>
+      <li>Dark Mode</li>
+    </ul>
+  </description>
+
+  <screenshots>
+    <screenshot type="default">
+      <image width="432" height="670">https://github.com/bitstower/markets/raw/master/data/screenshots/symbols.png</image>
+      <caption>Live Prices</caption>
+    </screenshot>
+  </screenshots>
+
+  <releases>
+    <release version="0.1.0" date="2020-07-21">
+      <description>
+        <p>Initial release</p>
+      </description>
+    </release>
+  </releases>
+
+  <content_rating type="oars-1.1" />
 </component>
