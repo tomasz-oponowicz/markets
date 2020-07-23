@@ -26,9 +26,9 @@ The Markets application delivers financial data to your fingertips. Track stocks
 ### Option 1: with GNOME Builder
 
 1. Open GNOME Builder
-1. Click the _Clone..._ button
+1. Click the _Clone Repository_ button
 1. Enter `https://github.com/bitstower/markets.git` in the field _Repository URL_
-1. Click the _Clone the project_ button
+1. Click the _Clone Project_ button
 1. Click the _Run_ button to start building application
 
 ### Option 2: with Meson
