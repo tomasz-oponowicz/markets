@@ -1,10 +1,7 @@
 ![](data/icons/com.bitstower.Markets.svg?raw=true)
 
 # Markets
-
-A simple application to track stocks, currencies and cryptocurrencies.
-
-The Markets app delivers financial data to your fingertips. Stay on top of the market and never miss an investment opportunity!
+The Markets application delivers financial data to your fingertips. Track stocks, currencies and cryptocurrencies. Stay on top of the market and never miss an investment opportunity!
 
 ## Screenshots
 
