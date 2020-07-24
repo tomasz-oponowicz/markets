@@ -42,6 +42,7 @@ You'll need the following dependencies:
 * glib2
 * gtk3
 * meson
+* vala
 * ninja
 * git
 
