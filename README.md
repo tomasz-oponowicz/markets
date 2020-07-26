@@ -18,6 +18,7 @@ The Markets application delivers financial data to your fingertips. Track stocks
 
 ## Installation
 
+* Flathub: [com.bitstower.Markets](https://flathub.org/apps/details/com.bitstower.Markets)
 * Arch Linux AUR: [markets](https://aur.archlinux.org/packages/markets/)
 
 ## Building from source
