@@ -41,7 +41,7 @@
                 <property name="can_focus">False</property>
                 <property name="halign">start</property>
                 <property name="margin_bottom">5</property>
-                <property name="label"></property>
+                <property name="label">__title__</property>
                 <property name="single_line_mode">True</property>
                 <style>
                   <class name="text-md"/>
@@ -64,7 +64,8 @@
                     <property name="can_focus">False</property>
                     <property name="valign">end</property>
                     <property name="margin_bottom">3</property>
-                    <property name="label"></property>
+                    <property name="label">__change__</property>
+                    <attributes>
                   </object>
                   <packing>
                     <property name="expand">False</property>
@@ -78,7 +79,7 @@
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="valign">end</property>
-                    <property name="label"></property>
+                    <property name="label">__price__</property>
                     <property name="single_line_mode">True</property>
                     <style>
                       <class name="text-lg"/>
@@ -98,7 +99,7 @@
                     <property name="valign">end</property>
                     <property name="margin_start">5</property>
                     <property name="margin_bottom">3</property>
-                    <property name="label"></property>
+                    <property name="label">__currency__</property>
                     <style>
                       <class name="text-bold"/>
                     </style>
@@ -126,6 +127,7 @@
                     <property name="can_focus">False</property>
                     <property name="halign">start</property>
                     <property name="margin_top">5</property>
+                    <property name="label" translatable="yes">__market__</property>
                     <style>
                       <class name="text-sm"/>
                     </style>
@@ -152,6 +154,7 @@
                     <property name="can_focus">False</property>
                     <property name="halign">start</property>
                     <property name="margin_top">5</property>
+                    <property name="label" translatable="yes">__time__</property>
                     <style>
                       <class name="dim-label"/>
                       <class name="text-sm"/>
