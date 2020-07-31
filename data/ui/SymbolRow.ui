@@ -78,7 +78,6 @@
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="valign">end</property>
-                    <property name="xpad">0</property>
                     <property name="label"></property>
                     <property name="single_line_mode">True</property>
                     <style>
