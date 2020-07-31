@@ -8,6 +8,9 @@ public class Markets.SymbolRow : Gtk.ListBoxRow {
     private Gtk.Label change;
 
     [GtkChild]
+    private Gtk.Label percent_change;
+
+    [GtkChild]
     private Gtk.Label price;
 
     [GtkChild]
@@ -51,18 +54,29 @@ public class Markets.SymbolRow : Gtk.ListBoxRow {
         this.currency.label = s.currency.up ();
 
         this.change.label =
-            @"%'+.$(s.precision)F (%'+.2F%)".printf (
-                s.regular_market_change,
+            @"%'+.$(s.precision)F".printf (
+                s.regular_market_change
+            );
+
+        this.percent_change.label =
+            @"(%'+.2F%)".printf (
                 s.regular_market_change_percent
             );
 
         var change_style = this.change.get_style_context ();
         change_style.remove_class ("profit");
         change_style.remove_class ("loss");
+
+        var percent_change_style = this.percent_change.get_style_context ();
+        percent_change_style.remove_class ("profit");
+        percent_change_style.remove_class ("loss");
+
         if (s.regular_market_change >= 0) {
             change_style.add_class ("profit");
+            percent_change_style.add_class ("profit");
         } else {
             change_style.add_class ("loss");
+            percent_change_style.add_class ("loss");
         }
 
         var market_style = this.market.get_style_context ();
