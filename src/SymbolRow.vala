@@ -24,7 +24,6 @@ public class Markets.SymbolRow : Gtk.ListBoxRow {
 
     private State state;
 
-
     private Symbol symbol;
 
     public SymbolRow (Symbol symbol, State state) {
