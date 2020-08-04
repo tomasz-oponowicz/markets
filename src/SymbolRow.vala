@@ -24,9 +24,8 @@ public class Markets.SymbolRow : Gtk.ListBoxRow {
 
     private State state;
 
-    public Symbol symbol {
-        get; private set;
-    }
+
+    private Symbol symbol;
 
     public SymbolRow (Symbol symbol, State state) {
         this.symbol = symbol;
@@ -109,6 +108,14 @@ public class Markets.SymbolRow : Gtk.ListBoxRow {
         } else {
             this.symbol.selected = false;
             this.state.total_selected--;
+        }
+    }
+
+    public void on_row_clicked () {
+        if (this.state.view_mode == State.ViewMode.SELECTION) {
+            this.checkbox.active = !this.checkbox.active;
+        } else {
+            this.state.link = this.symbol.link;
         }
     }
 }
