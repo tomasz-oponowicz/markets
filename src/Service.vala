@@ -47,6 +47,7 @@ namespace Markets {
         }
 
         private void on_symbols_updated () {
+            this.store_symbols ();
             this.on_tick ();
         }
 
