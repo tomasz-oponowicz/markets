@@ -34,6 +34,15 @@
   </screenshots>
 
   <releases>
+    <release version="0.2.0" date="2020-07-24">
+      <description>
+        <p>Markets 0.2.0 brings small feature additions and bug fixes.</p>
+        <ul>
+          <li>Added new app icon</li>
+          <li>Fixed various issues</li>
+        </ul>
+      </description>
+    </release>
     <release version="0.1.0" date="2020-07-21">
       <description>
         <p>Initial release</p>
