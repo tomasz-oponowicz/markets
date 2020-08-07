@@ -34,6 +34,14 @@
   </screenshots>
 
   <releases>
+    <release version="0.3.0" date="2020-08-07">
+      <description>
+        <p>Markets 0.3.0 brings bug fixes.</p>
+        <ul>
+          <li>Fixed various issues</li>
+        </ul>
+      </description>
+    </release>
     <release version="0.2.0" date="2020-07-24">
       <description>
         <p>Markets 0.2.0 brings small feature additions and bug fixes.</p>
