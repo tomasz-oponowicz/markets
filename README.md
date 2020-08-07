@@ -1,3 +1,5 @@
+![CI](https://github.com/bitstower/markets/workflows/CI/badge.svg)
+
 ![](data/icons/com.bitstower.Markets.svg?raw=true)
 
 # Markets
