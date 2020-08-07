@@ -24,7 +24,7 @@ jobs:
     - name: Update repository metadata
       run: sudo apt-get update
     - name: Install meson and ninja
-      run: sudo apt-get install python3 python3-pip python3-setuptools python3-wheel ninja-build
+      run: sudo apt-get install meson python3 python3-pip python3-setuptools python3-wheel ninja-build
     - name: Install build essential
       run: sudo apt-get install build-essential valac gettext cmake git appstream-util desktop-file-utils
     - name: Install dependencies
