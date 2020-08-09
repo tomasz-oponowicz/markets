@@ -13,7 +13,7 @@ The Markets application delivers financial data to your fingertips. Track stocks
 
 * Create your personal portfolio
 * Track stocks, currencies, cryptocurrencies, commodities and indexes
-* Compatible with Linux smartphones (Librem5, PinePhone)
+* Designed for Phosh (Librem5, PinePhone) and Gnome
 * Open any symbol in Yahoo Finance for more details
 * Adjust the refresh rate
 * Dark Mode
