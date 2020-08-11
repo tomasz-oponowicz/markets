@@ -4,7 +4,7 @@ bitstower-markets (0.3.0) unstable; urgency=low
 
  -- Tomasz Oponowicz <tomasz@zaxo.biz>  Fri, 7 Aug 2020 00:00:00 +0000
 
-bitstower-markets  (0.2.0) unstable; urgency=low
+bitstower-markets (0.2.0) unstable; urgency=low
 
   * Added new app icon.
   * Fixed various issues.
