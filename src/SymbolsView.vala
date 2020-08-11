@@ -42,6 +42,7 @@ public class Markets.SymbolsView : Gtk.ScrolledWindow {
         ((SymbolRow) row).on_row_clicked ();
     } */
 
+
     private void on_symbols_update () {
         var children = this.symbols.get_children ();
         foreach (Gtk.Widget widget in children) {

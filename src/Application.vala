@@ -65,6 +65,7 @@ public class Markets.Application : Gtk.Application {
         dialog.program_name = "Markets";
         dialog.comments = "A market tracker for Linux Smartphones and Tablets.";
         dialog.authors = { "Tomasz Oponowicz" };
+        dialog.artists = {"Gustavo Reis"};
         dialog.license_type = Gtk.License.GPL_3_0;
         dialog.website = "https://bitstower.com";
         dialog.website_label = "Official webpage";
@@ -89,7 +90,6 @@ public class Markets.Application : Gtk.Application {
 
     public static int main (string[] args) {
         var app = new Application ();
-
         return app.run (args);
     }
 }

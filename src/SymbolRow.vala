@@ -32,8 +32,8 @@ public class Markets.SymbolRow : Gtk.ListBoxRow {
     static Gtk.TargetEntry[] entries = {
 	    Gtk.TargetEntry () {
 		    target = "GTK_LIST_BOX_ROW", flags = Gtk.TargetFlags.SAME_APP, info = 0
-		}
-	};
+      }
+    };
 
     public SymbolRow (Symbol symbol, State state) {
         this.symbol = symbol;
