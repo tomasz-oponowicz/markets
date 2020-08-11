@@ -22,11 +22,18 @@ public class Markets.SymbolRow : Gtk.ListBoxRow {
     [GtkChild]
     private Gtk.CheckButton checkbox;
 
+    [GtkChild]
+    private Gtk.EventBox drag_handle;
+
     private State state;
 
-    public Symbol symbol {
-        get; private set;
-    }
+    private Symbol symbol;
+
+    static Gtk.TargetEntry[] entries = {
+	    Gtk.TargetEntry () {
+		    target = "GTK_LIST_BOX_ROW", flags = Gtk.TargetFlags.SAME_APP, info = 0
+		}
+	};
 
     public SymbolRow (Symbol symbol, State state) {
         this.symbol = symbol;
@@ -39,7 +46,61 @@ public class Markets.SymbolRow : Gtk.ListBoxRow {
         this.on_symbol_update ();
         this.on_view_mode_update ();
         this.on_selection_mode_update ();
+
+        Gtk.drag_source_set (
+            this.drag_handle, Gdk.ModifierType.BUTTON1_MASK, entries, Gdk.DragAction.MOVE
+        );
+
+        this.drag_handle.drag_begin.connect (handle_drag_begin);
+        this.drag_handle.drag_data_get.connect (handle_drag_data_get);
     }
+
+    public Markets.SymbolsView? get_drag_list_box () {
+        Gtk.Widget? parent = this.get_parent ();
+        if (parent != null) {
+            return parent.get_parent () as Markets.SymbolsView;
+        }
+        return null;
+    }
+
+    private void handle_drag_begin (Gtk.Widget widget, Gdk.DragContext drag_context) {
+
+        Markets.SymbolsView symbols_view;
+        Gtk.Allocation alloc;
+        Cairo.Surface surface;
+        Cairo.Context cr;
+        int x, y;
+
+        get_allocation (out alloc);
+        surface = new Cairo.ImageSurface (
+            Cairo.Format.ARGB32, alloc.width, alloc.height
+        );
+        cr = new Cairo.Context (surface);
+
+        symbols_view = get_drag_list_box ();
+        if (symbols_view != null)
+            symbols_view.drag_row = this;
+
+        get_style_context ().add_class ("dragging");
+        draw (cr);
+        get_style_context ().remove_class ("dragging");
+
+        this.drag_handle.translate_coordinates (this, 0, 0, out x, out y);
+        surface.set_device_offset (-x, -y);
+        Gtk.drag_set_icon_surface (drag_context, surface);
+    }
+
+    private void handle_drag_data_get (
+        Gdk.DragContext ctx, Gtk.SelectionData selection_data,
+        uint info, uint time_
+    ) {
+        uchar[] data = new uchar[(sizeof (Gtk.Widget))];
+        ((Gtk.Widget[])data)[0] = this;
+
+        selection_data.@set (
+            Gdk.Atom.intern_static_string ("GTK_LIST_BOX_ROW"), 32, data
+        );
+	}
 
     private void on_symbol_update () {
         var s = this.symbol;
@@ -109,6 +170,14 @@ public class Markets.SymbolRow : Gtk.ListBoxRow {
         } else {
             this.symbol.selected = false;
             this.state.total_selected--;
+        }
+    }
+
+    public void on_row_clicked () {
+        if (this.state.view_mode == State.ViewMode.SELECTION) {
+            this.checkbox.active = !this.checkbox.active;
+        } else {
+            this.state.link = this.symbol.link;
         }
     }
 }
