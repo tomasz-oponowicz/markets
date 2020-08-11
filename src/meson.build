@@ -30,6 +30,7 @@ markets_c_args = [
   '-DHANDY_USE_UNSTABLE_API',
 ]
 
+add_global_arguments('-rdynamic', language:'c')
 
 executable('markets', markets_sources,
   vala_args: '--target-glib=2.50',
