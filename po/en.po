@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.bitstower.Markets\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-21 10:49+0200\n"
+"POT-Creation-Date: 2020-08-21 15:05+0200\n"
 "PO-Revision-Date: 2020-08-21 10:49+0200\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -127,34 +127,6 @@ msgstr "Window height"
 msgid "Remember the window height."
 msgstr "Remember the window height."
 
-#: data/ui/MainHeaderBar.ui:85
-msgid "Preferences"
-msgstr "Preferences"
-
-#: data/ui/MainHeaderBar.ui:91
-msgid "About Markets"
-msgstr "About Markets"
-
-#: data/ui/NewSymbolDialog.ui:19
-msgid "New symbol"
-msgstr "New symbol"
-
-#: data/ui/NewSymbolDialog.ui:23
-msgid "_Cancel"
-msgstr "_Cancel"
-
-#: data/ui/NewSymbolDialog.ui:39
-msgid "_Add"
-msgstr "_Add"
-
-#: data/ui/NoSymbolsView.ui:27
-msgid "No symbols"
-msgstr "No symbols"
-
-#: data/ui/NoSymbolsView.ui:42
-msgid "Press + to add one."
-msgstr "Press + to add one."
-
 #: data/ui/PreferencesWindow.ui:16 data/ui/PreferencesWindow.ui:20
 msgid "General"
 msgstr "General"
@@ -175,6 +147,38 @@ msgstr "Apppearance"
 msgid "Dark Theme"
 msgstr "Dark Theme"
 
+#: data/ui/NoSymbolsView.ui:27
+msgid "No symbols"
+msgstr "No symbols"
+
+#: data/ui/NoSymbolsView.ui:42
+msgid "Press + to add one."
+msgstr "Press + to add one."
+
+#: data/ui/NewSymbolDialog.ui:19
+msgid "New symbol"
+msgstr "New symbol"
+
+#: data/ui/NewSymbolDialog.ui:23
+msgid "_Cancel"
+msgstr "_Cancel"
+
+#: data/ui/NewSymbolDialog.ui:39
+msgid "_Add"
+msgstr "_Add"
+
+#: data/ui/SymbolsView.ui:58
+msgid "Source: <a href=\"https://finance.yahoo.com/\">Yahoo Finance</a>"
+msgstr "Source: <a href=\"https://finance.yahoo.com/\">Yahoo Finance</a>"
+
+#: data/ui/MainHeaderBar.ui:85
+msgid "Preferences"
+msgstr "Preferences"
+
+#: data/ui/MainHeaderBar.ui:91
+msgid "About Markets"
+msgstr "About Markets"
+
 #: data/ui/SelectionHeaderBar.ui:28
 msgid "Click on a checkbox to select"
 msgstr "Click on a checkbox to select"
@@ -190,10 +194,6 @@ msgstr "Select all"
 #: data/ui/SelectionHeaderBar.ui:120
 msgid "Select none"
 msgstr "Select none"
-
-#: data/ui/SymbolsView.ui:58
-msgid "Source: <a href=\"https://finance.yahoo.com/\">Yahoo Finance</a>"
-msgstr "Source: <a href=\"https://finance.yahoo.com/\">Yahoo Finance</a>"
 
 #: src/Application.vala:66
 msgid "A market tracker for Linux Smartphones and Tablets."
