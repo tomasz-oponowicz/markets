@@ -1,7 +1,11 @@
-data/com.bitstower.Markets.desktop.in
 data/com.bitstower.Markets.appdata.xml.in
+data/com.bitstower.Markets.desktop.in
 data/com.bitstower.Markets.gschema.xml
-src/window.ui
-src/main.vala
-src/window.vala
-
+data/ui/MainHeaderBar.ui
+data/ui/NewSymbolDialog.ui
+data/ui/NoSymbolsView.ui
+data/ui/PreferencesWindow.ui
+data/ui/SelectionHeaderBar.ui
+data/ui/SymbolsView.ui
+src/Application.vala
+src/SymbolRow.vala

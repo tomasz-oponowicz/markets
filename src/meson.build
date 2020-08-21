@@ -14,6 +14,7 @@ markets_sources = [
   'RestClient.vala',
 
   'MainWindow.vala',
+  config_header,
   markets_resources
 ]
 

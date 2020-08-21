@@ -37,9 +37,9 @@
                     <property name="active_id">30</property>
                     <signal name="changed" handler="on_pull_interval_changed" swapped="no"/>
                     <items>
-                      <item id="30" translatable="yes">30</item>
-                      <item id="45" translatable="yes">45</item>
-                      <item id="60" translatable="yes">60</item>
+                      <item id="30">30</item>
+                      <item id="45">45</item>
+                      <item id="60">60</item>
                     </items>
                   </object>
                 </child>

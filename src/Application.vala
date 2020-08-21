@@ -62,13 +62,13 @@ public class Markets.Application : Gtk.Application {
         dialog.set_transient_for (window);
         dialog.set_modal (true);
         dialog.logo_icon_name = "com.bitstower.Markets";
-        dialog.program_name = "Markets";
-        dialog.comments = "A market tracker for Linux Smartphones and Tablets.";
+        dialog.program_name = _("Markets");
+        dialog.comments = _("A market tracker for Linux Smartphones and Tablets.");
         dialog.authors = { "Tomasz Oponowicz" };
         dialog.artists = {"Gustavo Reis"};
         dialog.license_type = Gtk.License.GPL_3_0;
         dialog.website = "https://bitstower.com";
-        dialog.website_label = "Official webpage";
+        dialog.website_label = _("Official webpage");
 
         dialog.run ();
         dialog.destroy ();
@@ -89,6 +89,14 @@ public class Markets.Application : Gtk.Application {
     }
 
     public static int main (string[] args) {
+
+        // Init internationalization support
+        Intl.setlocale (LocaleCategory.ALL, "");
+        string langpack_dir = Path.build_filename (Constants.INSTALL_PREFIX, "share", "locale");
+        Intl.bindtextdomain (Constants.GETTEXT_PACKAGE, langpack_dir);
+        Intl.bind_textdomain_codeset (Constants.GETTEXT_PACKAGE, "UTF-8");
+        Intl.textdomain (Constants.GETTEXT_PACKAGE);
+
         var app = new Application ();
         return app.run (args);
     }
