@@ -1,4 +1,6 @@
 ![CI](https://github.com/bitstower/markets/workflows/CI/badge.svg)
+![i18n](https://hosted.weblate.org/widgets/markets/-/markets/svg-badge.svg)
+
 
 ![](data/icons/com.bitstower.Markets.svg?raw=true)
 
