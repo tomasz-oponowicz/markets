@@ -67,10 +67,10 @@ public class Markets.SymbolRow : Gtk.ListBoxRow {
         market_style.remove_class ("open");
         market_style.remove_class ("dim-label");
         if (s.is_marked_closed) {
-            this.market.label = "Market Closed";
+            this.market.label = _("Market Closed");
             market_style.add_class ("dim-label");
         } else {
-            this.market.label = "Market Open";
+            this.market.label = _("Market Open");
             market_style.add_class ("open");
         }
 
