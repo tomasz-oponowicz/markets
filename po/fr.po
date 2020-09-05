@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: com.bitstower.Markets\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-27 13:40+0200\n"
-"PO-Revision-Date: 2020-08-30 18:38+0000\n"
-"Last-Translator: J. Lavoie <j.lavoie@net-c.ca>\n"
+"PO-Revision-Date: 2020-09-06 03:36+0000\n"
+"Last-Translator: Julien Humbert <julroy67@gmail.com>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/markets/markets/"
 "fr/>\n"
 "Language: fr\n"
@@ -17,26 +17,28 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.2.1-dev\n"
+"X-Generator: Weblate 4.3-dev\n"
 
 #: data/com.bitstower.Markets.appdata.xml.in:6
 msgid "Bitstower"
-msgstr ""
+msgstr "Bitstower"
 
 #: data/com.bitstower.Markets.appdata.xml.in:11
 #: data/com.bitstower.Markets.desktop.in:3 src/Application.vala:65
 msgid "Markets"
-msgstr ""
+msgstr "Marchés"
 
 #: data/com.bitstower.Markets.appdata.xml.in:12
 msgid "A stock, currency and cryptocurrency tracker"
-msgstr ""
+msgstr "Un système de suivi des actions, des devises et des cryptomonnaies"
 
 #: data/com.bitstower.Markets.appdata.xml.in:14
 msgid ""
 "The Markets app delivers financial data to your fingertips. Stay on top of "
 "the market and never miss an investment opportunity!"
 msgstr ""
+"L’application Marchés vous fournit des données financières. Restez au "
+"courant des marchés et ne manquez jamais une opportunité d’investissement !"
 
 #: data/com.bitstower.Markets.appdata.xml.in:18
 msgid "Features:"
@@ -49,18 +51,20 @@ msgstr "Créer votre portfolio personnel"
 #: data/com.bitstower.Markets.appdata.xml.in:21
 msgid "Track stocks, currencies, cryptocurrencies, commodities and indexes"
 msgstr ""
+"Suivez des actions, des devises, des cryptomonnaies, des matières premières "
+"et des indices"
 
 #: data/com.bitstower.Markets.appdata.xml.in:22
 msgid "Compatible with Linux smartphones (Librem5, PinePhone)"
-msgstr ""
+msgstr "Compatible avec les smartphones Linux (Librem5, PinePhone)"
 
 #: data/com.bitstower.Markets.appdata.xml.in:23
 msgid "Open any symbol in Yahoo Finance for more details"
-msgstr ""
+msgstr "Ouvrez n’importe quel symbole dans Yahoo Finance pour plus de détails"
 
 #: data/com.bitstower.Markets.appdata.xml.in:24
 msgid "Adjust the refresh rate"
-msgstr ""
+msgstr "Ajuster le taux de rafraichissement"
 
 #: data/com.bitstower.Markets.appdata.xml.in:25
 msgid "Dark Mode"
@@ -72,139 +76,143 @@ msgstr "Prix en direct"
 
 #: data/com.bitstower.Markets.appdata.xml.in:39
 msgid "Markets 0.3.0 brings bug fixes."
-msgstr ""
+msgstr "Marchés 0.3.0 apporte des corrections de bogues."
 
 #: data/com.bitstower.Markets.appdata.xml.in:41
 #: data/com.bitstower.Markets.appdata.xml.in:50
 msgid "Fixed various issues"
-msgstr ""
+msgstr "Correction de divers problèmes"
 
 #: data/com.bitstower.Markets.appdata.xml.in:47
 msgid "Markets 0.2.0 brings small feature additions and bug fixes."
 msgstr ""
+"Marchés 0.2.0 apporte de petits ajouts de fonctionnalités et des corrections "
+"de bogues."
 
 #: data/com.bitstower.Markets.appdata.xml.in:49
 msgid "Added new app icon"
-msgstr ""
+msgstr "Ajout d’une nouvelle icône d’application"
 
 #: data/com.bitstower.Markets.appdata.xml.in:56
 msgid "Initial release"
-msgstr ""
+msgstr "Première version"
 
 #: data/com.bitstower.Markets.gschema.xml:6
 msgid "Pull interval"
-msgstr ""
+msgstr "Intervalle de tirage"
 
 #: data/com.bitstower.Markets.gschema.xml:7
 msgid "Pull data every X seconds."
-msgstr ""
+msgstr "Tirer les données toutes les X secondes."
 
 #: data/com.bitstower.Markets.gschema.xml:11 data/ui/PreferencesWindow.ui:59
 msgid "Use dark GTK+ theme"
-msgstr ""
+msgstr "Utiliser le thème GTK+ sombre"
 
 #: data/com.bitstower.Markets.gschema.xml:12
 msgid ""
 "Use the dark variant of your GTK+ theme. Please note that not every GTK+ "
 "theme has a dark variant."
 msgstr ""
+"Utiliser la variante sombre du thème GTK+. Veuillez noter que tous les "
+"thèmes GTK+ n’ont pas une variante sombre."
 
 #: data/com.bitstower.Markets.gschema.xml:16
 msgid "Window width"
-msgstr ""
+msgstr "Largeur de la fenêtre"
 
 #: data/com.bitstower.Markets.gschema.xml:17
 msgid "Remember the window width."
-msgstr ""
+msgstr "Se souvenir de la largeur de la fenêtre."
 
 #: data/com.bitstower.Markets.gschema.xml:21
 msgid "Window height"
-msgstr ""
+msgstr "Hauteur de la fenêtre"
 
 #: data/com.bitstower.Markets.gschema.xml:22
 msgid "Remember the window height."
-msgstr ""
+msgstr "Se souvenir de la hauteur de la fenêtre."
 
 #: data/ui/PreferencesWindow.ui:16 data/ui/PreferencesWindow.ui:20
 msgid "General"
-msgstr ""
+msgstr "Général"
 
 #: data/ui/PreferencesWindow.ui:26
 msgid "Update Interval"
-msgstr ""
+msgstr "Intervalle de mise à jour"
 
 #: data/ui/PreferencesWindow.ui:27
 msgid "Pull data every X seconds"
-msgstr ""
+msgstr "Tirer les données toutes les X secondes"
 
 #: data/ui/PreferencesWindow.ui:52
 msgid "Apppearance"
-msgstr ""
+msgstr "Apparence"
 
 #: data/ui/PreferencesWindow.ui:58
 msgid "Dark Theme"
-msgstr ""
+msgstr "Thème sombre"
 
 #: data/ui/NoSymbolsView.ui:27
 msgid "No symbols"
-msgstr ""
+msgstr "Aucun symbole"
 
 #: data/ui/NoSymbolsView.ui:42
 msgid "Press + to add one."
-msgstr ""
+msgstr "Appuyez sur + pour en ajouter un."
 
 #: data/ui/NewSymbolDialog.ui:19
 msgid "New symbol"
-msgstr ""
+msgstr "Nouveau symbole"
 
 #: data/ui/NewSymbolDialog.ui:23
 msgid "_Cancel"
-msgstr ""
+msgstr "A_nnuler"
 
 #: data/ui/NewSymbolDialog.ui:39
 msgid "_Add"
-msgstr ""
+msgstr "_Ajouter"
 
 #: data/ui/SymbolsView.ui:58
 msgid "Source: <a href=\"https://finance.yahoo.com/\">Yahoo Finance</a>"
-msgstr ""
+msgstr "Source : <a href=\"https://finance.yahoo.com/\">Yahoo Finance</a>"
 
 #: data/ui/MainHeaderBar.ui:85
 msgid "Preferences"
-msgstr ""
+msgstr "Préférences"
 
 #: data/ui/MainHeaderBar.ui:91
 msgid "About Markets"
-msgstr ""
+msgstr "À propos de Marchés"
 
 #: data/ui/SelectionHeaderBar.ui:28
 msgid "Click on a checkbox to select"
-msgstr ""
+msgstr "Cliquez sur une case à cocher pour sélectionner"
 
 #: data/ui/SelectionHeaderBar.ui:55
 msgid "Cancel"
-msgstr ""
+msgstr "Annuler"
 
 #: data/ui/SelectionHeaderBar.ui:106
 msgid "Select all"
-msgstr ""
+msgstr "Tout sélectionner"
 
 #: data/ui/SelectionHeaderBar.ui:120
 msgid "Select none"
-msgstr ""
+msgstr "Ne rien sélectionner"
 
 #: src/Application.vala:66
 msgid "A market tracker for Linux Smartphones and Tablets."
-msgstr ""
+msgstr "Un outil de suivi des marchés pour smartphones et tablettes Linux."
 
 #: src/Application.vala:71
 msgid "Official webpage"
-msgstr ""
+msgstr "Site Web officiel"
 
 #: src/SymbolRow.vala:70
 msgid "Market Closed"
-msgstr ""
+msgstr "Marché fermé"
 
 #: src/SymbolRow.vala:73
 msgid "Market Open"
-msgstr ""
+msgstr "Marché ouvert"
