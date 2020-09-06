@@ -1,10 +1,7 @@
 Source: bitstower-markets
-Section: misc
+Section: gnome
 Priority: optional
 Maintainer: Tomasz Oponowicz <tomasz@zaxo.biz>
-Homepage: https://github.com/bitstower/markets
-Vcs-Browser: https://github.com/bitstower/markets
-Vcs-Git: https://github.com/bitstower/markets.git
 Build-Depends: debhelper-compat (= 13),
                valac,
                meson,
@@ -15,11 +12,15 @@ Build-Depends: debhelper-compat (= 13),
                libsoup2.4-dev,
                libjson-glib-dev,
 Standards-Version: 4.5.0
+Homepage: https://github.com/bitstower/markets
+Vcs-Browser: https://github.com/bitstower/markets
+Vcs-Git: https://github.com/bitstower/markets.git
 Rules-Requires-Root: no
+
 Package: bitstower-markets
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}
-Description: stock, currency and cryptocurrency tracker
+Description: Simple stock, currency and cryptocurrency tracker
  The Markets application delivers financial data to your fingertips.
  Track stocks, currencies and cryptocurrencies.
  Stay on top of the market and never miss an investment opportunity!
