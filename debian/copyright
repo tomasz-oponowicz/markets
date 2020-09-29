@@ -2,6 +2,7 @@ Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: com.bitstower.Markets
 Upstream-Contact: Tomasz Oponowicz <tomasz@zaxo.biz>
 Source: https://github.com/bitstower/markets
+
 Files: *
 Copyright: 2020 Tomasz Oponowicz <tomasz@zaxo.biz>
 License: GPL-3+
