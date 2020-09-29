@@ -1,18 +1,5 @@
-bitstower-markets (0.3.0) unstable; urgency=low
+bitstower-markets (0.3.0-1) unstable; urgency=medium
 
-  * Fixed various issues.
+  * New upstream release.
 
  -- Tomasz Oponowicz <tomasz@zaxo.biz>  Fri, 7 Aug 2020 00:00:00 +0000
-
-bitstower-markets (0.2.0) unstable; urgency=low
-
-  * Added new app icon.
-  * Fixed various issues.
-
- -- Tomasz Oponowicz <tomasz@zaxo.biz>  Fri, 24 Jul 2020 00:00:00 +0000
-
-bitstower-markets (0.1.0) unstable; urgency=low
-
-  * Initial Release.
-
- -- Tomasz Oponowicz <tomasz@zaxo.biz>  Wed, 21 Jul 2020 00:00:00 +0000
