@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<component type="desktop">
-  <id>com.bitstower.Markets.desktop</id>
+<component type="desktop-application">
+  <id>com.bitstower.Markets</id>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0-or-later</project_license>
   <developer_name>Bitstower</developer_name>
   <update_contact>tomasz@zaxo.biz</update_contact>
   <url type="homepage">https://github.com/bitstower/markets</url>
   <url type="bugtracker">https://github.com/bitstower/markets/issues</url>
+  <launchable type="desktop-id">com.bitstower.Markets.desktop</launchable>
+  <translation type="gettext">com.bitstower.Markets</translation>
 
   <name>Markets</name>
   <summary>A stock, currency and cryptocurrency tracker</summary>
