@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Markets
-Exec=markets
+Exec=bitstower-markets
 Terminal=false
 Type=Application
 StartupNotify=true

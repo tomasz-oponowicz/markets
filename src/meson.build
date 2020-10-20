@@ -32,7 +32,7 @@ markets_c_args = [
 ]
 
 
-executable('markets', markets_sources,
+executable('bitstower-markets', markets_sources,
   vala_args: '--target-glib=2.50',
   dependencies: markets_deps,
   c_args: markets_c_args,
