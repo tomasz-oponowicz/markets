@@ -1,24 +1,24 @@
-# Russian translations for com.bitstower.Markets package.
-# Copyright (C) 2020 THE com.bitstower.Markets'S COPYRIGHT HOLDER
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the com.bitstower.Markets package.
-# Automatically generated, 2020.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: com.bitstower.Markets\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-27 13:40+0200\n"
-"PO-Revision-Date: 2020-09-01 07:36+0000\n"
-"Last-Translator: Tomasz Oponowicz <tomasz@zaxo.biz>\n"
-"Language-Team: Russian <https://hosted.weblate.org/projects/markets/markets/"
-"ru/>\n"
-"Language: ru\n"
+"PO-Revision-Date: 2020-09-15 18:36+0000\n"
+"Last-Translator: Milo Ivir <mail@milotype.de>\n"
+"Language-Team: Croatian <https://hosted.weblate.org/projects/markets/markets/"
+"hr/>\n"
+"Language: hr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.2.1-dev\n"
+"X-Generator: Weblate 4.3-dev\n"
 
 #: data/com.bitstower.Markets.appdata.xml.in:6
 msgid "Bitstower"
@@ -27,185 +27,191 @@ msgstr "Bitstower"
 #: data/com.bitstower.Markets.appdata.xml.in:11
 #: data/com.bitstower.Markets.desktop.in:3 src/Application.vala:65
 msgid "Markets"
-msgstr ""
+msgstr "Tržišta"
 
 #: data/com.bitstower.Markets.appdata.xml.in:12
 msgid "A stock, currency and cryptocurrency tracker"
-msgstr ""
+msgstr "Program za praćenje dionica, valuta i kriptovaluta"
 
 #: data/com.bitstower.Markets.appdata.xml.in:14
 msgid ""
 "The Markets app delivers financial data to your fingertips. Stay on top of "
 "the market and never miss an investment opportunity!"
 msgstr ""
+"Program „Tržišta” pruža financijske podatke. Budi u toku događaja na "
+"tržištima i nikad ne propusti priliku za ulaganje!"
 
 #: data/com.bitstower.Markets.appdata.xml.in:18
 msgid "Features:"
-msgstr ""
+msgstr "Funkcije:"
 
 #: data/com.bitstower.Markets.appdata.xml.in:20
 msgid "Create your personal portfolio"
-msgstr ""
+msgstr "Stvori vlastiti portfelj"
 
 #: data/com.bitstower.Markets.appdata.xml.in:21
 msgid "Track stocks, currencies, cryptocurrencies, commodities and indexes"
-msgstr ""
+msgstr "Prati dionice, valute i kriptovalute, robu i indekse"
 
 #: data/com.bitstower.Markets.appdata.xml.in:22
 msgid "Compatible with Linux smartphones (Librem5, PinePhone)"
 msgstr ""
+"Kompatibilno s pametnim telefonima s Linux sustavom (Librem5, PinePhone)"
 
 #: data/com.bitstower.Markets.appdata.xml.in:23
 msgid "Open any symbol in Yahoo Finance for more details"
-msgstr ""
+msgstr "Otvori bilo koju ikonu na stranici Yahoo Finance za više detalja"
 
 #: data/com.bitstower.Markets.appdata.xml.in:24
 msgid "Adjust the refresh rate"
-msgstr ""
+msgstr "Podesi učestalost aktualiziranja"
 
 #: data/com.bitstower.Markets.appdata.xml.in:25
 msgid "Dark Mode"
-msgstr ""
+msgstr "Tamni modus"
 
 #: data/com.bitstower.Markets.appdata.xml.in:32
 msgid "Live Prices"
-msgstr ""
+msgstr "Cijene uživo"
 
 #: data/com.bitstower.Markets.appdata.xml.in:39
 msgid "Markets 0.3.0 brings bug fixes."
-msgstr ""
+msgstr "„Tržišta” 0.3.0 sadrži ispravke grešaka."
 
 #: data/com.bitstower.Markets.appdata.xml.in:41
 #: data/com.bitstower.Markets.appdata.xml.in:50
 msgid "Fixed various issues"
-msgstr ""
+msgstr "Ispravljeni su razni problemi"
 
 #: data/com.bitstower.Markets.appdata.xml.in:47
 msgid "Markets 0.2.0 brings small feature additions and bug fixes."
-msgstr ""
+msgstr "„Tržišta” 0.3.0 sadrži par funkcionalnih dodataka i ispravke grešaka."
 
 #: data/com.bitstower.Markets.appdata.xml.in:49
 msgid "Added new app icon"
-msgstr ""
+msgstr "Dodana je nova ikona programa"
 
 #: data/com.bitstower.Markets.appdata.xml.in:56
 msgid "Initial release"
-msgstr ""
+msgstr "Prvo izdanje"
 
 #: data/com.bitstower.Markets.gschema.xml:6
 msgid "Pull interval"
-msgstr ""
+msgstr "Interval preuzimanja"
 
 #: data/com.bitstower.Markets.gschema.xml:7
 msgid "Pull data every X seconds."
-msgstr ""
+msgstr "Preuzmi podatke svakih x sekundi."
 
 #: data/com.bitstower.Markets.gschema.xml:11 data/ui/PreferencesWindow.ui:59
 msgid "Use dark GTK+ theme"
-msgstr ""
+msgstr "Koristi tamnu GTK+ temu"
 
 #: data/com.bitstower.Markets.gschema.xml:12
 msgid ""
 "Use the dark variant of your GTK+ theme. Please note that not every GTK+ "
 "theme has a dark variant."
 msgstr ""
+"Koristi tamnu inačicu GTK+ teme. Napomena: Tamna tema ne postoji za svaku "
+"GTK+ temu."
 
 #: data/com.bitstower.Markets.gschema.xml:16
 msgid "Window width"
-msgstr ""
+msgstr "Širina prozora"
 
 #: data/com.bitstower.Markets.gschema.xml:17
 msgid "Remember the window width."
-msgstr ""
+msgstr "Zapamti širinu prozora."
 
 #: data/com.bitstower.Markets.gschema.xml:21
 msgid "Window height"
-msgstr ""
+msgstr "Visina prozora"
 
 #: data/com.bitstower.Markets.gschema.xml:22
 msgid "Remember the window height."
-msgstr ""
+msgstr "Zapamti visinu prozora."
 
 #: data/ui/PreferencesWindow.ui:16 data/ui/PreferencesWindow.ui:20
 msgid "General"
-msgstr ""
+msgstr "Opće"
 
 #: data/ui/PreferencesWindow.ui:26
 msgid "Update Interval"
-msgstr ""
+msgstr "Interval aktualiziranja"
 
 #: data/ui/PreferencesWindow.ui:27
 msgid "Pull data every X seconds"
-msgstr ""
+msgstr "Preuzmi podatke svakih x sekundi"
 
 #: data/ui/PreferencesWindow.ui:52
 msgid "Apppearance"
-msgstr ""
+msgstr "Izgled"
 
 #: data/ui/PreferencesWindow.ui:58
 msgid "Dark Theme"
-msgstr ""
+msgstr "Tamna tema"
 
 #: data/ui/NoSymbolsView.ui:27
 msgid "No symbols"
-msgstr ""
+msgstr "Bez simbola"
 
 #: data/ui/NoSymbolsView.ui:42
 msgid "Press + to add one."
-msgstr ""
+msgstr "Za dodavanje simbola, pritisni +."
 
 #: data/ui/NewSymbolDialog.ui:19
 msgid "New symbol"
-msgstr ""
+msgstr "Novi simbol"
 
 #: data/ui/NewSymbolDialog.ui:23
 msgid "_Cancel"
-msgstr ""
+msgstr "_Odustani"
 
 #: data/ui/NewSymbolDialog.ui:39
 msgid "_Add"
-msgstr ""
+msgstr "_Dodaj"
 
 #: data/ui/SymbolsView.ui:58
 msgid "Source: <a href=\"https://finance.yahoo.com/\">Yahoo Finance</a>"
-msgstr ""
+msgstr "Izvor: <a href=\"https://finance.yahoo.com/\">Yahoo Finance</a>"
 
 #: data/ui/MainHeaderBar.ui:85
 msgid "Preferences"
-msgstr ""
+msgstr "Postavke"
 
 #: data/ui/MainHeaderBar.ui:91
 msgid "About Markets"
-msgstr ""
+msgstr "Podaci „Tržišta”"
 
 #: data/ui/SelectionHeaderBar.ui:28
 msgid "Click on a checkbox to select"
-msgstr ""
+msgstr "Odaberi pritiskom na potvrdni okvir"
 
 #: data/ui/SelectionHeaderBar.ui:55
 msgid "Cancel"
-msgstr ""
+msgstr "Odustani"
 
 #: data/ui/SelectionHeaderBar.ui:106
 msgid "Select all"
-msgstr ""
+msgstr "Odaberi sve"
 
 #: data/ui/SelectionHeaderBar.ui:120
 msgid "Select none"
-msgstr ""
+msgstr "Odaberi ništa"
 
 #: src/Application.vala:66
 msgid "A market tracker for Linux Smartphones and Tablets."
 msgstr ""
+"Program za praćenje tržišta za pametne telefone i tablete s Linux sustavom."
 
 #: src/Application.vala:71
 msgid "Official webpage"
-msgstr ""
+msgstr "Službena web-stranica"
 
 #: src/SymbolRow.vala:70
 msgid "Market Closed"
-msgstr ""
+msgstr "Tržište zatvoreno"
 
 #: src/SymbolRow.vala:73
 msgid "Market Open"
-msgstr ""
+msgstr "Tržište otvoreno"
