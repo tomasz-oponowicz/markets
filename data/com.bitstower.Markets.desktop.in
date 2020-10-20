@@ -3,8 +3,8 @@ Name=Markets
 Exec=markets
 Terminal=false
 Type=Application
-Categories=Utility;GTK;
 StartupNotify=true
 Icon=com.bitstower.Markets
+Categories=GTK;Office;Finance;Economy;
 # Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-Keywords=stock;currency;cryptocurrency;tracker;finance;
+Keywords=stock;currency;cryptocurrency;finance;economy;
