@@ -172,6 +172,24 @@
             <property name="fill">True</property>
           </packing>
         </child>
+        <child>
+          <object class="GtkEventBox" id="drag_handle">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="margin_start">10</property>
+            <property name="margin_end">5</property>
+            <child>
+              <object class="GtkImage">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="icon-name">list-drag-handle-symbolic</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="fill">True</property>
+          </packing>
+        </child>
       </object>
     </child>
   </template>

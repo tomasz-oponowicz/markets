@@ -82,6 +82,21 @@ public class Markets.State : Object {
         this.symbols = copy;
     }
 
+    public void swap_symbols (Symbol a, Symbol b) {
+        var copy = new Gee.ArrayList<Symbol> ();
+
+        copy.add_all (this.symbols);
+
+        var a_idx = copy.index_of (a);
+        var b_idx = copy.index_of (b);
+
+        copy[b_idx] = a;
+        copy[a_idx] = b;
+
+        // create new array in order to enforce a notification
+        this.symbols = copy;
+    }
+
     public void remove_symbols (Gee.ArrayList<string> ids) {
         var filtered = new Gee.ArrayList<Symbol> ();
 
