@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: com.bitstower.Markets\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-27 13:40+0200\n"
-"PO-Revision-Date: 2020-09-01 07:36+0000\n"
+"PO-Revision-Date: 2020-10-21 11:40+0000\n"
 "Last-Translator: Tomasz Oponowicz <tomasz@zaxo.biz>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/markets/markets/"
 "ru/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.2.1-dev\n"
+"X-Generator: Weblate 4.3.1\n"
 
 #: data/com.bitstower.Markets.appdata.xml.in:6
 msgid "Bitstower"
@@ -31,7 +31,7 @@ msgstr ""
 
 #: data/com.bitstower.Markets.appdata.xml.in:12
 msgid "A stock, currency and cryptocurrency tracker"
-msgstr ""
+msgstr "Трекер акций, валют и криптовалют"
 
 #: data/com.bitstower.Markets.appdata.xml.in:14
 msgid ""
@@ -41,11 +41,11 @@ msgstr ""
 
 #: data/com.bitstower.Markets.appdata.xml.in:18
 msgid "Features:"
-msgstr ""
+msgstr "Возможности:"
 
 #: data/com.bitstower.Markets.appdata.xml.in:20
 msgid "Create your personal portfolio"
-msgstr ""
+msgstr "Создайте свое личное портфолио"
 
 #: data/com.bitstower.Markets.appdata.xml.in:21
 msgid "Track stocks, currencies, cryptocurrencies, commodities and indexes"
@@ -61,11 +61,11 @@ msgstr ""
 
 #: data/com.bitstower.Markets.appdata.xml.in:24
 msgid "Adjust the refresh rate"
-msgstr ""
+msgstr "Отрегулируйте частоту обновления"
 
 #: data/com.bitstower.Markets.appdata.xml.in:25
 msgid "Dark Mode"
-msgstr ""
+msgstr "Темный режим"
 
 #: data/com.bitstower.Markets.appdata.xml.in:32
 msgid "Live Prices"
@@ -78,7 +78,7 @@ msgstr ""
 #: data/com.bitstower.Markets.appdata.xml.in:41
 #: data/com.bitstower.Markets.appdata.xml.in:50
 msgid "Fixed various issues"
-msgstr ""
+msgstr "Исправлены различные проблемы"
 
 #: data/com.bitstower.Markets.appdata.xml.in:47
 msgid "Markets 0.2.0 brings small feature additions and bug fixes."
@@ -86,7 +86,7 @@ msgstr ""
 
 #: data/com.bitstower.Markets.appdata.xml.in:49
 msgid "Added new app icon"
-msgstr ""
+msgstr "Добавлен новый значок приложения"
 
 #: data/com.bitstower.Markets.appdata.xml.in:56
 msgid "Initial release"
