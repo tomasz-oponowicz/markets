@@ -8,7 +8,7 @@ The Markets application delivers financial data to your fingertips. Track stocks
 
 ## Screenshots
 
-![](data/screenshots/symbols.png?raw=true)
+![](preview.png?raw=true)
 
 ## Features
 

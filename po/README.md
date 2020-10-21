@@ -8,7 +8,7 @@
 
 ## Test localization
 
-  $ LC_ALL=pl_PL.utf8 markets
+  $ LC_ALL=pl_PL.utf8 bitstower-markets
 
 ## Import translations from Weblate
 
