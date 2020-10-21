@@ -65,9 +65,9 @@ cd build
 ninja
 ```
 
-To install, use `ninja install`, then execute with `markets`
+To install, use `ninja install`, then execute with `bitstower-markets`
 
 ```
 sudo ninja install
-markets
+bitstower-markets
 ```
