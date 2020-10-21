@@ -30,7 +30,7 @@
 
   <screenshots>
     <screenshot type="default">
-      <image width="432" height="670">https://github.com/bitstower/markets/raw/master/data/screenshots/symbols.png</image>
+      <image width="412" height="612">https://raw.githubusercontent.com/bitstower/markets/master/preview.png</image>
       <caption>Live Prices</caption>
     </screenshot>
   </screenshots>
