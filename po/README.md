@@ -12,10 +12,10 @@
 
 ## Import translations from Weblate
 
-1. Go to Webplate Dashboard
+1. Go to Weblate Dashboard
 1. Commit changes
 1. Lock the repository
 1. Go to Github
 1. Merge newly created PR
-1. Go to Webplate Dashboard
+1. Go to Weblate Dashboard
 1. Unlock the repository
