@@ -3,8 +3,7 @@
   <id>com.bitstower.Markets</id>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0-or-later</project_license>
-  <developer_name>Bitstower</developer_name>
-  <update_contact>tomasz@zaxo.biz</update_contact>
+  <developer_name>bitstower</developer_name>
   <url type="homepage">https://github.com/bitstower/markets</url>
   <url type="bugtracker">https://github.com/bitstower/markets/issues</url>
   <launchable type="desktop-id">com.bitstower.Markets.desktop</launchable>
