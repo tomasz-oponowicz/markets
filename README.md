@@ -22,7 +22,7 @@ The Markets application delivers financial data to your fingertips. Track stocks
 ## Installation
 
 * Flathub: [com.bitstower.Markets](https://flathub.org/apps/details/com.bitstower.Markets)
-* AUR: [bitstower-markets](https://aur.archlinux.org/packages/bitstower-markets/)
+* Arch (AUR): [bitstower-markets](https://aur.archlinux.org/packages/bitstower-markets/)
 
 ## Building from source
 
@@ -41,7 +41,7 @@ You'll need the following dependencies:
 
 * libsoup
 * libgee
-* libhandy
+* libhandy0
 * json-glib
 * glib2
 * gtk3
