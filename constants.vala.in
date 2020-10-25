@@ -1,0 +1,5 @@
+namespace Constants {
+    public const string APP_ID = @APP_ID@;
+    public const string APP_VERSION = @APP_VERSION@;
+    public const string APP_INSTALL_PREFIX = @APP_INSTALL_PREFIX@;
+}

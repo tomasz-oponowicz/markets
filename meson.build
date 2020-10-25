@@ -5,23 +5,22 @@ project('com.bitstower.Markets', ['c', 'vala'],
                    ],
 )
 
-add_project_arguments('-DGETTEXT_PACKAGE="@0@"'.format(meson.project_name()), language: 'c')
+app_binary = 'bitstower-markets'
+
+app_id = meson.project_name() # com.bitstower.Markets
+app_install_prefix = get_option('prefix')
+
+add_project_arguments('-DGETTEXT_PACKAGE="@0@"'.format(app_id), language: 'c')
 
 conf_data = configuration_data()
-conf_data.set_quoted('PROJECT_NAME', meson.project_name())
-conf_data.set_quoted('GETTEXT_PACKAGE', meson.project_name())
-conf_data.set_quoted('VERSION', meson.project_version())
-conf_data.set_quoted('PREFIX', get_option('prefix'))
-conf_data.set_quoted('DATADIR', join_paths (get_option('prefix'), get_option('datadir')))
-config_header = configure_file(
-    input : 'config.vala.in',
-    output : 'config.vala',
+conf_data.set_quoted('APP_ID', app_id)
+conf_data.set_quoted('APP_VERSION', meson.project_version())
+conf_data.set_quoted('APP_INSTALL_PREFIX', app_install_prefix)
+app_constants = configure_file(
+    input : 'constants.vala.in',
+    output : 'constants.vala',
     configuration : conf_data
 )
-
-app_prefix = get_option('prefix')
-app_datadir = join_paths(app_prefix, get_option('datadir'))
-app_id = 'com.bitstower.Markets'
 
 i18n = import('i18n')
 gnome = import('gnome')

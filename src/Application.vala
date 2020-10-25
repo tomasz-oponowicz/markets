@@ -6,7 +6,7 @@ public class Markets.Application : Gtk.Application {
 
     public Application () {
         Object (
-            application_id: "com.bitstower.Markets",
+            application_id: Constants.APP_ID,
             flags : ApplicationFlags.FLAGS_NONE
         );
 
@@ -61,7 +61,7 @@ public class Markets.Application : Gtk.Application {
         dialog.set_destroy_with_parent (true);
         dialog.set_transient_for (window);
         dialog.set_modal (true);
-        dialog.logo_icon_name = "com.bitstower.Markets";
+        dialog.logo_icon_name = Constants.APP_ID;
         dialog.program_name = _("Markets");
         dialog.comments = _("A market tracker for Linux Smartphones and Tablets.");
         dialog.authors = { "Tomasz Oponowicz" };
@@ -92,10 +92,10 @@ public class Markets.Application : Gtk.Application {
 
         // Init internationalization support
         Intl.setlocale (LocaleCategory.ALL, "");
-        string langpack_dir = Path.build_filename (Constants.INSTALL_PREFIX, "share", "locale");
-        Intl.bindtextdomain (Constants.GETTEXT_PACKAGE, langpack_dir);
-        Intl.bind_textdomain_codeset (Constants.GETTEXT_PACKAGE, "UTF-8");
-        Intl.textdomain (Constants.GETTEXT_PACKAGE);
+        string langpack_dir = Path.build_filename (Constants.APP_INSTALL_PREFIX, "share", "locale");
+        Intl.bindtextdomain (Constants.APP_ID, langpack_dir);
+        Intl.bind_textdomain_codeset (Constants.APP_ID, "UTF-8");
+        Intl.textdomain (Constants.APP_ID);
 
         var app = new Application ();
         return app.run (args);

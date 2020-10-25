@@ -1,6 +1,5 @@
-markets_sources = [
+app_sources = [
   'Application.vala',
-
   'NewSymbolDialog.vala',
   'PreferencesWindow.vala',
   'SymbolsView.vala',
@@ -12,13 +11,12 @@ markets_sources = [
   'Service.vala',
   'Symbol.vala',
   'RestClient.vala',
-
   'MainWindow.vala',
-  config_header,
-  markets_resources
+  app_constants,
+  app_ui_resources
 ]
 
-markets_deps = [
+app_deps = [
   dependency('gio-2.0', version: '>= 2.50'),
   dependency('gtk+-3.0', version: '>= 3.22'),
   dependency('libhandy-0.0', version: '>= 0.0.13'),
@@ -27,14 +25,13 @@ markets_deps = [
   dependency('gee-0.8')
 ]
 
-markets_c_args = [
+app_c_args = [
   '-DHANDY_USE_UNSTABLE_API',
 ]
 
-
-executable('bitstower-markets', markets_sources,
+executable(app_binary, app_sources,
   vala_args: '--target-glib=2.50',
-  dependencies: markets_deps,
-  c_args: markets_c_args,
+  dependencies: app_deps,
+  c_args: app_c_args,
   install: true,
 )
