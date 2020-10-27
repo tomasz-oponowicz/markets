@@ -25,6 +25,9 @@ public class Markets.SymbolRow : Gtk.ListBoxRow {
     [GtkChild]
     private Gtk.EventBox drag_handle;
 
+    [GtkChild]
+    private Gtk.Image drag_icon;
+
     private State state;
 
     private Symbol symbol;
@@ -46,7 +49,7 @@ public class Markets.SymbolRow : Gtk.ListBoxRow {
         this.on_selection_mode_update ();
 
         Gtk.drag_source_set (
-            this, Gdk.ModifierType.BUTTON1_MASK, TARGET_ENTRIES, Gdk.DragAction.MOVE
+            this.drag_handle, Gdk.ModifierType.BUTTON1_MASK, TARGET_ENTRIES, Gdk.DragAction.MOVE
         );
 
         Gtk.drag_dest_set (
@@ -103,7 +106,7 @@ public class Markets.SymbolRow : Gtk.ListBoxRow {
     private void on_view_mode_update () {
         var visible = this.state.view_mode == State.ViewMode.SELECTION;
         this.checkbox.visible = visible;
-        this.drag_handle.visible = visible;
+        this.drag_icon.visible = visible;
     }
 
     private void on_selection_mode_update () {
