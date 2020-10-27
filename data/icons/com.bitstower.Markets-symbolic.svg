@@ -1,10 +1,49 @@
-<svg id="svg8" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
-  <g id="g53" enable-background="new" fill="#474747" transform="translate(65 -236.000008)">
-    <path id="rect1110" d="m-65 246h2v6h-2z"/>
-    <path id="rect1118" d="m-61.5 244.80569h2v7.194313h-2z"/>
-    <path id="rect1120" d="m-58 247.00002h2v4.999992h-2z"/>
-    <path id="rect1126" d="m-54.5 245.2417h2v6.758294h-2z"/>
-    <path id="rect1128" d="m-51 243.00002h2v8.999992h-2z"/>
-    <path id="path1134" d="m-50.011719 239.99023-6.980469 4.18555-3.263671-2.55273-4.744141 2.16211.789062 1.73242 3.691407-1.6836 3.384765 2.64844 8.101563-4.85937z"/>
-  </g>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg height="16px" viewBox="0 0 16 16" width="16px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <filter id="a" height="100%" width="100%" x="0%" y="0%">
+        <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/>
+    </filter>
+    <mask id="b">
+        <g filter="url(#a)">
+            <rect fill-opacity="0.5" height="16" width="16"/>
+        </g>
+    </mask>
+    <linearGradient id="c" gradientTransform="matrix(-1 0 0 1 16 -156)" gradientUnits="userSpaceOnUse" x1="-31.093782" x2="-32.359253" y1="201.344055" y2="284.542908">
+        <stop offset="0" stop-color="#f6f5f4" stop-opacity="0.5"/>
+        <stop offset="1" stop-color="#f6f5f4" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="d">
+        <rect height="152" width="192"/>
+    </clipPath>
+    <mask id="e">
+        <g filter="url(#a)">
+            <rect fill-opacity="0.5" height="16" width="16"/>
+        </g>
+    </mask>
+    <linearGradient id="f" gradientTransform="matrix(-1 0 0 1 16 -156)" gradientUnits="userSpaceOnUse" x1="-32" x2="-32" y1="208" y2="276">
+        <stop offset="0" stop-color="#5e5c64"/>
+        <stop offset="1" stop-color="#241f31"/>
+    </linearGradient>
+    <clipPath id="g">
+        <rect height="152" width="192"/>
+    </clipPath>
+    <mask id="h">
+        <g filter="url(#a)">
+            <rect fill-opacity="0.5" height="16" width="16"/>
+        </g>
+    </mask>
+    <clipPath id="i">
+        <rect height="152" width="192"/>
+    </clipPath>
+    <g clip-path="url(#d)" mask="url(#b)" transform="matrix(1 0 0 1 -168 -16)">
+        <path d="m 120 52 h -96 v 68 h 96 z m 0 0" fill="url(#c)"/>
+    </g>
+    <g clip-path="url(#g)" mask="url(#e)" transform="matrix(1 0 0 1 -168 -16)">
+        <path d="m 120 52 h -96 v 68 h 96 z m 0 0" fill="url(#f)"/>
+    </g>
+    <g clip-path="url(#i)" mask="url(#h)" transform="matrix(1 0 0 1 -168 -16)">
+        <path d="m 77 77 c 2.761719 0 5 2.238281 5 5 s -2.238281 5 -5 5 s -5 -2.238281 -5 -5 s 2.238281 -5 5 -5 z m 0 0"/>
+    </g>
+    <path d="m 1 2 v 13 h 13 v -2 h -11 v -11 z m 0 0"/>
+    <path d="m 14.292969 4.292969 l -4.292969 4.292969 l -3 -3 l -5.707031 5.707031 l 1.414062 1.414062 l 4.292969 -4.292969 l 3 3 l 5.707031 -5.707031 z m 0 0"/>
 </svg>
