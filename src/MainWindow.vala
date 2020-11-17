@@ -58,7 +58,7 @@ public class Markets.MainWindow : Gtk.ApplicationWindow {
                 this.set_titlebar (this.main_header_bar);
                 break;
             case State.ViewMode.SELECTION:
-                this.state.selection_mode = State.SelectionMode.NONE;
+                this.state.select_none ();
                 this.set_titlebar (this.selection_header_bar);
                 break;
         }

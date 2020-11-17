@@ -75,17 +75,11 @@ public class Markets.Application : Gtk.Application {
     }
 
     private void on_selection_all () {
-
-        // Enforce update by changing to opposite value first
-        this.state.selection_mode = State.SelectionMode.NONE;
-        this.state.selection_mode = State.SelectionMode.ALL;
+        this.state.select_all ();
     }
 
     private void on_selection_none () {
-
-        // Enforce update by changing to opposite value first
-        this.state.selection_mode = State.SelectionMode.ALL;
-        this.state.selection_mode = State.SelectionMode.NONE;
+        this.state.select_none ();
     }
 
     public static int main (string[] args) {
