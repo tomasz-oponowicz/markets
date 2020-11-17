@@ -37,7 +37,6 @@
                     <child>
                       <object class="GtkListBox" id="symbols">
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
                         <property name="selection_mode">none</property>
                         <signal name="row_activated" handler="on_row_click" swapped="no"/>
                         <child>

@@ -4,11 +4,6 @@ public class Markets.State : Object {
         SELECTION
     }
 
-    public enum SelectionMode {
-        NONE,
-        ALL,
-    }
-
     public enum NetworkStatus {
         IDLE,
         IN_PROGRESS,
@@ -18,12 +13,8 @@ public class Markets.State : Object {
         get; set; default = ViewMode.PRESENTATION;
     }
 
-    public SelectionMode selection_mode {
-        get; set; default = SelectionMode.NONE;
-    }
-
-    public int total_selected {
-        get; set; default = 0;
+    public bool has_selected {
+        get; set; default = false;
     }
 
     public NetworkStatus network_status {
@@ -137,5 +128,35 @@ public class Markets.State : Object {
         }
 
         return null;
+    }
+
+    public void select_all() {
+        foreach (Symbol symbol in this.symbols) {
+            symbol.selected = true;
+        }
+        this.update_has_selected ();
+    }
+
+    public void select_none() {
+        foreach (Symbol symbol in this.symbols) {
+            symbol.selected = false;
+        }
+        this.update_has_selected ();
+    }
+
+
+    public void select(Symbol symbol, bool active) {
+        symbol.selected = active;
+        this.update_has_selected ();
+    }
+
+    private void update_has_selected () {
+        foreach (Symbol symbol in this.symbols) {
+            if (symbol.selected) {
+                this.has_selected = true;
+                return;
+            }
+        }
+        this.has_selected = false;
     }
 }

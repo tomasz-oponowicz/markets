@@ -26,3 +26,19 @@
     background-color: alpha(@theme_selected_bg_color,0.2);
     box-shadow: inset 0 0 0 0.15em alpha(@theme_selected_bg_color,0.2);
 }
+
+.test {
+    background-color: green;
+}
+
+.pd-left-sm {
+    padding-left: 10px;
+}
+
+.pd-left-md {
+    padding-left: 20px;
+}
+
+.pd-right-sm {
+    padding-right: 10px;
+}

@@ -9,9 +9,9 @@ public class Markets.SelectionHeaderBar : Hdy.HeaderBar {
     public SelectionHeaderBar (State state) {
         this.state = state;
 
-        this.state.notify["total-selected"].connect (this.on_total_selected_updated);
+        this.state.notify["has-selected"].connect (this.on_has_selected_updated);
 
-        this.on_total_selected_updated ();
+        this.on_has_selected_updated ();
     }
 
     [GtkCallback]
@@ -31,7 +31,7 @@ public class Markets.SelectionHeaderBar : Hdy.HeaderBar {
         this.state.remove_symbols (ids);
     }
 
-    private void on_total_selected_updated () {
-        this.delete_button.sensitive = this.state.total_selected > 0;
+    private void on_has_selected_updated () {
+        this.delete_button.sensitive = this.state.has_selected;
     }
 }

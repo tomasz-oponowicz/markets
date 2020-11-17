@@ -25,6 +25,9 @@ public class Markets.SymbolRow : Gtk.ListBoxRow {
     [GtkChild]
     private Gtk.EventBox drag_handle;
 
+    [GtkChild]
+    private Gtk.Image drag_icon;
+
     private State state;
 
     private Symbol symbol;
@@ -39,27 +42,23 @@ public class Markets.SymbolRow : Gtk.ListBoxRow {
 
         this.symbol.notify.connect (this.on_symbol_update);
         this.state.notify["view-mode"].connect (this.on_view_mode_update);
-        this.state.notify["selection-mode"].connect (this.on_selection_mode_update);
 
         this.on_symbol_update ();
         this.on_view_mode_update ();
-        this.on_selection_mode_update ();
 
         Gtk.drag_source_set (
-            this, Gdk.ModifierType.BUTTON1_MASK, TARGET_ENTRIES, Gdk.DragAction.MOVE
+            this.drag_handle, Gdk.ModifierType.BUTTON1_MASK, TARGET_ENTRIES, Gdk.DragAction.MOVE
         );
 
         Gtk.drag_dest_set (
-             this, Gtk.DestDefaults.ALL, TARGET_ENTRIES, Gdk.DragAction.MOVE
+            this, Gtk.DestDefaults.ALL, TARGET_ENTRIES, Gdk.DragAction.MOVE
         );
-
-        this.drag_begin.connect (this.on_drag_begin);
-        this.drag_data_get.connect (this.on_drag_data_get);
-        this.drag_data_received.connect (this.on_drag_received);
     }
 
     private void on_symbol_update () {
         var s = this.symbol;
+
+        this.checkbox.active = s.selected;
 
         this.title.label = s.name;
 
@@ -102,83 +101,50 @@ public class Markets.SymbolRow : Gtk.ListBoxRow {
 
     private void on_view_mode_update () {
         var visible = this.state.view_mode == State.ViewMode.SELECTION;
+        this.change.visible = !visible;
         this.checkbox.visible = visible;
-        this.drag_handle.visible = visible;
+        this.drag_icon.visible = visible;
+        this.activatable = !visible;
     }
 
-    private void on_selection_mode_update () {
-        switch (this.state.selection_mode) {
-            case State.SelectionMode.ALL:
-                this.symbol.selected = true;
-                this.checkbox.active = true;
-                break;
-            case State.SelectionMode.NONE:
-                this.symbol.selected = false;
-                this.checkbox.active = false;
-                break;
-        }
-    }
 
     [GtkCallback]
     private void on_checkbox_toggled () {
-        if (this.checkbox.active) {
-            this.symbol.selected = true;
-            this.state.total_selected++;
-        } else {
-            this.symbol.selected = false;
-            this.state.total_selected--;
-        }
+        this.state.select(this.symbol, this.checkbox.active);
     }
 
     public void on_row_clicked () {
-        if (this.state.view_mode == State.ViewMode.SELECTION) {
-            this.checkbox.active = !this.checkbox.active;
-        } else {
+        if (this.state.view_mode == State.ViewMode.PRESENTATION) {
             this.state.link = this.symbol.link;
         }
     }
 
+    [GtkCallback]
     private void on_drag_begin (Gtk.Widget widget, Gdk.DragContext context) {
         var row = ((SymbolRow) widget);
-
-        Gtk.Allocation alloc;
-        row.get_allocation (out alloc);
-
-        var surface = new Cairo.ImageSurface (Cairo.Format.ARGB32, alloc.width, alloc.height);
-        var cr = new Cairo.Context (surface);
-        cr.set_source_rgba (0, 0, 0, 0);
-        cr.set_line_width (1);
-
-        cr.move_to (0, 0);
-        cr.line_to (alloc.width, 0);
-        cr.line_to (alloc.width, alloc.height);
-        cr.line_to (0, alloc.height);
-        cr.line_to (0, 0);
-        cr.stroke ();
-
-        cr.set_source_rgba (255, 255, 255, 0);
-        cr.rectangle (0, 0, alloc.width, alloc.height);
-        cr.fill ();
-
         row.get_style_context ().add_class ("drag-begin");
-        row.draw (cr);
-        row.get_style_context ().remove_class ("drag-begin");
-
-        Gtk.drag_set_icon_surface (context, surface);
     }
 
+    [GtkCallback]
+    private void on_drag_end (Gtk.Widget widget, Gdk.DragContext context) {
+        var row = ((SymbolRow) widget);
+        row.get_style_context ().remove_class ("drag-begin");
+    }
+
+    [GtkCallback]
     private void on_drag_data_get (
         Gdk.DragContext ctx, Gtk.SelectionData selection_data,
         uint info, uint time_
     ) {
         uchar[] data = new uchar[(sizeof (Gtk.Widget))];
-        ((Gtk.Widget[]) data)[0] = this;
+        ((Gtk.Widget[]) data)[0] = this.parent.parent;
 
         selection_data.set (
             Gdk.Atom.intern_static_string ("SYMBOLROW"), 32, data
         );
 	}
 
+    [GtkCallback]
     private void on_drag_received (
         Gdk.DragContext context, int x, int y,
         Gtk.SelectionData selection_data, uint target_type
