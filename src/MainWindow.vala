@@ -1,5 +1,5 @@
 [GtkTemplate (ui = "/com/bitstower/Markets/MainWindow.ui")]
-public class Markets.MainWindow : Gtk.ApplicationWindow {
+public class Markets.MainWindow : Hdy.ApplicationWindow {
 
     [GtkChild]
     private Gtk.Stack stack;

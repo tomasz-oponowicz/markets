@@ -2,8 +2,8 @@
 <!-- Generated with glade 3.22.2 -->
 <interface>
   <requires lib="gtk+" version="3.20"/>
-  <requires lib="libhandy" version="0.0"/>
-  <template class="MarketsNewSymbolDialog" parent="HdyDialog">
+  <requires lib="libhandy" version="1.0"/>
+  <template class="MarketsNewSymbolDialog" parent="GtkDialog">
     <property name="can_focus">False</property>
     <property name="modal">True</property>
     <property name="window_position">center-on-parent</property>

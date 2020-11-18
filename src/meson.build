@@ -19,7 +19,7 @@ app_sources = [
 app_deps = [
   dependency('gio-2.0', version: '>= 2.50'),
   dependency('gtk+-3.0', version: '>= 3.22'),
-  dependency('libhandy-0.0', version: '>= 0.0.13'),
+  dependency('libhandy-1', version: '>= 1.0.0'),
   dependency('libsoup-2.4', version: '>= 2.66'),
   dependency('json-glib-1.0'),
   dependency('gee-0.8')
