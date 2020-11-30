@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schemalist gettext-domain="markets">
+<schemalist gettext-domain="bitstower-markets">
   <schema id="com.bitstower.Markets" path="/com/bitstower/Markets/">
     <key type="i" name="pull-interval">
       <default>30</default>
