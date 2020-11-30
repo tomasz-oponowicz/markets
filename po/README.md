@@ -1,6 +1,6 @@
 ## Generate pot file
 
-   $ ninja com.bitstower.Markets-pot
+  $ ninja com.bitstower.Markets-pot
 
 ## Generate po files
 

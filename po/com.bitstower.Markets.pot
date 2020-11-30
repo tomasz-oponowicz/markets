@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.bitstower.Markets\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-27 13:40+0200\n"
+"POT-Creation-Date: 2020-11-30 18:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,75 +18,95 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: data/com.bitstower.Markets.appdata.xml.in:6
-msgid "Bitstower"
-msgstr ""
-
-#: data/com.bitstower.Markets.appdata.xml.in:11
-#: data/com.bitstower.Markets.desktop.in:3 src/Application.vala:65
-msgid "Markets"
+msgid "bitstower"
 msgstr ""
 
 #: data/com.bitstower.Markets.appdata.xml.in:12
+#: data/com.bitstower.Markets.desktop.in:3 src/Application.vala:65
+#: src/MainWindow.vala:17
+msgid "Markets"
+msgstr ""
+
+#: data/com.bitstower.Markets.appdata.xml.in:13
 msgid "A stock, currency and cryptocurrency tracker"
 msgstr ""
 
-#: data/com.bitstower.Markets.appdata.xml.in:14
+#: data/com.bitstower.Markets.appdata.xml.in:15
 msgid ""
 "The Markets app delivers financial data to your fingertips. Stay on top of "
 "the market and never miss an investment opportunity!"
 msgstr ""
 
-#: data/com.bitstower.Markets.appdata.xml.in:18
+#: data/com.bitstower.Markets.appdata.xml.in:19
 msgid "Features:"
 msgstr ""
 
-#: data/com.bitstower.Markets.appdata.xml.in:20
+#: data/com.bitstower.Markets.appdata.xml.in:21
 msgid "Create your personal portfolio"
 msgstr ""
 
-#: data/com.bitstower.Markets.appdata.xml.in:21
+#: data/com.bitstower.Markets.appdata.xml.in:22
 msgid "Track stocks, currencies, cryptocurrencies, commodities and indexes"
 msgstr ""
 
-#: data/com.bitstower.Markets.appdata.xml.in:22
+#: data/com.bitstower.Markets.appdata.xml.in:23
 msgid "Compatible with Linux smartphones (Librem5, PinePhone)"
 msgstr ""
 
-#: data/com.bitstower.Markets.appdata.xml.in:23
+#: data/com.bitstower.Markets.appdata.xml.in:24
 msgid "Open any symbol in Yahoo Finance for more details"
 msgstr ""
 
-#: data/com.bitstower.Markets.appdata.xml.in:24
+#: data/com.bitstower.Markets.appdata.xml.in:25
 msgid "Adjust the refresh rate"
 msgstr ""
 
-#: data/com.bitstower.Markets.appdata.xml.in:25
+#: data/com.bitstower.Markets.appdata.xml.in:26
 msgid "Dark Mode"
 msgstr ""
 
-#: data/com.bitstower.Markets.appdata.xml.in:32
+#: data/com.bitstower.Markets.appdata.xml.in:33
 msgid "Live Prices"
 msgstr ""
 
-#: data/com.bitstower.Markets.appdata.xml.in:39
-msgid "Markets 0.3.0 brings bug fixes."
+#: data/com.bitstower.Markets.appdata.xml.in:40
+msgid "Markets 0.4.0 brings new features and bug fixes."
 msgstr ""
 
-#: data/com.bitstower.Markets.appdata.xml.in:41
-#: data/com.bitstower.Markets.appdata.xml.in:50
-msgid "Fixed various issues"
-msgstr ""
-
-#: data/com.bitstower.Markets.appdata.xml.in:47
-msgid "Markets 0.2.0 brings small feature additions and bug fixes."
-msgstr ""
-
-#: data/com.bitstower.Markets.appdata.xml.in:49
+#: data/com.bitstower.Markets.appdata.xml.in:42
+#: data/com.bitstower.Markets.appdata.xml.in:61
 msgid "Added new app icon"
 msgstr ""
 
-#: data/com.bitstower.Markets.appdata.xml.in:56
+#: data/com.bitstower.Markets.appdata.xml.in:43
+msgid "Added reorder support"
+msgstr ""
+
+#: data/com.bitstower.Markets.appdata.xml.in:44
+msgid "Added i18n support"
+msgstr ""
+
+#: data/com.bitstower.Markets.appdata.xml.in:45
+#: data/com.bitstower.Markets.appdata.xml.in:53
+#: data/com.bitstower.Markets.appdata.xml.in:62
+msgid "Fixed various issues"
+msgstr ""
+
+#: data/com.bitstower.Markets.appdata.xml.in:51
+msgid "Markets 0.3.0 brings bug fixes."
+msgstr ""
+
+#: data/com.bitstower.Markets.appdata.xml.in:59
+msgid "Markets 0.2.0 brings small feature additions and bug fixes."
+msgstr ""
+
+#: data/com.bitstower.Markets.appdata.xml.in:68
 msgid "Initial release"
+msgstr ""
+
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/com.bitstower.Markets.desktop.in:11
+msgid "stock;currency;cryptocurrency;finance;economy;"
 msgstr ""
 
 #: data/com.bitstower.Markets.gschema.xml:6
@@ -163,7 +183,7 @@ msgstr ""
 msgid "_Add"
 msgstr ""
 
-#: data/ui/SymbolsView.ui:58
+#: data/ui/SymbolsView.ui:57
 msgid "Source: <a href=\"https://finance.yahoo.com/\">Yahoo Finance</a>"
 msgstr ""
 
@@ -199,10 +219,10 @@ msgstr ""
 msgid "Official webpage"
 msgstr ""
 
-#: src/SymbolRow.vala:70
+#: src/SymbolRow.vala:88
 msgid "Market Closed"
 msgstr ""
 
-#: src/SymbolRow.vala:73
+#: src/SymbolRow.vala:91
 msgid "Market Open"
 msgstr ""
