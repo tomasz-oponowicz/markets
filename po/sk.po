@@ -8,220 +8,229 @@ msgstr ""
 "Project-Id-Version: com.bitstower.Markets\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-11-30 18:14+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2020-12-10 12:38+0000\n"
+"Last-Translator: MartinIIOT <max_m@centrum.sk>\n"
+"Language-Team: Slovak <https://hosted.weblate.org/projects/markets/markets/"
+"sk/>\n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Weblate 4.4-dev\n"
 
 #: data/com.bitstower.Markets.appdata.xml.in:6
 msgid "bitstower"
-msgstr ""
+msgstr "bitstower"
 
 #: data/com.bitstower.Markets.appdata.xml.in:12
 #: data/com.bitstower.Markets.desktop.in:3 src/Application.vala:65
 #: src/MainWindow.vala:17
 msgid "Markets"
-msgstr ""
+msgstr "Markets"
 
 #: data/com.bitstower.Markets.appdata.xml.in:13
 msgid "A stock, currency and cryptocurrency tracker"
-msgstr ""
+msgstr "Sledovač akcií, mien a kryptomien"
 
 #: data/com.bitstower.Markets.appdata.xml.in:15
 msgid ""
 "The Markets app delivers financial data to your fingertips. Stay on top of "
 "the market and never miss an investment opportunity!"
 msgstr ""
+"Aplikácia Markets poskytuje finančné údaje na dosah ruky. Zostaňte na "
+"vrchole trhu a nikdy nepremeškajte investičnú príležitosť!"
 
 #: data/com.bitstower.Markets.appdata.xml.in:19
 msgid "Features:"
-msgstr ""
+msgstr "Vlastnosti:"
 
 #: data/com.bitstower.Markets.appdata.xml.in:21
 msgid "Create your personal portfolio"
-msgstr ""
+msgstr "Vytvorte si svoje osobné portfólio"
 
 #: data/com.bitstower.Markets.appdata.xml.in:22
 msgid "Track stocks, currencies, cryptocurrencies, commodities and indexes"
-msgstr ""
+msgstr "Sledujte akcie, meny, kryptomeny, komodity a indexy"
 
 #: data/com.bitstower.Markets.appdata.xml.in:23
 msgid "Compatible with Linux smartphones (Librem5, PinePhone)"
-msgstr ""
+msgstr "Kompatibilné s Linux smartphonmi (Librem5, PinePhone)"
 
 #: data/com.bitstower.Markets.appdata.xml.in:24
 msgid "Open any symbol in Yahoo Finance for more details"
 msgstr ""
+"Ak chcete získať ďalšie informácie, otvorte ľubovoľný symbol v službe Yahoo "
+"Finance"
 
 #: data/com.bitstower.Markets.appdata.xml.in:25
 msgid "Adjust the refresh rate"
-msgstr ""
+msgstr "Upravte obnovovaciu frekvenciu"
 
 #: data/com.bitstower.Markets.appdata.xml.in:26
 msgid "Dark Mode"
-msgstr ""
+msgstr "Tmavý mód"
 
 #: data/com.bitstower.Markets.appdata.xml.in:33
 msgid "Live Prices"
-msgstr ""
+msgstr "Ceny naživo"
 
 #: data/com.bitstower.Markets.appdata.xml.in:40
 msgid "Markets 0.4.0 brings new features and bug fixes."
-msgstr ""
+msgstr "Markets 0.4.0 prináša nové funkcie a opravy chýb."
 
 #: data/com.bitstower.Markets.appdata.xml.in:42
 #: data/com.bitstower.Markets.appdata.xml.in:61
 msgid "Added new app icon"
-msgstr ""
+msgstr "Pridaná nová ikona aplikácie"
 
 #: data/com.bitstower.Markets.appdata.xml.in:43
 msgid "Added reorder support"
-msgstr ""
+msgstr "Pridaná podpora zmeny poradia"
 
 #: data/com.bitstower.Markets.appdata.xml.in:44
 msgid "Added i18n support"
-msgstr ""
+msgstr "Pridaná podpora i18n"
 
 #: data/com.bitstower.Markets.appdata.xml.in:45
 #: data/com.bitstower.Markets.appdata.xml.in:53
 #: data/com.bitstower.Markets.appdata.xml.in:62
 msgid "Fixed various issues"
-msgstr ""
+msgstr "Opravené rôzne problémy"
 
 #: data/com.bitstower.Markets.appdata.xml.in:51
 msgid "Markets 0.3.0 brings bug fixes."
-msgstr ""
+msgstr "Markets 0.3.0 prináša opravy chýb."
 
 #: data/com.bitstower.Markets.appdata.xml.in:59
 msgid "Markets 0.2.0 brings small feature additions and bug fixes."
-msgstr ""
+msgstr "Markets 0.2.0 prináša malé vylepšenia funkcií a opravy chýb."
 
 #: data/com.bitstower.Markets.appdata.xml.in:68
 msgid "Initial release"
-msgstr ""
+msgstr "Prvé vydanie"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/com.bitstower.Markets.desktop.in:11
 msgid "stock;currency;cryptocurrency;finance;economy;"
-msgstr ""
+msgstr "akcie;mena;kryptomena;financie;ekonomika;"
 
 #: data/com.bitstower.Markets.gschema.xml:6
 msgid "Pull interval"
-msgstr ""
+msgstr "Interval ťahania"
 
 #: data/com.bitstower.Markets.gschema.xml:7
 msgid "Pull data every X seconds."
-msgstr ""
+msgstr "Vytiahnite údaje každých X sekúnd."
 
 #: data/com.bitstower.Markets.gschema.xml:11 data/ui/PreferencesWindow.ui:59
 msgid "Use dark GTK+ theme"
-msgstr ""
+msgstr "Použite tmavú tému GTK +"
 
 #: data/com.bitstower.Markets.gschema.xml:12
 msgid ""
 "Use the dark variant of your GTK+ theme. Please note that not every GTK+ "
 "theme has a dark variant."
 msgstr ""
+"Použite tmavý variant svojej témy GTK+. Upozorňujeme, že nie každá téma GTK+ "
+"má tmavú variantu."
 
 #: data/com.bitstower.Markets.gschema.xml:16
 msgid "Window width"
-msgstr ""
+msgstr "Šírka okna"
 
 #: data/com.bitstower.Markets.gschema.xml:17
 msgid "Remember the window width."
-msgstr ""
+msgstr "Zapamätať si šírku okna."
 
 #: data/com.bitstower.Markets.gschema.xml:21
 msgid "Window height"
-msgstr ""
+msgstr "Výška okna"
 
 #: data/com.bitstower.Markets.gschema.xml:22
 msgid "Remember the window height."
-msgstr ""
+msgstr "Zapamätať si výšku okna."
 
 #: data/ui/PreferencesWindow.ui:16 data/ui/PreferencesWindow.ui:20
 msgid "General"
-msgstr ""
+msgstr "Všeobecné"
 
 #: data/ui/PreferencesWindow.ui:26
 msgid "Update Interval"
-msgstr ""
+msgstr "Interval aktualizácie"
 
 #: data/ui/PreferencesWindow.ui:27
 msgid "Pull data every X seconds"
-msgstr ""
+msgstr "Vytiahnite údaje každých X sekúnd"
 
 #: data/ui/PreferencesWindow.ui:52
 msgid "Apppearance"
-msgstr ""
+msgstr "Vzhľad"
 
 #: data/ui/PreferencesWindow.ui:58
 msgid "Dark Theme"
-msgstr ""
+msgstr "Tmavá téma"
 
 #: data/ui/NoSymbolsView.ui:27
 msgid "No symbols"
-msgstr ""
+msgstr "Žiadne symboly"
 
 #: data/ui/NoSymbolsView.ui:42
 msgid "Press + to add one."
-msgstr ""
+msgstr "Stlačením + jednu pridajte."
 
 #: data/ui/NewSymbolDialog.ui:19
 msgid "New symbol"
-msgstr ""
+msgstr "Nový symbol"
 
 #: data/ui/NewSymbolDialog.ui:23
 msgid "_Cancel"
-msgstr ""
+msgstr "_Zrušiť"
 
 #: data/ui/NewSymbolDialog.ui:39
 msgid "_Add"
-msgstr ""
+msgstr "_Pridať"
 
 #: data/ui/SymbolsView.ui:57
 msgid "Source: <a href=\"https://finance.yahoo.com/\">Yahoo Finance</a>"
-msgstr ""
+msgstr "Zdroj: <a href=\"https://finance.yahoo.com/\">Yahoo Finance</a>"
 
 #: data/ui/MainHeaderBar.ui:85
 msgid "Preferences"
-msgstr ""
+msgstr "Predvoľby"
 
 #: data/ui/MainHeaderBar.ui:91
 msgid "About Markets"
-msgstr ""
+msgstr "O aplikácii Markets"
 
 #: data/ui/SelectionHeaderBar.ui:28
 msgid "Click on a checkbox to select"
-msgstr ""
+msgstr "Začiarknite políčko pre výber"
 
 #: data/ui/SelectionHeaderBar.ui:55
 msgid "Cancel"
-msgstr ""
+msgstr "Zrušiť"
 
 #: data/ui/SelectionHeaderBar.ui:106
 msgid "Select all"
-msgstr ""
+msgstr "Označiť všetko"
 
 #: data/ui/SelectionHeaderBar.ui:120
 msgid "Select none"
-msgstr ""
+msgstr "Nič neoznačiť"
 
 #: src/Application.vala:66
 msgid "A market tracker for Linux Smartphones and Tablets."
-msgstr ""
+msgstr "Sledovač trhu pre smartphony a tablety s Linuxom."
 
 #: src/Application.vala:71
 msgid "Official webpage"
-msgstr ""
+msgstr "Oficiálna webová stránka"
 
 #: src/SymbolRow.vala:88
 msgid "Market Closed"
-msgstr ""
+msgstr "Trh uzavretý"
 
 #: src/SymbolRow.vala:91
 msgid "Market Open"
-msgstr ""
+msgstr "Trh otvorený"
