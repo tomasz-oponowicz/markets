@@ -65,9 +65,13 @@ public class Markets.Symbol : Object {
         }
 
         if (json.has_member ("longname")) {
-            this.name = json.get_string_member ("longname");
+            this.name = this.decode_entities (
+                json.get_string_member ("longname")
+            );
         } else if (json.has_member ("shortname")) {
-            this.name = json.get_string_member ("shortname");
+            this.name = this.decode_entities (
+                json.get_string_member ("shortname")
+            );
         }
 
         if (json.has_member ("typeDisp")) {
@@ -107,7 +111,9 @@ public class Markets.Symbol : Object {
         }
 
         if (json.has_member ("shortName")) {
-            this.name = json.get_string_member ("shortName");
+            this.name = this.decode_entities (
+                json.get_string_member ("shortName")
+            );
         }
 
         if (json.has_member ("exchange")) {
@@ -187,5 +193,9 @@ public class Markets.Symbol : Object {
         builder.add_double_value (this.regular_market_change_percent);
 
         builder.end_object ();
+    }
+
+    private string decode_entities (string value) {
+        return value.replace ("&amp;", "&").strip ();
     }
 }
