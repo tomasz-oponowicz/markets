@@ -108,6 +108,8 @@ public class Markets.State : Object {
 
         // create new array in order to enforce a notification
         this.symbols = filtered;
+
+        this.update_has_selected ();
     }
 
     public string[] get_symbol_ids () {

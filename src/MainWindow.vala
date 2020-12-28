@@ -14,7 +14,11 @@ public class Markets.MainWindow : Hdy.ApplicationWindow {
     private SelectionHeaderBar selection_header_bar;
 
     public MainWindow (Gtk.Application app, State state) {
-        Object (application: app);
+        Object (
+            application: app,
+            icon_name: Constants.APP_ID,
+            title: _("Markets")
+        );
 
         this.state = state;
 

@@ -67,7 +67,7 @@ public class Markets.Application : Gtk.Application {
         dialog.program_name = _("Markets");
         dialog.comments = _("A market tracker for Linux Smartphones and Tablets.");
         dialog.authors = { "Tomasz Oponowicz" };
-        dialog.artists = {"Gustavo Reis"};
+        dialog.artists = {"Tobias Bernard"};
         dialog.license_type = Gtk.License.GPL_3_0;
         dialog.website = "https://bitstower.com";
         dialog.website_label = _("Official webpage");

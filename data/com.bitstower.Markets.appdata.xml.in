@@ -35,6 +35,17 @@
   </screenshots>
 
   <releases>
+    <release version="0.4.0" date="2020-11-30">
+      <description>
+        <p>Markets 0.4.0 brings new features and bug fixes.</p>
+        <ul>
+          <li>Added new app icon</li>
+          <li>Added reorder support</li>
+          <li>Added i18n support</li>
+          <li>Fixed various issues</li>
+        </ul>
+      </description>
+    </release>
     <release version="0.3.0" date="2020-08-07">
       <description>
         <p>Markets 0.3.0 brings bug fixes.</p>
@@ -60,4 +71,9 @@
   </releases>
 
   <content_rating type="oars-1.1" />
+
+  <custom>
+    <value key="Purism::form_factor">workstation</value>
+    <value key="Purism::form_factor">mobile</value>
+  </custom>
 </component>
