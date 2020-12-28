@@ -4,6 +4,9 @@ public class Markets.MainWindow : Hdy.ApplicationWindow {
     [GtkChild]
     private Gtk.Stack stack;
 
+    [GtkChild]
+    private Gtk.Box headerbars;
+
     private State state;
 
     private MainHeaderBar main_header_bar;
@@ -17,7 +20,10 @@ public class Markets.MainWindow : Hdy.ApplicationWindow {
 
         this.main_header_bar = new MainHeaderBar (this, state);
         this.selection_header_bar = new SelectionHeaderBar (state);
-        this.set_titlebar (this.main_header_bar);
+
+        this.selection_header_bar.visible = false;
+        this.headerbars.pack_start (this.main_header_bar, false, true);
+        this.headerbars.pack_start (this.selection_header_bar, false);
 
         var symbols_view = new SymbolsView (this.state);
         stack.add_named (symbols_view, "symbols_view");
@@ -55,11 +61,13 @@ public class Markets.MainWindow : Hdy.ApplicationWindow {
     private void on_selection_mode_update () {
         switch (this.state.view_mode) {
             case State.ViewMode.PRESENTATION:
-                this.set_titlebar (this.main_header_bar);
+                this.selection_header_bar.visible = false;
+                this.main_header_bar.visible = true;
                 break;
             case State.ViewMode.SELECTION:
                 this.state.select_none ();
-                this.set_titlebar (this.selection_header_bar);
+                this.selection_header_bar.visible = true;
+                this.main_header_bar.visible = false;
                 break;
         }
     }
