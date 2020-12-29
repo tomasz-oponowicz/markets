@@ -92,6 +92,7 @@ public class Markets.Application : Gtk.Application {
         Intl.textdomain (Constants.APP_ID);
 
         var app = new Application ();
+        app.startup.connect (() => { Hdy.init (); });
         return app.run (args);
     }
 }

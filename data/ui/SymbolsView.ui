@@ -2,7 +2,7 @@
 <!-- Generated with glade 3.22.2 -->
 <interface>
   <requires lib="gtk+" version="3.20"/>
-  <requires lib="libhandy" version="0.0"/>
+  <requires lib="libhandy" version="1.0"/>
   <template class="MarketsSymbolsView" parent="GtkScrolledWindow">
     <property name="visible">True</property>
     <property name="can_focus">True</property>
@@ -14,10 +14,10 @@
         <property name="can_focus">False</property>
         <property name="shadow_type">none</property>
         <child>
-          <object class="HdyColumn">
+          <object class="HdyClamp">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
-            <property name="maximum_width">500</property>
+            <property name="maximum_size">400</property>
             <child>
               <object class="GtkBox">
                 <property name="height_request">250</property>

@@ -1,5 +1,5 @@
 [GtkTemplate (ui = "/com/bitstower/Markets/NewSymbolDialog.ui")]
-public class Markets.NewSymbolDialog : Hdy.Dialog {
+public class Markets.NewSymbolDialog : Gtk.Dialog {
 
     [GtkChild]
     private Gtk.TreeView results_view;

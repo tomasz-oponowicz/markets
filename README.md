@@ -41,7 +41,7 @@ You'll need the following dependencies:
 
 * libsoup
 * libgee
-* libhandy0
+* libhandy
 * json-glib
 * glib2
 * gtk3
