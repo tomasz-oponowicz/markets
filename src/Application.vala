@@ -19,8 +19,6 @@ public class Markets.Application : Gtk.Application {
             return;
         }
 
-        Hdy.init();
-
         var provider = new Gtk.CssProvider ();
         provider.load_from_resource ("/com/bitstower/Markets/Application.css");
         Gtk.StyleContext.add_provider_for_screen (
@@ -94,6 +92,7 @@ public class Markets.Application : Gtk.Application {
         Intl.textdomain (Constants.APP_ID);
 
         var app = new Application ();
+        app.startup.connect (() => { Hdy.init (); });
         return app.run (args);
     }
 }
