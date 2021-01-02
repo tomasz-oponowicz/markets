@@ -28,21 +28,14 @@
                 <property name="valign">fill</property>
                 <property name="orientation">vertical</property>
                 <child>
-                  <object class="GtkFrame">
+                  <object class="GtkListBox" id="symbols">
+                    <property name="name">symbols</property>
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="selection_mode">none</property>
                     <property name="margin_bottom">20</property>
-                    <property name="label_xalign">0</property>
-                    <property name="shadow_type">in</property>
+                    <signal name="row_activated" handler="on_row_click" swapped="no"/>
                     <child>
-                      <object class="GtkListBox" id="symbols">
-                        <property name="visible">True</property>
-                        <property name="selection_mode">none</property>
-                        <signal name="row_activated" handler="on_row_click" swapped="no"/>
-                        <child>
-                          <placeholder/>
-                        </child>
-                      </object>
+                      <placeholder/>
                     </child>
                   </object>
                   <packing>
