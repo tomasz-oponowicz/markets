@@ -43,12 +43,3 @@
     padding-right: 10px;
 }
 
-clamp.medium #symbols, clamp.large #symbols {
-	border: 1px solid @borders;
-	border-radius: 8px;
-}
-
-clamp.small #symbols {
-	border: 1px solid @borders;
-}
-

@@ -29,11 +29,13 @@
                 <property name="orientation">vertical</property>
                 <child>
                   <object class="GtkListBox" id="symbols">
-                    <property name="name">symbols</property>
                     <property name="visible">True</property>
                     <property name="selection_mode">none</property>
                     <property name="margin_bottom">20</property>
                     <signal name="row_activated" handler="on_row_click" swapped="no"/>
+                    <style>
+                      <class name="content"/>
+                    </style>
                     <child>
                       <placeholder/>
                     </child>
