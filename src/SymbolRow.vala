@@ -154,6 +154,6 @@ public class Markets.SymbolRow : Gtk.ListBoxRow {
         Symbol src = ((SymbolRow) row).symbol;
         Symbol dst = this.symbol;
 
-        this.state.swap_symbols (src, dst);
+        this.state.move_symbol (src, dst);
     }
 }
