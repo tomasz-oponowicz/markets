@@ -76,10 +76,6 @@
                     <property name="xpad">0</property>
                     <property name="label"></property>
                     <property name="single_line_mode">True</property>
-                    <style>
-                      <class name="text-lg"/>
-                      <class name="text-bold"/>
-                    </style>
                   </object>
                   <packing>
                     <property name="expand">False</property>
@@ -92,11 +88,7 @@
                     <property name="visible">True</property>
                     <property name="valign">end</property>
                     <property name="margin_start">5</property>
-                    <property name="margin_bottom">3</property>
                     <property name="label"></property>
-                    <style>
-                      <class name="text-bold"/>
-                    </style>
                   </object>
                   <packing>
                     <property name="expand">False</property>
