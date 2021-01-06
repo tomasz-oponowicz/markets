@@ -40,31 +40,46 @@
                 <property name="visible">True</property>
                 <property name="orientation">vertical</property>
                 <child>
-                  <object class="GtkLabel" id="title">
+                  <object class="GtkLabel" id="title1">
                     <property name="visible">True</property>
-                    <property name="halign">start</property>
-                    <property name="margin_bottom">5</property>
                     <property name="label"></property>
                     <property name="single_line_mode">True</property>
+                    <property name="ellipsize">end</property>
+                    <property name="halign">start</property>
+                    <property name="valign">start</property>
                     <style>
                       <class name="text-md"/>
                       <class name="text-bold"/>
                     </style>
                   </object>
                   <packing>
-                    <property name="expand">False</property>
+                    <property name="expand">True</property>
                     <property name="fill">True</property>
                     <property name="position">0</property>
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkBox">
+                  <object class="GtkLabel" id="title2">
+                    <property name="visible">True</property>
+                    <property name="label"></property>
+                    <property name="single_line_mode">True</property>
+                    <property name="ellipsize">end</property>
+                    <property name="halign">start</property>
+                    <property name="valign">middle</property>
+                  </object>
+                  <packing>
+                    <property name="expand">True</property>
+                    <property name="fill">True</property>
+                    <property name="position">1</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkBox" id="extra_info">
                     <property name="visible">True</property>
                     <child>
                       <object class="GtkLabel" id="market">
                         <property name="visible">True</property>
                         <property name="halign">start</property>
-                        <property name="margin_top">5</property>
                         <style>
                           <class name="text-sm"/>
                         </style>
@@ -74,7 +89,6 @@
                       <object class="GtkLabel">
                         <property name="visible">True</property>
                         <property name="halign">start</property>
-                        <property name="margin_top">5</property>
                         <property name="label"> · </property>
                         <attributes>
                         </attributes>
@@ -88,7 +102,7 @@
                       <object class="GtkLabel" id="time">
                         <property name="visible">True</property>
                         <property name="halign">start</property>
-                        <property name="margin_top">5</property>
+                        <property name="ellipsize">end</property>
                         <style>
                           <class name="dim-label"/>
                           <class name="text-sm"/>
@@ -96,16 +110,11 @@
                       </object>
                     </child>
                   </object>
-                  <packing>
-                    <property name="expand">False</property>
-                    <property name="fill">True</property>
-                    <property name="position">2</property>
-                  </packing>
                 </child>
               </object>
             </child>
             <child>
-              <object class="GtkBox">
+              <object class="GtkBox" id="price_info">
                 <!-- right -->
                 <property name="visible">True</property>
                 <property name="orientation">vertical</property>
@@ -123,11 +132,6 @@
                         <property name="label"></property>
                         <property name="single_line_mode">True</property>
                       </object>
-                      <packing>
-                        <property name="expand">False</property>
-                        <property name="fill">True</property>
-                        <property name="position">2</property>
-                      </packing>
                     </child>
                     <child>
                       <object class="GtkLabel" id="currency">
@@ -136,11 +140,6 @@
                         <property name="margin_start">5</property>
                         <property name="label"></property>
                       </object>
-                      <packing>
-                        <property name="expand">False</property>
-                        <property name="fill">True</property>
-                        <property name="position">3</property>
-                      </packing>
                     </child>
                   </object>
                 </child>
@@ -150,12 +149,6 @@
                     <property name="halign">end</property>
                     <property name="label"></property>
                   </object>
-                  <packing>
-                    <property name="expand">True</property>
-                    <property name="fill">True</property>
-                    <property name="pack_type">end</property>
-                    <property name="position">1</property>
-                  </packing>
                 </child>
               </object>
               <packing>
