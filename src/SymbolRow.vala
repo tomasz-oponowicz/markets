@@ -2,7 +2,10 @@
 public class Markets.SymbolRow : Gtk.ListBoxRow {
 
     [GtkChild]
-    private Gtk.Label title;
+    private Gtk.Label title1;
+
+    [GtkChild]
+    private Gtk.Label title2;
 
     [GtkChild]
     private Gtk.Label change;
@@ -27,6 +30,12 @@ public class Markets.SymbolRow : Gtk.ListBoxRow {
 
     [GtkChild]
     private Gtk.Image drag_icon;
+
+    [GtkChild]
+    private Gtk.Box extra_info;
+
+    [GtkChild]
+    private Gtk.Box price_info;
 
     private State state;
 
@@ -60,7 +69,8 @@ public class Markets.SymbolRow : Gtk.ListBoxRow {
 
         this.checkbox.active = s.selected;
 
-        this.title.label = s.name;
+        this.title1.label = s.name;
+        this.title2.label = s.name;
 
         this.price.label = @"%'.$(s.precision)F".printf (s.regular_market_price);
 
@@ -101,7 +111,10 @@ public class Markets.SymbolRow : Gtk.ListBoxRow {
 
     private void on_view_mode_update () {
         var visible = this.state.view_mode == State.ViewMode.SELECTION;
-        this.change.visible = !visible;
+        this.title1.visible = !visible;
+        this.extra_info.visible = !visible;
+        this.price_info.visible = !visible;
+        this.title2.visible = visible;
         this.checkbox.visible = visible;
         this.drag_icon.visible = visible;
         this.activatable = !visible;
