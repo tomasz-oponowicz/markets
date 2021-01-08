@@ -13,12 +13,17 @@ public class Markets.MainWindow : Hdy.ApplicationWindow {
 
     private SelectionHeaderBar selection_header_bar;
 
+    public Gtk.AccelGroup accel_group;
+
     public MainWindow (Gtk.Application app, State state) {
         Object (
             application: app,
             icon_name: Constants.APP_ID,
             title: _("Markets")
         );
+
+        this.accel_group = new Gtk.AccelGroup();
+        this.add_accel_group(accel_group);
 
         this.state = state;
 
@@ -43,6 +48,7 @@ public class Markets.MainWindow : Hdy.ApplicationWindow {
 
         this.window_position = Gtk.WindowPosition.CENTER;
         this.set_default_size (this.state.window_width, this.state.window_height);
+
     }
 
     private bool on_quit () {

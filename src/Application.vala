@@ -4,6 +4,11 @@ public class Markets.Application : Gtk.Application {
     private State state;
     private Service service;
 
+    private const ActionEntry[] app_entries =
+    {
+        { "quit", on_quit, null, null, null },
+    };
+
     public Application () {
         Object (
             application_id: Constants.APP_ID,
@@ -12,6 +17,8 @@ public class Markets.Application : Gtk.Application {
 
         this.service = new Service ();
         this.state = this.service.state;
+
+        set_accels_for_action ("app.quit", {"<control>Q"});
     }
 
     public override void activate () {
@@ -42,6 +49,10 @@ public class Markets.Application : Gtk.Application {
         var selection_none = new SimpleAction ("selection.none", null);
         selection_none.activate.connect (on_selection_none);
         add_action (selection_none);
+
+        this.add_action_entries (app_entries, this);
+
+        this.set_accels_for_action ("app.quit", {"<control>Q"});
 
         this.service.init ();
 
@@ -80,6 +91,10 @@ public class Markets.Application : Gtk.Application {
 
     private void on_selection_none () {
         this.state.select_none ();
+    }
+
+    private void on_quit () {
+        this.quit ();
     }
 
     public static int main (string[] args) {

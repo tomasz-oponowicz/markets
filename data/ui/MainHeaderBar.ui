@@ -10,7 +10,7 @@
     <child>
       <object class="GtkButton">
         <property name="visible">True</property>
-        <property name="can_focus">False</property>
+        <property name="can_focus">True</property>
         <property name="receives_default">False</property>
         <property name="valign">center</property>
         <signal name="clicked" handler="on_add_clicked" swapped="no"/>
@@ -30,7 +30,7 @@
     <child>
       <object class="GtkButton">
         <property name="visible">True</property>
-        <property name="can_focus">False</property>
+        <property name="can_focus">True</property>
         <property name="receives_default">False</property>
         <property name="valign">center</property>
         <signal name="clicked" handler="on_select_clicked" swapped="no"/>
@@ -48,19 +48,28 @@
       </packing>
     </child>
     <child>
-      <object class="GtkMenuButton">
+      <object class="GtkMenuButton" id="menu_button">
         <property name="visible">True</property>
         <property name="can_focus">False</property>
         <property name="receives_default">False</property>
         <property name="valign">center</property>
-        <property name="menu_model">mainMenu</property>
+        <property name="menu_model">primary_menu</property>
+        <child internal-child="accessible">
+          <object class="AtkObject">
+            <property name="accessible-name" translatable="yes">Primary menu</property>
+          </object>
+        </child>
         <child>
           <object class="GtkImage">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="icon_name">open-menu-symbolic</property>
+            <property name="icon_size">1</property>
           </object>
         </child>
+        <style>
+          <class name="image-button"/>
+        </style>
       </object>
       <packing>
         <property name="pack_type">end</property>
@@ -79,7 +88,7 @@
       </packing>
     </child>
   </template>
-  <menu id="mainMenu">
+  <menu id="primary_menu">
     <section>
       <item>
         <attribute name="label" translatable="yes">Preferences</attribute>
