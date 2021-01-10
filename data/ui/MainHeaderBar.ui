@@ -54,11 +54,6 @@
         <property name="receives_default">False</property>
         <property name="valign">center</property>
         <property name="menu_model">primary_menu</property>
-        <child internal-child="accessible">
-          <object class="AtkObject">
-            <property name="accessible-name" translatable="yes">Primary menu</property>
-          </object>
-        </child>
         <child>
           <object class="GtkImage">
             <property name="visible">True</property>
