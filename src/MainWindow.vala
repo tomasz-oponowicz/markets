@@ -13,6 +13,8 @@ public class Markets.MainWindow : Hdy.ApplicationWindow {
 
     private SelectionHeaderBar selection_header_bar;
 
+    public Gtk.AccelGroup accel_group;
+
     public MainWindow (Gtk.Application app, State state) {
         Object (
             application: app,
@@ -22,9 +24,12 @@ public class Markets.MainWindow : Hdy.ApplicationWindow {
 
         this.state = state;
 
+        this.accel_group = new Gtk.AccelGroup();
+        this.add_accel_group(accel_group);
+
         this.main_header_bar = new MainHeaderBar (this, state);
 
-        this.selection_header_bar = new SelectionHeaderBar (state);
+        this.selection_header_bar = new SelectionHeaderBar (this, state);
         this.selection_header_bar.visible = false;
 
         this.titlebar.pack_start (this.main_header_bar, false);

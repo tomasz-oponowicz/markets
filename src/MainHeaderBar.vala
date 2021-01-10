@@ -1,21 +1,32 @@
 [GtkTemplate (ui = "/com/bitstower/Markets/MainHeaderBar.ui")]
 public class Markets.MainHeaderBar : Hdy.HeaderBar {
-    private Gtk.ApplicationWindow parent_window;
+    private Markets.MainWindow window;
     private Markets.State state;
+
+    [GtkChild]
+    private Gtk.MenuButton menu_button;
 
     [GtkChild]
     private Gtk.Spinner spinner;
 
-    public MainHeaderBar (Gtk.ApplicationWindow parent_window, State state) {
-        this.parent_window = parent_window;
+    public MainHeaderBar (MainWindow window, State state) {
+        this.window = window;
         this.state = state;
 
         this.state.notify["network-status"].connect (this.on_network_status_updated);
+
+        this.menu_button.add_accelerator (
+            "clicked",
+            window.accel_group,
+            Gdk.Key.F10,
+            0,
+            Gtk.AccelFlags.VISIBLE
+        );
     }
 
     [GtkCallback]
     private void on_add_clicked () {
-        var dialog = new NewSymbolDialog (this.parent_window, this.state);
+        var dialog = new NewSymbolDialog (this.window, this.state);
         dialog.run ();
         dialog.destroy ();
     }

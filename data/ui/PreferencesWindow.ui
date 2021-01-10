@@ -22,7 +22,6 @@
             <child>
               <object class="HdyActionRow">
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
                 <property name="title" translatable="yes">Update Interval</property>
                 <property name="subtitle" translatable="yes">Pull data every X seconds</property>
                 <property name="use_underline">True</property>
@@ -30,7 +29,6 @@
                 <child>
                   <object class="GtkComboBoxText" id="pull_interval">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
                     <property name="hexpand">False</property>
                     <property name="halign">center</property>
                     <property name="valign">center</property>
@@ -54,7 +52,6 @@
             <child>
               <object class="HdyActionRow">
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
                 <property name="title" translatable="yes">Dark Theme</property>
                 <property name="subtitle" translatable="yes">Use dark GTK+ theme</property>
                 <property name="use_underline">True</property>
@@ -62,7 +59,6 @@
                 <child>
                   <object class="GtkSwitch" id="dark_theme">
                     <property name="visible">True</property>
-                    <property name="can_focus">True</property>
                     <property name="halign">center</property>
                     <property name="valign">center</property>
                     <property name="hexpand">False</property>

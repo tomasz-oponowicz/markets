@@ -49,6 +49,7 @@
                 <child>
                   <object class="GtkLabel">
                     <property name="visible">True</property>
+                    <property name="can_focus">False</property>
                     <property name="label" translatable="yes">Source: &lt;a href="https://finance.yahoo.com/"&gt;Yahoo Finance&lt;/a&gt;</property>
                     <property name="wrap">True</property>
                     <property name="justify">center</property>

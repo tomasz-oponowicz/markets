@@ -10,6 +10,8 @@ public class Markets.NewSymbolDialog : Gtk.Dialog {
     [GtkChild]
     private Gtk.SearchEntry search_entry;
 
+    private Gtk.AccelGroup accel_group;
+
     private Markets.State state;
     private Gtk.ListStore store;
 
@@ -27,6 +29,17 @@ public class Markets.NewSymbolDialog : Gtk.Dialog {
         this.state.search_results = new Gee.ArrayList<Symbol> ();
 
         this.state.notify["search-results"].connect (this.on_search_results_updated);
+
+        this.accel_group = new Gtk.AccelGroup();
+        this.add_accel_group(accel_group);
+
+        this.save_button.add_accelerator (
+            "clicked",
+            this.accel_group,
+            Gdk.Key.Return,
+            0,
+            Gtk.AccelFlags.VISIBLE
+        );
     }
 
     private void on_search_results_updated () {
@@ -50,11 +63,22 @@ public class Markets.NewSymbolDialog : Gtk.Dialog {
     }
 
     [GtkCallback]
-    private void on_row_activated (Gtk.TreePath path, Gtk.TreeViewColumn column) {
-        this.state.search_selection = path.get_indices ()[0];
+    private void on_search_stopped () {
+        this.close ();
+    }
 
-        var selection = this.results_view.get_selection ();
-        this.save_button.sensitive = selection.count_selected_rows () > 0;
+    [GtkCallback]
+    private void on_cursor_changed () {
+        Gtk.TreePath path;
+        Gtk.TreeViewColumn column;
+
+        results_view.get_cursor(out path, out column);
+
+        if (path != null) {
+            this.state.search_selection = path.get_indices ()[0];
+            var selection = this.results_view.get_selection ();
+            this.save_button.sensitive = selection.count_selected_rows () > 0;
+        }
     }
 
     [GtkCallback]

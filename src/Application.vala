@@ -4,6 +4,11 @@ public class Markets.Application : Gtk.Application {
     private State state;
     private Service service;
 
+    private const ActionEntry[] app_entries =
+    {
+        { "quit", on_quit, null, null, null },
+    };
+
     public Application () {
         Object (
             application_id: Constants.APP_ID,
@@ -43,6 +48,10 @@ public class Markets.Application : Gtk.Application {
         selection_none.activate.connect (on_selection_none);
         add_action (selection_none);
 
+        this.add_action_entries (app_entries, this);
+
+        this.set_accels_for_action ("app.quit", {"<control>Q"});
+
         this.service.init ();
 
         this.window = new MainWindow (this, this.state);
@@ -80,6 +89,10 @@ public class Markets.Application : Gtk.Application {
 
     private void on_selection_none () {
         this.state.select_none ();
+    }
+
+    private void on_quit () {
+        this.window.close ();
     }
 
     public static int main (string[] args) {
