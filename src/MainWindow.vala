@@ -22,14 +22,14 @@ public class Markets.MainWindow : Hdy.ApplicationWindow {
             title: _("Markets")
         );
 
+        this.state = state;
+
         this.accel_group = new Gtk.AccelGroup();
         this.add_accel_group(accel_group);
 
-        this.state = state;
-
         this.main_header_bar = new MainHeaderBar (this, state);
 
-        this.selection_header_bar = new SelectionHeaderBar (state);
+        this.selection_header_bar = new SelectionHeaderBar (this, state);
         this.selection_header_bar.visible = false;
 
         this.titlebar.pack_start (this.main_header_bar, false);
@@ -48,7 +48,6 @@ public class Markets.MainWindow : Hdy.ApplicationWindow {
 
         this.window_position = Gtk.WindowPosition.CENTER;
         this.set_default_size (this.state.window_width, this.state.window_height);
-
     }
 
     private bool on_quit () {

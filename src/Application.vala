@@ -17,8 +17,6 @@ public class Markets.Application : Gtk.Application {
 
         this.service = new Service ();
         this.state = this.service.state;
-
-        set_accels_for_action ("app.quit", {"<control>Q"});
     }
 
     public override void activate () {
@@ -94,7 +92,7 @@ public class Markets.Application : Gtk.Application {
     }
 
     private void on_quit () {
-        this.quit ();
+        this.window.close ();
     }
 
     public static int main (string[] args) {

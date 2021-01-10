@@ -76,6 +76,7 @@
             <property name="primary_icon_sensitive">False</property>
             <property name="margin_bottom">10</property>
             <signal name="search_changed" handler="on_search_changed" swapped="no"/>
+            <signal name="stop_search" handler="on_search_stopped" swapped="no"/>
           </object>
           <packing>
             <property name="expand">False</property>
@@ -95,8 +96,9 @@
                 <property name="visible">True</property>
                 <property name="headers_visible">False</property>
                 <property name="activate_on_single_click">True</property>
+                <property name="enable_search">False</property>
                 <property name="search_column">0</property>
-                <signal name="row_activated" handler="on_row_activated" swapped="no"/>
+                <signal name="cursor_changed" handler="on_cursor_changed" swapped="no"/>
                 <child>
                   <object class="GtkTreeViewColumn">
                     <property name="title">Name</property>

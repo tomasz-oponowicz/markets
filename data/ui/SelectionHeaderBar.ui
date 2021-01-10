@@ -13,7 +13,7 @@
       <object class="GtkMenuButton">
         <property name="visible">True</property>
         <property name="can_focus">True</property>
-        <property name="receives_default">True</property>
+        <property name="receives_default">False</property>
         <property name="relief">none</property>
         <property name="popover">selection_options_popover</property>
         <child>
