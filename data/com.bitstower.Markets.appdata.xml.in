@@ -35,6 +35,18 @@
   </screenshots>
 
   <releases>
+    <release version="0.5.0" date="2021-01-12">
+      <description>
+        <p>Markets 0.5.0 brings new features and bug fixes.</p>
+        <ul>
+          <li>New layout of the symbol list</li>
+          <li>Improved keyboard support</li>
+          <li>Added new languages: Spanish, Slovak</li>
+          <li>More natural drag and drop behaviour</li>
+          <li>Bug fixes</li>
+        </ul>
+      </description>
+    </release>
     <release version="0.4.0" date="2020-11-30">
       <description>
         <p>Markets 0.4.0 brings new features and bug fixes.</p>
