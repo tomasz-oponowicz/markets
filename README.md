@@ -21,7 +21,7 @@ The Markets application delivers financial data to your fingertips. Track stocks
 
 ## Installation
 
-> **Librem5 / PinePhone users:** For the best experience, please avoid the Flatpak package and install the app from source. [Flatpak apps don't have access to a patched runtime](https://source.puri.sm/Librem5/Apps_Issues/-/issues/135). Because of that apps are not fully responsive. For example dialogs are not maximized.
+> **Librem5 / PinePhone users:** For the best experience, please avoid the Flatpak package and install the app from source. [Flatpak apps don't have access to a patched runtime](https://source.puri.sm/Librem5/Apps_Issues/-/issues/135). Because of that apps are not fully responsive in the Phosh shell. For example dialogs are not maximized.
 
 * Flathub: [com.bitstower.Markets](https://flathub.org/apps/details/com.bitstower.Markets)
 * Arch (AUR): [bitstower-markets](https://aur.archlinux.org/packages/bitstower-markets/)
