@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: com.bitstower.Markets\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-11-30 18:14+0100\n"
-"PO-Revision-Date: 2021-01-05 21:31+0000\n"
+"PO-Revision-Date: 2021-01-16 22:32+0000\n"
 "Last-Translator: Óscar Fernández Díaz <oscfdezdz@tuta.io>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/markets/markets/"
 "es/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4.1-dev\n"
+"X-Generator: Weblate 4.5-dev\n"
 
 #: data/com.bitstower.Markets.appdata.xml.in:6
 msgid "bitstower"
@@ -225,7 +225,7 @@ msgstr "No seleccionar ninguna"
 
 #: src/Application.vala:66
 msgid "A market tracker for Linux Smartphones and Tablets."
-msgstr "Un rastreador de mercado para Smartphones y Tablets Linux."
+msgstr "Un rastreador de mercado para smartphones y tablets Linux."
 
 #: src/Application.vala:71
 msgid "Official webpage"
