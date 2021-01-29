@@ -46,6 +46,7 @@ You'll need the following dependencies:
 * libgee
 * libhandy
 * json-glib
+* gettext
 * glib2
 * gtk3
 * meson
