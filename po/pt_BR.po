@@ -215,7 +215,7 @@ msgstr "Selecionar todos"
 
 #: data/ui/SelectionHeaderBar.ui:120
 msgid "Select none"
-msgstr "Desselecionar"
+msgstr "Desmarcar todos"
 
 #: src/Application.vala:66
 msgid "A market tracker for Linux Smartphones and Tablets."
