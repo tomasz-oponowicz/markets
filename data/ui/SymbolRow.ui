@@ -66,7 +66,7 @@
                     <property name="single_line_mode">True</property>
                     <property name="ellipsize">end</property>
                     <property name="halign">start</property>
-                    <property name="valign">middle</property>
+                    <property name="valign">center</property>
                   </object>
                   <packing>
                     <property name="expand">True</property>
