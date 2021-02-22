@@ -17,7 +17,7 @@
           <object class="HdyClamp">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
-            <property name="maximum_size">400</property>
+            <property name="maximum_size">600</property>
             <child>
               <object class="GtkBox">
                 <property name="height_request">250</property>

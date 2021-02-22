@@ -12,6 +12,8 @@ app_sources = [
   'Symbol.vala',
   'RestClient.vala',
   'MainWindow.vala',
+  'DetailedView.vala',
+  'DetailedHeaderBar.vala',
   app_constants,
   app_ui_resources
 ]

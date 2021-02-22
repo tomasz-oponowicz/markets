@@ -78,6 +78,7 @@ public class Markets.Application : Gtk.Application {
         dialog.license_type = Gtk.License.GPL_3_0;
         dialog.website = "https://bitstower.com";
         dialog.website_label = _("Official webpage");
+        // TODO add version
 
         dialog.run ();
         dialog.destroy ();

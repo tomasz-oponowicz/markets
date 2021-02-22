@@ -161,4 +161,8 @@ public class Markets.State : Object {
         }
         this.has_selected = false;
     }
+
+    public signal void symbol_clicked ();
+
+    public signal void back_clicked ();
 }

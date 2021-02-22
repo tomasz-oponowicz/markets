@@ -10,5 +10,7 @@
     <file compressed="true">SymbolsView.ui</file>
     <file compressed="true">MainHeaderBar.ui</file>
     <file compressed="true">SelectionHeaderBar.ui</file>
+    <file compressed="true">DetailedView.ui</file>
+    <file compressed="true">DetailedHeaderBar.ui</file>
   </gresource>
 </gresources>

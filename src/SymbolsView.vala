@@ -15,7 +15,8 @@ public class Markets.SymbolsView : Gtk.ScrolledWindow {
 
     [GtkCallback]
     private void on_row_click (Gtk.ListBox box, Gtk.ListBoxRow row) {
-        ((SymbolRow) row).on_row_clicked ();
+        this.state.symbol_clicked ();
+        //((SymbolRow) row).on_row_clicked ();
     }
 
     private void on_symbols_update () {
