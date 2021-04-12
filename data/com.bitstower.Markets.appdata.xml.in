@@ -35,6 +35,15 @@
   </screenshots>
 
   <releases>
+    <release version="0.5.2" date="2021-04-12">
+      <description>
+        <p>Markets 0.5.2 brings new translations and bug fixes.</p>
+        <ul>
+          <li>Added Portuguese (Brazil) translations</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
     <release version="0.5.1" date="2021-01-12">
       <description>
         <p>Markets 0.5.1 brings new features and bug fixes.</p>
