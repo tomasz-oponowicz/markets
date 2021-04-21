@@ -229,8 +229,8 @@ msgstr "Offizielle Webseite"
 
 #: src/SymbolRow.vala:88
 msgid "Market Closed"
-msgstr "Börse geöffnet"
+msgstr "Börse geschlossen"
 
 #: src/SymbolRow.vala:91
 msgid "Market Open"
-msgstr "Börse geschlossen"
+msgstr "Börse geöffnet"
