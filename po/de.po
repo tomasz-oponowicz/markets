@@ -10,15 +10,16 @@ msgstr ""
 "Project-Id-Version: com.bitstower.Markets\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-11-30 18:14+0100\n"
-"PO-Revision-Date: 2021-04-21 17:03+0200\n"
-"Last-Translator: Jan <liquidsky42@gmail.com>\n"
-"Language-Team: German <->\n"
+"PO-Revision-Date: 2021-05-07 23:33+0000\n"
+"Last-Translator: J. Lavoie <j.lavoie@net-c.ca>\n"
+"Language-Team: German <https://hosted.weblate.org/projects/markets/markets/"
+"de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Gtranslator 40.0\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.7-dev\n"
 
 #: data/com.bitstower.Markets.appdata.xml.in:6
 msgid "bitstower"
@@ -32,15 +33,15 @@ msgstr "Markets"
 
 #: data/com.bitstower.Markets.appdata.xml.in:13
 msgid "A stock, currency and cryptocurrency tracker"
-msgstr "Ein Kurs, Währung und Kryptowährungstracker"
+msgstr "Ein Kurs-, Währungs- und Kryptowährungstracker"
 
 #: data/com.bitstower.Markets.appdata.xml.in:15
 msgid ""
 "The Markets app delivers financial data to your fingertips. Stay on top of "
 "the market and never miss an investment opportunity!"
 msgstr ""
-"Market liefert Finanzdaten mit nur einem Klick. Bleiben Sie immer auf dem "
-"laufenden und verpasse keine Investmentchance."
+"Markets liefert Finanzdaten mit nur einem Klick. Bleibe immer auf dem "
+"Laufenden und verpasse keine Investitionmöglichkeit!"
 
 #: data/com.bitstower.Markets.appdata.xml.in:19
 msgid "Features:"
@@ -141,7 +142,7 @@ msgstr "Festerbreite"
 
 #: data/com.bitstower.Markets.gschema.xml:17
 msgid "Remember the window width."
-msgstr "Fensterweite merken"
+msgstr "Fensterweite merken."
 
 #: data/com.bitstower.Markets.gschema.xml:21
 msgid "Window height"
@@ -149,7 +150,7 @@ msgstr "Fensterhöhe"
 
 #: data/com.bitstower.Markets.gschema.xml:22
 msgid "Remember the window height."
-msgstr "Fensterhöhe merken"
+msgstr "Fensterhöhe merken."
 
 #: data/ui/PreferencesWindow.ui:16 data/ui/PreferencesWindow.ui:20
 msgid "General"
