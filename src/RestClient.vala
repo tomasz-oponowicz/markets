@@ -10,6 +10,10 @@ public class Markets.RestClient {
 
         yield this.queue_message (this.session, message);
 
+        if (message.status_code < 200 || message.status_code >= 300) {
+            warning (@"Unexpected response: $(message.status_code) $(message.reason_phrase)");
+        }
+
         var body = (string) message.response_body.data;
         return Json.from_string (body);
     }
