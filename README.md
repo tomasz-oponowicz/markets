@@ -75,3 +75,7 @@ To install, use `ninja install`, then execute with `bitstower-markets`
 sudo ninja install
 bitstower-markets
 ```
+
+## License
+
+The GNU General Public License, version 3.0 or later
