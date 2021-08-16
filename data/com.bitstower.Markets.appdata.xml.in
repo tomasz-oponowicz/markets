@@ -2,7 +2,7 @@
 <component type="desktop-application">
   <id>com.bitstower.Markets</id>
   <metadata_license>CC0-1.0</metadata_license>
-  <project_license>GPL-3.0-or-later</project_license>
+  <project_license>GPL-3.0</project_license>
   <developer_name>bitstower</developer_name>
   <url type="homepage">https://github.com/bitstower/markets</url>
   <url type="bugtracker">https://github.com/bitstower/markets/issues</url>
