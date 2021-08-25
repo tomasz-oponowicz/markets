@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: com.bitstower.Markets\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-11-30 18:14+0100\n"
-"PO-Revision-Date: 2021-05-24 22:33+0000\n"
+"PO-Revision-Date: 2021-08-26 12:33+0000\n"
 "Last-Translator: liimee <alt3753.7@gmail.com>\n"
 "Language-Team: Indonesian <https://hosted.weblate.org/projects/markets/"
 "markets/id/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.7-dev\n"
+"X-Generator: Weblate 4.8.1-dev\n"
 
 #: data/com.bitstower.Markets.appdata.xml.in:6
 msgid "bitstower"
@@ -171,7 +171,7 @@ msgstr ""
 
 #: data/ui/NoSymbolsView.ui:42
 msgid "Press + to add one."
-msgstr ""
+msgstr "Tekan + untuk menambahkan."
 
 #: data/ui/NewSymbolDialog.ui:19
 msgid "New symbol"
@@ -179,19 +179,19 @@ msgstr ""
 
 #: data/ui/NewSymbolDialog.ui:23
 msgid "_Cancel"
-msgstr ""
+msgstr "_Batal"
 
 #: data/ui/NewSymbolDialog.ui:39
 msgid "_Add"
-msgstr ""
+msgstr "_Tambahkan"
 
 #: data/ui/SymbolsView.ui:57
 msgid "Source: <a href=\"https://finance.yahoo.com/\">Yahoo Finance</a>"
-msgstr ""
+msgstr "Sumber: <a href=\"https://finance.yahoo.com/\">Yahoo Finance</a>"
 
 #: data/ui/MainHeaderBar.ui:85
 msgid "Preferences"
-msgstr ""
+msgstr "Preferensi"
 
 #: data/ui/MainHeaderBar.ui:91
 msgid "About Markets"
@@ -203,11 +203,11 @@ msgstr ""
 
 #: data/ui/SelectionHeaderBar.ui:55
 msgid "Cancel"
-msgstr ""
+msgstr "Batal"
 
 #: data/ui/SelectionHeaderBar.ui:106
 msgid "Select all"
-msgstr ""
+msgstr "Pilih semua"
 
 #: data/ui/SelectionHeaderBar.ui:120
 msgid "Select none"
@@ -219,7 +219,7 @@ msgstr ""
 
 #: src/Application.vala:71
 msgid "Official webpage"
-msgstr ""
+msgstr "Situs web resmi"
 
 #: src/SymbolRow.vala:88
 msgid "Market Closed"
