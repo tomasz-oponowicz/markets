@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: com.bitstower.Markets\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-11-30 18:14+0100\n"
-"PO-Revision-Date: 2021-09-24 12:34+0000\n"
+"PO-Revision-Date: 2021-09-25 13:36+0000\n"
 "Last-Translator: Óscar Fernández Díaz <oscfdezdz@tuta.io>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/markets/markets/"
 "es/>\n"
@@ -38,7 +38,7 @@ msgid ""
 "The Markets app delivers financial data to your fingertips. Stay on top of "
 "the market and never miss an investment opportunity!"
 msgstr ""
-"¡La aplicación de Mercados ofrece datos financieros al alcance de su mano. "
+"La aplicación de Mercados ofrece datos financieros al alcance de su mano. ¡"
 "Manténgase en la cima del mercado y nunca pierda una oportunidad de "
 "inversión!"
 
@@ -48,7 +48,7 @@ msgstr "Característias:"
 
 #: data/com.bitstower.Markets.appdata.xml.in:21
 msgid "Create your personal portfolio"
-msgstr "Crea tu cartera personal"
+msgstr "Crear su cartera personal"
 
 #: data/com.bitstower.Markets.appdata.xml.in:22
 msgid "Track stocks, currencies, cryptocurrencies, commodities and indexes"
@@ -61,7 +61,7 @@ msgstr "Compatible con los smartphones Linux (Librem5, PinePhone)"
 
 #: data/com.bitstower.Markets.appdata.xml.in:24
 msgid "Open any symbol in Yahoo Finance for more details"
-msgstr "Abre cualquier símbolo en Yahoo Finanzas para más detalles"
+msgstr "Abrir cualquier símbolo en Yahoo Finanzas para más detalles"
 
 #: data/com.bitstower.Markets.appdata.xml.in:25
 msgid "Adjust the refresh rate"
@@ -77,7 +77,7 @@ msgstr "Precios en directo"
 
 #: data/com.bitstower.Markets.appdata.xml.in:40
 msgid "Markets 0.4.0 brings new features and bug fixes."
-msgstr "Markets 0.4.0 trae nuevas características y correcciones de errores."
+msgstr "Markets 0.4.0 añade características nuevas y correcciones de errores."
 
 #: data/com.bitstower.Markets.appdata.xml.in:42
 #: data/com.bitstower.Markets.appdata.xml.in:61
@@ -100,17 +100,17 @@ msgstr "Se han solucionado varios problemas"
 
 #: data/com.bitstower.Markets.appdata.xml.in:51
 msgid "Markets 0.3.0 brings bug fixes."
-msgstr "Markets 0.3.0 trae correcciones de errores."
+msgstr "Markets 0.3.0 corrige errores."
 
 #: data/com.bitstower.Markets.appdata.xml.in:59
 msgid "Markets 0.2.0 brings small feature additions and bug fixes."
 msgstr ""
-"Markets 0.2.0 trae pequeñas adiciones de características y correcciones de "
+"Markets 0.2.0 añade pequeñas características adicionales y correcciones de "
 "errores."
 
 #: data/com.bitstower.Markets.appdata.xml.in:68
 msgid "Initial release"
-msgstr "Lanzamiento inicial"
+msgstr "Versión inicial"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/com.bitstower.Markets.desktop.in:11
@@ -137,7 +137,7 @@ msgid ""
 "theme has a dark variant."
 msgstr ""
 "Usar la variante oscura de su tema GTK+. Tenga en cuenta que no todos los "
-"temas de GTK+ tienen una variante oscura."
+"temas GTK+ tienen una variante oscura."
 
 #: data/com.bitstower.Markets.gschema.xml:16
 msgid "Window width"
@@ -185,7 +185,7 @@ msgstr "Pulse + para agregar uno."
 
 #: data/ui/NewSymbolDialog.ui:19
 msgid "New symbol"
-msgstr "Nuevo símbolo"
+msgstr "Símbolo nuevo"
 
 #: data/ui/NewSymbolDialog.ui:23
 msgid "_Cancel"
@@ -205,7 +205,7 @@ msgstr "Preferencias"
 
 #: data/ui/MainHeaderBar.ui:91
 msgid "About Markets"
-msgstr "Acerca de Markets"
+msgstr "Acerca de Mercados"
 
 #: data/ui/SelectionHeaderBar.ui:28
 msgid "Click on a checkbox to select"
