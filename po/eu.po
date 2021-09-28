@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.bitstower.Markets\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-28 12:44+0200\n"
+"POT-Creation-Date: 2021-09-28 12:54+0200\n"
 "PO-Revision-Date: 2021-05-24 22:33+0000\n"
 "Last-Translator: Sergio Varela <sergitroll9@gmail.com>\n"
 "Language-Team: Basque <https://hosted.weblate.org/projects/markets/markets/"
@@ -75,32 +75,28 @@ msgid "Live Prices"
 msgstr "Zuzeneko prezioak"
 
 #: data/com.bitstower.Markets.appdata.xml.in:40
-#, fuzzy
 msgid "Markets 0.5.2 brings new translations and bug fixes."
-msgstr "Markets 0.4.0 ezaugarri berriak eta akatsen zuzenketak dakartza."
+msgstr "Markets 0.5.2 ezaugarri berriak eta akatsen zuzenketak dakartza."
 
 #: data/com.bitstower.Markets.appdata.xml.in:42
 msgid "Added Portuguese (Brazil) translations"
 msgstr ""
 
 #: data/com.bitstower.Markets.appdata.xml.in:43
-#, fuzzy
 msgid "Updated translations"
-msgstr "Eguneratzeko tartea"
+msgstr ""
 
 #: data/com.bitstower.Markets.appdata.xml.in:49
-#, fuzzy
 msgid "Markets 0.5.1 brings new features and bug fixes."
-msgstr "Markets 0.4.0 ezaugarri berriak eta akatsen zuzenketak dakartza."
+msgstr "Markets 0.5.1 ezaugarri berriak eta akatsen zuzenketak dakartza."
 
 #: data/com.bitstower.Markets.appdata.xml.in:51
 msgid "New layout of the symbol list"
 msgstr ""
 
 #: data/com.bitstower.Markets.appdata.xml.in:52
-#, fuzzy
 msgid "Improved keyboard support"
-msgstr "Berrantolaketa-euskarria gehituta"
+msgstr ""
 
 #: data/com.bitstower.Markets.appdata.xml.in:53
 msgid "Added new languages: Spanish, Slovak"

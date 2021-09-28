@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.bitstower.Markets\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-28 12:44+0200\n"
+"POT-Creation-Date: 2021-09-28 12:54+0200\n"
 "PO-Revision-Date: 2020-10-21 11:40+0000\n"
 "Last-Translator: Tomasz Oponowicz <tomasz@zaxo.biz>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/markets/markets/"
@@ -21,9 +21,8 @@ msgstr ""
 "X-Generator: Weblate 4.3.1\n"
 
 #: data/com.bitstower.Markets.appdata.xml.in:6
-#, fuzzy
 msgid "bitstower"
-msgstr "Bitstower"
+msgstr "bitstower"
 
 #: data/com.bitstower.Markets.appdata.xml.in:12
 #: data/com.bitstower.Markets.desktop.in:3 src/Application.vala:74
@@ -123,9 +122,8 @@ msgid "Added reorder support"
 msgstr ""
 
 #: data/com.bitstower.Markets.appdata.xml.in:65
-#, fuzzy
 msgid "Added i18n support"
-msgstr "Добавлен новый значок приложения"
+msgstr ""
 
 #: data/com.bitstower.Markets.appdata.xml.in:66
 #: data/com.bitstower.Markets.appdata.xml.in:74
@@ -147,9 +145,8 @@ msgstr ""
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/com.bitstower.Markets.desktop.in:11
-#, fuzzy
 msgid "stock;currency;cryptocurrency;finance;economy;"
-msgstr "Трекер акций, валют и криптовалют"
+msgstr ""
 
 #: data/com.bitstower.Markets.gschema.xml:6
 msgid "Pull interval"

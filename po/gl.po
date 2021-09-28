@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.bitstower.Markets\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-28 12:44+0200\n"
+"POT-Creation-Date: 2021-09-28 12:54+0200\n"
 "PO-Revision-Date: 2021-09-12 00:17+0200\n"
 "Last-Translator: Fran Dieguez <frandieguez@gnome.org>\n"
 "Language-Team: Galician <proxecto@trasno.gal>\n"
@@ -75,32 +75,28 @@ msgid "Live Prices"
 msgstr "Precios en directo"
 
 #: data/com.bitstower.Markets.appdata.xml.in:40
-#, fuzzy
 msgid "Markets 0.5.2 brings new translations and bug fixes."
-msgstr "Markets 0.4.0 trae novas características e correccións de erros."
+msgstr "Markets 0.5.2 trae novas características e correccións de erros."
 
 #: data/com.bitstower.Markets.appdata.xml.in:42
 msgid "Added Portuguese (Brazil) translations"
 msgstr ""
 
 #: data/com.bitstower.Markets.appdata.xml.in:43
-#, fuzzy
 msgid "Updated translations"
-msgstr "Intervalo de actualización"
+msgstr ""
 
 #: data/com.bitstower.Markets.appdata.xml.in:49
-#, fuzzy
 msgid "Markets 0.5.1 brings new features and bug fixes."
-msgstr "Markets 0.4.0 trae novas características e correccións de erros."
+msgstr "Markets 0.5.1 trae novas características e correccións de erros."
 
 #: data/com.bitstower.Markets.appdata.xml.in:51
 msgid "New layout of the symbol list"
 msgstr ""
 
 #: data/com.bitstower.Markets.appdata.xml.in:52
-#, fuzzy
 msgid "Improved keyboard support"
-msgstr "Engadida compatibilidade para reordenar"
+msgstr ""
 
 #: data/com.bitstower.Markets.appdata.xml.in:53
 msgid "Added new languages: Spanish, Slovak"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.bitstower.Markets\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-28 12:44+0200\n"
+"POT-Creation-Date: 2021-09-28 12:54+0200\n"
 "PO-Revision-Date: 2020-08-28 17:28+0200\n"
 "Last-Translator: Heimen Stoffels <vistausss@outlook.com>\n"
 "Language-Team: \n"
@@ -19,9 +19,8 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: data/com.bitstower.Markets.appdata.xml.in:6
-#, fuzzy
 msgid "bitstower"
-msgstr "Bitstower"
+msgstr "bitstower"
 
 #: data/com.bitstower.Markets.appdata.xml.in:12
 #: data/com.bitstower.Markets.desktop.in:3 src/Application.vala:74
@@ -74,23 +73,20 @@ msgid "Live Prices"
 msgstr "Live-koerwaarden"
 
 #: data/com.bitstower.Markets.appdata.xml.in:40
-#, fuzzy
 msgid "Markets 0.5.2 brings new translations and bug fixes."
-msgstr "Markten 0.2.0 bevat een paar nieuwe functies en foutoplossingen."
+msgstr "Markten 0.5.2 bevat een paar nieuwe functies en foutoplossingen."
 
 #: data/com.bitstower.Markets.appdata.xml.in:42
 msgid "Added Portuguese (Brazil) translations"
 msgstr ""
 
 #: data/com.bitstower.Markets.appdata.xml.in:43
-#, fuzzy
 msgid "Updated translations"
-msgstr "Bijwerktussenpoos"
+msgstr ""
 
 #: data/com.bitstower.Markets.appdata.xml.in:49
-#, fuzzy
 msgid "Markets 0.5.1 brings new features and bug fixes."
-msgstr "Markten 0.2.0 bevat een paar nieuwe functies en foutoplossingen."
+msgstr "Markten 0.5.1 bevat een paar nieuwe functies en foutoplossingen."
 
 #: data/com.bitstower.Markets.appdata.xml.in:51
 msgid "New layout of the symbol list"
@@ -113,9 +109,8 @@ msgid "Bug fixes"
 msgstr ""
 
 #: data/com.bitstower.Markets.appdata.xml.in:61
-#, fuzzy
 msgid "Markets 0.4.0 brings new features and bug fixes."
-msgstr "Markten 0.2.0 bevat een paar nieuwe functies en foutoplossingen."
+msgstr "Markten 0.4.0 bevat een paar nieuwe functies en foutoplossingen."
 
 #: data/com.bitstower.Markets.appdata.xml.in:63
 #: data/com.bitstower.Markets.appdata.xml.in:82
@@ -127,9 +122,8 @@ msgid "Added reorder support"
 msgstr ""
 
 #: data/com.bitstower.Markets.appdata.xml.in:65
-#, fuzzy
 msgid "Added i18n support"
-msgstr "Nieuw toepassingspictogram"
+msgstr ""
 
 #: data/com.bitstower.Markets.appdata.xml.in:66
 #: data/com.bitstower.Markets.appdata.xml.in:74
@@ -151,9 +145,8 @@ msgstr "Initiële uitgave"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/com.bitstower.Markets.desktop.in:11
-#, fuzzy
 msgid "stock;currency;cryptocurrency;finance;economy;"
-msgstr "Een toepassing voor het bijhouden van aandelen- en (crypto)valuta"
+msgstr ""
 
 #: data/com.bitstower.Markets.gschema.xml:6
 msgid "Pull interval"

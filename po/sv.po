@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.bitstower.Markets\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-28 12:44+0200\n"
+"POT-Creation-Date: 2021-09-28 12:54+0200\n"
 "PO-Revision-Date: 2020-12-20 11:56+0100\n"
 "Last-Translator: Åke Engelbrektson <eson@svenskasprakfiler.se>\n"
 "Language-Team: Svenska Språkfiler <contactform@svenskasprakfiler.se>\n"
@@ -73,32 +73,28 @@ msgid "Live Prices"
 msgstr "Realtidspriser"
 
 #: data/com.bitstower.Markets.appdata.xml.in:40
-#, fuzzy
 msgid "Markets 0.5.2 brings new translations and bug fixes."
-msgstr "Markets 0.4.0 kommer med nya funktioner och buggfixar."
+msgstr "Markets 0.5.2 kommer med nya funktioner och buggfixar."
 
 #: data/com.bitstower.Markets.appdata.xml.in:42
 msgid "Added Portuguese (Brazil) translations"
 msgstr ""
 
 #: data/com.bitstower.Markets.appdata.xml.in:43
-#, fuzzy
 msgid "Updated translations"
-msgstr "Uppdateringsintervall"
+msgstr ""
 
 #: data/com.bitstower.Markets.appdata.xml.in:49
-#, fuzzy
 msgid "Markets 0.5.1 brings new features and bug fixes."
-msgstr "Markets 0.4.0 kommer med nya funktioner och buggfixar."
+msgstr "Markets 0.5.1 kommer med nya funktioner och buggfixar."
 
 #: data/com.bitstower.Markets.appdata.xml.in:51
 msgid "New layout of the symbol list"
 msgstr ""
 
 #: data/com.bitstower.Markets.appdata.xml.in:52
-#, fuzzy
 msgid "Improved keyboard support"
-msgstr "Lade till omordningsstöd"
+msgstr ""
 
 #: data/com.bitstower.Markets.appdata.xml.in:53
 msgid "Added new languages: Spanish, Slovak"
