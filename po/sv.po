@@ -7,30 +7,30 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.bitstower.Markets\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-30 18:14+0100\n"
+"POT-Creation-Date: 2021-09-28 12:44+0200\n"
 "PO-Revision-Date: 2020-12-20 11:56+0100\n"
+"Last-Translator: Åke Engelbrektson <eson@svenskasprakfiler.se>\n"
 "Language-Team: Svenska Språkfiler <contactform@svenskasprakfiler.se>\n"
+"Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 2.0.6\n"
-"Last-Translator: Åke Engelbrektson <eson@svenskasprakfiler.se>\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"Language: sv\n"
 
 #: data/com.bitstower.Markets.appdata.xml.in:6
 msgid "bitstower"
 msgstr "bitstower"
 
 #: data/com.bitstower.Markets.appdata.xml.in:12
-#: data/com.bitstower.Markets.desktop.in:3 src/Application.vala:65
-#: src/MainWindow.vala:17
+#: data/com.bitstower.Markets.desktop.in:3 src/Application.vala:74
+#: src/MainWindow.vala:22
 msgid "Markets"
 msgstr "Markets"
 
-#: data/com.bitstower.Markets.appdata.xml.in:13
-msgid "A stock, currency and cryptocurrency tracker"
-msgstr "En aktie-, valuta- kryptovalutaspårare"
+#: data/com.bitstower.Markets.appdata.xml.in:13 src/Application.vala:75
+msgid "Keep track of your investments"
+msgstr ""
 
 #: data/com.bitstower.Markets.appdata.xml.in:15
 msgid ""
@@ -73,37 +73,77 @@ msgid "Live Prices"
 msgstr "Realtidspriser"
 
 #: data/com.bitstower.Markets.appdata.xml.in:40
-msgid "Markets 0.4.0 brings new features and bug fixes."
+#, fuzzy
+msgid "Markets 0.5.2 brings new translations and bug fixes."
 msgstr "Markets 0.4.0 kommer med nya funktioner och buggfixar."
 
 #: data/com.bitstower.Markets.appdata.xml.in:42
+msgid "Added Portuguese (Brazil) translations"
+msgstr ""
+
+#: data/com.bitstower.Markets.appdata.xml.in:43
+#, fuzzy
+msgid "Updated translations"
+msgstr "Uppdateringsintervall"
+
+#: data/com.bitstower.Markets.appdata.xml.in:49
+#, fuzzy
+msgid "Markets 0.5.1 brings new features and bug fixes."
+msgstr "Markets 0.4.0 kommer med nya funktioner och buggfixar."
+
+#: data/com.bitstower.Markets.appdata.xml.in:51
+msgid "New layout of the symbol list"
+msgstr ""
+
+#: data/com.bitstower.Markets.appdata.xml.in:52
+#, fuzzy
+msgid "Improved keyboard support"
+msgstr "Lade till omordningsstöd"
+
+#: data/com.bitstower.Markets.appdata.xml.in:53
+msgid "Added new languages: Spanish, Slovak"
+msgstr ""
+
+#: data/com.bitstower.Markets.appdata.xml.in:54
+msgid "More natural drag and drop behaviour"
+msgstr ""
+
+#: data/com.bitstower.Markets.appdata.xml.in:55
+msgid "Bug fixes"
+msgstr ""
+
 #: data/com.bitstower.Markets.appdata.xml.in:61
+msgid "Markets 0.4.0 brings new features and bug fixes."
+msgstr "Markets 0.4.0 kommer med nya funktioner och buggfixar."
+
+#: data/com.bitstower.Markets.appdata.xml.in:63
+#: data/com.bitstower.Markets.appdata.xml.in:82
 msgid "Added new app icon"
 msgstr "Lade till ny appikon"
 
-#: data/com.bitstower.Markets.appdata.xml.in:43
+#: data/com.bitstower.Markets.appdata.xml.in:64
 msgid "Added reorder support"
 msgstr "Lade till omordningsstöd"
 
-#: data/com.bitstower.Markets.appdata.xml.in:44
+#: data/com.bitstower.Markets.appdata.xml.in:65
 msgid "Added i18n support"
 msgstr "Lade till språkstöd (i18n)"
 
-#: data/com.bitstower.Markets.appdata.xml.in:45
-#: data/com.bitstower.Markets.appdata.xml.in:53
-#: data/com.bitstower.Markets.appdata.xml.in:62
+#: data/com.bitstower.Markets.appdata.xml.in:66
+#: data/com.bitstower.Markets.appdata.xml.in:74
+#: data/com.bitstower.Markets.appdata.xml.in:83
 msgid "Fixed various issues"
 msgstr "Fixade diverse problem"
 
-#: data/com.bitstower.Markets.appdata.xml.in:51
+#: data/com.bitstower.Markets.appdata.xml.in:72
 msgid "Markets 0.3.0 brings bug fixes."
 msgstr "Markets 0.3.0 kommer med buggfixar."
 
-#: data/com.bitstower.Markets.appdata.xml.in:59
+#: data/com.bitstower.Markets.appdata.xml.in:80
 msgid "Markets 0.2.0 brings small feature additions and bug fixes."
 msgstr "Markets 0.2.0 kommer med mindre funktionstillägg och buggfixar."
 
-#: data/com.bitstower.Markets.appdata.xml.in:68
+#: data/com.bitstower.Markets.appdata.xml.in:89
 msgid "Initial release"
 msgstr "Inledande utgåva"
 
@@ -120,7 +160,7 @@ msgstr "Hämtningsintervall"
 msgid "Pull data every X seconds."
 msgstr "Hämta data varje X sekunder."
 
-#: data/com.bitstower.Markets.gschema.xml:11 data/ui/PreferencesWindow.ui:59
+#: data/com.bitstower.Markets.gschema.xml:11 data/ui/PreferencesWindow.ui:56
 msgid "Use dark GTK+ theme"
 msgstr "Använd mörkt GTK+ tema"
 
@@ -152,19 +192,19 @@ msgstr "Kom ihåg fönsterhöjden."
 msgid "General"
 msgstr "Allmänt"
 
-#: data/ui/PreferencesWindow.ui:26
+#: data/ui/PreferencesWindow.ui:25
 msgid "Update Interval"
 msgstr "Uppdateringsintervall"
 
-#: data/ui/PreferencesWindow.ui:27
+#: data/ui/PreferencesWindow.ui:26
 msgid "Pull data every X seconds"
 msgstr "Hämta data varje X sekunder"
 
-#: data/ui/PreferencesWindow.ui:52
+#: data/ui/PreferencesWindow.ui:50
 msgid "Apppearance"
 msgstr "Utseende"
 
-#: data/ui/PreferencesWindow.ui:58
+#: data/ui/PreferencesWindow.ui:55
 msgid "Dark Theme"
 msgstr "Mörkt tema"
 
@@ -188,15 +228,15 @@ msgstr "_Avbryt"
 msgid "_Add"
 msgstr "_Lägg till"
 
-#: data/ui/SymbolsView.ui:57
+#: data/ui/SymbolsView.ui:53
 msgid "Source: <a href=\"https://finance.yahoo.com/\">Yahoo Finance</a>"
 msgstr "Källa: <a href=\"https://finance.yahoo.com/\">Yahoo Finance</a>"
 
-#: data/ui/MainHeaderBar.ui:85
+#: data/ui/MainHeaderBar.ui:89
 msgid "Preferences"
 msgstr "Inställningar"
 
-#: data/ui/MainHeaderBar.ui:91
+#: data/ui/MainHeaderBar.ui:95
 msgid "About Markets"
 msgstr "Om Markets"
 
@@ -216,18 +256,20 @@ msgstr "Markera alla"
 msgid "Select none"
 msgstr "Avmarkera alla"
 
-#: src/Application.vala:66
-msgid "A market tracker for Linux Smartphones and Tablets."
-msgstr "En marknadsspårare för Linux-telefoner och surfplattor."
-
-#: src/Application.vala:71
+#: src/Application.vala:80
 msgid "Official webpage"
 msgstr "Officiell webbplats"
 
-#: src/SymbolRow.vala:88
+#: src/SymbolRow.vala:98
 msgid "Market Closed"
 msgstr "Marknaden stängd"
 
-#: src/SymbolRow.vala:91
+#: src/SymbolRow.vala:101
 msgid "Market Open"
 msgstr "Marknaden öppen"
+
+#~ msgid "A stock, currency and cryptocurrency tracker"
+#~ msgstr "En aktie-, valuta- kryptovalutaspårare"
+
+#~ msgid "A market tracker for Linux Smartphones and Tablets."
+#~ msgstr "En marknadsspårare för Linux-telefoner och surfplattor."

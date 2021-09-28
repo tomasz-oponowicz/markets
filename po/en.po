@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.bitstower.Markets\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-27 13:40+0200\n"
+"POT-Creation-Date: 2021-09-28 12:44+0200\n"
 "PO-Revision-Date: 2020-08-21 10:49+0200\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -18,19 +18,21 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: data/com.bitstower.Markets.appdata.xml.in:6
-msgid "Bitstower"
+#, fuzzy
+msgid "bitstower"
 msgstr "Bitstower"
 
-#: data/com.bitstower.Markets.appdata.xml.in:11
-#: data/com.bitstower.Markets.desktop.in:3 src/Application.vala:65
+#: data/com.bitstower.Markets.appdata.xml.in:12
+#: data/com.bitstower.Markets.desktop.in:3 src/Application.vala:74
+#: src/MainWindow.vala:22
 msgid "Markets"
 msgstr "Markets"
 
-#: data/com.bitstower.Markets.appdata.xml.in:12
-msgid "A stock, currency and cryptocurrency tracker"
-msgstr "A stock, currency and cryptocurrency tracker"
+#: data/com.bitstower.Markets.appdata.xml.in:13 src/Application.vala:75
+msgid "Keep track of your investments"
+msgstr ""
 
-#: data/com.bitstower.Markets.appdata.xml.in:14
+#: data/com.bitstower.Markets.appdata.xml.in:15
 msgid ""
 "The Markets app delivers financial data to your fingertips. Stay on top of "
 "the market and never miss an investment opportunity!"
@@ -38,58 +40,119 @@ msgstr ""
 "The Markets app delivers financial data to your fingertips. Stay on top of "
 "the market and never miss an investment opportunity!"
 
-#: data/com.bitstower.Markets.appdata.xml.in:18
+#: data/com.bitstower.Markets.appdata.xml.in:19
 msgid "Features:"
 msgstr "Features:"
 
-#: data/com.bitstower.Markets.appdata.xml.in:20
+#: data/com.bitstower.Markets.appdata.xml.in:21
 msgid "Create your personal portfolio"
 msgstr "Create your personal portfolio"
 
-#: data/com.bitstower.Markets.appdata.xml.in:21
+#: data/com.bitstower.Markets.appdata.xml.in:22
 msgid "Track stocks, currencies, cryptocurrencies, commodities and indexes"
 msgstr "Track stocks, currencies, cryptocurrencies, commodities and indexes"
 
-#: data/com.bitstower.Markets.appdata.xml.in:22
+#: data/com.bitstower.Markets.appdata.xml.in:23
 msgid "Compatible with Linux smartphones (Librem5, PinePhone)"
 msgstr "Compatible with Linux smartphones (Librem5, PinePhone)"
 
-#: data/com.bitstower.Markets.appdata.xml.in:23
+#: data/com.bitstower.Markets.appdata.xml.in:24
 msgid "Open any symbol in Yahoo Finance for more details"
 msgstr "Open any symbol in Yahoo Finance for more details"
 
-#: data/com.bitstower.Markets.appdata.xml.in:24
+#: data/com.bitstower.Markets.appdata.xml.in:25
 msgid "Adjust the refresh rate"
 msgstr "Adjust the refresh rate"
 
-#: data/com.bitstower.Markets.appdata.xml.in:25
+#: data/com.bitstower.Markets.appdata.xml.in:26
 msgid "Dark Mode"
 msgstr "Dark Mode"
 
-#: data/com.bitstower.Markets.appdata.xml.in:32
+#: data/com.bitstower.Markets.appdata.xml.in:33
 msgid "Live Prices"
 msgstr "Live Prices"
 
-#: data/com.bitstower.Markets.appdata.xml.in:39
-msgid "Markets 0.3.0 brings bug fixes."
-msgstr "Markets 0.3.0 brings bug fixes."
-
-#: data/com.bitstower.Markets.appdata.xml.in:41
-#: data/com.bitstower.Markets.appdata.xml.in:50
-msgid "Fixed various issues"
-msgstr "Fixed various issues"
-
-#: data/com.bitstower.Markets.appdata.xml.in:47
-msgid "Markets 0.2.0 brings small feature additions and bug fixes."
+#: data/com.bitstower.Markets.appdata.xml.in:40
+#, fuzzy
+msgid "Markets 0.5.2 brings new translations and bug fixes."
 msgstr "Markets 0.2.0 brings small feature additions and bug fixes."
 
+#: data/com.bitstower.Markets.appdata.xml.in:42
+msgid "Added Portuguese (Brazil) translations"
+msgstr ""
+
+#: data/com.bitstower.Markets.appdata.xml.in:43
+#, fuzzy
+msgid "Updated translations"
+msgstr "Update Interval"
+
 #: data/com.bitstower.Markets.appdata.xml.in:49
+#, fuzzy
+msgid "Markets 0.5.1 brings new features and bug fixes."
+msgstr "Markets 0.2.0 brings small feature additions and bug fixes."
+
+#: data/com.bitstower.Markets.appdata.xml.in:51
+msgid "New layout of the symbol list"
+msgstr ""
+
+#: data/com.bitstower.Markets.appdata.xml.in:52
+msgid "Improved keyboard support"
+msgstr ""
+
+#: data/com.bitstower.Markets.appdata.xml.in:53
+msgid "Added new languages: Spanish, Slovak"
+msgstr ""
+
+#: data/com.bitstower.Markets.appdata.xml.in:54
+msgid "More natural drag and drop behaviour"
+msgstr ""
+
+#: data/com.bitstower.Markets.appdata.xml.in:55
+msgid "Bug fixes"
+msgstr ""
+
+#: data/com.bitstower.Markets.appdata.xml.in:61
+#, fuzzy
+msgid "Markets 0.4.0 brings new features and bug fixes."
+msgstr "Markets 0.2.0 brings small feature additions and bug fixes."
+
+#: data/com.bitstower.Markets.appdata.xml.in:63
+#: data/com.bitstower.Markets.appdata.xml.in:82
 msgid "Added new app icon"
 msgstr "Added new app icon"
 
-#: data/com.bitstower.Markets.appdata.xml.in:56
+#: data/com.bitstower.Markets.appdata.xml.in:64
+msgid "Added reorder support"
+msgstr ""
+
+#: data/com.bitstower.Markets.appdata.xml.in:65
+#, fuzzy
+msgid "Added i18n support"
+msgstr "Added new app icon"
+
+#: data/com.bitstower.Markets.appdata.xml.in:66
+#: data/com.bitstower.Markets.appdata.xml.in:74
+#: data/com.bitstower.Markets.appdata.xml.in:83
+msgid "Fixed various issues"
+msgstr "Fixed various issues"
+
+#: data/com.bitstower.Markets.appdata.xml.in:72
+msgid "Markets 0.3.0 brings bug fixes."
+msgstr "Markets 0.3.0 brings bug fixes."
+
+#: data/com.bitstower.Markets.appdata.xml.in:80
+msgid "Markets 0.2.0 brings small feature additions and bug fixes."
+msgstr "Markets 0.2.0 brings small feature additions and bug fixes."
+
+#: data/com.bitstower.Markets.appdata.xml.in:89
 msgid "Initial release"
 msgstr "Initial release"
+
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/com.bitstower.Markets.desktop.in:11
+#, fuzzy
+msgid "stock;currency;cryptocurrency;finance;economy;"
+msgstr "A stock, currency and cryptocurrency tracker"
 
 #: data/com.bitstower.Markets.gschema.xml:6
 msgid "Pull interval"
@@ -99,7 +162,7 @@ msgstr "Pull interval"
 msgid "Pull data every X seconds."
 msgstr "Pull data every X seconds."
 
-#: data/com.bitstower.Markets.gschema.xml:11 data/ui/PreferencesWindow.ui:59
+#: data/com.bitstower.Markets.gschema.xml:11 data/ui/PreferencesWindow.ui:56
 msgid "Use dark GTK+ theme"
 msgstr "Use dark GTK+ theme"
 
@@ -131,19 +194,19 @@ msgstr "Remember the window height."
 msgid "General"
 msgstr "General"
 
-#: data/ui/PreferencesWindow.ui:26
+#: data/ui/PreferencesWindow.ui:25
 msgid "Update Interval"
 msgstr "Update Interval"
 
-#: data/ui/PreferencesWindow.ui:27
+#: data/ui/PreferencesWindow.ui:26
 msgid "Pull data every X seconds"
 msgstr "Pull data every X seconds"
 
-#: data/ui/PreferencesWindow.ui:52
+#: data/ui/PreferencesWindow.ui:50
 msgid "Apppearance"
 msgstr "Apppearance"
 
-#: data/ui/PreferencesWindow.ui:58
+#: data/ui/PreferencesWindow.ui:55
 msgid "Dark Theme"
 msgstr "Dark Theme"
 
@@ -167,15 +230,15 @@ msgstr "_Cancel"
 msgid "_Add"
 msgstr "_Add"
 
-#: data/ui/SymbolsView.ui:58
+#: data/ui/SymbolsView.ui:53
 msgid "Source: <a href=\"https://finance.yahoo.com/\">Yahoo Finance</a>"
 msgstr "Source: <a href=\"https://finance.yahoo.com/\">Yahoo Finance</a>"
 
-#: data/ui/MainHeaderBar.ui:85
+#: data/ui/MainHeaderBar.ui:89
 msgid "Preferences"
 msgstr "Preferences"
 
-#: data/ui/MainHeaderBar.ui:91
+#: data/ui/MainHeaderBar.ui:95
 msgid "About Markets"
 msgstr "About Markets"
 
@@ -195,18 +258,17 @@ msgstr "Select all"
 msgid "Select none"
 msgstr "Select none"
 
-#: src/Application.vala:66
-msgid "A market tracker for Linux Smartphones and Tablets."
-msgstr "A market tracker for Linux Smartphones and Tablets."
-
-#: src/Application.vala:71
+#: src/Application.vala:80
 msgid "Official webpage"
 msgstr "Official webpage"
 
-#: src/SymbolRow.vala:70
+#: src/SymbolRow.vala:98
 msgid "Market Closed"
 msgstr "Market Closed"
 
-#: src/SymbolRow.vala:73
+#: src/SymbolRow.vala:101
 msgid "Market Open"
 msgstr "Market Open"
+
+#~ msgid "A market tracker for Linux Smartphones and Tablets."
+#~ msgstr "A market tracker for Linux Smartphones and Tablets."

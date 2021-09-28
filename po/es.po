@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.bitstower.Markets\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-30 18:14+0100\n"
+"POT-Creation-Date: 2021-09-28 12:44+0200\n"
 "PO-Revision-Date: 2021-09-25 13:36+0000\n"
 "Last-Translator: Óscar Fernández Díaz <oscfdezdz@tuta.io>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/markets/markets/"
@@ -24,22 +24,22 @@ msgid "bitstower"
 msgstr "bitstower"
 
 #: data/com.bitstower.Markets.appdata.xml.in:12
-#: data/com.bitstower.Markets.desktop.in:3 src/Application.vala:65
-#: src/MainWindow.vala:17
+#: data/com.bitstower.Markets.desktop.in:3 src/Application.vala:74
+#: src/MainWindow.vala:22
 msgid "Markets"
 msgstr "Mercados"
 
-#: data/com.bitstower.Markets.appdata.xml.in:13
-msgid "A stock, currency and cryptocurrency tracker"
-msgstr "Un rastreador de acciones, divisas y criptodivisas"
+#: data/com.bitstower.Markets.appdata.xml.in:13 src/Application.vala:75
+msgid "Keep track of your investments"
+msgstr ""
 
 #: data/com.bitstower.Markets.appdata.xml.in:15
 msgid ""
 "The Markets app delivers financial data to your fingertips. Stay on top of "
 "the market and never miss an investment opportunity!"
 msgstr ""
-"La aplicación de Mercados ofrece datos financieros al alcance de su mano. ¡"
-"Manténgase en la cima del mercado y nunca pierda una oportunidad de "
+"La aplicación de Mercados ofrece datos financieros al alcance de su mano. "
+"¡Manténgase en la cima del mercado y nunca pierda una oportunidad de "
 "inversión!"
 
 #: data/com.bitstower.Markets.appdata.xml.in:19
@@ -76,39 +76,79 @@ msgid "Live Prices"
 msgstr "Precios en directo"
 
 #: data/com.bitstower.Markets.appdata.xml.in:40
-msgid "Markets 0.4.0 brings new features and bug fixes."
+#, fuzzy
+msgid "Markets 0.5.2 brings new translations and bug fixes."
 msgstr "Markets 0.4.0 añade características nuevas y correcciones de errores."
 
 #: data/com.bitstower.Markets.appdata.xml.in:42
+msgid "Added Portuguese (Brazil) translations"
+msgstr ""
+
+#: data/com.bitstower.Markets.appdata.xml.in:43
+#, fuzzy
+msgid "Updated translations"
+msgstr "Intervalo de actualización"
+
+#: data/com.bitstower.Markets.appdata.xml.in:49
+#, fuzzy
+msgid "Markets 0.5.1 brings new features and bug fixes."
+msgstr "Markets 0.4.0 añade características nuevas y correcciones de errores."
+
+#: data/com.bitstower.Markets.appdata.xml.in:51
+msgid "New layout of the symbol list"
+msgstr ""
+
+#: data/com.bitstower.Markets.appdata.xml.in:52
+#, fuzzy
+msgid "Improved keyboard support"
+msgstr "Añadido soporte para reordenar"
+
+#: data/com.bitstower.Markets.appdata.xml.in:53
+msgid "Added new languages: Spanish, Slovak"
+msgstr ""
+
+#: data/com.bitstower.Markets.appdata.xml.in:54
+msgid "More natural drag and drop behaviour"
+msgstr ""
+
+#: data/com.bitstower.Markets.appdata.xml.in:55
+msgid "Bug fixes"
+msgstr ""
+
 #: data/com.bitstower.Markets.appdata.xml.in:61
+msgid "Markets 0.4.0 brings new features and bug fixes."
+msgstr "Markets 0.4.0 añade características nuevas y correcciones de errores."
+
+#: data/com.bitstower.Markets.appdata.xml.in:63
+#: data/com.bitstower.Markets.appdata.xml.in:82
 msgid "Added new app icon"
 msgstr "Añadido un nuevo icono de la aplicación"
 
-#: data/com.bitstower.Markets.appdata.xml.in:43
+#: data/com.bitstower.Markets.appdata.xml.in:64
 msgid "Added reorder support"
 msgstr "Añadido soporte para reordenar"
 
-#: data/com.bitstower.Markets.appdata.xml.in:44
+#: data/com.bitstower.Markets.appdata.xml.in:65
 msgid "Added i18n support"
 msgstr "Añadido el soporte de i18n"
 
-#: data/com.bitstower.Markets.appdata.xml.in:45
-#: data/com.bitstower.Markets.appdata.xml.in:53
-#: data/com.bitstower.Markets.appdata.xml.in:62
+#: data/com.bitstower.Markets.appdata.xml.in:66
+#: data/com.bitstower.Markets.appdata.xml.in:74
+#: data/com.bitstower.Markets.appdata.xml.in:83
 msgid "Fixed various issues"
 msgstr "Se han solucionado varios problemas"
 
-#: data/com.bitstower.Markets.appdata.xml.in:51
+#: data/com.bitstower.Markets.appdata.xml.in:72
 msgid "Markets 0.3.0 brings bug fixes."
 msgstr "Markets 0.3.0 corrige errores."
 
-#: data/com.bitstower.Markets.appdata.xml.in:59
+#: data/com.bitstower.Markets.appdata.xml.in:80
 msgid "Markets 0.2.0 brings small feature additions and bug fixes."
 msgstr ""
 "Markets 0.2.0 añade pequeñas características adicionales y correcciones de "
 "errores."
 
-#: data/com.bitstower.Markets.appdata.xml.in:68
+#: data/com.bitstower.Markets.appdata.xml.in:89
 msgid "Initial release"
 msgstr "Versión inicial"
 
@@ -116,8 +156,8 @@ msgstr "Versión inicial"
 #: data/com.bitstower.Markets.desktop.in:11
 msgid "stock;currency;cryptocurrency;finance;economy;"
 msgstr ""
-"stock;currency;cryptocurrency;finance;economy;moneda;criptomoneda;finanzas;ec"
-"onomía;"
+"stock;currency;cryptocurrency;finance;economy;moneda;criptomoneda;finanzas;"
+"economía;"
 
 #: data/com.bitstower.Markets.gschema.xml:6
 msgid "Pull interval"
@@ -127,7 +167,7 @@ msgstr "Intervalo de refresco"
 msgid "Pull data every X seconds."
 msgstr "Refrescar datos cada X segundos."
 
-#: data/com.bitstower.Markets.gschema.xml:11 data/ui/PreferencesWindow.ui:59
+#: data/com.bitstower.Markets.gschema.xml:11 data/ui/PreferencesWindow.ui:56
 msgid "Use dark GTK+ theme"
 msgstr "Usar el tema GTK+ oscuro"
 
@@ -159,19 +199,19 @@ msgstr "Recuerda la altura de la ventana."
 msgid "General"
 msgstr "General"
 
-#: data/ui/PreferencesWindow.ui:26
+#: data/ui/PreferencesWindow.ui:25
 msgid "Update Interval"
 msgstr "Intervalo de actualización"
 
-#: data/ui/PreferencesWindow.ui:27
+#: data/ui/PreferencesWindow.ui:26
 msgid "Pull data every X seconds"
 msgstr "Refrescar datos cada X segundos"
 
-#: data/ui/PreferencesWindow.ui:52
+#: data/ui/PreferencesWindow.ui:50
 msgid "Apppearance"
 msgstr "Apariencia"
 
-#: data/ui/PreferencesWindow.ui:58
+#: data/ui/PreferencesWindow.ui:55
 msgid "Dark Theme"
 msgstr "Tema oscuro"
 
@@ -195,15 +235,15 @@ msgstr "_Cancelar"
 msgid "_Add"
 msgstr "_Añadir"
 
-#: data/ui/SymbolsView.ui:57
+#: data/ui/SymbolsView.ui:53
 msgid "Source: <a href=\"https://finance.yahoo.com/\">Yahoo Finance</a>"
 msgstr "Fuente: <a href=\"https://finance.yahoo.com/\">Yahoo Finanzas</a>"
 
-#: data/ui/MainHeaderBar.ui:85
+#: data/ui/MainHeaderBar.ui:89
 msgid "Preferences"
 msgstr "Preferencias"
 
-#: data/ui/MainHeaderBar.ui:91
+#: data/ui/MainHeaderBar.ui:95
 msgid "About Markets"
 msgstr "Acerca de Mercados"
 
@@ -223,18 +263,20 @@ msgstr "Seleccionar todo"
 msgid "Select none"
 msgstr "No seleccionar ninguna"
 
-#: src/Application.vala:66
-msgid "A market tracker for Linux Smartphones and Tablets."
-msgstr "Un rastreador de mercado para smartphones y tablets Linux."
-
-#: src/Application.vala:71
+#: src/Application.vala:80
 msgid "Official webpage"
 msgstr "Página web oficial"
 
-#: src/SymbolRow.vala:88
+#: src/SymbolRow.vala:98
 msgid "Market Closed"
 msgstr "Mercado cerrado"
 
-#: src/SymbolRow.vala:91
+#: src/SymbolRow.vala:101
 msgid "Market Open"
 msgstr "Mercado abierto"
+
+#~ msgid "A stock, currency and cryptocurrency tracker"
+#~ msgstr "Un rastreador de acciones, divisas y criptodivisas"
+
+#~ msgid "A market tracker for Linux Smartphones and Tablets."
+#~ msgstr "Un rastreador de mercado para smartphones y tablets Linux."

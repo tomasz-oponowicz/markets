@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.bitstower.Markets\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-30 18:14+0100\n"
+"POT-Creation-Date: 2021-09-28 12:44+0200\n"
 "PO-Revision-Date: 2021-05-24 22:33+0000\n"
 "Last-Translator: Sergio Varela <sergitroll9@gmail.com>\n"
 "Language-Team: Basque <https://hosted.weblate.org/projects/markets/markets/"
@@ -24,14 +24,14 @@ msgid "bitstower"
 msgstr "bitstower"
 
 #: data/com.bitstower.Markets.appdata.xml.in:12
-#: data/com.bitstower.Markets.desktop.in:3 src/Application.vala:65
-#: src/MainWindow.vala:17
+#: data/com.bitstower.Markets.desktop.in:3 src/Application.vala:74
+#: src/MainWindow.vala:22
 msgid "Markets"
 msgstr "Merkatuak"
 
-#: data/com.bitstower.Markets.appdata.xml.in:13
-msgid "A stock, currency and cryptocurrency tracker"
-msgstr "Akzio, dibisa eta kriptomoneten arakatzaile bat"
+#: data/com.bitstower.Markets.appdata.xml.in:13 src/Application.vala:75
+msgid "Keep track of your investments"
+msgstr ""
 
 #: data/com.bitstower.Markets.appdata.xml.in:15
 msgid ""
@@ -59,7 +59,8 @@ msgstr "Bateragarria da Linux smartphoneekin (Librem5, PinePhone)"
 
 #: data/com.bitstower.Markets.appdata.xml.in:24
 msgid "Open any symbol in Yahoo Finance for more details"
-msgstr "Ireki edozein ikur Yahoo Finantzak webgunean xehetasun gehiago lortzeko"
+msgstr ""
+"Ireki edozein ikur Yahoo Finantzak webgunean xehetasun gehiago lortzeko"
 
 #: data/com.bitstower.Markets.appdata.xml.in:25
 msgid "Adjust the refresh rate"
@@ -74,39 +75,79 @@ msgid "Live Prices"
 msgstr "Zuzeneko prezioak"
 
 #: data/com.bitstower.Markets.appdata.xml.in:40
-msgid "Markets 0.4.0 brings new features and bug fixes."
+#, fuzzy
+msgid "Markets 0.5.2 brings new translations and bug fixes."
 msgstr "Markets 0.4.0 ezaugarri berriak eta akatsen zuzenketak dakartza."
 
 #: data/com.bitstower.Markets.appdata.xml.in:42
+msgid "Added Portuguese (Brazil) translations"
+msgstr ""
+
+#: data/com.bitstower.Markets.appdata.xml.in:43
+#, fuzzy
+msgid "Updated translations"
+msgstr "Eguneratzeko tartea"
+
+#: data/com.bitstower.Markets.appdata.xml.in:49
+#, fuzzy
+msgid "Markets 0.5.1 brings new features and bug fixes."
+msgstr "Markets 0.4.0 ezaugarri berriak eta akatsen zuzenketak dakartza."
+
+#: data/com.bitstower.Markets.appdata.xml.in:51
+msgid "New layout of the symbol list"
+msgstr ""
+
+#: data/com.bitstower.Markets.appdata.xml.in:52
+#, fuzzy
+msgid "Improved keyboard support"
+msgstr "Berrantolaketa-euskarria gehituta"
+
+#: data/com.bitstower.Markets.appdata.xml.in:53
+msgid "Added new languages: Spanish, Slovak"
+msgstr ""
+
+#: data/com.bitstower.Markets.appdata.xml.in:54
+msgid "More natural drag and drop behaviour"
+msgstr ""
+
+#: data/com.bitstower.Markets.appdata.xml.in:55
+msgid "Bug fixes"
+msgstr ""
+
 #: data/com.bitstower.Markets.appdata.xml.in:61
+msgid "Markets 0.4.0 brings new features and bug fixes."
+msgstr "Markets 0.4.0 ezaugarri berriak eta akatsen zuzenketak dakartza."
+
+#: data/com.bitstower.Markets.appdata.xml.in:63
+#: data/com.bitstower.Markets.appdata.xml.in:82
 msgid "Added new app icon"
 msgstr "Aplikazioaren ikono berri bat gehitu da"
 
-#: data/com.bitstower.Markets.appdata.xml.in:43
+#: data/com.bitstower.Markets.appdata.xml.in:64
 msgid "Added reorder support"
 msgstr "Berrantolaketa-euskarria gehituta"
 
-#: data/com.bitstower.Markets.appdata.xml.in:44
+#: data/com.bitstower.Markets.appdata.xml.in:65
 msgid "Added i18n support"
 msgstr "Bateragarritasuna gehitu da i18n-ekin"
 
-#: data/com.bitstower.Markets.appdata.xml.in:45
-#: data/com.bitstower.Markets.appdata.xml.in:53
-#: data/com.bitstower.Markets.appdata.xml.in:62
+#: data/com.bitstower.Markets.appdata.xml.in:66
+#: data/com.bitstower.Markets.appdata.xml.in:74
+#: data/com.bitstower.Markets.appdata.xml.in:83
 msgid "Fixed various issues"
 msgstr "Hainbat arazo konpondu dira"
 
-#: data/com.bitstower.Markets.appdata.xml.in:51
+#: data/com.bitstower.Markets.appdata.xml.in:72
 msgid "Markets 0.3.0 brings bug fixes."
 msgstr "Markets 0.3.0 akats-zuzenketak ekartzen ditu."
 
-#: data/com.bitstower.Markets.appdata.xml.in:59
+#: data/com.bitstower.Markets.appdata.xml.in:80
 msgid "Markets 0.2.0 brings small feature additions and bug fixes."
 msgstr ""
 "Markets 0.2.0 ezaugarrien gehikuntza txikiak eta erroreen zuzenketak "
 "dakartza."
 
-#: data/com.bitstower.Markets.appdata.xml.in:68
+#: data/com.bitstower.Markets.appdata.xml.in:89
 msgid "Initial release"
 msgstr "Hasierako jaurtiketa"
 
@@ -123,7 +164,7 @@ msgstr "Freskagarri tartea"
 msgid "Pull data every X seconds."
 msgstr "Freskatu datuak X segundotik behin."
 
-#: data/com.bitstower.Markets.gschema.xml:11 data/ui/PreferencesWindow.ui:59
+#: data/com.bitstower.Markets.gschema.xml:11 data/ui/PreferencesWindow.ui:56
 msgid "Use dark GTK+ theme"
 msgstr "GTK+ gai iluna erabili"
 
@@ -155,19 +196,19 @@ msgstr "Gogoratu leihoaren altuera."
 msgid "General"
 msgstr "Orokorra"
 
-#: data/ui/PreferencesWindow.ui:26
+#: data/ui/PreferencesWindow.ui:25
 msgid "Update Interval"
 msgstr "Eguneratzeko tartea"
 
-#: data/ui/PreferencesWindow.ui:27
+#: data/ui/PreferencesWindow.ui:26
 msgid "Pull data every X seconds"
 msgstr "Freskatu datuak X segundotik behin"
 
-#: data/ui/PreferencesWindow.ui:52
+#: data/ui/PreferencesWindow.ui:50
 msgid "Apppearance"
 msgstr "Itxura"
 
-#: data/ui/PreferencesWindow.ui:58
+#: data/ui/PreferencesWindow.ui:55
 msgid "Dark Theme"
 msgstr "Gai iluna"
 
@@ -191,15 +232,15 @@ msgstr "_Ezeztatu"
 msgid "_Add"
 msgstr "_Gehitu"
 
-#: data/ui/SymbolsView.ui:57
+#: data/ui/SymbolsView.ui:53
 msgid "Source: <a href=\"https://finance.yahoo.com/\">Yahoo Finance</a>"
 msgstr "Iturria: <a href=\"https://finance.yahoo.com/\">Yahoo Finantzak</a>"
 
-#: data/ui/MainHeaderBar.ui:85
+#: data/ui/MainHeaderBar.ui:89
 msgid "Preferences"
 msgstr "Lehentasunak"
 
-#: data/ui/MainHeaderBar.ui:91
+#: data/ui/MainHeaderBar.ui:95
 msgid "About Markets"
 msgstr "Marketi buruz"
 
@@ -219,18 +260,21 @@ msgstr "Hautatu dena"
 msgid "Select none"
 msgstr "Ez hautatu bakar bat ere"
 
-#: src/Application.vala:66
-msgid "A market tracker for Linux Smartphones and Tablets."
-msgstr "Linux tableta eta telefono adimendunentzako merkatu-arakatzaile bat."
-
-#: src/Application.vala:71
+#: src/Application.vala:80
 msgid "Official webpage"
 msgstr "Webgune ofiziala"
 
-#: src/SymbolRow.vala:88
+#: src/SymbolRow.vala:98
 msgid "Market Closed"
 msgstr "Merkatu itxia"
 
-#: src/SymbolRow.vala:91
+#: src/SymbolRow.vala:101
 msgid "Market Open"
 msgstr "Merkatu irekia"
+
+#~ msgid "A stock, currency and cryptocurrency tracker"
+#~ msgstr "Akzio, dibisa eta kriptomoneten arakatzaile bat"
+
+#~ msgid "A market tracker for Linux Smartphones and Tablets."
+#~ msgstr ""
+#~ "Linux tableta eta telefono adimendunentzako merkatu-arakatzaile bat."
