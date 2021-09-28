@@ -72,7 +72,7 @@ public class Markets.Application : Gtk.Application {
         dialog.set_modal (true);
         dialog.logo_icon_name = Constants.APP_ID;
         dialog.program_name = _("Markets");
-        dialog.comments = _("A market tracker for Linux Smartphones and Tablets.");
+        dialog.comments = _("Keep track of your investments");
         dialog.authors = { "Tomasz Oponowicz" };
         dialog.artists = {"Tobias Bernard"};
         dialog.license_type = Gtk.License.GPL_3_0;
