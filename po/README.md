@@ -26,6 +26,7 @@
 1. Merge Weblate changes and resolve any conflicts.
 
        git merge weblate/master
+1. Update `./po/LINGUAS` if needed.
 1. Push changes into upstream repository.
 
        git push origin master
