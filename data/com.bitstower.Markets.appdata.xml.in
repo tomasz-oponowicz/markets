@@ -6,6 +6,7 @@
   <developer_name>bitstower</developer_name>
   <url type="homepage">https://github.com/bitstower/markets</url>
   <url type="bugtracker">https://github.com/bitstower/markets/issues</url>
+  <url type="translate">https://hosted.weblate.org/engage/markets/</url>
   <launchable type="desktop-id">com.bitstower.Markets.desktop</launchable>
   <translation type="gettext">com.bitstower.Markets</translation>
 
@@ -33,6 +34,15 @@
       <caption>Live Prices</caption>
     </screenshot>
   </screenshots>
+
+  <recommends>
+      <control>keyboard</control>
+      <control>pointing</control>
+      <control>touch</control>
+  </recommends>
+  <requires>
+      <display_length compare="ge">360</display_length>
+  </requires>
 
   <releases>
     <release version="0.5.3" date="2021-09-28">
