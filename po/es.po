@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: com.bitstower.Markets\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-28 12:54+0200\n"
-"PO-Revision-Date: 2021-09-25 13:36+0000\n"
+"PO-Revision-Date: 2021-09-30 09:37+0000\n"
 "Last-Translator: Óscar Fernández Díaz <oscfdezdz@tuta.io>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/markets/markets/"
 "es/>\n"
@@ -31,7 +31,7 @@ msgstr "Mercados"
 
 #: data/com.bitstower.Markets.appdata.xml.in:13 src/Application.vala:75
 msgid "Keep track of your investments"
-msgstr ""
+msgstr "Controle sus inversiones"
 
 #: data/com.bitstower.Markets.appdata.xml.in:15
 msgid ""
@@ -81,11 +81,11 @@ msgstr "Markets 0.5.2 añade características nuevas y correcciones de errores."
 
 #: data/com.bitstower.Markets.appdata.xml.in:42
 msgid "Added Portuguese (Brazil) translations"
-msgstr ""
+msgstr "Añadidas las traducciones al portugués (Brasil)"
 
 #: data/com.bitstower.Markets.appdata.xml.in:43
 msgid "Updated translations"
-msgstr ""
+msgstr "Traducciones actualizadas"
 
 #: data/com.bitstower.Markets.appdata.xml.in:49
 msgid "Markets 0.5.1 brings new features and bug fixes."
@@ -93,23 +93,23 @@ msgstr "Markets 0.5.1 añade características nuevas y correcciones de errores."
 
 #: data/com.bitstower.Markets.appdata.xml.in:51
 msgid "New layout of the symbol list"
-msgstr ""
+msgstr "Nueva disposición de la lista de símbolos"
 
 #: data/com.bitstower.Markets.appdata.xml.in:52
 msgid "Improved keyboard support"
-msgstr ""
+msgstr "Soporte de teclado mejorado"
 
 #: data/com.bitstower.Markets.appdata.xml.in:53
 msgid "Added new languages: Spanish, Slovak"
-msgstr ""
+msgstr "Añadidos nuevos idiomas: español, eslovaco"
 
 #: data/com.bitstower.Markets.appdata.xml.in:54
 msgid "More natural drag and drop behaviour"
-msgstr ""
+msgstr "Comportamiento más natural al arrastrar y soltar"
 
 #: data/com.bitstower.Markets.appdata.xml.in:55
 msgid "Bug fixes"
-msgstr ""
+msgstr "Corrección de errores"
 
 #: data/com.bitstower.Markets.appdata.xml.in:61
 msgid "Markets 0.4.0 brings new features and bug fixes."
