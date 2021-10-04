@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: com.bitstower.Markets\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-28 12:54+0200\n"
-"PO-Revision-Date: 2021-10-02 10:35+0000\n"
+"PO-Revision-Date: 2021-10-05 10:09+0000\n"
 "Last-Translator: Luna Jernberg <droidbittin@gmail.com>\n"
 "Language-Team: Swedish <https://hosted.weblate.org/projects/markets/markets/"
 "sv/>\n"
@@ -91,7 +91,7 @@ msgstr "Markets 0.5.1 kommer med nya funktioner och buggfixar."
 
 #: data/com.bitstower.Markets.appdata.xml.in:51
 msgid "New layout of the symbol list"
-msgstr ""
+msgstr "Ny layout för symbollistan"
 
 #: data/com.bitstower.Markets.appdata.xml.in:52
 msgid "Improved keyboard support"
@@ -103,7 +103,7 @@ msgstr "Tillagda nya språk: Spanska, Slovakiska"
 
 #: data/com.bitstower.Markets.appdata.xml.in:54
 msgid "More natural drag and drop behaviour"
-msgstr ""
+msgstr "Mer naturligt drag och släpp-beteende"
 
 #: data/com.bitstower.Markets.appdata.xml.in:55
 msgid "Bug fixes"
