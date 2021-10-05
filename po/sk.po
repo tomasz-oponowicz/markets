@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-28 12:54+0200\n"
 "PO-Revision-Date: 2020-12-10 12:38+0000\n"
-"Last-Translator: MartinIIOT <max_m@centrum.sk>\n"
+"Last-Translator: MartinIIOT <https://github.com/MartinIIOT/>\n"
 "Language-Team: Slovak <https://hosted.weblate.org/projects/markets/markets/"
 "sk/>\n"
 "Language: sk\n"
@@ -31,7 +31,7 @@ msgstr "Markets"
 
 #: data/com.bitstower.Markets.appdata.xml.in:13 src/Application.vala:75
 msgid "Keep track of your investments"
-msgstr ""
+msgstr "Sledujte svoje investície"
 
 #: data/com.bitstower.Markets.appdata.xml.in:15
 msgid ""
@@ -81,11 +81,11 @@ msgstr "Markets 0.5.2 prináša nové funkcie a opravy chýb."
 
 #: data/com.bitstower.Markets.appdata.xml.in:42
 msgid "Added Portuguese (Brazil) translations"
-msgstr ""
+msgstr "Pridaný Portugalský preklad"
 
 #: data/com.bitstower.Markets.appdata.xml.in:43
 msgid "Updated translations"
-msgstr ""
+msgstr "Aktualizované preklady"
 
 #: data/com.bitstower.Markets.appdata.xml.in:49
 msgid "Markets 0.5.1 brings new features and bug fixes."
@@ -93,23 +93,23 @@ msgstr "Markets 0.5.1 prináša nové funkcie a opravy chýb."
 
 #: data/com.bitstower.Markets.appdata.xml.in:51
 msgid "New layout of the symbol list"
-msgstr ""
+msgstr "Nové rozloženie zoznamu symbolov"
 
 #: data/com.bitstower.Markets.appdata.xml.in:52
 msgid "Improved keyboard support"
-msgstr ""
+msgstr "Vylepšená podpora klávesnice"
 
 #: data/com.bitstower.Markets.appdata.xml.in:53
 msgid "Added new languages: Spanish, Slovak"
-msgstr ""
+msgstr "Pridané nové jazyky: Španielsky, Slovenský"
 
 #: data/com.bitstower.Markets.appdata.xml.in:54
 msgid "More natural drag and drop behaviour"
-msgstr ""
+msgstr "Prirodzenejšie správanie funkcie drag and drop"
 
 #: data/com.bitstower.Markets.appdata.xml.in:55
 msgid "Bug fixes"
-msgstr ""
+msgstr "Opravy chýb"
 
 #: data/com.bitstower.Markets.appdata.xml.in:61
 msgid "Markets 0.4.0 brings new features and bug fixes."
@@ -161,7 +161,7 @@ msgstr "Vytiahnite údaje každých X sekúnd."
 
 #: data/com.bitstower.Markets.gschema.xml:11 data/ui/PreferencesWindow.ui:56
 msgid "Use dark GTK+ theme"
-msgstr "Použite tmavú tému GTK +"
+msgstr "Použite tmavú tému GTK+"
 
 #: data/com.bitstower.Markets.gschema.xml:12
 msgid ""
