@@ -27,6 +27,8 @@ The Markets application delivers financial data to your fingertips. Track stocks
 
 * Flathub: [com.bitstower.Markets](https://flathub.org/apps/details/com.bitstower.Markets)
 * Arch (AUR): [bitstower-markets](https://aur.archlinux.org/packages/bitstower-markets/)
+* Guix: [markets](https://guix.gnu.org/packages/markets-0.5.2/)
+* Nixpkgs: [markets](https://github.com/NixOS/nixpkgs/blob/master/pkgs/applications/misc/markets/default.nix)
 
 ## Building from source
 
