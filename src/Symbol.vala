@@ -122,7 +122,7 @@ public class Markets.Symbol : Object {
 
         if (json.has_member ("currency")) {
             // Omits currency units for market indices
-            string symbol_string = json.get_string_member_with_default ("symbol", "");
+            string symbol_string = json.has_member ("symbol") ? json.get_string_member ("symbol") : "";
             bool symbol_starts_with_hat = symbol_string.length != 0 && symbol_string[0 : 1] == "^";
             this.currency = symbol_starts_with_hat ? "" : json.get_string_member ("currency");
         }
