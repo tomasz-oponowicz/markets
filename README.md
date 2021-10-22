@@ -25,8 +25,13 @@ The Markets application delivers financial data to your fingertips. Track stocks
 
 > **Package mainteners:** We are looking for volunteers to help us make native packages of Markets for Fedora, Debian and other major distributions. It would be great if you could help either by packaging, or by getting the following into the official repositories.
 
-* Flathub: [com.bitstower.Markets](https://flathub.org/apps/details/com.bitstower.Markets)
-* Arch (AUR): [bitstower-markets](https://aur.archlinux.org/packages/bitstower-markets/)
+Official:
+  * Flathub: [com.bitstower.Markets](https://flathub.org/apps/details/com.bitstower.Markets)
+  * Arch (AUR): [bitstower-markets](https://aur.archlinux.org/packages/bitstower-markets/)
+
+Unofficial:
+  * Guix: [markets](https://guix.gnu.org/packages/markets-0.5.3/)
+  * Nixpkgs: [markets](https://github.com/NixOS/nixpkgs/blob/master/pkgs/applications/misc/markets/default.nix)
 
 ## Building from source
 
