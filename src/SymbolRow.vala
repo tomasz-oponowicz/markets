@@ -75,6 +75,7 @@ public class Markets.SymbolRow : Gtk.ListBoxRow {
         this.price.label = @"%'.$(s.precision)F".printf (s.regular_market_price);
 
         this.currency.label = s.currency.up ();
+        this.currency.visible = s.currency != ""; // Hide currency for market indices
 
         this.change.label =
             @"%'+.$(s.precision)F (%'+.2F%)".printf (
@@ -119,7 +120,6 @@ public class Markets.SymbolRow : Gtk.ListBoxRow {
         this.drag_icon.visible = visible;
         this.activatable = !visible;
     }
-
 
     [GtkCallback]
     private void on_checkbox_toggled () {
