@@ -7,252 +7,262 @@ msgstr ""
 "Project-Id-Version: com.bitstower.Markets\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-28 12:54+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2021-12-10 22:03+0000\n"
+"Last-Translator: Ömer Faruk Çakmak <omerfarukckmk@protonmail.com>\n"
+"Language-Team: Turkish <https://hosted.weblate.org/projects/markets/markets/"
+"tr/>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.10-dev\n"
 
 #: data/com.bitstower.Markets.appdata.xml.in:6
 msgid "bitstower"
-msgstr ""
+msgstr "bitstower"
 
 #: data/com.bitstower.Markets.appdata.xml.in:12
 #: data/com.bitstower.Markets.desktop.in:3 src/Application.vala:74
 #: src/MainWindow.vala:22
 msgid "Markets"
-msgstr ""
+msgstr "Piyasalar"
 
 #: data/com.bitstower.Markets.appdata.xml.in:13 src/Application.vala:75
 msgid "Keep track of your investments"
-msgstr ""
+msgstr "Yatırımlarınızı takip edin"
 
 #: data/com.bitstower.Markets.appdata.xml.in:15
 msgid ""
 "The Markets app delivers financial data to your fingertips. Stay on top of "
 "the market and never miss an investment opportunity!"
 msgstr ""
+"Piyasalar uygulaması finansal veriyi parmaklarınızın ucuna getirir. "
+"Piyasanın zirvesinde kalın ve hiçbir yatırım fırsatını kaçırmayın!"
 
 #: data/com.bitstower.Markets.appdata.xml.in:19
 msgid "Features:"
-msgstr ""
+msgstr "Özellikler:"
 
 #: data/com.bitstower.Markets.appdata.xml.in:21
 msgid "Create your personal portfolio"
-msgstr ""
+msgstr "Kişisel portföyünüzü oluşturun"
 
 #: data/com.bitstower.Markets.appdata.xml.in:22
 msgid "Track stocks, currencies, cryptocurrencies, commodities and indexes"
 msgstr ""
+"Borsaları, para birimlerini, kripto paraları, emtiaları ve indeksleri takip "
+"edin"
 
 #: data/com.bitstower.Markets.appdata.xml.in:23
 msgid "Compatible with Linux smartphones (Librem5, PinePhone)"
-msgstr ""
+msgstr "Linux akıllı telefonlarıyla uyumludur (Librem5, PinePhone)"
 
 #: data/com.bitstower.Markets.appdata.xml.in:24
 msgid "Open any symbol in Yahoo Finance for more details"
-msgstr ""
+msgstr "Herhangi bir sembolu daha ayrıntılı bilgi için Yahoo Finance'ta aç"
 
 #: data/com.bitstower.Markets.appdata.xml.in:25
 msgid "Adjust the refresh rate"
-msgstr ""
+msgstr "Yenileme oranını ayarla"
 
 #: data/com.bitstower.Markets.appdata.xml.in:26
 msgid "Dark Mode"
-msgstr ""
+msgstr "Koyu Kip"
 
 #: data/com.bitstower.Markets.appdata.xml.in:33
 msgid "Live Prices"
-msgstr ""
+msgstr "Canlı Fiyatlar"
 
 #: data/com.bitstower.Markets.appdata.xml.in:40
 msgid "Markets 0.5.2 brings new translations and bug fixes."
-msgstr ""
+msgstr "Piyasalar 0.5.2 yeni çeviriler ve hata düzeltmeleri içeriyor."
 
 #: data/com.bitstower.Markets.appdata.xml.in:42
 msgid "Added Portuguese (Brazil) translations"
-msgstr ""
+msgstr "Portekizce (Brezilya) çeviri eklendi"
 
 #: data/com.bitstower.Markets.appdata.xml.in:43
 msgid "Updated translations"
-msgstr ""
+msgstr "Çeviriler güncellendi"
 
 #: data/com.bitstower.Markets.appdata.xml.in:49
 msgid "Markets 0.5.1 brings new features and bug fixes."
-msgstr ""
+msgstr "Piyasalar 0.5.1 yeni özellikler ve hata düzeltmeleri içeriyor."
 
 #: data/com.bitstower.Markets.appdata.xml.in:51
 msgid "New layout of the symbol list"
-msgstr ""
+msgstr "Semboller listesinde yeni tasarım"
 
 #: data/com.bitstower.Markets.appdata.xml.in:52
 msgid "Improved keyboard support"
-msgstr ""
+msgstr "Klavye desteği geliştirildi"
 
 #: data/com.bitstower.Markets.appdata.xml.in:53
 msgid "Added new languages: Spanish, Slovak"
-msgstr ""
+msgstr "Yeni diller eklendi: İspanyolca, Slovakça"
 
 #: data/com.bitstower.Markets.appdata.xml.in:54
 msgid "More natural drag and drop behaviour"
-msgstr ""
+msgstr "Daha doğal sürükle-bırak özelliği"
 
 #: data/com.bitstower.Markets.appdata.xml.in:55
 msgid "Bug fixes"
-msgstr ""
+msgstr "Hata düzeltmeleri"
 
 #: data/com.bitstower.Markets.appdata.xml.in:61
 msgid "Markets 0.4.0 brings new features and bug fixes."
-msgstr ""
+msgstr "Piyasalar 0.4.0 yeni özellikler ve hata düzeltmeleri içeriyor."
 
 #: data/com.bitstower.Markets.appdata.xml.in:63
 #: data/com.bitstower.Markets.appdata.xml.in:82
 msgid "Added new app icon"
-msgstr ""
+msgstr "Yeni uygulama simgesi eklendi"
 
 #: data/com.bitstower.Markets.appdata.xml.in:64
 msgid "Added reorder support"
-msgstr ""
+msgstr "Sırlama desteği eklendi"
 
 #: data/com.bitstower.Markets.appdata.xml.in:65
 msgid "Added i18n support"
-msgstr ""
+msgstr "Yabancı dil desteği eklendi"
 
 #: data/com.bitstower.Markets.appdata.xml.in:66
 #: data/com.bitstower.Markets.appdata.xml.in:74
 #: data/com.bitstower.Markets.appdata.xml.in:83
 msgid "Fixed various issues"
-msgstr ""
+msgstr "Çeşitli hatalar düzeltildi"
 
 #: data/com.bitstower.Markets.appdata.xml.in:72
 msgid "Markets 0.3.0 brings bug fixes."
-msgstr ""
+msgstr "Piyasalar 0.3.0 hata düzeltmeleri içeriyor."
 
 #: data/com.bitstower.Markets.appdata.xml.in:80
 msgid "Markets 0.2.0 brings small feature additions and bug fixes."
 msgstr ""
+"Piyasalar 0.2.0 birkaç küçük özellik ekliyor ve hata düzeltmeleri içeriyor."
 
 #: data/com.bitstower.Markets.appdata.xml.in:89
 msgid "Initial release"
-msgstr ""
+msgstr "İlk sürüm"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/com.bitstower.Markets.desktop.in:11
 msgid "stock;currency;cryptocurrency;finance;economy;"
-msgstr ""
+msgstr "borsa;döviz;kriptopara;finans;ekonomi;"
 
 #: data/com.bitstower.Markets.gschema.xml:6
 msgid "Pull interval"
-msgstr ""
+msgstr "Verileri yenileme sıklığı"
 
 #: data/com.bitstower.Markets.gschema.xml:7
 msgid "Pull data every X seconds."
-msgstr ""
+msgstr "Her X saniyede bir verileri yenile."
 
 #: data/com.bitstower.Markets.gschema.xml:11 data/ui/PreferencesWindow.ui:56
 msgid "Use dark GTK+ theme"
-msgstr ""
+msgstr "Koyu GTK+ teması kullan"
 
 #: data/com.bitstower.Markets.gschema.xml:12
 msgid ""
 "Use the dark variant of your GTK+ theme. Please note that not every GTK+ "
 "theme has a dark variant."
 msgstr ""
+"GTK+ temanızın koyu şeklini kullanın. Ancak şunu unutmayın ki her GTK+ "
+"temasının koyu şekli yoktur."
 
 #: data/com.bitstower.Markets.gschema.xml:16
 msgid "Window width"
-msgstr ""
+msgstr "Pencere genişliği"
 
 #: data/com.bitstower.Markets.gschema.xml:17
 msgid "Remember the window width."
-msgstr ""
+msgstr "Pencere genişliğini hatırla."
 
 #: data/com.bitstower.Markets.gschema.xml:21
 msgid "Window height"
-msgstr ""
+msgstr "Pencere yüksekliği"
 
 #: data/com.bitstower.Markets.gschema.xml:22
 msgid "Remember the window height."
-msgstr ""
+msgstr "Pencere yüksekliğini hatırla."
 
 #: data/ui/PreferencesWindow.ui:16 data/ui/PreferencesWindow.ui:20
 msgid "General"
-msgstr ""
+msgstr "Genel"
 
 #: data/ui/PreferencesWindow.ui:25
 msgid "Update Interval"
-msgstr ""
+msgstr "Güncelleme sıklığı"
 
 #: data/ui/PreferencesWindow.ui:26
 msgid "Pull data every X seconds"
-msgstr ""
+msgstr "Her X saniyede bir verileri yenile"
 
 #: data/ui/PreferencesWindow.ui:50
 msgid "Apppearance"
-msgstr ""
+msgstr "Görünüm"
 
 #: data/ui/PreferencesWindow.ui:55
 msgid "Dark Theme"
-msgstr ""
+msgstr "Koyu Tema"
 
 #: data/ui/NoSymbolsView.ui:27
 msgid "No symbols"
-msgstr ""
+msgstr "Sembol yok"
 
 #: data/ui/NoSymbolsView.ui:42
 msgid "Press + to add one."
-msgstr ""
+msgstr "Eklemek için +'ya basın."
 
 #: data/ui/NewSymbolDialog.ui:19
 msgid "New symbol"
-msgstr ""
+msgstr "Yeni sembol"
 
 #: data/ui/NewSymbolDialog.ui:23
 msgid "_Cancel"
-msgstr ""
+msgstr "_İptal"
 
 #: data/ui/NewSymbolDialog.ui:39
 msgid "_Add"
-msgstr ""
+msgstr "_Ekle"
 
 #: data/ui/SymbolsView.ui:53
 msgid "Source: <a href=\"https://finance.yahoo.com/\">Yahoo Finance</a>"
-msgstr ""
+msgstr "Kaynak: <a href=\"https://finance.yahoo.com/\">Yahoo Finance</a>"
 
 #: data/ui/MainHeaderBar.ui:89
 msgid "Preferences"
-msgstr ""
+msgstr "Tercihler"
 
 #: data/ui/MainHeaderBar.ui:95
 msgid "About Markets"
-msgstr ""
+msgstr "Marketler hakkında"
 
 #: data/ui/SelectionHeaderBar.ui:28
 msgid "Click on a checkbox to select"
-msgstr ""
+msgstr "Seçmek için seçim kutusuna tıklayın"
 
 #: data/ui/SelectionHeaderBar.ui:55
 msgid "Cancel"
-msgstr ""
+msgstr "İptal"
 
 #: data/ui/SelectionHeaderBar.ui:106
 msgid "Select all"
-msgstr ""
+msgstr "Hepsini seç"
 
 #: data/ui/SelectionHeaderBar.ui:120
 msgid "Select none"
-msgstr ""
+msgstr "Hiçbirini seçme"
 
 #: src/Application.vala:80
 msgid "Official webpage"
-msgstr ""
+msgstr "Resmi veb sayfası"
 
 #: src/SymbolRow.vala:98
 msgid "Market Closed"
-msgstr ""
+msgstr "Market Kapalı"
 
 #: src/SymbolRow.vala:101
 msgid "Market Open"
-msgstr ""
+msgstr "Market Açık"
