@@ -10,8 +10,8 @@ msgstr ""
 "Project-Id-Version: com.bitstower.Markets\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-28 12:54+0200\n"
-"PO-Revision-Date: 2021-05-07 23:33+0000\n"
-"Last-Translator: J. Lavoie <j.lavoie@net-c.ca>\n"
+"PO-Revision-Date: 2021-12-27 16:50+0000\n"
+"Last-Translator: Milo Ivir <mail@milotype.de>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/markets/markets/"
 "de/>\n"
 "Language: de\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.7-dev\n"
+"X-Generator: Weblate 4.10.1\n"
 
 #: data/com.bitstower.Markets.appdata.xml.in:6
 msgid "bitstower"
@@ -33,7 +33,7 @@ msgstr "Markets"
 
 #: data/com.bitstower.Markets.appdata.xml.in:13 src/Application.vala:75
 msgid "Keep track of your investments"
-msgstr ""
+msgstr "Behalte den Überblick über deine Investitionen"
 
 #: data/com.bitstower.Markets.appdata.xml.in:15
 msgid ""
@@ -53,7 +53,7 @@ msgstr "Erstelle dein eigenes Portfolio"
 
 #: data/com.bitstower.Markets.appdata.xml.in:22
 msgid "Track stocks, currencies, cryptocurrencies, commodities and indexes"
-msgstr "Verfolge Kurse, Krytpowährungen, Rohstoffe und Indizies"
+msgstr "Verfolge Kurse, Krytpowährungen, Rohstoffe und Indizes"
 
 #: data/com.bitstower.Markets.appdata.xml.in:23
 msgid "Compatible with Linux smartphones (Librem5, PinePhone)"
@@ -81,11 +81,11 @@ msgstr "Markets 0.5.2 bringt neue Funktionen und Fehlerbehebungen."
 
 #: data/com.bitstower.Markets.appdata.xml.in:42
 msgid "Added Portuguese (Brazil) translations"
-msgstr ""
+msgstr "Übersetzungen für Portugiesisch (Brasilien) hinzugefügt"
 
 #: data/com.bitstower.Markets.appdata.xml.in:43
 msgid "Updated translations"
-msgstr "Aktualisierungsintervall"
+msgstr "Aktualisierte Übersetzungen"
 
 #: data/com.bitstower.Markets.appdata.xml.in:49
 msgid "Markets 0.5.1 brings new features and bug fixes."
@@ -93,23 +93,23 @@ msgstr "Markets 0.5.1 bringt neue Funktionen und Fehlerbehebungen."
 
 #: data/com.bitstower.Markets.appdata.xml.in:51
 msgid "New layout of the symbol list"
-msgstr ""
+msgstr "Neue Gestaltung der Symbolliste"
 
 #: data/com.bitstower.Markets.appdata.xml.in:52
 msgid "Improved keyboard support"
-msgstr "Sortierungsmöglichkeit hinzugefügt"
+msgstr "Verbesserte Tastaturunterstützung"
 
 #: data/com.bitstower.Markets.appdata.xml.in:53
 msgid "Added new languages: Spanish, Slovak"
-msgstr ""
+msgstr "Neue Sprachen hinzugefügt: Spanisch, Slowakisch"
 
 #: data/com.bitstower.Markets.appdata.xml.in:54
 msgid "More natural drag and drop behaviour"
-msgstr ""
+msgstr "Natürlicheres Verhalten beim Ziehen und Ablegen"
 
 #: data/com.bitstower.Markets.appdata.xml.in:55
 msgid "Bug fixes"
-msgstr ""
+msgstr "Fehlerbehebungen"
 
 #: data/com.bitstower.Markets.appdata.xml.in:61
 msgid "Markets 0.4.0 brings new features and bug fixes."
@@ -122,7 +122,7 @@ msgstr "Neues Programmsymbol"
 
 #: data/com.bitstower.Markets.appdata.xml.in:64
 msgid "Added reorder support"
-msgstr "Sortierungsmöglichkeit hinzugefügt"
+msgstr "Unterstützung für Neuanordnungen hinzugefügt"
 
 #: data/com.bitstower.Markets.appdata.xml.in:65
 msgid "Added i18n support"
@@ -169,16 +169,16 @@ msgid ""
 "Use the dark variant of your GTK+ theme. Please note that not every GTK+ "
 "theme has a dark variant."
 msgstr ""
-"Verwendet die dunkle Varaiante des aktuellen GTK+ Themas. Beachten Sie, dass "
-"nicht jedes GTK+ Thema eine dunkle Variante anbietet."
+"Verwende die dunkle Variante des aktuellen GTK+ Themas. Beachte, dass nicht "
+"jedes GTK+ Thema eine dunkle Variante anbietet."
 
 #: data/com.bitstower.Markets.gschema.xml:16
 msgid "Window width"
-msgstr "Festerbreite"
+msgstr "Fensterbreite"
 
 #: data/com.bitstower.Markets.gschema.xml:17
 msgid "Remember the window width."
-msgstr "Fensterweite merken."
+msgstr "Fensterbreite merken."
 
 #: data/com.bitstower.Markets.gschema.xml:21
 msgid "Window height"
@@ -214,7 +214,7 @@ msgstr "Keine Symbole"
 
 #: data/ui/NoSymbolsView.ui:42
 msgid "Press + to add one."
-msgstr "Drücken Sie + um einen hinzuzufügen."
+msgstr "Drücke + um eins hinzuzufügen."
 
 #: data/ui/NewSymbolDialog.ui:19
 msgid "New symbol"
