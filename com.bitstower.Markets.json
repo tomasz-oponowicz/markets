@@ -24,25 +24,6 @@
     ],
     "modules" : [
         {
-            "name" : "libhandy",
-            "buildsystem" : "meson",
-            "config-opts" : [
-                "-Dprofiling=false",
-                "-Dintrospection=enabled",
-                "-Dgtk_doc=false",
-                "-Dtests=false",
-                "-Dexamples=false",
-                "-Dglade_catalog=disabled"
-            ],
-            "sources" : [
-                {
-                    "type" : "git",
-                    "url" : "https://gitlab.gnome.org/GNOME/libhandy.git",
-                    "tag" : "1.0.3"
-                }
-            ]
-        },
-        {
             "name" : "bitstower-markets",
             "builddir" : true,
             "buildsystem" : "meson",
