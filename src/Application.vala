@@ -74,6 +74,8 @@ public class Markets.Application : Gtk.Application {
         dialog.program_name = _("Markets");
         dialog.comments = _("Keep track of your investments");
         dialog.authors = { "Tomasz Oponowicz" };
+        // TRANSLATORS: 'Name <email@domain.com>' or 'Name https://website.example'
+        dialog.translator_credits = _("translator-credits");
         dialog.artists = {"Tobias Bernard"};
         dialog.license_type = Gtk.License.GPL_3_0;
         dialog.website = "https://bitstower.com";

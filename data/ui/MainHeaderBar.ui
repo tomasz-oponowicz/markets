@@ -6,7 +6,7 @@
   <template class="MarketsMainHeaderBar" parent="HdyHeaderBar">
     <property name="visible">True</property>
     <property name="show_close_button">True</property>
-    <property name="title">Markets</property>
+    <property name="title" translatable="yes">Markets</property>
     <child>
       <object class="GtkButton">
         <property name="visible">True</property>
