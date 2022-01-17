@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: com.bitstower.Markets\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-28 12:54+0200\n"
-"PO-Revision-Date: 2021-08-26 12:33+0000\n"
-"Last-Translator: liimee <alt3753.7@gmail.com>\n"
+"PO-Revision-Date: 2021-12-30 00:53+0000\n"
+"Last-Translator: Reza Almanda <rezaalmanda27@gmail.com>\n"
 "Language-Team: Indonesian <https://hosted.weblate.org/projects/markets/"
 "markets/id/>\n"
 "Language: id\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.8.1-dev\n"
+"X-Generator: Weblate 4.10.1\n"
 
 #: data/com.bitstower.Markets.appdata.xml.in:6
 msgid "bitstower"
@@ -27,17 +27,19 @@ msgstr "bitstower"
 #: data/com.bitstower.Markets.desktop.in:3 src/Application.vala:74
 #: src/MainWindow.vala:22
 msgid "Markets"
-msgstr ""
+msgstr "Pasar"
 
 #: data/com.bitstower.Markets.appdata.xml.in:13 src/Application.vala:75
 msgid "Keep track of your investments"
-msgstr ""
+msgstr "Pantau investasi Anda"
 
 #: data/com.bitstower.Markets.appdata.xml.in:15
 msgid ""
 "The Markets app delivers financial data to your fingertips. Stay on top of "
 "the market and never miss an investment opportunity!"
 msgstr ""
+"Aplikasi Markets memberikan data keuangan ke ujung jari Anda. Tetap pantau "
+"pasar dan jangan pernah melewatkan peluang investasi!"
 
 #: data/com.bitstower.Markets.appdata.xml.in:19
 msgid "Features:"
@@ -45,11 +47,11 @@ msgstr "Fitur-fitur:"
 
 #: data/com.bitstower.Markets.appdata.xml.in:21
 msgid "Create your personal portfolio"
-msgstr ""
+msgstr "Buat portfolio pribadi"
 
 #: data/com.bitstower.Markets.appdata.xml.in:22
 msgid "Track stocks, currencies, cryptocurrencies, commodities and indexes"
-msgstr ""
+msgstr "Lacak saham, mata uang, cryptocurrency, komoditas, dan indeks"
 
 #: data/com.bitstower.Markets.appdata.xml.in:23
 msgid "Compatible with Linux smartphones (Librem5, PinePhone)"
@@ -57,11 +59,11 @@ msgstr "Kompatibel dengan ponsel Linux (Librem5, PinePhone)"
 
 #: data/com.bitstower.Markets.appdata.xml.in:24
 msgid "Open any symbol in Yahoo Finance for more details"
-msgstr ""
+msgstr "Buka simbol apa pun di Yahoo Finance untuk detail lebih lanjut"
 
 #: data/com.bitstower.Markets.appdata.xml.in:25
 msgid "Adjust the refresh rate"
-msgstr ""
+msgstr "Sesuaikan refresh rate"
 
 #: data/com.bitstower.Markets.appdata.xml.in:26
 msgid "Dark Mode"
@@ -69,47 +71,47 @@ msgstr "Mode Gelap"
 
 #: data/com.bitstower.Markets.appdata.xml.in:33
 msgid "Live Prices"
-msgstr ""
+msgstr "Harga Langsung"
 
 #: data/com.bitstower.Markets.appdata.xml.in:40
 msgid "Markets 0.5.2 brings new translations and bug fixes."
-msgstr ""
+msgstr "Markets 0.5.2 menghadirkan terjemahan baru dan perbaikan bug."
 
 #: data/com.bitstower.Markets.appdata.xml.in:42
 msgid "Added Portuguese (Brazil) translations"
-msgstr ""
+msgstr "Penambahan terjemahan Portugis (Brasil)"
 
 #: data/com.bitstower.Markets.appdata.xml.in:43
 msgid "Updated translations"
-msgstr ""
+msgstr "Pembaruan terjemahan"
 
 #: data/com.bitstower.Markets.appdata.xml.in:49
 msgid "Markets 0.5.1 brings new features and bug fixes."
-msgstr ""
+msgstr "Markets 0.5.1 menghadirkan fitur baru dan perbaikan bug."
 
 #: data/com.bitstower.Markets.appdata.xml.in:51
 msgid "New layout of the symbol list"
-msgstr ""
+msgstr "Tata letak baru dari daftar simbol"
 
 #: data/com.bitstower.Markets.appdata.xml.in:52
 msgid "Improved keyboard support"
-msgstr ""
+msgstr "Peningkatan dukungan keyboard"
 
 #: data/com.bitstower.Markets.appdata.xml.in:53
 msgid "Added new languages: Spanish, Slovak"
-msgstr ""
+msgstr "Penambahan bahasa baru: Spanyol, Slovak"
 
 #: data/com.bitstower.Markets.appdata.xml.in:54
 msgid "More natural drag and drop behaviour"
-msgstr ""
+msgstr "Drag dan drop yang lebih alami"
 
 #: data/com.bitstower.Markets.appdata.xml.in:55
 msgid "Bug fixes"
-msgstr ""
+msgstr "Perbaikan bug"
 
 #: data/com.bitstower.Markets.appdata.xml.in:61
 msgid "Markets 0.4.0 brings new features and bug fixes."
-msgstr ""
+msgstr "Markets 0.4.0 menghadirkan fitur baru dan perbaikan bug."
 
 #: data/com.bitstower.Markets.appdata.xml.in:63
 #: data/com.bitstower.Markets.appdata.xml.in:82
@@ -118,7 +120,7 @@ msgstr "Menambahkan ikon aplikasi baru"
 
 #: data/com.bitstower.Markets.appdata.xml.in:64
 msgid "Added reorder support"
-msgstr ""
+msgstr "Menambahkan dukungan reorder"
 
 #: data/com.bitstower.Markets.appdata.xml.in:65
 msgid "Added i18n support"
@@ -132,11 +134,11 @@ msgstr "Memperbaiki bermacam-macam masalah"
 
 #: data/com.bitstower.Markets.appdata.xml.in:72
 msgid "Markets 0.3.0 brings bug fixes."
-msgstr ""
+msgstr "Markets 0.3.0 membawa perbaikan bug."
 
 #: data/com.bitstower.Markets.appdata.xml.in:80
 msgid "Markets 0.2.0 brings small feature additions and bug fixes."
-msgstr ""
+msgstr "Markets 0.2.0 menghadirkan penambahan fitur kecil dan perbaikan bug."
 
 #: data/com.bitstower.Markets.appdata.xml.in:89
 msgid "Initial release"
@@ -149,7 +151,7 @@ msgstr "saham;mata uang;mata uang crypto;keuangan;ekonomi;"
 
 #: data/com.bitstower.Markets.gschema.xml:6
 msgid "Pull interval"
-msgstr ""
+msgstr "Tarik interval"
 
 #: data/com.bitstower.Markets.gschema.xml:7
 msgid "Pull data every X seconds."
@@ -164,6 +166,8 @@ msgid ""
 "Use the dark variant of your GTK+ theme. Please note that not every GTK+ "
 "theme has a dark variant."
 msgstr ""
+"Gunakan varian gelap dari tema GTK+. Harap dicatat bahwa tidak setiap tema "
+"GTK+ memiliki varian gelap."
 
 #: data/com.bitstower.Markets.gschema.xml:16
 msgid "Window width"
@@ -187,23 +191,23 @@ msgstr "Umum"
 
 #: data/ui/PreferencesWindow.ui:25
 msgid "Update Interval"
-msgstr ""
+msgstr "Interval pembaruan"
 
 #: data/ui/PreferencesWindow.ui:26
 msgid "Pull data every X seconds"
-msgstr ""
+msgstr "Ambil data tiap X detik"
 
 #: data/ui/PreferencesWindow.ui:50
 msgid "Apppearance"
-msgstr ""
+msgstr "Tampilan"
 
 #: data/ui/PreferencesWindow.ui:55
 msgid "Dark Theme"
-msgstr ""
+msgstr "Tema Gelap"
 
 #: data/ui/NoSymbolsView.ui:27
 msgid "No symbols"
-msgstr ""
+msgstr "Tidak ada simbol"
 
 #: data/ui/NoSymbolsView.ui:42
 msgid "Press + to add one."
@@ -211,7 +215,7 @@ msgstr "Tekan + untuk menambahkan."
 
 #: data/ui/NewSymbolDialog.ui:19
 msgid "New symbol"
-msgstr ""
+msgstr "Simbol baru"
 
 #: data/ui/NewSymbolDialog.ui:23
 msgid "_Cancel"
@@ -231,11 +235,11 @@ msgstr "Preferensi"
 
 #: data/ui/MainHeaderBar.ui:95
 msgid "About Markets"
-msgstr ""
+msgstr "Tentang Pasar"
 
 #: data/ui/SelectionHeaderBar.ui:28
 msgid "Click on a checkbox to select"
-msgstr ""
+msgstr "Klik kotak centang untuk memilih"
 
 #: data/ui/SelectionHeaderBar.ui:55
 msgid "Cancel"
@@ -247,7 +251,7 @@ msgstr "Pilih semua"
 
 #: data/ui/SelectionHeaderBar.ui:120
 msgid "Select none"
-msgstr ""
+msgstr "Pilih tidak ada"
 
 #: src/Application.vala:80
 msgid "Official webpage"
@@ -255,11 +259,11 @@ msgstr "Situs web resmi"
 
 #: src/SymbolRow.vala:98
 msgid "Market Closed"
-msgstr ""
+msgstr "Pasar Tutup"
 
 #: src/SymbolRow.vala:101
 msgid "Market Open"
-msgstr ""
+msgstr "Pasar Buka"
 
 #~ msgid "A stock, currency and cryptocurrency tracker"
 #~ msgstr "Sebuah pelacak saham, mata uang dan mata uang crypto"

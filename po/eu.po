@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: com.bitstower.Markets\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-28 12:54+0200\n"
-"PO-Revision-Date: 2021-05-24 22:33+0000\n"
+"PO-Revision-Date: 2021-09-30 09:37+0000\n"
 "Last-Translator: Sergio Varela <sergitroll9@gmail.com>\n"
 "Language-Team: Basque <https://hosted.weblate.org/projects/markets/markets/"
 "eu/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.7-dev\n"
+"X-Generator: Weblate 4.9-dev\n"
 
 #: data/com.bitstower.Markets.appdata.xml.in:6
 msgid "bitstower"
@@ -31,7 +31,7 @@ msgstr "Merkatuak"
 
 #: data/com.bitstower.Markets.appdata.xml.in:13 src/Application.vala:75
 msgid "Keep track of your investments"
-msgstr ""
+msgstr "Kontrolatu zure inbertsioak"
 
 #: data/com.bitstower.Markets.appdata.xml.in:15
 msgid ""
@@ -80,11 +80,11 @@ msgstr "Markets 0.5.2 ezaugarri berriak eta akatsen zuzenketak dakartza."
 
 #: data/com.bitstower.Markets.appdata.xml.in:42
 msgid "Added Portuguese (Brazil) translations"
-msgstr ""
+msgstr "Portugeserako (Brasil) itzulpenak gehitu dira"
 
 #: data/com.bitstower.Markets.appdata.xml.in:43
 msgid "Updated translations"
-msgstr ""
+msgstr "Itzulpen eguneratuak"
 
 #: data/com.bitstower.Markets.appdata.xml.in:49
 msgid "Markets 0.5.1 brings new features and bug fixes."
@@ -92,23 +92,23 @@ msgstr "Markets 0.5.1 ezaugarri berriak eta akatsen zuzenketak dakartza."
 
 #: data/com.bitstower.Markets.appdata.xml.in:51
 msgid "New layout of the symbol list"
-msgstr ""
+msgstr "Sinboloen zerrendaren antolamendu berria"
 
 #: data/com.bitstower.Markets.appdata.xml.in:52
 msgid "Improved keyboard support"
-msgstr ""
+msgstr "Teklatu-euskarri hobetua"
 
 #: data/com.bitstower.Markets.appdata.xml.in:53
 msgid "Added new languages: Spanish, Slovak"
-msgstr ""
+msgstr "Hizkuntza berriak gehitu dira: espainiera, eslovakiera"
 
 #: data/com.bitstower.Markets.appdata.xml.in:54
 msgid "More natural drag and drop behaviour"
-msgstr ""
+msgstr "Portaera naturalagoa herrestan eramatean eta askatzean"
 
 #: data/com.bitstower.Markets.appdata.xml.in:55
 msgid "Bug fixes"
-msgstr ""
+msgstr "Erroreen zuzenketak"
 
 #: data/com.bitstower.Markets.appdata.xml.in:61
 msgid "Markets 0.4.0 brings new features and bug fixes."

@@ -2,22 +2,21 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the com.bitstower.Markets package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
 msgid ""
 msgstr ""
 "Project-Id-Version: com.bitstower.Markets\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-28 12:54+0200\n"
-"PO-Revision-Date: 2022-01-17 12:58+0000\n"
-"Last-Translator: Óscar Fernández Díaz <oscfdezdz@tuta.io>\n"
-"Language-Team: Spanish <https://hosted.weblate.org/projects/markets/markets/"
-"es/>\n"
-"Language: es\n"
+"PO-Revision-Date: 2021-11-07 20:04+0000\n"
+"Last-Translator: Michal Schmidt <mschmidt@redhat.com>\n"
+"Language-Team: Czech <https://hosted.weblate.org/projects/markets/markets/cs/"
+">\n"
+"Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.10.1\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Weblate 4.9-dev\n"
 
 #: data/com.bitstower.Markets.appdata.xml.in:6
 msgid "bitstower"
@@ -27,252 +26,240 @@ msgstr "bitstower"
 #: data/com.bitstower.Markets.desktop.in:3 src/Application.vala:74
 #: src/MainWindow.vala:22
 msgid "Markets"
-msgstr "Mercados"
+msgstr "Trhy"
 
 #: data/com.bitstower.Markets.appdata.xml.in:13 src/Application.vala:75
 msgid "Keep track of your investments"
-msgstr "Controle sus inversiones"
+msgstr "Sledujte své investice"
 
 #: data/com.bitstower.Markets.appdata.xml.in:15
 msgid ""
 "The Markets app delivers financial data to your fingertips. Stay on top of "
 "the market and never miss an investment opportunity!"
 msgstr ""
-"La aplicación de Mercados ofrece datos financieros al alcance de su mano. "
-"¡Manténgase en la cima del mercado y nunca pierda una oportunidad de "
-"inversión!"
+"Aplikace Trhy poskytuje finanční údaje na dosah ruky. Mějte přehled o trhu a "
+"nikdy nepromeškejte investiční příležitost!"
 
 #: data/com.bitstower.Markets.appdata.xml.in:19
 msgid "Features:"
-msgstr "Característias:"
+msgstr "Vlastnosti:"
 
 #: data/com.bitstower.Markets.appdata.xml.in:21
 msgid "Create your personal portfolio"
-msgstr "Crear su cartera personal"
+msgstr "Vytvořte si své osobní portfolio"
 
 #: data/com.bitstower.Markets.appdata.xml.in:22
 msgid "Track stocks, currencies, cryptocurrencies, commodities and indexes"
-msgstr ""
-"Seguimiento de acciones, divisas, criptodivisas, productos básicos e índices"
+msgstr "Sledujte akcie, měny, kryptoměny, komodity a indexy"
 
 #: data/com.bitstower.Markets.appdata.xml.in:23
 msgid "Compatible with Linux smartphones (Librem5, PinePhone)"
-msgstr "Compatible con los smartphones Linux (Librem5, PinePhone)"
+msgstr "Kompatibilní s Linuxovými smartphony (Librem5, PinePhone)"
 
 #: data/com.bitstower.Markets.appdata.xml.in:24
 msgid "Open any symbol in Yahoo Finance for more details"
-msgstr "Abrir cualquier símbolo en Yahoo Finanzas para más detalles"
+msgstr "Otevřete libovolný symbol v Yahoo Finance pro podrobnosti"
 
 #: data/com.bitstower.Markets.appdata.xml.in:25
 msgid "Adjust the refresh rate"
-msgstr "Ajustar la tasa de refresco"
+msgstr "Nastavte si obnovovací frekvenci"
 
 #: data/com.bitstower.Markets.appdata.xml.in:26
 msgid "Dark Mode"
-msgstr "Modo oscuro"
+msgstr "Tmavý režim"
 
 #: data/com.bitstower.Markets.appdata.xml.in:33
 msgid "Live Prices"
-msgstr "Precios en directo"
+msgstr "Aktuální ceny"
 
 #: data/com.bitstower.Markets.appdata.xml.in:40
 msgid "Markets 0.5.2 brings new translations and bug fixes."
-msgstr "Mercados 0.5.2 añade características nuevas y correcciones de errores."
+msgstr "Trhy 0.5.2 přináší nové překlady a opravy chyb."
 
 #: data/com.bitstower.Markets.appdata.xml.in:42
 msgid "Added Portuguese (Brazil) translations"
-msgstr "Añadidas las traducciones al portugués (Brasil)"
+msgstr "Přidán překlad do brazilské portugalštiny"
 
 #: data/com.bitstower.Markets.appdata.xml.in:43
 msgid "Updated translations"
-msgstr "Traducciones actualizadas"
+msgstr "Aktualizované překlady"
 
 #: data/com.bitstower.Markets.appdata.xml.in:49
 msgid "Markets 0.5.1 brings new features and bug fixes."
-msgstr "Mercados 0.5.1 añade características nuevas y correcciones de errores."
+msgstr "Trhy 0.5.1 přináší nové funkce a opravy chyb."
 
 #: data/com.bitstower.Markets.appdata.xml.in:51
 msgid "New layout of the symbol list"
-msgstr "Nueva disposición de la lista de símbolos"
+msgstr "Nové rozvržení seznamu symbolů"
 
 #: data/com.bitstower.Markets.appdata.xml.in:52
 msgid "Improved keyboard support"
-msgstr "Soporte de teclado mejorado"
+msgstr "Vylepšená podpora klávesnice"
 
 #: data/com.bitstower.Markets.appdata.xml.in:53
 msgid "Added new languages: Spanish, Slovak"
-msgstr "Añadidos nuevos idiomas: español, eslovaco"
+msgstr "Přidány nové jazyky: španělština, slovenština"
 
 #: data/com.bitstower.Markets.appdata.xml.in:54
 msgid "More natural drag and drop behaviour"
-msgstr "Comportamiento más natural al arrastrar y soltar"
+msgstr "Přirozenější chování přetažení"
 
 #: data/com.bitstower.Markets.appdata.xml.in:55
 msgid "Bug fixes"
-msgstr "Corrección de errores"
+msgstr "Opravy chyb"
 
 #: data/com.bitstower.Markets.appdata.xml.in:61
 msgid "Markets 0.4.0 brings new features and bug fixes."
-msgstr "Mercados 0.4.0 añade características nuevas y correcciones de errores."
+msgstr "Trhy 0.4.0 přináší nové funkce a opravy chyb."
 
 #: data/com.bitstower.Markets.appdata.xml.in:63
 #: data/com.bitstower.Markets.appdata.xml.in:82
 msgid "Added new app icon"
-msgstr "Añadido un nuevo icono de la aplicación"
+msgstr "Přidána nová ikona aplikace"
 
 #: data/com.bitstower.Markets.appdata.xml.in:64
 msgid "Added reorder support"
-msgstr "Añadido soporte para reordenar"
+msgstr "Přidána podpora přeuspořádání"
 
 #: data/com.bitstower.Markets.appdata.xml.in:65
 msgid "Added i18n support"
-msgstr "Añadido el soporte de i18n"
+msgstr "Přidána podpora i18n"
 
 #: data/com.bitstower.Markets.appdata.xml.in:66
 #: data/com.bitstower.Markets.appdata.xml.in:74
 #: data/com.bitstower.Markets.appdata.xml.in:83
 msgid "Fixed various issues"
-msgstr "Se han solucionado varios problemas"
+msgstr "Opravy různých chyb"
 
 #: data/com.bitstower.Markets.appdata.xml.in:72
 msgid "Markets 0.3.0 brings bug fixes."
-msgstr "Mercados 0.3.0 corrige errores."
+msgstr "Trhy 0.3.0 přináší opravy chyb."
 
 #: data/com.bitstower.Markets.appdata.xml.in:80
 msgid "Markets 0.2.0 brings small feature additions and bug fixes."
-msgstr ""
-"Mercados 0.2.0 añade pequeñas características adicionales y correcciones de "
-"errores."
+msgstr "Trhy 0.2.0 přináší malá vylepšení a opravy chyb."
 
 #: data/com.bitstower.Markets.appdata.xml.in:89
 msgid "Initial release"
-msgstr "Versión inicial"
+msgstr "První vydání"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/com.bitstower.Markets.desktop.in:11
 msgid "stock;currency;cryptocurrency;finance;economy;"
-msgstr ""
-"stock;currency;cryptocurrency;finance;economy;moneda;criptomoneda;finanzas;"
-"economía;"
+msgstr "akcie;měna;kryptoměna;finance;ekonomika;"
 
 #: data/com.bitstower.Markets.gschema.xml:6
 msgid "Pull interval"
-msgstr "Intervalo de refresco"
+msgstr "Interval obnovení"
 
 #: data/com.bitstower.Markets.gschema.xml:7
 msgid "Pull data every X seconds."
-msgstr "Refrescar datos cada X segundos."
+msgstr "Stahovat data každých X sekund."
 
 #: data/com.bitstower.Markets.gschema.xml:11 data/ui/PreferencesWindow.ui:56
 msgid "Use dark GTK+ theme"
-msgstr "Usar el tema GTK+ oscuro"
+msgstr "Použít tmavé GTK+ téma"
 
 #: data/com.bitstower.Markets.gschema.xml:12
 msgid ""
 "Use the dark variant of your GTK+ theme. Please note that not every GTK+ "
 "theme has a dark variant."
 msgstr ""
-"Usar la variante oscura de su tema GTK+. Tenga en cuenta que no todos los "
-"temas GTK+ tienen una variante oscura."
+"Použít tmavou variantu vašeho GTK+ tématu. Vězte, že ne každé GTK+ téma má "
+"tmavou variantu."
 
 #: data/com.bitstower.Markets.gschema.xml:16
 msgid "Window width"
-msgstr "Anchura de la ventana"
+msgstr "Šířka okna"
 
 #: data/com.bitstower.Markets.gschema.xml:17
 msgid "Remember the window width."
-msgstr "Recuerda la anchura de la ventana."
+msgstr "Zapamatovat si šířku okna."
 
 #: data/com.bitstower.Markets.gschema.xml:21
 msgid "Window height"
-msgstr "Altura de la ventana"
+msgstr "Výška okna"
 
 #: data/com.bitstower.Markets.gschema.xml:22
 msgid "Remember the window height."
-msgstr "Recuerda la altura de la ventana."
+msgstr "Zapamatovat si výšku okna."
 
 #: data/ui/PreferencesWindow.ui:16 data/ui/PreferencesWindow.ui:20
 msgid "General"
-msgstr "General"
+msgstr "Obecné"
 
 #: data/ui/PreferencesWindow.ui:25
 msgid "Update Interval"
-msgstr "Intervalo de actualización"
+msgstr "Interval aktualizace"
 
 #: data/ui/PreferencesWindow.ui:26
 msgid "Pull data every X seconds"
-msgstr "Refrescar datos cada X segundos"
+msgstr "Stahovat data každých X sekund"
 
 #: data/ui/PreferencesWindow.ui:50
 msgid "Apppearance"
-msgstr "Apariencia"
+msgstr "Vzhled"
 
 #: data/ui/PreferencesWindow.ui:55
 msgid "Dark Theme"
-msgstr "Tema oscuro"
+msgstr "Tmavé téma"
 
 #: data/ui/NoSymbolsView.ui:27
 msgid "No symbols"
-msgstr "Sin símbolos"
+msgstr "Žádné symboly"
 
 #: data/ui/NoSymbolsView.ui:42
 msgid "Press + to add one."
-msgstr "Pulse + para agregar uno."
+msgstr "Zmáčkněte + pro přidání."
 
 #: data/ui/NewSymbolDialog.ui:19
 msgid "New symbol"
-msgstr "Símbolo nuevo"
+msgstr "Nový symbol"
 
 #: data/ui/NewSymbolDialog.ui:23
 msgid "_Cancel"
-msgstr "_Cancelar"
+msgstr "_Zrušit"
 
 #: data/ui/NewSymbolDialog.ui:39
 msgid "_Add"
-msgstr "_Añadir"
+msgstr "_Přidat"
 
 #: data/ui/SymbolsView.ui:53
 msgid "Source: <a href=\"https://finance.yahoo.com/\">Yahoo Finance</a>"
-msgstr "Fuente: <a href=\"https://finance.yahoo.com/\">Yahoo Finanzas</a>"
+msgstr "Zdroj: <a href=\"https://finance.yahoo.com/\">Yahoo Finance</a>"
 
 #: data/ui/MainHeaderBar.ui:89
 msgid "Preferences"
-msgstr "Preferencias"
+msgstr "Předvolby"
 
 #: data/ui/MainHeaderBar.ui:95
 msgid "About Markets"
-msgstr "Acerca de Mercados"
+msgstr "O aplikaci Trhy"
 
 #: data/ui/SelectionHeaderBar.ui:28
 msgid "Click on a checkbox to select"
-msgstr "Haga clic en una casilla para seleccionar"
+msgstr "Zaškrtněte políčko pro výběr"
 
 #: data/ui/SelectionHeaderBar.ui:55
 msgid "Cancel"
-msgstr "Cancelar"
+msgstr "Zrušit"
 
 #: data/ui/SelectionHeaderBar.ui:106
 msgid "Select all"
-msgstr "Seleccionar todo"
+msgstr "Vybrat vše"
 
 #: data/ui/SelectionHeaderBar.ui:120
 msgid "Select none"
-msgstr "No seleccionar ninguna"
+msgstr "Zrušit výběr"
 
 #: src/Application.vala:80
 msgid "Official webpage"
-msgstr "Página web oficial"
+msgstr "Oficiální webová stránka"
 
 #: src/SymbolRow.vala:98
 msgid "Market Closed"
-msgstr "Mercado cerrado"
+msgstr "Trh uzavřen"
 
 #: src/SymbolRow.vala:101
 msgid "Market Open"
-msgstr "Mercado abierto"
-
-#~ msgid "A stock, currency and cryptocurrency tracker"
-#~ msgstr "Un rastreador de acciones, divisas y criptodivisas"
-
-#~ msgid "A market tracker for Linux Smartphones and Tablets."
-#~ msgstr "Un rastreador de mercado para smartphones y tablets Linux."
+msgstr "Trh otevřen"
