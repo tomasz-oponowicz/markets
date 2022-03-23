@@ -6,11 +6,6 @@
       <summary>Pull interval</summary>
       <description>Pull data every X seconds.</description>
     </key>
-    <key type="b" name="dark-theme">
-      <default>true</default>
-      <summary>Use dark GTK+ theme</summary>
-      <description>Use the dark variant of your GTK+ theme. Please note that not every GTK+ theme has a dark variant.</description>
-    </key>
     <key type="i" name="window-width">
       <default>300</default>
       <summary>Window width</summary>

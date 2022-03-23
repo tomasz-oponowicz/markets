@@ -107,7 +107,11 @@ public class Markets.Application : Gtk.Application {
         Intl.textdomain (Constants.APP_ID);
 
         var app = new Application ();
-        app.startup.connect (() => { Hdy.init (); });
+        app.startup.connect (() => {
+            Hdy.init ();
+
+            Hdy.StyleManager.get_default ().color_scheme = PREFER_LIGHT;
+        });
         return app.run (args);
     }
 }

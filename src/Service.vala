@@ -13,13 +13,11 @@ namespace Markets {
         }
 
         private void attach_listeners () {
-            this.bind_setting ("dark-theme", "dark_theme");
             this.bind_setting ("pull-interval", "pull_interval");
             this.bind_setting ("window-width", "window_width");
             this.bind_setting ("window-height", "window_height");
 
             this.state.notify["symbols"].connect (this.on_symbols_updated);
-            this.state.notify["dark-theme"].connect (this.on_dark_theme_updated);
             this.state.notify["pull-interval"].connect (this.on_pull_interval_updated);
             this.state.notify["search-query"].connect (this.on_search_query_updated);
             this.state.notify["link"].connect (this.on_link_updated);
@@ -34,7 +32,6 @@ namespace Markets {
 
             this.load_symbols ();
             this.on_pull_interval_updated ();
-            this.on_dark_theme_updated ();
         }
 
         private void bind_setting (string setting_prop, string state_prop) {
@@ -78,11 +75,6 @@ namespace Markets {
 
             // reset value in order to allow triggering the same url many times
             this.state.link = null;
-        }
-
-        private void on_dark_theme_updated () {
-            Gtk.Settings.get_default ().gtk_application_prefer_dark_theme =
-                this.state.dark_theme;
         }
 
         private void on_pull_interval_updated () {

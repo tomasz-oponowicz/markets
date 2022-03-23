@@ -45,32 +45,7 @@
             </child>
           </object>
         </child>
-        <child>
-          <object class="HdyPreferencesGroup">
-            <property name="title" translatable="yes">Apppearance</property>
-            <property name="visible">True</property>
-            <child>
-              <object class="HdyActionRow">
-                <property name="visible">True</property>
-                <property name="title" translatable="yes">Dark Theme</property>
-                <property name="subtitle" translatable="yes">Use dark GTK+ theme</property>
-                <property name="use_underline">True</property>
-                <property name="activatable">False</property>
-                <child>
-                  <object class="GtkSwitch" id="dark_theme">
-                    <property name="visible">True</property>
-                    <property name="halign">center</property>
-                    <property name="valign">center</property>
-                    <property name="hexpand">False</property>
-                    <signal name="state-set" handler="on_dark_theme_changed" swapped="no"/>
-                  </object>
-                </child>
-              </object>
-            </child>
-          </object>
-        </child>
       </object>
     </child>
   </template>
 </interface>
-
