@@ -7,7 +7,7 @@
   <homepage rdf:resource="https://github.com/tomasz-oponowicz/markets" />
   <bug-database rdf:resource="https://github.com/tomasz-oponowicz/markets/issues" />
 
-  <programming-language>Python</programming-language>
+  <programming-language>Vala</programming-language>
   <platform>GTK 3</platform>
   <platform>Libhandy</platform>
 
