@@ -16,20 +16,6 @@ The Markets application delivers financial data to your fingertips. Track stocks
 * Adjust the refresh rate
 * Dark Mode
 
-## Installation
-
-> **Librem5 / PinePhone users:** For the best experience, please avoid the Flatpak package and install the app from source. [Flatpak apps don't have access to the patched runtime](https://source.puri.sm/Librem5/Apps_Issues/-/issues/135). Because of that apps are not fully responsive in the Phosh shell. For example dialogs are not maximized.
-
-> **Package mainteners:** We are looking for volunteers to help us make native packages of Markets for Fedora, Debian and other major distributions. It would be great if you could help either by packaging, or by getting the following into the official repositories.
-
-Official:
-  * Flathub: [com.bitstower.Markets](https://flathub.org/apps/details/com.bitstower.Markets)
-  * Arch (AUR): [bitstower-markets](https://aur.archlinux.org/packages/bitstower-markets/)
-
-Unofficial:
-  * Guix: [markets](https://guix.gnu.org/packages/markets-0.5.3/)
-  * Nixpkgs: [markets](https://github.com/NixOS/nixpkgs/blob/master/pkgs/applications/misc/markets/default.nix)
-
 ## Building from source
 
 ### Option 1: with GNOME Builder
