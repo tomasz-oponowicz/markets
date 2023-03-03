@@ -1,11 +1,11 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the com.bitstower.Markets package.
+# This file is distributed under the same license as the biz.zaxo.Markets package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: com.bitstower.Markets\n"
+"Project-Id-Version: biz.zaxo.Markets\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-28 12:54+0200\n"
 "PO-Revision-Date: 2021-12-30 00:53+0000\n"
@@ -19,21 +19,21 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 4.10.1\n"
 
-#: data/com.bitstower.Markets.appdata.xml.in:6
+#: data/biz.zaxo.Markets.appdata.xml.in:6
 msgid "bitstower"
 msgstr "bitstower"
 
-#: data/com.bitstower.Markets.appdata.xml.in:12
-#: data/com.bitstower.Markets.desktop.in:3 src/Application.vala:74
+#: data/biz.zaxo.Markets.appdata.xml.in:12
+#: data/biz.zaxo.Markets.desktop.in:3 src/Application.vala:74
 #: src/MainWindow.vala:22
 msgid "Markets"
 msgstr "Pasar"
 
-#: data/com.bitstower.Markets.appdata.xml.in:13 src/Application.vala:75
+#: data/biz.zaxo.Markets.appdata.xml.in:13 src/Application.vala:75
 msgid "Keep track of your investments"
 msgstr "Pantau investasi Anda"
 
-#: data/com.bitstower.Markets.appdata.xml.in:15
+#: data/biz.zaxo.Markets.appdata.xml.in:15
 msgid ""
 "The Markets app delivers financial data to your fingertips. Stay on top of "
 "the market and never miss an investment opportunity!"
@@ -41,127 +41,127 @@ msgstr ""
 "Aplikasi Markets memberikan data keuangan ke ujung jari Anda. Tetap pantau "
 "pasar dan jangan pernah melewatkan peluang investasi!"
 
-#: data/com.bitstower.Markets.appdata.xml.in:19
+#: data/biz.zaxo.Markets.appdata.xml.in:19
 msgid "Features:"
 msgstr "Fitur-fitur:"
 
-#: data/com.bitstower.Markets.appdata.xml.in:21
+#: data/biz.zaxo.Markets.appdata.xml.in:21
 msgid "Create your personal portfolio"
 msgstr "Buat portfolio pribadi"
 
-#: data/com.bitstower.Markets.appdata.xml.in:22
+#: data/biz.zaxo.Markets.appdata.xml.in:22
 msgid "Track stocks, currencies, cryptocurrencies, commodities and indexes"
 msgstr "Lacak saham, mata uang, cryptocurrency, komoditas, dan indeks"
 
-#: data/com.bitstower.Markets.appdata.xml.in:23
+#: data/biz.zaxo.Markets.appdata.xml.in:23
 msgid "Compatible with Linux smartphones (Librem5, PinePhone)"
 msgstr "Kompatibel dengan ponsel Linux (Librem5, PinePhone)"
 
-#: data/com.bitstower.Markets.appdata.xml.in:24
+#: data/biz.zaxo.Markets.appdata.xml.in:24
 msgid "Open any symbol in Yahoo Finance for more details"
 msgstr "Buka simbol apa pun di Yahoo Finance untuk detail lebih lanjut"
 
-#: data/com.bitstower.Markets.appdata.xml.in:25
+#: data/biz.zaxo.Markets.appdata.xml.in:25
 msgid "Adjust the refresh rate"
 msgstr "Sesuaikan refresh rate"
 
-#: data/com.bitstower.Markets.appdata.xml.in:26
+#: data/biz.zaxo.Markets.appdata.xml.in:26
 msgid "Dark Mode"
 msgstr "Mode Gelap"
 
-#: data/com.bitstower.Markets.appdata.xml.in:33
+#: data/biz.zaxo.Markets.appdata.xml.in:33
 msgid "Live Prices"
 msgstr "Harga Langsung"
 
-#: data/com.bitstower.Markets.appdata.xml.in:40
+#: data/biz.zaxo.Markets.appdata.xml.in:40
 msgid "Markets 0.5.2 brings new translations and bug fixes."
 msgstr "Markets 0.5.2 menghadirkan terjemahan baru dan perbaikan bug."
 
-#: data/com.bitstower.Markets.appdata.xml.in:42
+#: data/biz.zaxo.Markets.appdata.xml.in:42
 msgid "Added Portuguese (Brazil) translations"
 msgstr "Penambahan terjemahan Portugis (Brasil)"
 
-#: data/com.bitstower.Markets.appdata.xml.in:43
+#: data/biz.zaxo.Markets.appdata.xml.in:43
 msgid "Updated translations"
 msgstr "Pembaruan terjemahan"
 
-#: data/com.bitstower.Markets.appdata.xml.in:49
+#: data/biz.zaxo.Markets.appdata.xml.in:49
 msgid "Markets 0.5.1 brings new features and bug fixes."
 msgstr "Markets 0.5.1 menghadirkan fitur baru dan perbaikan bug."
 
-#: data/com.bitstower.Markets.appdata.xml.in:51
+#: data/biz.zaxo.Markets.appdata.xml.in:51
 msgid "New layout of the symbol list"
 msgstr "Tata letak baru dari daftar simbol"
 
-#: data/com.bitstower.Markets.appdata.xml.in:52
+#: data/biz.zaxo.Markets.appdata.xml.in:52
 msgid "Improved keyboard support"
 msgstr "Peningkatan dukungan keyboard"
 
-#: data/com.bitstower.Markets.appdata.xml.in:53
+#: data/biz.zaxo.Markets.appdata.xml.in:53
 msgid "Added new languages: Spanish, Slovak"
 msgstr "Penambahan bahasa baru: Spanyol, Slovak"
 
-#: data/com.bitstower.Markets.appdata.xml.in:54
+#: data/biz.zaxo.Markets.appdata.xml.in:54
 msgid "More natural drag and drop behaviour"
 msgstr "Drag dan drop yang lebih alami"
 
-#: data/com.bitstower.Markets.appdata.xml.in:55
+#: data/biz.zaxo.Markets.appdata.xml.in:55
 msgid "Bug fixes"
 msgstr "Perbaikan bug"
 
-#: data/com.bitstower.Markets.appdata.xml.in:61
+#: data/biz.zaxo.Markets.appdata.xml.in:61
 msgid "Markets 0.4.0 brings new features and bug fixes."
 msgstr "Markets 0.4.0 menghadirkan fitur baru dan perbaikan bug."
 
-#: data/com.bitstower.Markets.appdata.xml.in:63
-#: data/com.bitstower.Markets.appdata.xml.in:82
+#: data/biz.zaxo.Markets.appdata.xml.in:63
+#: data/biz.zaxo.Markets.appdata.xml.in:82
 msgid "Added new app icon"
 msgstr "Menambahkan ikon aplikasi baru"
 
-#: data/com.bitstower.Markets.appdata.xml.in:64
+#: data/biz.zaxo.Markets.appdata.xml.in:64
 msgid "Added reorder support"
 msgstr "Menambahkan dukungan reorder"
 
-#: data/com.bitstower.Markets.appdata.xml.in:65
+#: data/biz.zaxo.Markets.appdata.xml.in:65
 msgid "Added i18n support"
 msgstr "Menambahkan dukungan i18n"
 
-#: data/com.bitstower.Markets.appdata.xml.in:66
-#: data/com.bitstower.Markets.appdata.xml.in:74
-#: data/com.bitstower.Markets.appdata.xml.in:83
+#: data/biz.zaxo.Markets.appdata.xml.in:66
+#: data/biz.zaxo.Markets.appdata.xml.in:74
+#: data/biz.zaxo.Markets.appdata.xml.in:83
 msgid "Fixed various issues"
 msgstr "Memperbaiki bermacam-macam masalah"
 
-#: data/com.bitstower.Markets.appdata.xml.in:72
+#: data/biz.zaxo.Markets.appdata.xml.in:72
 msgid "Markets 0.3.0 brings bug fixes."
 msgstr "Markets 0.3.0 membawa perbaikan bug."
 
-#: data/com.bitstower.Markets.appdata.xml.in:80
+#: data/biz.zaxo.Markets.appdata.xml.in:80
 msgid "Markets 0.2.0 brings small feature additions and bug fixes."
 msgstr "Markets 0.2.0 menghadirkan penambahan fitur kecil dan perbaikan bug."
 
-#: data/com.bitstower.Markets.appdata.xml.in:89
+#: data/biz.zaxo.Markets.appdata.xml.in:89
 msgid "Initial release"
 msgstr "Peluncuran awal"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/com.bitstower.Markets.desktop.in:11
+#: data/biz.zaxo.Markets.desktop.in:11
 msgid "stock;currency;cryptocurrency;finance;economy;"
 msgstr "saham;mata uang;mata uang crypto;keuangan;ekonomi;"
 
-#: data/com.bitstower.Markets.gschema.xml:6
+#: data/biz.zaxo.Markets.gschema.xml:6
 msgid "Pull interval"
 msgstr "Tarik interval"
 
-#: data/com.bitstower.Markets.gschema.xml:7
+#: data/biz.zaxo.Markets.gschema.xml:7
 msgid "Pull data every X seconds."
 msgstr "Tarik data setiap X detik."
 
-#: data/com.bitstower.Markets.gschema.xml:11 data/ui/PreferencesWindow.ui:56
+#: data/biz.zaxo.Markets.gschema.xml:11 data/ui/PreferencesWindow.ui:56
 msgid "Use dark GTK+ theme"
 msgstr "Gunakan tema gelap GTK+"
 
-#: data/com.bitstower.Markets.gschema.xml:12
+#: data/biz.zaxo.Markets.gschema.xml:12
 msgid ""
 "Use the dark variant of your GTK+ theme. Please note that not every GTK+ "
 "theme has a dark variant."
@@ -169,19 +169,19 @@ msgstr ""
 "Gunakan varian gelap dari tema GTK+. Harap dicatat bahwa tidak setiap tema "
 "GTK+ memiliki varian gelap."
 
-#: data/com.bitstower.Markets.gschema.xml:16
+#: data/biz.zaxo.Markets.gschema.xml:16
 msgid "Window width"
 msgstr "Lebar jendela"
 
-#: data/com.bitstower.Markets.gschema.xml:17
+#: data/biz.zaxo.Markets.gschema.xml:17
 msgid "Remember the window width."
 msgstr "Ingat lebar jendela."
 
-#: data/com.bitstower.Markets.gschema.xml:21
+#: data/biz.zaxo.Markets.gschema.xml:21
 msgid "Window height"
 msgstr "Tinggi jendela"
 
-#: data/com.bitstower.Markets.gschema.xml:22
+#: data/biz.zaxo.Markets.gschema.xml:22
 msgid "Remember the window height."
 msgstr "Ingat tinggi jendela."
 

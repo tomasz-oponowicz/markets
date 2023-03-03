@@ -1,4 +1,4 @@
-[GtkTemplate (ui = "/com/bitstower/Markets/MainHeaderBar.ui")]
+[GtkTemplate (ui = "/biz/zaxo/Markets/MainHeaderBar.ui")]
 public class Markets.MainHeaderBar : Hdy.HeaderBar {
     private Markets.MainWindow window;
     private Markets.State state;

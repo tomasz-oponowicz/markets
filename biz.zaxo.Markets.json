@@ -1,9 +1,9 @@
 {
-    "app-id" : "com.bitstower.Markets",
+    "app-id" : "biz.zaxo.Markets",
     "runtime" : "org.gnome.Platform",
     "runtime-version" : "43",
     "sdk" : "org.gnome.Sdk",
-    "command" : "bitstower-markets",
+    "command" : "markets",
     "finish-args" : [
         "--share=network",
         "--share=ipc",
@@ -24,7 +24,7 @@
     ],
     "modules" : [
         {
-            "name" : "bitstower-markets",
+            "name" : "markets",
             "builddir" : true,
             "buildsystem" : "meson",
             "sources" : [

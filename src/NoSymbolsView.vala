@@ -1,3 +1,3 @@
-[GtkTemplate (ui = "/com/bitstower/Markets/NoSymbolsView.ui")]
+[GtkTemplate (ui = "/biz/zaxo/Markets/NoSymbolsView.ui")]
 public class Markets.NoSymbolsView : Gtk.Box {
 }

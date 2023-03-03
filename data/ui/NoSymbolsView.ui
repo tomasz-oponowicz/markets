@@ -14,7 +14,7 @@
         <property name="visible">True</property>
         <property name="pixel_size">96</property>
         <property name="margin-bottom">18</property>
-        <property name="icon_name">com.bitstower.Markets-symbolic</property>
+        <property name="icon_name">biz.zaxo.Markets-symbolic</property>
         <property name="icon_size">6</property>
         <style>
           <class name="dim-label"/>

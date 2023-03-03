@@ -1,4 +1,4 @@
-[GtkTemplate (ui = "/com/bitstower/Markets/PreferencesWindow.ui")]
+[GtkTemplate (ui = "/biz/zaxo/Markets/PreferencesWindow.ui")]
 public class Markets.PreferencesWindow : Hdy.PreferencesWindow {
 
     [GtkChild]

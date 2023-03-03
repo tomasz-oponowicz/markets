@@ -1,4 +1,4 @@
-[GtkTemplate (ui = "/com/bitstower/Markets/SymbolsView.ui")]
+[GtkTemplate (ui = "/biz/zaxo/Markets/SymbolsView.ui")]
 public class Markets.SymbolsView : Gtk.ScrolledWindow {
 
     [GtkChild]

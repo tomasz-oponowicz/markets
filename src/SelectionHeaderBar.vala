@@ -1,4 +1,4 @@
-[GtkTemplate (ui = "/com/bitstower/Markets/SelectionHeaderBar.ui")]
+[GtkTemplate (ui = "/biz/zaxo/Markets/SelectionHeaderBar.ui")]
 public class Markets.SelectionHeaderBar : Hdy.HeaderBar {
 
     [GtkChild]

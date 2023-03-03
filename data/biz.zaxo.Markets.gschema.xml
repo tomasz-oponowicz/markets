@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schemalist gettext-domain="bitstower-markets">
-  <schema id="com.bitstower.Markets" path="/com/bitstower/Markets/">
+<schemalist gettext-domain="markets">
+  <schema id="biz.zaxo.Markets" path="/biz/zaxo/Markets/">
     <key type="i" name="pull-interval">
       <default>30</default>
       <summary>Pull interval</summary>

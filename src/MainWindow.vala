@@ -1,4 +1,4 @@
-[GtkTemplate (ui = "/com/bitstower/Markets/MainWindow.ui")]
+[GtkTemplate (ui = "/biz/zaxo/Markets/MainWindow.ui")]
 public class Markets.MainWindow : Hdy.ApplicationWindow {
 
     [GtkChild]

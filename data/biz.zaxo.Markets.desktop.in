@@ -1,10 +1,10 @@
 [Desktop Entry]
 Name=Markets
-Exec=bitstower-markets
+Exec=markets
 Terminal=false
 Type=Application
 StartupNotify=true
-Icon=com.bitstower.Markets
+Icon=biz.zaxo.Markets
 Categories=GTK;Office;Finance;Economy;
 # Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 Keywords=stock;currency;cryptocurrency;finance;economy;

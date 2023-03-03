@@ -25,7 +25,7 @@ public class Markets.Application : Gtk.Application {
         }
 
         var provider = new Gtk.CssProvider ();
-        provider.load_from_resource ("/com/bitstower/Markets/Application.css");
+        provider.load_from_resource ("/biz/zaxo/Markets/Application.css");
         Gtk.StyleContext.add_provider_for_screen (
             Gdk.Screen.get_default (),
             provider,
