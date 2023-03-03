@@ -1,4 +1,4 @@
-[GtkTemplate (ui = "/com/bitstower/Markets/SymbolRow.ui")]
+[GtkTemplate (ui = "/biz/zaxo/Markets/SymbolRow.ui")]
 public class Markets.SymbolRow : Gtk.ListBoxRow {
 
     [GtkChild]

@@ -1,4 +1,4 @@
-![](data/icons/com.bitstower.Markets.svg?raw=true)
+![](data/icons/biz.zaxo.Markets.svg?raw=true)
 
 # Markets
 The Markets application delivers financial data to your fingertips. Track stocks, currencies and cryptocurrencies. Stay on top of the market and never miss an investment opportunity!
@@ -47,11 +47,11 @@ cd build
 ninja
 ```
 
-To install, use `ninja install`, then execute with `bitstower-markets`
+To install, use `ninja install`, then execute with `markets`
 
 ```
 sudo ninja install
-bitstower-markets
+markets
 ```
 
 ## License

@@ -1,11 +1,11 @@
-# English translations for com.bitstower.Markets package.
-# Copyright (C) 2020 THE com.bitstower.Markets'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the com.bitstower.Markets package.
+# English translations for biz.zaxo.Markets package.
+# Copyright (C) 2020 THE biz.zaxo.Markets'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the biz.zaxo.Markets package.
 # Automatically generated, 2020.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: com.bitstower.Markets\n"
+"Project-Id-Version: biz.zaxo.Markets\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-28 12:54+0200\n"
 "PO-Revision-Date: 2020-08-21 10:49+0200\n"
@@ -17,21 +17,17 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: data/com.bitstower.Markets.appdata.xml.in:6
-msgid "bitstower"
-msgstr "bitstower"
-
-#: data/com.bitstower.Markets.appdata.xml.in:12
-#: data/com.bitstower.Markets.desktop.in:3 src/Application.vala:74
+#: data/biz.zaxo.Markets.appdata.xml.in:12
+#: data/biz.zaxo.Markets.desktop.in:3 src/Application.vala:74
 #: src/MainWindow.vala:22
 msgid "Markets"
 msgstr "Markets"
 
-#: data/com.bitstower.Markets.appdata.xml.in:13 src/Application.vala:75
+#: data/biz.zaxo.Markets.appdata.xml.in:13 src/Application.vala:75
 msgid "Keep track of your investments"
 msgstr "Keep track of your investments"
 
-#: data/com.bitstower.Markets.appdata.xml.in:15
+#: data/biz.zaxo.Markets.appdata.xml.in:15
 msgid ""
 "The Markets app delivers financial data to your fingertips. Stay on top of "
 "the market and never miss an investment opportunity!"
@@ -39,127 +35,127 @@ msgstr ""
 "The Markets app delivers financial data to your fingertips. Stay on top of "
 "the market and never miss an investment opportunity!"
 
-#: data/com.bitstower.Markets.appdata.xml.in:19
+#: data/biz.zaxo.Markets.appdata.xml.in:19
 msgid "Features:"
 msgstr "Features:"
 
-#: data/com.bitstower.Markets.appdata.xml.in:21
+#: data/biz.zaxo.Markets.appdata.xml.in:21
 msgid "Create your personal portfolio"
 msgstr "Create your personal portfolio"
 
-#: data/com.bitstower.Markets.appdata.xml.in:22
+#: data/biz.zaxo.Markets.appdata.xml.in:22
 msgid "Track stocks, currencies, cryptocurrencies, commodities and indexes"
 msgstr "Track stocks, currencies, cryptocurrencies, commodities and indexes"
 
-#: data/com.bitstower.Markets.appdata.xml.in:23
+#: data/biz.zaxo.Markets.appdata.xml.in:23
 msgid "Compatible with Linux smartphones (Librem5, PinePhone)"
 msgstr "Compatible with Linux smartphones (Librem5, PinePhone)"
 
-#: data/com.bitstower.Markets.appdata.xml.in:24
+#: data/biz.zaxo.Markets.appdata.xml.in:24
 msgid "Open any symbol in Yahoo Finance for more details"
 msgstr "Open any symbol in Yahoo Finance for more details"
 
-#: data/com.bitstower.Markets.appdata.xml.in:25
+#: data/biz.zaxo.Markets.appdata.xml.in:25
 msgid "Adjust the refresh rate"
 msgstr "Adjust the refresh rate"
 
-#: data/com.bitstower.Markets.appdata.xml.in:26
+#: data/biz.zaxo.Markets.appdata.xml.in:26
 msgid "Dark Mode"
 msgstr "Dark Mode"
 
-#: data/com.bitstower.Markets.appdata.xml.in:33
+#: data/biz.zaxo.Markets.appdata.xml.in:33
 msgid "Live Prices"
 msgstr "Live Prices"
 
-#: data/com.bitstower.Markets.appdata.xml.in:40
+#: data/biz.zaxo.Markets.appdata.xml.in:40
 msgid "Markets 0.5.2 brings new translations and bug fixes."
 msgstr "Markets 0.5.2 brings new translations and bug fixes."
 
-#: data/com.bitstower.Markets.appdata.xml.in:42
+#: data/biz.zaxo.Markets.appdata.xml.in:42
 msgid "Added Portuguese (Brazil) translations"
 msgstr "Added Portuguese (Brazil) translations"
 
-#: data/com.bitstower.Markets.appdata.xml.in:43
+#: data/biz.zaxo.Markets.appdata.xml.in:43
 msgid "Updated translations"
 msgstr "Updated translations"
 
-#: data/com.bitstower.Markets.appdata.xml.in:49
+#: data/biz.zaxo.Markets.appdata.xml.in:49
 msgid "Markets 0.5.1 brings new features and bug fixes."
 msgstr "Markets 0.5.1 brings new features and bug fixes."
 
-#: data/com.bitstower.Markets.appdata.xml.in:51
+#: data/biz.zaxo.Markets.appdata.xml.in:51
 msgid "New layout of the symbol list"
 msgstr "New layout of the symbol list"
 
-#: data/com.bitstower.Markets.appdata.xml.in:52
+#: data/biz.zaxo.Markets.appdata.xml.in:52
 msgid "Improved keyboard support"
 msgstr "Improved keyboard support"
 
-#: data/com.bitstower.Markets.appdata.xml.in:53
+#: data/biz.zaxo.Markets.appdata.xml.in:53
 msgid "Added new languages: Spanish, Slovak"
 msgstr "Added new languages: Spanish, Slovak"
 
-#: data/com.bitstower.Markets.appdata.xml.in:54
+#: data/biz.zaxo.Markets.appdata.xml.in:54
 msgid "More natural drag and drop behaviour"
 msgstr "More natural drag and drop behaviour"
 
-#: data/com.bitstower.Markets.appdata.xml.in:55
+#: data/biz.zaxo.Markets.appdata.xml.in:55
 msgid "Bug fixes"
 msgstr "Bug fixes"
 
-#: data/com.bitstower.Markets.appdata.xml.in:61
+#: data/biz.zaxo.Markets.appdata.xml.in:61
 msgid "Markets 0.4.0 brings new features and bug fixes."
 msgstr "Markets 0.4.0 brings new features and bug fixes."
 
-#: data/com.bitstower.Markets.appdata.xml.in:63
-#: data/com.bitstower.Markets.appdata.xml.in:82
+#: data/biz.zaxo.Markets.appdata.xml.in:63
+#: data/biz.zaxo.Markets.appdata.xml.in:82
 msgid "Added new app icon"
 msgstr "Added new app icon"
 
-#: data/com.bitstower.Markets.appdata.xml.in:64
+#: data/biz.zaxo.Markets.appdata.xml.in:64
 msgid "Added reorder support"
 msgstr "Added reorder support"
 
-#: data/com.bitstower.Markets.appdata.xml.in:65
+#: data/biz.zaxo.Markets.appdata.xml.in:65
 msgid "Added i18n support"
 msgstr "Added i18n support"
 
-#: data/com.bitstower.Markets.appdata.xml.in:66
-#: data/com.bitstower.Markets.appdata.xml.in:74
-#: data/com.bitstower.Markets.appdata.xml.in:83
+#: data/biz.zaxo.Markets.appdata.xml.in:66
+#: data/biz.zaxo.Markets.appdata.xml.in:74
+#: data/biz.zaxo.Markets.appdata.xml.in:83
 msgid "Fixed various issues"
 msgstr "Fixed various issues"
 
-#: data/com.bitstower.Markets.appdata.xml.in:72
+#: data/biz.zaxo.Markets.appdata.xml.in:72
 msgid "Markets 0.3.0 brings bug fixes."
 msgstr "Markets 0.3.0 brings bug fixes."
 
-#: data/com.bitstower.Markets.appdata.xml.in:80
+#: data/biz.zaxo.Markets.appdata.xml.in:80
 msgid "Markets 0.2.0 brings small feature additions and bug fixes."
 msgstr "Markets 0.2.0 brings small feature additions and bug fixes."
 
-#: data/com.bitstower.Markets.appdata.xml.in:89
+#: data/biz.zaxo.Markets.appdata.xml.in:89
 msgid "Initial release"
 msgstr "Initial release"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/com.bitstower.Markets.desktop.in:11
+#: data/biz.zaxo.Markets.desktop.in:11
 msgid "stock;currency;cryptocurrency;finance;economy;"
 msgstr "stock;currency;cryptocurrency;finance;economy;"
 
-#: data/com.bitstower.Markets.gschema.xml:6
+#: data/biz.zaxo.Markets.gschema.xml:6
 msgid "Pull interval"
 msgstr "Pull interval"
 
-#: data/com.bitstower.Markets.gschema.xml:7
+#: data/biz.zaxo.Markets.gschema.xml:7
 msgid "Pull data every X seconds."
 msgstr "Pull data every X seconds."
 
-#: data/com.bitstower.Markets.gschema.xml:11 data/ui/PreferencesWindow.ui:56
+#: data/biz.zaxo.Markets.gschema.xml:11 data/ui/PreferencesWindow.ui:56
 msgid "Use dark GTK+ theme"
 msgstr "Use dark GTK+ theme"
 
-#: data/com.bitstower.Markets.gschema.xml:12
+#: data/biz.zaxo.Markets.gschema.xml:12
 msgid ""
 "Use the dark variant of your GTK+ theme. Please note that not every GTK+ "
 "theme has a dark variant."
@@ -167,19 +163,19 @@ msgstr ""
 "Use the dark variant of your GTK+ theme. Please note that not every GTK+ "
 "theme has a dark variant."
 
-#: data/com.bitstower.Markets.gschema.xml:16
+#: data/biz.zaxo.Markets.gschema.xml:16
 msgid "Window width"
 msgstr "Window width"
 
-#: data/com.bitstower.Markets.gschema.xml:17
+#: data/biz.zaxo.Markets.gschema.xml:17
 msgid "Remember the window width."
 msgstr "Remember the window width."
 
-#: data/com.bitstower.Markets.gschema.xml:21
+#: data/biz.zaxo.Markets.gschema.xml:21
 msgid "Window height"
 msgstr "Window height"
 
-#: data/com.bitstower.Markets.gschema.xml:22
+#: data/biz.zaxo.Markets.gschema.xml:22
 msgid "Remember the window height."
 msgstr "Remember the window height."
 

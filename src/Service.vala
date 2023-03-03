@@ -9,7 +9,7 @@ namespace Markets {
         public Service () {
             this.state = new State ();
             this.client = new RestClient ();
-            this.settings = new Settings ("com.bitstower.Markets");
+            this.settings = new Settings ("biz.zaxo.Markets");
         }
 
         private void attach_listeners () {

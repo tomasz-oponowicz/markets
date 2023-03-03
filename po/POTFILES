@@ -1,6 +1,6 @@
-data/com.bitstower.Markets.appdata.xml.in
-data/com.bitstower.Markets.desktop.in
-data/com.bitstower.Markets.gschema.xml
+data/biz.zaxo.Markets.appdata.xml.in
+data/biz.zaxo.Markets.desktop.in
+data/biz.zaxo.Markets.gschema.xml
 data/ui/MainWindow.ui
 data/ui/PreferencesWindow.ui
 data/ui/NoSymbolsView.ui

@@ -1,20 +1,20 @@
 ## Generate pot file
 
-    $ ninja com.bitstower.Markets-pot
+    $ ninja biz.zaxo.Markets-pot
 
 ## Generate po files
 
-    $ ninja com.bitstower.Markets-update-po
+    $ ninja biz.zaxo.Markets-update-po
 
 ## Test localization
 
-    $ LC_ALL=pl_PL.utf8 bitstower-markets
+    $ LC_ALL=pl_PL.utf8 markets
 
 ## Import translations from Weblate
 
 1. Create and activate the virutal enviorment for Python3.
 1. Install the Weblate command.
-   
+
        pip install wlc
 1. Configure the Webplate command in `~/.config/weblate`
 1. Commit all pending changes in Weblate and lock the translation component.

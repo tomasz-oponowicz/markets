@@ -1,11 +1,11 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the com.bitstower.Markets package.
+# This file is distributed under the same license as the biz.zaxo.Markets package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: com.bitstower.Markets\n"
+"Project-Id-Version: biz.zaxo.Markets\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-28 12:54+0200\n"
 "PO-Revision-Date: 2021-10-28 23:05+0000\n"
@@ -20,21 +20,17 @@ msgstr ""
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 4.9-dev\n"
 
-#: data/com.bitstower.Markets.appdata.xml.in:6
-msgid "bitstower"
-msgstr "bitstower"
-
-#: data/com.bitstower.Markets.appdata.xml.in:12
-#: data/com.bitstower.Markets.desktop.in:3 src/Application.vala:74
+#: data/biz.zaxo.Markets.appdata.xml.in:12
+#: data/biz.zaxo.Markets.desktop.in:3 src/Application.vala:74
 #: src/MainWindow.vala:22
 msgid "Markets"
 msgstr "Tržišta"
 
-#: data/com.bitstower.Markets.appdata.xml.in:13 src/Application.vala:75
+#: data/biz.zaxo.Markets.appdata.xml.in:13 src/Application.vala:75
 msgid "Keep track of your investments"
 msgstr "Prati svoja ulaganja"
 
-#: data/com.bitstower.Markets.appdata.xml.in:15
+#: data/biz.zaxo.Markets.appdata.xml.in:15
 msgid ""
 "The Markets app delivers financial data to your fingertips. Stay on top of "
 "the market and never miss an investment opportunity!"
@@ -42,128 +38,128 @@ msgstr ""
 "Program „Tržišta” pruža financijske podatke. Budi u toku događaja na "
 "tržištima i nikad ne propusti priliku za ulaganje!"
 
-#: data/com.bitstower.Markets.appdata.xml.in:19
+#: data/biz.zaxo.Markets.appdata.xml.in:19
 msgid "Features:"
 msgstr "Funkcije:"
 
-#: data/com.bitstower.Markets.appdata.xml.in:21
+#: data/biz.zaxo.Markets.appdata.xml.in:21
 msgid "Create your personal portfolio"
 msgstr "Stvori vlastiti portfelj"
 
-#: data/com.bitstower.Markets.appdata.xml.in:22
+#: data/biz.zaxo.Markets.appdata.xml.in:22
 msgid "Track stocks, currencies, cryptocurrencies, commodities and indexes"
 msgstr "Prati dionice, valute i kriptovalute, robu i indekse"
 
-#: data/com.bitstower.Markets.appdata.xml.in:23
+#: data/biz.zaxo.Markets.appdata.xml.in:23
 msgid "Compatible with Linux smartphones (Librem5, PinePhone)"
 msgstr ""
 "Kompatibilno s pametnim telefonima s Linux sustavom (Librem5, PinePhone)"
 
-#: data/com.bitstower.Markets.appdata.xml.in:24
+#: data/biz.zaxo.Markets.appdata.xml.in:24
 msgid "Open any symbol in Yahoo Finance for more details"
 msgstr "Otvori bilo koju ikonu na stranici Yahoo Finance za više detalja"
 
-#: data/com.bitstower.Markets.appdata.xml.in:25
+#: data/biz.zaxo.Markets.appdata.xml.in:25
 msgid "Adjust the refresh rate"
 msgstr "Podesi učestalost aktualiziranja"
 
-#: data/com.bitstower.Markets.appdata.xml.in:26
+#: data/biz.zaxo.Markets.appdata.xml.in:26
 msgid "Dark Mode"
 msgstr "Tamni modus"
 
-#: data/com.bitstower.Markets.appdata.xml.in:33
+#: data/biz.zaxo.Markets.appdata.xml.in:33
 msgid "Live Prices"
 msgstr "Cijene uživo"
 
-#: data/com.bitstower.Markets.appdata.xml.in:40
+#: data/biz.zaxo.Markets.appdata.xml.in:40
 msgid "Markets 0.5.2 brings new translations and bug fixes."
 msgstr "„Tržišta” 0.5.2 sadrži par funkcionalnih dodataka i ispravke grešaka."
 
-#: data/com.bitstower.Markets.appdata.xml.in:42
+#: data/biz.zaxo.Markets.appdata.xml.in:42
 msgid "Added Portuguese (Brazil) translations"
 msgstr "Dodani portugalski (Brazil) prijevodi"
 
-#: data/com.bitstower.Markets.appdata.xml.in:43
+#: data/biz.zaxo.Markets.appdata.xml.in:43
 msgid "Updated translations"
 msgstr "Aktualizirani prijevodi"
 
-#: data/com.bitstower.Markets.appdata.xml.in:49
+#: data/biz.zaxo.Markets.appdata.xml.in:49
 msgid "Markets 0.5.1 brings new features and bug fixes."
 msgstr "„Tržišta” 0.5.1 sadrži par funkcionalnih dodataka i ispravke grešaka."
 
-#: data/com.bitstower.Markets.appdata.xml.in:51
+#: data/biz.zaxo.Markets.appdata.xml.in:51
 msgid "New layout of the symbol list"
 msgstr "Novi izgled popisa simbola"
 
-#: data/com.bitstower.Markets.appdata.xml.in:52
+#: data/biz.zaxo.Markets.appdata.xml.in:52
 msgid "Improved keyboard support"
 msgstr "Poboljšana podrška za tipkovnicu"
 
-#: data/com.bitstower.Markets.appdata.xml.in:53
+#: data/biz.zaxo.Markets.appdata.xml.in:53
 msgid "Added new languages: Spanish, Slovak"
 msgstr "Dodani novi jezici: španjolski, slovački"
 
-#: data/com.bitstower.Markets.appdata.xml.in:54
+#: data/biz.zaxo.Markets.appdata.xml.in:54
 msgid "More natural drag and drop behaviour"
 msgstr "Prirodnije ponašanje za povlačenje i ispuštanje"
 
-#: data/com.bitstower.Markets.appdata.xml.in:55
+#: data/biz.zaxo.Markets.appdata.xml.in:55
 msgid "Bug fixes"
 msgstr "Ispravci grešaka"
 
-#: data/com.bitstower.Markets.appdata.xml.in:61
+#: data/biz.zaxo.Markets.appdata.xml.in:61
 msgid "Markets 0.4.0 brings new features and bug fixes."
 msgstr "„Tržišta” 0.4.0 sadrži par funkcionalnih dodataka i ispravke grešaka."
 
-#: data/com.bitstower.Markets.appdata.xml.in:63
-#: data/com.bitstower.Markets.appdata.xml.in:82
+#: data/biz.zaxo.Markets.appdata.xml.in:63
+#: data/biz.zaxo.Markets.appdata.xml.in:82
 msgid "Added new app icon"
 msgstr "Dodana je nova ikona programa"
 
-#: data/com.bitstower.Markets.appdata.xml.in:64
+#: data/biz.zaxo.Markets.appdata.xml.in:64
 msgid "Added reorder support"
 msgstr "Dodana je podrška za mijenjanje redoslijeda"
 
-#: data/com.bitstower.Markets.appdata.xml.in:65
+#: data/biz.zaxo.Markets.appdata.xml.in:65
 msgid "Added i18n support"
 msgstr "Dodana je podrška za i18n"
 
-#: data/com.bitstower.Markets.appdata.xml.in:66
-#: data/com.bitstower.Markets.appdata.xml.in:74
-#: data/com.bitstower.Markets.appdata.xml.in:83
+#: data/biz.zaxo.Markets.appdata.xml.in:66
+#: data/biz.zaxo.Markets.appdata.xml.in:74
+#: data/biz.zaxo.Markets.appdata.xml.in:83
 msgid "Fixed various issues"
 msgstr "Ispravljeni su razni problemi"
 
-#: data/com.bitstower.Markets.appdata.xml.in:72
+#: data/biz.zaxo.Markets.appdata.xml.in:72
 msgid "Markets 0.3.0 brings bug fixes."
 msgstr "„Tržišta” 0.3.0 sadrži ispravke grešaka."
 
-#: data/com.bitstower.Markets.appdata.xml.in:80
+#: data/biz.zaxo.Markets.appdata.xml.in:80
 msgid "Markets 0.2.0 brings small feature additions and bug fixes."
 msgstr "„Tržišta” 0.3.0 sadrži par funkcionalnih dodataka i ispravke grešaka."
 
-#: data/com.bitstower.Markets.appdata.xml.in:89
+#: data/biz.zaxo.Markets.appdata.xml.in:89
 msgid "Initial release"
 msgstr "Prvo izdanje"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/com.bitstower.Markets.desktop.in:11
+#: data/biz.zaxo.Markets.desktop.in:11
 msgid "stock;currency;cryptocurrency;finance;economy;"
 msgstr "dionica;valuta;kriptovaluta;financije;ekonomija;"
 
-#: data/com.bitstower.Markets.gschema.xml:6
+#: data/biz.zaxo.Markets.gschema.xml:6
 msgid "Pull interval"
 msgstr "Interval preuzimanja"
 
-#: data/com.bitstower.Markets.gschema.xml:7
+#: data/biz.zaxo.Markets.gschema.xml:7
 msgid "Pull data every X seconds."
 msgstr "Preuzmi podatke svakih x sekundi."
 
-#: data/com.bitstower.Markets.gschema.xml:11 data/ui/PreferencesWindow.ui:56
+#: data/biz.zaxo.Markets.gschema.xml:11 data/ui/PreferencesWindow.ui:56
 msgid "Use dark GTK+ theme"
 msgstr "Koristi tamnu GTK+ temu"
 
-#: data/com.bitstower.Markets.gschema.xml:12
+#: data/biz.zaxo.Markets.gschema.xml:12
 msgid ""
 "Use the dark variant of your GTK+ theme. Please note that not every GTK+ "
 "theme has a dark variant."
@@ -171,19 +167,19 @@ msgstr ""
 "Koristi tamnu inačicu GTK+ teme. Napomena: Tamna tema ne postoji za svaku GTK"
 "+ temu."
 
-#: data/com.bitstower.Markets.gschema.xml:16
+#: data/biz.zaxo.Markets.gschema.xml:16
 msgid "Window width"
 msgstr "Širina prozora"
 
-#: data/com.bitstower.Markets.gschema.xml:17
+#: data/biz.zaxo.Markets.gschema.xml:17
 msgid "Remember the window width."
 msgstr "Zapamti širinu prozora."
 
-#: data/com.bitstower.Markets.gschema.xml:21
+#: data/biz.zaxo.Markets.gschema.xml:21
 msgid "Window height"
 msgstr "Visina prozora"
 
-#: data/com.bitstower.Markets.gschema.xml:22
+#: data/biz.zaxo.Markets.gschema.xml:22
 msgid "Remember the window height."
 msgstr "Zapamti visinu prozora."
 

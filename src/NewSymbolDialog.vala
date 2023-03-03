@@ -1,4 +1,4 @@
-[GtkTemplate (ui = "/com/bitstower/Markets/NewSymbolDialog.ui")]
+[GtkTemplate (ui = "/biz/zaxo/Markets/NewSymbolDialog.ui")]
 public class Markets.NewSymbolDialog : Gtk.Dialog {
 
     [GtkChild]
