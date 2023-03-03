@@ -18,10 +18,6 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
 
-#: data/biz.zaxo.Markets.appdata.xml.in:6
-msgid "bitstower"
-msgstr ""
-
 #: data/biz.zaxo.Markets.appdata.xml.in:12
 #: data/biz.zaxo.Markets.desktop.in:3 src/Application.vala:74
 #: src/MainWindow.vala:22

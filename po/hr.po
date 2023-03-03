@@ -20,10 +20,6 @@ msgstr ""
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 4.9-dev\n"
 
-#: data/biz.zaxo.Markets.appdata.xml.in:6
-msgid "bitstower"
-msgstr "bitstower"
-
 #: data/biz.zaxo.Markets.appdata.xml.in:12
 #: data/biz.zaxo.Markets.desktop.in:3 src/Application.vala:74
 #: src/MainWindow.vala:22

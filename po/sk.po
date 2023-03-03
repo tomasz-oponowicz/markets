@@ -19,10 +19,6 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "X-Generator: Weblate 4.4-dev\n"
 
-#: data/biz.zaxo.Markets.appdata.xml.in:6
-msgid "bitstower"
-msgstr "bitstower"
-
 #: data/biz.zaxo.Markets.appdata.xml.in:12
 #: data/biz.zaxo.Markets.desktop.in:3 src/Application.vala:74
 #: src/MainWindow.vala:22

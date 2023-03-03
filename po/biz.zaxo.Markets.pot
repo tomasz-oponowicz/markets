@@ -15,10 +15,6 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: data/biz.zaxo.Markets.appdata.xml.in:6
-msgid "bitstower"
-msgstr ""
-
 #: data/biz.zaxo.Markets.appdata.xml.in:12
 #: data/biz.zaxo.Markets.desktop.in:3 src/Application.vala:74
 #: src/MainWindow.vala:22
