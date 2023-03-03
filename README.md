@@ -45,7 +45,7 @@ You'll need the following dependencies:
 Clone the repository and change to the project directory
 
 ```
-git clone https://github.com/bitstower/markets.git
+https://github.com/tomasz-oponowicz/markets.git
 cd markets
 ```
 
