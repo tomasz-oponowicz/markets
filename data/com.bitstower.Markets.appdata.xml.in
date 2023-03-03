@@ -4,9 +4,8 @@
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0-or-later</project_license>
   <developer_name translatable="no">bitstower</developer_name>
-  <url type="homepage">https://github.com/bitstower/markets</url>
-  <url type="bugtracker">https://github.com/bitstower/markets/issues</url>
-  <url type="translate">https://hosted.weblate.org/engage/markets/</url>
+  <url type="homepage">https://github.com/tomasz-oponowicz/markets</url>
+  <url type="bugtracker">https://github.com/tomasz-oponowicz/markets/issues</url>
   <launchable type="desktop-id">com.bitstower.Markets.desktop</launchable>
   <translation type="gettext">com.bitstower.Markets</translation>
 
@@ -45,6 +44,14 @@
   </requires>
 
   <releases>
+    <release version="0.5.5" date="2023-03-03">
+      <description>
+        <p>Markets 0.5.5</p>
+        <ul>
+          <li>End of life</li>
+        </ul>
+      </description>
+    </release>
     <release version="0.5.4" date="2022-01-17">
       <description>
         <p>Markets 0.5.4 brings new translations and bug fixes.</p>
