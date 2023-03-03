@@ -1,6 +1,3 @@
-![CI](https://github.com/bitstower/markets/workflows/CI/badge.svg)
-[![Translation](https://hosted.weblate.org/widgets/markets/-/markets/svg-badge.svg)](https://hosted.weblate.org/engage/markets/?utm_source=widget)
-
 ![](data/icons/com.bitstower.Markets.svg?raw=true)
 
 # Markets
