@@ -29,7 +29,7 @@
 
   <screenshots>
     <screenshot type="default">
-      <image width="469" height="629">https://raw.githubusercontent.com/bitstower/markets/master/preview.png</image>
+      <image width="469" height="629">https://raw.githubusercontent.com/tomasz-oponowicz/markets/master/preview.png</image>
       <caption>Live Prices</caption>
     </screenshot>
   </screenshots>
