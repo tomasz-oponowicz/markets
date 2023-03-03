@@ -3,7 +3,7 @@
   <id>biz.zaxo.Markets</id>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0-or-later</project_license>
-  <developer_name translatable="no">bitstower</developer_name>
+  <developer_name translatable="no">Tomasz Oponowicz</developer_name>
   <url type="homepage">https://github.com/tomasz-oponowicz/markets</url>
   <url type="bugtracker">https://github.com/tomasz-oponowicz/markets/issues</url>
   <launchable type="desktop-id">biz.zaxo.Markets.desktop</launchable>
