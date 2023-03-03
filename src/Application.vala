@@ -78,7 +78,7 @@ public class Markets.Application : Gtk.Application {
         dialog.translator_credits = _("translator-credits");
         dialog.artists = {"Tobias Bernard"};
         dialog.license_type = Gtk.License.GPL_3_0;
-        dialog.website = "https://bitstower.com";
+        dialog.website = "https://github.com/tomasz-oponowicz/markets";
         dialog.website_label = _("Official webpage");
 
         dialog.run ();
